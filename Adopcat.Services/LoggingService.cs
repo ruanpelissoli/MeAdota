@@ -3,6 +3,7 @@ using Adopcat.Model;
 using Adopcat.Model.Enums;
 using Adopcat.Services.Interfaces;
 using System;
+using System.Threading.Tasks;
 
 namespace Adopcat.Services
 {
@@ -15,7 +16,7 @@ namespace Adopcat.Services
             _systemLogRepository = systemLogRepository;
         }
 
-        public void Error(Exception ex)
+        public async Task Error(Exception ex)
         {
             try
             {
@@ -26,7 +27,7 @@ namespace Adopcat.Services
                     Text = ex.Message,
                 };
 
-                _systemLogRepository.Create(error);
+                await _systemLogRepository.CreateAsync(error);
             }
             catch (Exception) { }
         }

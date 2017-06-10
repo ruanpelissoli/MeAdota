@@ -1,6 +1,7 @@
 ﻿using Adopcat.API.Filters;
 using Adopcat.API.Models;
 using Adopcat.Services.Interfaces;
+using System.Threading.Tasks;
 using System.Web.Http;
 
 namespace Adopcat.API.Controllers
@@ -18,19 +19,18 @@ namespace Adopcat.API.Controllers
         [Route("login")]
         [HttpPost]
         [AllowAnonymous]
-        public IHttpActionResult Login(LoginViewModel loginModel)
+        public async Task<IHttpActionResult> Login(LoginViewModel loginModel)
         {
-            return Ok(_authenticationService.GenerateToken(loginModel.Email, loginModel.Password));
+            return Ok(await _authenticationService.GenerateToken(loginModel.Email, loginModel.Password));
         }
 
-        [Route("Logout")]
+        [Route("logout")]
         [HttpGet]
         [CustomAuthorize]
-        public IHttpActionResult Logout()
+        public async Task<IHttpActionResult> Logout()
         {
-            _authenticationService.KillToken(this.Token.Id);
+            await _authenticationService.KillToken(Token.Id);
             return Ok();
         }
-
     }
 }

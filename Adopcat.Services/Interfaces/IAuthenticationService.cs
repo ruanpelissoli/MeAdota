@@ -1,17 +1,14 @@
 ﻿using Adopcat.Model;
+using System.Threading.Tasks;
 
 namespace Adopcat.Services.Interfaces
 {
     public interface IAuthenticationService
     {
-        Token GetByAccessToken(string accessToken);
-
-        string GenerateToken(string email, string password);
-
-        void KillToken(long idToken);
-
-        void RefreshToken(Token token);
-
-        void ChangePassword(int idUser, string newPassword);
+        Task<Token> GetByAccessToken(string accessToken);
+        Task<string> GenerateToken(string email, string password);
+        Task KillToken(int idToken);
+        Task RefreshToken(Token token);
+        Task ChangePassword(int idUser, string newPassword);
     }
 }

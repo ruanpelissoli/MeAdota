@@ -7,6 +7,7 @@ using System;
 using System.Linq;
 using System.Security.Cryptography;
 using System.Text;
+using System.Threading.Tasks;
 
 namespace Adopcat.Services
 {
@@ -21,23 +22,23 @@ namespace Adopcat.Services
             _userRepository = userRepository;
         }
 
-        public Token GetByAccessToken(string accessToken)
+        public async Task<Token> GetByAccessToken(string accessToken)
         {
-            return TryCatch(() =>
+            return await TryCatch(async () =>
             {
-                return _tokenRepository.GetAll(x => x.Access_token.Equals(accessToken) && x.ExpiresUtc >= DateTime.UtcNow).FirstOrDefault();
+                return await _tokenRepository.FindAsync(x => x.Access_token.Equals(accessToken) && x.ExpiresUtc >= DateTime.UtcNow);
             });
         }
 
-        public string GenerateToken(string email, string password)
+        public async Task<string> GenerateToken(string email, string password)
         {
-            return TryCatch(() =>
+            return await TryCatch(async () =>
             {
                 password = Cryptography.GetMD5Hash(password);
                 var user = _userRepository.GetAll(x => x.Email == email && x.Password == password && x.IsActive).FirstOrDefault();
                 if (user != null)
                 {
-                    KillExpiredTokens(user);
+                    await KillExpiredTokens(user);
                     string accessToken = CreateToken(email, password);
                     var token = new Token()
                     {
@@ -49,7 +50,7 @@ namespace Adopcat.Services
 
                     token.ExpiresUtc = DateTime.UtcNow.Add(TimeSpan.FromDays(1));
 
-                    _tokenRepository.Create(token);
+                    await _tokenRepository.CreateAsync(token);
                     return token.Access_token;
                 }
 
@@ -57,44 +58,44 @@ namespace Adopcat.Services
             });
         }
 
-        public void KillToken(long idToken)
+        public async Task KillToken(int idToken)
         {
-            TryCatch(() =>
+            await TryCatch(async () =>
             {
-                _tokenRepository.Delete(t => t.Id == idToken);
+                await _tokenRepository.DeleteAsync(t => t.Id == idToken);
             });
         }
 
-        private void KillExpiredTokens(User user)
+        private async Task KillExpiredTokens(User user)
         {
-            TryCatch(() =>
+            await TryCatch(async () =>
             {
                 if (user != null)
                 {
-                    _tokenRepository.Delete(t => t.UserId == user.Id && t.ExpiresUtc < DateTime.UtcNow);
+                    await _tokenRepository.DeleteAsync(t => t.UserId == user.Id && t.ExpiresUtc < DateTime.UtcNow);
                 }
             });
         }
 
-        public void RefreshToken(Token token)
+        public async Task RefreshToken(Token token)
         {
-            TryCatch(() =>
+            await TryCatch(async () =>
             {
                 if (token != null)
                 {
                      token.ExpiresUtc = DateTime.UtcNow.Add(TimeSpan.FromDays(1));
-                    _tokenRepository.Update(token);
+                    await _tokenRepository.UpdateAsync(token);
                 }
             });
         }
 
-        public void ChangePassword(int idUser, string newPassword)
+        public async Task ChangePassword(int idUser, string newPassword)
         {
-            TryCatch(() =>
+            await TryCatch(async () =>
             {
                 var user = _userRepository.GetAll(u => u.Id == idUser).FirstOrDefault();
                 user.Password = Cryptography.GetMD5Hash(newPassword);
-                _userRepository.Update(user);
+                await _userRepository.UpdateAsync(user);
             });
         }
 

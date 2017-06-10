@@ -1,8 +1,11 @@
 ﻿using Adopcat.Data.Interfaces;
+using Adopcat.Model;
 using System;
+using System.Collections.Generic;
 using System.Data.Entity;
 using System.Linq;
 using System.Linq.Expressions;
+using System.Threading.Tasks;
 
 namespace Adopcat.Data.Repository
 {
@@ -101,6 +104,50 @@ namespace Adopcat.Data.Repository
             }
         }
 
+        public async Task<List<TObject>> GetAllAsync()
+        {
+            try
+            {
+                return await DbSet.ToListAsync();
+            }
+            catch (Exception)
+            {
+                throw;
+            }
+        }
+
+        public async Task<List<TObject>> GetAllAsync(Expression<Func<TObject, bool>> filterExpression)
+        {
+            try
+            {
+                var query = DbSet.Where(filterExpression).AsQueryable();
+                return await query.ToListAsync();
+            }
+            catch (Exception)
+            {
+                throw;
+            }
+        }
+
+        public Task<List<TObject>> GetAllAsync(Expression<Func<TObject, bool>> filterExpression, out int total, int index = 0, int size = 50)
+        {
+            try
+            {
+                int skipCount = index * size;
+                var resetSet = filterExpression != null ? DbSet.Where(filterExpression).AsNoTracking().AsQueryable() : DbSet.AsNoTracking().AsQueryable();
+
+                total = resetSet.Count();
+
+                resetSet = skipCount == 0 ? resetSet.Take(size) : resetSet.Skip(skipCount).Take(size);
+
+                return resetSet.ToListAsync();
+            }
+            catch (Exception)
+            {
+                throw;
+            }
+        }
+
         public virtual bool Contains(Expression<Func<TObject, bool>> filterExpression)
         {
             try
@@ -113,11 +160,11 @@ namespace Adopcat.Data.Repository
             }
         }
 
-        public virtual TObject Find(System.Linq.Expressions.Expression<Func<TObject, bool>> filterExpression)
+        public async virtual Task<TObject> FindAsync(Expression<Func<TObject, bool>> filterExpression)
         {
             try
             {
-                return DbSet.AsNoTracking().FirstOrDefault(filterExpression);
+                return await DbSet.FindAsync(filterExpression);
             }
             catch (Exception)
             {
@@ -125,12 +172,12 @@ namespace Adopcat.Data.Repository
             }
         }
 
-        public virtual IQueryable<TObject> Create(IQueryable<TObject> TObjects)
+        public async virtual Task<IQueryable<TObject>> CreateAsync(IQueryable<TObject> TObjects)
         {
             try
             {
                 foreach (var TObject in TObjects)
-                    this.Create(TObject);
+                    await CreateAsync(TObject);
 
                 return TObjects;
             }
@@ -140,7 +187,7 @@ namespace Adopcat.Data.Repository
             }
         }
 
-        public virtual TObject Create(TObject TObject)
+        public async virtual Task<TObject> CreateAsync(TObject TObject)
         {
             try
             {
@@ -148,7 +195,7 @@ namespace Adopcat.Data.Repository
 
                 if (!this.ShareContext)
                 {
-                    Context.SaveChanges();
+                    await Context.SaveChangesAsync();
                     Context.Entry(newEntry).State = EntityState.Detached;
                 }
                 return newEntry;
@@ -159,7 +206,7 @@ namespace Adopcat.Data.Repository
             }
         }
 
-        public virtual int Delete(TObject TObject)
+        public async virtual Task<int> DeleteAsync(TObject TObject)
         {
             try
             {
@@ -167,7 +214,7 @@ namespace Adopcat.Data.Repository
                 DbSet.Remove(TObject);
 
                 if (!this.ShareContext)
-                    return Context.SaveChanges();
+                    return await Context.SaveChangesAsync();
                 return 0;
             }
             catch (Exception)
@@ -176,7 +223,7 @@ namespace Adopcat.Data.Repository
             }
         }
 
-        public virtual int Delete(Expression<Func<TObject, bool>> filterExpression)
+        public async virtual Task<int> DeleteAsync(Expression<Func<TObject, bool>> filterExpression)
         {
             try
             {
@@ -189,7 +236,7 @@ namespace Adopcat.Data.Repository
                 }
 
                 if (!this.ShareContext)
-                    return Context.SaveChanges();
+                    return await Context.SaveChangesAsync();
                 return 0;
             }
             catch (Exception)
@@ -198,7 +245,7 @@ namespace Adopcat.Data.Repository
             }
         }
 
-        public virtual int Update(TObject TObject)
+        public async virtual Task<int> UpdateAsync(TObject TObject)
         {
             try
             {
@@ -207,7 +254,7 @@ namespace Adopcat.Data.Repository
                 entry.State = EntityState.Modified;
 
                 if (!this.ShareContext)
-                    return Context.SaveChanges();
+                    return await Context.SaveChangesAsync();
                 return 0;
             }
             catch (Exception)
@@ -238,8 +285,8 @@ namespace Adopcat.Data.Repository
             {
                 throw;
             }
-        }
+        }       
 
-        # endregion
+        #endregion
     }
 }
