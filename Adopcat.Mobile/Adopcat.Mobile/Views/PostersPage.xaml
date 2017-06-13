@@ -3,16 +3,22 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:prism="clr-namespace:Prism.Mvvm;assembly=Prism.Forms"
              prism:ViewModelLocator.AutowireViewModel="True"
+             xmlns:converters="clr-namespace:Adopcat.Mobile.Util"
              x:Class="Adopcat.Mobile.Views.PostersPage"
              Title="{Binding Title}"
              ItemsSource="{Binding Posters}">
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <converters:ByteToImageFieldConverter x:Key="ByteArrayToImage" />
+        </ResourceDictionary>
+    </ContentPage.Resources>
     <CarouselPage.ItemTemplate>
         <DataTemplate>
             <ContentPage>
                 <StackLayout 
                     HorizontalOptions="CenterAndExpand"
                     VerticalOptions="CenterAndExpand">
-                    <Image Source="{Binding PetPicture.Url}" />
+                    <Image Source="{Binding PetPictures, Converter={StaticResource Key=ByteArrayToImage}}" />
                     <Label Text="{Binding Country}" />
                     <Label Text="{Binding State}" />
                     <Label Text="{Binding City}" />

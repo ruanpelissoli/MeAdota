@@ -26,6 +26,7 @@ namespace Adopcat.Mobile.Droid
 		
 		public static void UpdateIdValues()
 		{
+			global::Gcm.Client.Resource.String.library_name = global::Adopcat.Mobile.Droid.Resource.String.library_name;
 			global::PCLAppConfig.FileSystemStream.Android.Resource.Animation.abc_fade_in = global::Adopcat.Mobile.Droid.Resource.Animation.abc_fade_in;
 			global::PCLAppConfig.FileSystemStream.Android.Resource.Animation.abc_fade_out = global::Adopcat.Mobile.Droid.Resource.Animation.abc_fade_out;
 			global::PCLAppConfig.FileSystemStream.Android.Resource.Animation.abc_grow_fade_in_from_bottom = global::Adopcat.Mobile.Droid.Resource.Animation.abc_grow_fade_in_from_bottom;
@@ -4808,6 +4809,9 @@ namespace Adopcat.Mobile.Droid
 			
 			// aapt resource value: 0x7f090025
 			public const int character_counter_pattern = 2131296293;
+			
+			// aapt resource value: 0x7f090028
+			public const int library_name = 2131296296;
 			
 			// aapt resource value: 0x7f090000
 			public const int mr_button_content_description = 2131296256;

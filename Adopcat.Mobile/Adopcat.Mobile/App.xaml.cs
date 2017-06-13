@@ -8,12 +8,14 @@ using System;
 using System.Diagnostics;
 using Adopcat.Mobile.ViewModels;
 using Adopcat.Mobile.Helpers;
+using Adopcat.Mobile.Services;
 
 namespace Adopcat.Mobile
 {
     public partial class App : PrismApplication
     {
         public static IApiService ApiService { get; private set; }
+        public static AzureService MobileService { get; private set; }
 
         public App(IPlatformInitializer initializer = null) : base(initializer) { }
 
@@ -22,6 +24,9 @@ namespace Adopcat.Mobile
             try
             {
                 InitializeComponent();
+
+                MobileService = DependencyService.Get<AzureService>();
+                MobileService.Initialize();
 
                 ApiService = RestService.For<IApiService>(ApplicationParameters.ApiUrl);
 

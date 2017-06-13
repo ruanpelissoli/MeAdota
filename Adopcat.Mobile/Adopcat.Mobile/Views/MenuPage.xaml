@@ -12,8 +12,7 @@
                 <Label Text="{Binding User.Name}" />
                 <ListView
                     ItemsSource="{Binding MenuItems}"
-                    ItemTapped="ListView_ItemTapped"
-                    >
+                    ItemTapped="ListView_ItemTapped">
                     <ListView.ItemTemplate>
                         <DataTemplate>
                             <ImageCell 

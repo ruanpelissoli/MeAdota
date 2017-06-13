@@ -91,6 +91,7 @@
     <Compile Include="Helpers\Settings.cs" />
     <Compile Include="Main.cs" />
     <Compile Include="AppDelegate.cs" />
+    <Compile Include="Services\AuthenticationService.cs" />
     <None Include="..\Adopcat.Mobile\app.config">
       <Link>app.config</Link>
     </None>
