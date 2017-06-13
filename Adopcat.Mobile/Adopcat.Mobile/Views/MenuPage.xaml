@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<MasterDetailPage xmlns="http://xamarin.com/schemas/2014/forms"
+                  xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+                  xmlns:prism="clr-namespace:Prism.Mvvm;assembly=Prism.Forms"
+                  xmlns:b="clr-namespace:Prism.Behaviors;assembly=Prism.Forms"
+                  prism:ViewModelLocator.AutowireViewModel="True"
+                  x:Class="Adopcat.Mobile.Views.MenuPage">
+    <MasterDetailPage.Master>
+        <ContentPage Title="Menu">
+            <StackLayout>
+                <Image Source="http://lorempixel.com/output/animals-q-c-400-400-8.jpg" />
+                <Label Text="{Binding User.Name}" />
+                <ListView
+                    ItemsSource="{Binding MenuItems}"
+                    ItemTapped="ListView_ItemTapped"
+                    >
+                    <ListView.ItemTemplate>
+                        <DataTemplate>
+                            <ImageCell 
+                                ImageSource="http://lorempixel.com/output/animals-q-c-400-400-8.jpg"
+                                Text="{Binding Text}" />
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                </ListView>
+            </StackLayout>
+        </ContentPage>
+    </MasterDetailPage.Master>
+</MasterDetailPage>

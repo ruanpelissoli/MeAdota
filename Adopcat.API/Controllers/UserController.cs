@@ -1,11 +1,7 @@
-﻿using Adopcat.API.Models;
+﻿using Adopcat.API.Filters;
+using Adopcat.API.Models;
 using Adopcat.Model;
 using Adopcat.Services.Interfaces;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Net;
-using System.Net.Http;
 using System.Threading.Tasks;
 using System.Web.Http;
 
@@ -19,6 +15,12 @@ namespace Adopcat.API.Controllers
         public UserController(IUserService userService)
         {
             _userService = userService;
+        }
+
+        [HttpGet]
+        public async Task<IHttpActionResult> Get(int id)
+        {
+            return Ok(await _userService.GetById(id));
         }
 
         [HttpPost]

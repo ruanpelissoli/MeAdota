@@ -68,9 +68,9 @@ namespace Adopcat.Data.Interfaces
         /// <summary>
         /// Busca um registro do banco de dados, através de um filtro.
         /// </summary>
-        /// <param name="filterExpression">Expressão de filtro</param>
+        /// <param name="id">Id do objeto</param>
         /// <returns>O primeiro registro encontrado.</returns>
-        Task<T> FindAsync(Expression<Func<T, bool>> filterExpression);
+        Task<T> FindAsync(int id);
 
         /// <summary>
         /// Cria registros no banco de dados através de uma lista.
@@ -106,6 +106,13 @@ namespace Adopcat.Data.Interfaces
         /// <param name="t">O registro a ser atualizado.</param>
         /// <returns>O registro atualizado.</returns>
         Task<int> UpdateAsync(T t);
+
+        /// <summary>
+        /// Atualiza um registro no banco de dados.
+        /// </summary>
+        /// <param name="t">O registro a ser atualizado.</param>
+        /// <returns>O registro atualizado.</returns>
+        int Update(T t);
 
         /// <summary>
         /// Retorna a quantidade de registros no banco.

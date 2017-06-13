@@ -10,10 +10,12 @@ namespace Adopcat.API.Controllers
     public class AuthController : BaseApiController
     {
         private IAuthenticationService _authenticationService;
+        private IUserService _userService;
 
-        public AuthController(IAuthenticationService authenticationService)
+        public AuthController(IAuthenticationService authenticationService, IUserService userService)
         {
             _authenticationService = authenticationService;
+            _userService = userService;
         }
 
         [Route("login")]
@@ -21,7 +23,16 @@ namespace Adopcat.API.Controllers
         [AllowAnonymous]
         public async Task<IHttpActionResult> Login(LoginViewModel loginModel)
         {
-            return Ok(await _authenticationService.GenerateToken(loginModel.Email, loginModel.Password));
+            var token = await _authenticationService.GenerateToken(loginModel.Email, loginModel.Password);
+            var userId = _authenticationService.GetByAccessToken(token).UserId;
+            
+            var loginResponse = new LoginResponseViewModel
+            {
+                AuthToken = token,
+                UserId = userId
+            };
+
+            return Ok(loginResponse);
         }
 
         [Route("logout")]

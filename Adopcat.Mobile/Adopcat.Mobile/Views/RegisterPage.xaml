@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:prism="clr-namespace:Prism.Mvvm;assembly=Prism.Forms"
+             prism:ViewModelLocator.AutowireViewModel="True"
+             x:Class="Adopcat.Mobile.Views.RegisterPage"
+             Title="{Binding Title}">
+    <StackLayout>
+        <Entry Placeholder="Nome" Text="{Binding Name}" />
+        <Entry Placeholder="E-mail" Text="{Binding Email}" />
+        <Entry Placeholder="Senha" IsPassword="True" Text="{Binding Password}" />
+        <Entry Placeholder="Confirmacao de senha" IsPassword="True" Text="{Binding PasswordConfirm}" />
+        <Entry Placeholder="Telefone" Text="{Binding Phone}" />
+        <Button Text="Registrar" Command="{Binding RegisterCommand}" />
+        <ActivityIndicator IsVisible="{Binding ShowLoading}" IsRunning="{Binding ShowLoading}" Color="Black" />
+    </StackLayout>
+</ContentPage>

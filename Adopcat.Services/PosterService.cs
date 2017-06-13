@@ -35,8 +35,16 @@ namespace Adopcat.Services
         {
             return await TryCatch(async () =>
             {
-                return await _repository.FindAsync(w => w.Id == id);
+                return await _repository.FindAsync(id);
             });            
+        }
+
+        public async Task<List<Poster>> GetAsync()
+        {
+            return await TryCatch(async () =>
+            {
+                return await _repository.GetAllAsync();
+            });
         }
 
         public async Task<List<Poster>> GetByUserIdAsync(int userId)

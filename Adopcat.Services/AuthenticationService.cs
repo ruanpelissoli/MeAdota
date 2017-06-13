@@ -22,11 +22,11 @@ namespace Adopcat.Services
             _userRepository = userRepository;
         }
 
-        public async Task<Token> GetByAccessToken(string accessToken)
+        public Token GetByAccessToken(string accessToken)
         {
-            return await TryCatch(async () =>
+            return TryCatch(() =>
             {
-                return await _tokenRepository.FindAsync(x => x.Access_token.Equals(accessToken) && x.ExpiresUtc >= DateTime.UtcNow);
+                return _tokenRepository.GetAll(x => x.Access_token.Equals(accessToken) && x.ExpiresUtc >= DateTime.UtcNow).FirstOrDefault();
             });
         }
 
@@ -77,14 +77,14 @@ namespace Adopcat.Services
             });
         }
 
-        public async Task RefreshToken(Token token)
+        public void RefreshToken(Token token)
         {
-            await TryCatch(async () =>
+            TryCatch(() =>
             {
                 if (token != null)
                 {
                      token.ExpiresUtc = DateTime.UtcNow.Add(TimeSpan.FromDays(1));
-                    await _tokenRepository.UpdateAsync(token);
+                     _tokenRepository.Update(token);
                 }
             });
         }

@@ -12,21 +12,21 @@ namespace Adopcat.API.Filters
 {
     public class CustomAuthorizeAttribute : AuthorizeAttribute
     {
-        public async override void OnAuthorization(HttpActionContext actionContext)
+        public override void OnAuthorization(HttpActionContext actionContext)
         {
             var authToken = actionContext.ControllerContext.Request.GetCurrentBearerAuthrorizationToken();
             var authenticationService = DependencyResolverHelper.GetService<IAuthenticationService>();
-            var token = await authenticationService.GetByAccessToken(authToken);
+            var token = authenticationService.GetByAccessToken(authToken);
             if (token != null)
             {
                 if (actionContext.ControllerContext.Controller.GetType().IsSubclassOf(typeof(BaseApiController)))
                 {
                     if (((BaseApiController)actionContext.ControllerContext.Controller).Token == null && actionContext.ActionDescriptor.ActionName != "Logout")
-                        await authenticationService.RefreshToken(token);
+                        authenticationService.RefreshToken(token);
                     ((BaseApiController)actionContext.ControllerContext.Controller).Token = token;
                 }
                 else
-                    await authenticationService.RefreshToken(token);
+                    authenticationService.RefreshToken(token);
             }
 
             if (SkipAuthorization(actionContext))

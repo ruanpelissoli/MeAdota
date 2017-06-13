@@ -24,5 +24,11 @@ namespace Adopcat.API.Controllers
             if (poster == null) return BadRequest();
             return Ok(poster);
         }
+
+        [HttpGet]
+        public async Task<IHttpActionResult> Get()
+        {
+            return Ok(await _posterService.GetAsync().ConfigureAwait(false));
+        }
     }
 }

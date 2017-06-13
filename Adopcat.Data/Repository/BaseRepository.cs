@@ -160,11 +160,11 @@ namespace Adopcat.Data.Repository
             }
         }
 
-        public async virtual Task<TObject> FindAsync(Expression<Func<TObject, bool>> filterExpression)
+        public async virtual Task<TObject> FindAsync(int id)
         {
             try
             {
-                return await DbSet.FindAsync(filterExpression);
+                return await DbSet.FindAsync(id);
             }
             catch (Exception)
             {
@@ -285,7 +285,25 @@ namespace Adopcat.Data.Repository
             {
                 throw;
             }
-        }       
+        }
+
+        public int Update(TObject t)
+        {
+            try
+            {
+                var entry = Context.Entry(t);
+                DbSet.Attach(t);
+                entry.State = EntityState.Modified;
+
+                if (!this.ShareContext)
+                    return Context.SaveChanges();
+                return 0;
+            }
+            catch (Exception)
+            {
+                throw;
+            }
+        }
 
         #endregion
     }

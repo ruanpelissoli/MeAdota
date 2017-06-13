@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:prism="clr-namespace:Prism.Mvvm;assembly=Prism.Forms"
+             prism:ViewModelLocator.AutowireViewModel="True"
+             xmlns:converters="clr-namespace:Adopcat.Mobile.Util"
+             x:Class="Adopcat.Mobile.Views.NewPosterPage"
+             Title="{Binding Title}">
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <converters:ByteToImageFieldConverter x:Key="ByteArrayToImage" />
+        </ResourceDictionary>
+    </ContentPage.Resources>
+    <ScrollView>
+        <StackLayout>
+            <ListView
+               ItemsSource="{Binding PetImages}">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ImageCell ImageSource="{Binding ., Converter={StaticResource Key=ByteArrayToImage}}" />
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+            <Button Text="Adicionar foto" Command="{Binding PickPhotoCommand}" />
+            <Picker ItemsSource="{Binding PetType}" />
+            <StackLayout Orientation="Horizontal">
+                <Label Text="Castrado?" HorizontalOptions="StartAndExpand" />
+                <Switch IsToggled="False" HorizontalOptions="End"/>
+            </StackLayout>
+        </StackLayout>
+    </ScrollView>
+</ContentPage>

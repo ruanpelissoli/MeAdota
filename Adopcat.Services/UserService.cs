@@ -14,18 +14,24 @@ namespace Adopcat.Services
         private IUserRepository _userRepository;
         
         private readonly IApplicationParameterRepository _applicationParameterRepository;
+        private IAuthenticationService _authService;
 
-        public UserService(ILoggingService log, IUserRepository userRepository, IApplicationParameterRepository applicationParameterRepository) : base(log)
+        public UserService(ILoggingService log, 
+                           IUserRepository userRepository, 
+                           IApplicationParameterRepository applicationParameterRepository,
+                           IAuthenticationService authService) : base(log)
         {
             _userRepository = userRepository;
             _applicationParameterRepository = applicationParameterRepository;
+            _authService = authService;
         }
 
         public async Task<User> GetByEmail(string email)
         {
             return await TryCatch(async () =>
             {
-                return await _userRepository.FindAsync(r => r.Email == email && r.IsActive);
+                var query = await _userRepository.GetAllAsync(r => r.Email == email && r.IsActive);
+                return query.FirstOrDefault();
             });
         }
 
@@ -41,7 +47,7 @@ namespace Adopcat.Services
         {
             return await TryCatch(async () =>
             {
-                return await _userRepository.FindAsync(r => r.Id == id);
+                return await _userRepository.FindAsync(id);
             });
         }
 
@@ -91,6 +97,15 @@ namespace Adopcat.Services
             {
                 var list = await _userRepository.GetAllAsync(u => u.Email == email && u.Id != idUser && u.IsActive);
                 return list.Any();
+            });
+        }
+
+        public async Task<User> GetByToken(string authToken)
+        {
+            return await TryCatch(async () =>
+            {
+                var token = _authService.GetByAccessToken(authToken);
+                return await _userRepository.FindAsync(token.UserId);                
             });
         }
     }
