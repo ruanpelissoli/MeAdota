@@ -12,16 +12,24 @@
         </ResourceDictionary>
     </ContentPage.Resources>
     <ScrollView>
-        <StackLayout>
-            <ListView
-               ItemsSource="{Binding PetImages}">
-                <ListView.ItemTemplate>
-                    <DataTemplate>
-                        <ImageCell ImageSource="{Binding ., Converter={StaticResource Key=ByteArrayToImage}}" />
-                    </DataTemplate>
-                </ListView.ItemTemplate>
-            </ListView>
-            <Button Text="Adicionar foto" Command="{Binding PickPhotoCommand}" />
+        <StackLayout VerticalOptions="FillAndExpand">
+            <StackLayout 
+                VerticalOptions="FillAndExpand"
+                HorizontalOptions="Center">
+                <ListView
+                    ItemsSource="{Binding PetImages}">
+                    <ListView.ItemTemplate>
+                        <DataTemplate>
+                            <ViewCell>
+                                <StackLayout HorizontalOptions="Center">
+                                    <Image Source="{Binding ., Converter={StaticResource Key=ByteArrayToImage}}" />
+                                </StackLayout>                                
+                            </ViewCell>
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                </ListView>
+                <Button Text="Adicionar foto" Command="{Binding PickPhotoCommand}" />
+            </StackLayout>
             <Picker ItemsSource="{Binding PetType}" />
             <StackLayout Orientation="Horizontal">
                 <Label Text="Castrado?" HorizontalOptions="StartAndExpand" />

@@ -23,9 +23,8 @@ namespace Adopcat.Mobile.Droid.Services
             {
                 var user = await client.LoginAsync(Forms.Context, provider);
 
-                Settings.AuthToken = user?.MobileServiceAuthenticationToken ?? string.Empty;
-                Settings.UserId = user?.UserId ?? string.Empty;
-
+                Settings.FacebookAuthToken = user?.MobileServiceAuthenticationToken ?? string.Empty;
+                
                 return user;
             }
             catch (Exception ex)

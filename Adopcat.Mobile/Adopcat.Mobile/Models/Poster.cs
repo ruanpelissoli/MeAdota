@@ -6,7 +6,7 @@ namespace Adopcat.Mobile.Models
     {
         public int Id { get; set; }
         public int UserId { get; set; }
-        public List<byte[]> PetPictures { get; set; }
+        public List<PetPicture> PetPictures { get; set; }
         public int PetType { get; set; }
         public bool Castrated { get; set; }
         public bool Dewormed { get; set; }

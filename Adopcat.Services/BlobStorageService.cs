@@ -3,6 +3,7 @@ using Adopcat.Model;
 using Adopcat.Services.Interfaces;
 using Microsoft.WindowsAzure.Storage;
 using Microsoft.WindowsAzure.Storage.Blob;
+using System;
 using System.Threading.Tasks;
 
 namespace Adopcat.Services
@@ -41,18 +42,17 @@ namespace Adopcat.Services
         //    };
         //}
 
-        public async Task AddImageToBlobStorageAsync(PetPicture image)
+        public async Task AddImageToBlobStorageAsync(byte[] file)
         {
             //  get the container reference
             var container = GetImagesBlobContainer();
 
             // using the container reference, get a block blob reference and set its type
-            CloudBlockBlob blockBlob = container.GetBlockBlobReference($"{_blobName}/{image.Name}");
-            blockBlob.Properties.ContentType = image.ContentType;
+            CloudBlockBlob blockBlob = container.GetBlockBlobReference($"{_blobName}/{Guid.NewGuid().ToString()}");
+            blockBlob.Properties.ContentType = "jpg";
 
             // finally, upload the image into blob storage using the block blob reference
-            var fileBytes = image.Data;
-            await blockBlob.UploadFromByteArrayAsync(fileBytes, 0, fileBytes.Length);
+            await blockBlob.UploadFromByteArrayAsync(file, 0, file.Length);
         }
 
         private CloudBlobContainer GetImagesBlobContainer()

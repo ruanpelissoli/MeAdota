@@ -7,18 +7,13 @@
              x:Class="Adopcat.Mobile.Views.PostersPage"
              Title="{Binding Title}"
              ItemsSource="{Binding Posters}">
-    <ContentPage.Resources>
-        <ResourceDictionary>
-            <converters:ByteToImageFieldConverter x:Key="ByteArrayToImage" />
-        </ResourceDictionary>
-    </ContentPage.Resources>
     <CarouselPage.ItemTemplate>
         <DataTemplate>
             <ContentPage>
                 <StackLayout 
                     HorizontalOptions="CenterAndExpand"
                     VerticalOptions="CenterAndExpand">
-                    <Image Source="{Binding PetPictures, Converter={StaticResource Key=ByteArrayToImage}}" />
+                    <Image Source="{Binding PetPictures.Url}" />
                     <Label Text="{Binding Country}" />
                     <Label Text="{Binding State}" />
                     <Label Text="{Binding City}" />

@@ -13,6 +13,9 @@ namespace Adopcat.Mobile.iOS.Helpers
         const string AuthTokenKey = "authtoken";
         static readonly string AuthTokenDefault = string.Empty;
 
+        const string FacebookAuthTokenKey = "facebookauthtoken";
+        static readonly string FacebookAuthTokenDefault = string.Empty;
+
         public static string AuthToken
         {
             get
@@ -37,6 +40,25 @@ namespace Adopcat.Mobile.iOS.Helpers
             }
         }
 
+        public static string FacebookAuthToken
+        {
+            get
+            {
+                return AppSettings.GetValueOrDefault(FacebookAuthTokenKey, FacebookAuthTokenDefault);
+            }
+            set
+            {
+                AppSettings.AddOrUpdateValue(FacebookAuthTokenKey, value);
+            }
+        }
+
         public static bool IsLoggedIn => !string.IsNullOrEmpty(AuthToken);
+
+        public static void Clear()
+        {
+            AuthToken = null;
+            UserId = null;
+            FacebookAuthToken = null;
+        }
     }
 }

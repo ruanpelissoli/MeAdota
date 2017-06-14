@@ -1,5 +1,6 @@
 ﻿using Adopcat.Mobile.Helpers;
 using Adopcat.Mobile.Interfaces;
+using Adopcat.Mobile.Services;
 using Adopcat.Mobile.Util;
 using Microsoft.WindowsAzure.MobileServices;
 using System;
@@ -7,6 +8,7 @@ using System.Diagnostics;
 using System.Threading.Tasks;
 using Xamarin.Forms;
 
+[assembly: Dependency(typeof(AzureService))]
 namespace Adopcat.Mobile.Services
 {
     public class AzureService
@@ -22,11 +24,11 @@ namespace Adopcat.Mobile.Services
 
             _auth = DependencyService.Get<IAuthentication>();
 
-            if (!string.IsNullOrWhiteSpace(Settings.AuthToken) && !string.IsNullOrWhiteSpace(Settings.UserId))
+            if (!string.IsNullOrWhiteSpace(Settings.FacebookAuthToken) && !string.IsNullOrWhiteSpace(Settings.UserId))
             {
                 Client.CurrentUser = new MobileServiceUser(Settings.UserId)
                 {
-                    MobileServiceAuthenticationToken = Settings.AuthToken
+                    MobileServiceAuthenticationToken = Settings.FacebookAuthToken
                 };
             }
         }
@@ -39,8 +41,7 @@ namespace Adopcat.Mobile.Services
 
             if (user == null)
             {
-                Settings.AuthToken = string.Empty;
-                Settings.UserId = string.Empty;
+                Settings.FacebookAuthToken = string.Empty;
 
                 Device.BeginInvokeOnMainThread(async () =>
                 {
@@ -51,8 +52,10 @@ namespace Adopcat.Mobile.Services
             }
             else
             {
-                Settings.AuthToken = user.MobileServiceAuthenticationToken;
-                Settings.UserId = user.UserId;
+                Settings.FacebookAuthToken = user.MobileServiceAuthenticationToken;
+
+                //TODO: Buscar usuario da api aqui
+                //Settings.UserId = user.UserId;
 
                 _auth.RegisterPush();
             }
@@ -64,9 +67,7 @@ namespace Adopcat.Mobile.Services
         {
             try
             {
-                Settings.AuthToken = null;
-                Settings.UserId = null;
-
+                Settings.Clear();
                 await _auth.Logout();
             }
             catch (Exception ex)

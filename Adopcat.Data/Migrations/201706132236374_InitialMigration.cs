@@ -23,12 +23,12 @@ namespace Adopcat.Data.Migrations
                 c => new
                     {
                         Id = c.Int(nullable: false, identity: true),
-                        ContentType = c.String(),
-                        Data = c.Binary(),
-                        Name = c.String(),
+                        PosterId = c.Int(nullable: false),
                         Url = c.String(),
                     })
-                .PrimaryKey(t => t.Id);
+                .PrimaryKey(t => t.Id)
+                .ForeignKey("dbo.Poster", t => t.PosterId)
+                .Index(t => t.PosterId);
             
             CreateTable(
                 "dbo.Poster",
@@ -36,7 +36,6 @@ namespace Adopcat.Data.Migrations
                     {
                         Id = c.Int(nullable: false, identity: true),
                         UserId = c.Int(nullable: false),
-                        PetPictureId = c.Int(nullable: false),
                         PetType = c.Int(nullable: false),
                         Castrated = c.Boolean(nullable: false),
                         Dewormed = c.Boolean(nullable: false),
@@ -49,10 +48,8 @@ namespace Adopcat.Data.Migrations
                     })
                 .PrimaryKey(t => t.Id)
                 .ForeignKey("dbo.User", t => t.AdopterId)
-                .ForeignKey("dbo.PetPicture", t => t.PetPictureId)
                 .ForeignKey("dbo.User", t => t.UserId)
                 .Index(t => t.UserId)
-                .Index(t => t.PetPictureId)
                 .Index(t => t.AdopterId);
             
             CreateTable(
@@ -103,12 +100,12 @@ namespace Adopcat.Data.Migrations
         {
             DropForeignKey("dbo.Token", "UserId", "dbo.User");
             DropForeignKey("dbo.Poster", "UserId", "dbo.User");
-            DropForeignKey("dbo.Poster", "PetPictureId", "dbo.PetPicture");
+            DropForeignKey("dbo.PetPicture", "PosterId", "dbo.Poster");
             DropForeignKey("dbo.Poster", "AdopterId", "dbo.User");
             DropIndex("dbo.Token", new[] { "UserId" });
             DropIndex("dbo.Poster", new[] { "AdopterId" });
-            DropIndex("dbo.Poster", new[] { "PetPictureId" });
             DropIndex("dbo.Poster", new[] { "UserId" });
+            DropIndex("dbo.PetPicture", new[] { "PosterId" });
             DropTable("dbo.Token");
             DropTable("dbo.SystemLog");
             DropTable("dbo.User");

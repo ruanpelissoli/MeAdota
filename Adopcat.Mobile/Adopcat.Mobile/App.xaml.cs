@@ -39,7 +39,6 @@ namespace Adopcat.Mobile
             {
                 Debug.WriteLine(ex.StackTrace);
             }
-
         }
 
         protected override void RegisterTypes()
@@ -51,6 +50,7 @@ namespace Adopcat.Mobile
             Container.RegisterTypeForNavigation<RegisterPage, RegisterPageViewModel>();
             Container.RegisterTypeForNavigation<PostersPage, PostersPageViewModel>();
             Container.RegisterTypeForNavigation<NewPosterPage, NewPosterPageViewModel>();
+            Container.RegisterTypeForNavigation<ConfigurationPage, ConfigurationPageViewModel>();
         }
     }
 }

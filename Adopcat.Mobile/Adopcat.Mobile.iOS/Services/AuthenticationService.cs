@@ -21,9 +21,8 @@ namespace Adopcat.Mobile.iOS.Services
                 var current = GetController();
                 var user = await client.LoginAsync(current, provider);
 
-                Settings.AuthToken = user?.MobileServiceAuthenticationToken ?? string.Empty;
-                Settings.UserId = user?.UserId ?? string.Empty;
-
+                Settings.FacebookAuthToken = user?.MobileServiceAuthenticationToken ?? string.Empty;
+                
                 return user;
             }
             catch (Exception ex)

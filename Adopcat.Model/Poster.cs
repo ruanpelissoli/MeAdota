@@ -1,4 +1,5 @@
 ﻿using Adopcat.Model.Enums;
+using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
@@ -9,7 +10,7 @@ namespace Adopcat.Model
         [Key]
         public int Id { get; set; }
         public int UserId { get; set; }
-        public int PetPictureId { get; set; }
+        public List<PetPicture> PetPictures { get; set; }
         public EPetType PetType { get; set; }
         public bool Castrated { get; set; }
         public bool Dewormed { get; set; }
@@ -22,8 +23,6 @@ namespace Adopcat.Model
 
         [ForeignKey("UserId")]
         public virtual User User { get; set; }
-        [ForeignKey("PetPictureId")]
-        public virtual PetPicture PetPicture { get; set; }
         [ForeignKey("AdopterId")]
         public virtual User AdoptedBy { get; set; }
     }

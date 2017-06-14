@@ -13,7 +13,7 @@ namespace Adopcat.Data.Migrations
         
         string IMigrationMetadata.Id
         {
-            get { return "201706102151050_InitialMigration"; }
+            get { return "201706132236374_InitialMigration"; }
         }
         
         string IMigrationMetadata.Source

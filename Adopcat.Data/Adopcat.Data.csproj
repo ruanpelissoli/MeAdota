@@ -56,9 +56,9 @@
     <Compile Include="Interfaces\ISystemLogRepository.cs" />
     <Compile Include="Interfaces\ITokenRepository.cs" />
     <Compile Include="Interfaces\IUserRepository.cs" />
-    <Compile Include="Migrations\201706102151050_InitialMigration.cs" />
-    <Compile Include="Migrations\201706102151050_InitialMigration.Designer.cs">
-      <DependentUpon>201706102151050_InitialMigration.cs</DependentUpon>
+    <Compile Include="Migrations\201706132236374_InitialMigration.cs" />
+    <Compile Include="Migrations\201706132236374_InitialMigration.Designer.cs">
+      <DependentUpon>201706132236374_InitialMigration.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -80,8 +80,8 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\201706102151050_InitialMigration.resx">
-      <DependentUpon>201706102151050_InitialMigration.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201706132236374_InitialMigration.resx">
+      <DependentUpon>201706132236374_InitialMigration.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

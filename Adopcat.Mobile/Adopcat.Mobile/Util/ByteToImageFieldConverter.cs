@@ -12,11 +12,7 @@ namespace Adopcat.Mobile.Util
             ImageSource retSource = null;
             if (value != null)
             {
-                byte[] imageAsBytes;
-                if (value is IList<byte[]>)
-                    imageAsBytes = (value as IList<byte[]>)[0];
-                else
-                    imageAsBytes = (byte[])value;
+                byte[] imageAsBytes = imageAsBytes = (byte[])value;
 
                 retSource = ImageSource.FromStream(() => new MemoryStream(imageAsBytes));
             }
