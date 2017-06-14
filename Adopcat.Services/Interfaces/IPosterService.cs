@@ -1,4 +1,5 @@
 ﻿using Adopcat.Model;
+using Adopcat.Model.DTO;
 using System.Collections.Generic;
 using System.Threading.Tasks;
 
@@ -8,7 +9,7 @@ namespace Adopcat.Services.Interfaces
     {
         Task<Poster> GetAsync(int id);
         Task<List<Poster>> GetAsync();
-        Task<Poster> CreateAsync(Poster poster);
+        Task<Poster> CreateAsync(PosterInputDTO poster);
         Task<int> UpdateAsync(Poster poster);
         Task<List<Poster>> GetByUserIdAsync(int id);
         Task<List<Poster>> GetByStateAsync(string state);

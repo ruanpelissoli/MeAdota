@@ -7,12 +7,16 @@
              x:Class="Adopcat.Mobile.Views.PostersPage"
              Title="{Binding Title}"
              ItemsSource="{Binding Posters}">
+    <CarouselPage.ToolbarItems>
+        <ToolbarItem Text="Filtro" Order="Primary" Command="{Binding FilterCommand}" />
+    </CarouselPage.ToolbarItems>
     <CarouselPage.ItemTemplate>
         <DataTemplate>
             <ContentPage>
                 <StackLayout 
                     HorizontalOptions="CenterAndExpand"
                     VerticalOptions="CenterAndExpand">
+                    <Label Text="Nenhum anúncio encontrado!" IsVisible="{Binding IsEmpty}" />
                     <Image Source="{Binding PetPictures.Url}" />
                     <Label Text="{Binding Country}" />
                     <Label Text="{Binding State}" />

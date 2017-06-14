@@ -3,24 +3,48 @@ using System.Collections.Generic;
 using Adopcat.Model;
 using Adopcat.Data.Interfaces;
 using System.Threading.Tasks;
+using Adopcat.Model.DTO;
+using Adopcat.Model.Enums;
 
 namespace Adopcat.Services
 {
     public class PosterService : BaseService, IPosterService
     {
         private IPosterRepository _repository;
+        private IPetPictureService _petPictureService;
 
-        public PosterService(ILoggingService log, IPosterRepository repository) :base(log)
+        public PosterService(ILoggingService log,
+                             IPosterRepository repository,
+                             IPetPictureService petPictureService) : base(log)
         {
             _repository = repository;
+            _petPictureService = petPictureService;
         }
 
-        public async Task<Poster> CreateAsync(Poster poster)
+        public async Task<Poster> CreateAsync(PosterInputDTO posterDto)
         {
             return await TryCatch(async () =>
             {
-                return await _repository.CreateAsync(poster);
-            });            
+                var poster = new Poster
+                {
+                    UserId = posterDto.UserId,
+                    PetType = (EPetType)posterDto.PetType,
+                    Castrated = posterDto.Castrated,
+                    Dewormed = posterDto.Dewormed,
+                    DeliverToAdopter = posterDto.DeliverToAdopter,
+                    Country = posterDto.Country,
+                    State = posterDto.State,
+                    City = posterDto.City,
+                    IsAdopted = posterDto.IsAdopted
+                };
+
+                poster = await _repository.CreateAsync(poster);
+
+                foreach (var pic in posterDto.PetPictures)
+                    await _petPictureService.Create(pic, poster.Id);
+
+                return poster;
+            });
         }
 
         public async Task<int> UpdateAsync(Poster poster)
@@ -36,7 +60,7 @@ namespace Adopcat.Services
             return await TryCatch(async () =>
             {
                 return await _repository.FindAsync(id);
-            });            
+            });
         }
 
         public async Task<List<Poster>> GetAsync()
@@ -52,7 +76,7 @@ namespace Adopcat.Services
             return await TryCatch(async () =>
             {
                 return await _repository.GetAllAsync(w => w.UserId == userId);
-            });            
+            });
         }
 
         public async Task<List<Poster>> GetByStateAsync(string state)
@@ -60,7 +84,7 @@ namespace Adopcat.Services
             return await TryCatch(async () =>
             {
                 return await _repository.GetAllAsync(w => w.State == state);
-            });            
+            });
         }
 
         public async Task<List<Poster>> GetByCityAsync(string city)
@@ -68,7 +92,7 @@ namespace Adopcat.Services
             return await TryCatch(async () =>
             {
                 return await _repository.GetAllAsync(w => w.City == city);
-            });            
+            });
         }
     }
 }

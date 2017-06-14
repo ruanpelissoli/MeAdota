@@ -1,25 +1,43 @@
 ﻿using Adopcat.Mobile.Helpers;
 using Adopcat.Mobile.Models;
+using Adopcat.Mobile.Views;
+using Prism.Commands;
 using Prism.Navigation;
 using Prism.Services;
 using System;
 using System.Collections.ObjectModel;
 using System.Diagnostics;
+using System.Linq;
 
 namespace Adopcat.Mobile.ViewModels
 {
     public class PostersPageViewModel : BaseViewModel
     {
-        private ObservableCollection<Poster> _posters;
-        public ObservableCollection<Poster> Posters
+        private ObservableCollection<PosterOutput> _posters;
+        public ObservableCollection<PosterOutput> Posters
         {
             get { return _posters; }
             set { SetProperty(ref _posters, value); }
         }
 
+        private bool _isEmpty;
+        public bool IsEmpty
+        {
+            get { return _isEmpty; }
+            set { SetProperty(ref _isEmpty, value); }
+        }
+
+        public DelegateCommand FilterCommand { get; set; }
+
         public PostersPageViewModel(INavigationService navigationService, IPageDialogService dialogService) : base(navigationService, dialogService)
         {
             Title = "Anúncios";
+            FilterCommand = new DelegateCommand(FilterCommandExecute);
+        }
+
+        private async void FilterCommandExecute()
+        {
+            await _navigationService.NavigateAsync(nameof(FilterPage), null, true);
         }
 
         public async override void OnNavigatedTo(NavigationParameters parameters)
@@ -29,8 +47,15 @@ namespace Adopcat.Mobile.ViewModels
 
             try
             {
-                Posters = new ObservableCollection<Poster>(
-                    await App.ApiService.GetPosters("bearer " + Settings.AuthToken));                
+                if (parameters.Any(a => a.Key.Equals("filter")))
+                {
+
+                }
+
+                Posters = new ObservableCollection<PosterOutput>(
+                    await App.ApiService.GetPosters("bearer " + Settings.AuthToken));
+
+                IsEmpty = !Posters.Any();
             }
             catch (Exception ex)
             {

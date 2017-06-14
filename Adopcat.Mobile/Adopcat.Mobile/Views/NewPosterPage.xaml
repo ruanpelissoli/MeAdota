@@ -30,10 +30,18 @@
                 </ListView>
                 <Button Text="Adicionar foto" Command="{Binding PickPhotoCommand}" />
             </StackLayout>
-            <Picker ItemsSource="{Binding PetType}" />
+            <Picker ItemsSource="{Binding PetTypeList}" SelectedIndexChanged="Picker_SelectedIndexChanged" />
             <StackLayout Orientation="Horizontal">
                 <Label Text="Castrado?" HorizontalOptions="StartAndExpand" />
-                <Switch IsToggled="False" HorizontalOptions="End"/>
+                <Switch IsToggled="{Binding IsCastrated}" HorizontalOptions="End"/>
+            </StackLayout>
+            <StackLayout Orientation="Horizontal">
+                <Label Text="Vermifugado?" HorizontalOptions="StartAndExpand" />
+                <Switch IsToggled="{Binding IsDewormed}" HorizontalOptions="End"/>
+            </StackLayout>
+            <StackLayout Orientation="Horizontal">
+                <Label Text="Leva até o adotante?" HorizontalOptions="StartAndExpand" />
+                <Switch IsToggled="{Binding DeliverToAdopter}" HorizontalOptions="End"/>
             </StackLayout>
         </StackLayout>
     </ScrollView>

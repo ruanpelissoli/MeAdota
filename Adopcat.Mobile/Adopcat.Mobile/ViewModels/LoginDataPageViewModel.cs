@@ -17,14 +17,22 @@ namespace Adopcat.Mobile.ViewModels
         public string Email
         {
             get { return _email; }
-            set { SetProperty(ref _email, value); }
+            set
+            {
+                SetProperty(ref _email, value);
+                LoginCommand.RaiseCanExecuteChanged();
+            }
         }
 
         private string _password;
         public string Password
         {
             get { return _password; }
-            set { SetProperty(ref _password, value); }
+            set
+            {
+                SetProperty(ref _password, value);
+                LoginCommand.RaiseCanExecuteChanged();
+            }
         }
 
         public DelegateCommand LoginCommand { get; set; }
@@ -34,7 +42,7 @@ namespace Adopcat.Mobile.ViewModels
         {
             Title = "Login";
 
-            LoginCommand = new DelegateCommand(LoginCommandExecute);
+            LoginCommand = new DelegateCommand(LoginCommandExecute, LoginCanExecuteCommand);
             FacebookLoginCommand = new DelegateCommand(FacebookLoginCommandExecute);
         }
 
@@ -67,11 +75,17 @@ namespace Adopcat.Mobile.ViewModels
             }
         }
 
+        private bool LoginCanExecuteCommand()
+        {
+            return !string.IsNullOrEmpty(Email) &&
+                   !string.IsNullOrEmpty(Password);
+        }
+
         private async void FacebookLoginCommandExecute()
         {
             if (!(await LoginAsync()))
                 return;
-            
+
             await _navigationService.NavigateAsync($"{nameof(MenuPage)}/NavigationPage/{nameof(PostersPage)}");
         }
 

@@ -13,5 +13,15 @@ namespace Adopcat.Mobile.Util
         {
             get { return ConfigurationManager.AppSettings.Get("AzureAppServiceUrl"); }
         }
+
+        public static string GoogleGeocodeApiUrl
+        {
+            get { return ConfigurationManager.AppSettings.Get("GoogleGeocodeApiUrl"); }
+        }
+
+        public static string GoogleGeocodeApiKey
+        {
+            get { return ConfigurationManager.AppSettings.Get("GoogleGeocodeApiKey"); }
+        }
     }
 }

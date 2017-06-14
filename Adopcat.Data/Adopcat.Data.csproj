@@ -52,6 +52,7 @@
     <Compile Include="DatabaseContext.cs" />
     <Compile Include="Interfaces\IApplicationParameterRepository.cs" />
     <Compile Include="Interfaces\IBaseRepository.cs" />
+    <Compile Include="Interfaces\IPetPictureRepository.cs" />
     <Compile Include="Interfaces\IPosterRepository.cs" />
     <Compile Include="Interfaces\ISystemLogRepository.cs" />
     <Compile Include="Interfaces\ITokenRepository.cs" />
@@ -64,6 +65,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Repository\ApplicationParameterRepository.cs" />
     <Compile Include="Repository\BaseRepository.cs" />
+    <Compile Include="Repository\PetPictureRepository.cs" />
     <Compile Include="Repository\PosterRepository.cs" />
     <Compile Include="Repository\SystemLogRepository.cs" />
     <Compile Include="Repository\TokenRepository.cs" />

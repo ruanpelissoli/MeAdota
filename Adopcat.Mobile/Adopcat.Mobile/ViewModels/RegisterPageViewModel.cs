@@ -14,35 +14,55 @@ namespace Adopcat.Mobile.ViewModels
         public string Name
         {
             get { return _name; }
-            set { SetProperty(ref _name, value); }
+            set
+            {
+                SetProperty(ref _name, value);
+                RegisterCommand.RaiseCanExecuteChanged();
+            }
         }
 
         private string _email;
         public string Email
         {
             get { return _email; }
-            set { SetProperty(ref _email, value); }
+            set
+            {
+                SetProperty(ref _email, value);
+                RegisterCommand.RaiseCanExecuteChanged();
+            }
         }
 
         private string _password;
         public string Password
         {
             get { return _password; }
-            set { SetProperty(ref _password, value); }
+            set
+            {
+                SetProperty(ref _password, value);
+                RegisterCommand.RaiseCanExecuteChanged();
+            }
         }
 
         private string _passwordConfirm;
         public string PasswordConfirm
         {
             get { return _passwordConfirm; }
-            set { SetProperty(ref _passwordConfirm, value); }
+            set
+            {
+                SetProperty(ref _passwordConfirm, value);
+                RegisterCommand.RaiseCanExecuteChanged();
+            }
         }
 
         private string _phone;
         public string Phone
         {
             get { return _phone; }
-            set { SetProperty(ref _phone, value); }
+            set
+            {
+                SetProperty(ref _phone, value);
+                RegisterCommand.RaiseCanExecuteChanged();
+            }
         }
 
         public DelegateCommand RegisterCommand { get; set; }
@@ -56,7 +76,12 @@ namespace Adopcat.Mobile.ViewModels
 
         private bool RegisterCommandCanExecute()
         {
-            return true;
+            return !string.IsNullOrEmpty(Name) &&
+                   !string.IsNullOrEmpty(Email) &&
+                   !string.IsNullOrEmpty(Password) &&
+                   !string.IsNullOrEmpty(PasswordConfirm) &&
+                   Password == PasswordConfirm &&
+                   !string.IsNullOrEmpty(Phone);
         }
 
         private async void RegisterCommandExecute()
@@ -78,8 +103,9 @@ namespace Adopcat.Mobile.ViewModels
                 await _dialogService.DisplayAlertAsync("Sucesso", "Usuário criado com sucesso.", "Ok");
 
                 ShowLoading = false;
-                await _navigationService.NavigateAsync(nameof(LoginDataPage));                
-            } catch(Exception ex)
+                await _navigationService.NavigateAsync(nameof(LoginDataPage));
+            }
+            catch (Exception ex)
             {
                 Debug.WriteLine(ex.StackTrace);
             }

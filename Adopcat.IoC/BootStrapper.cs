@@ -23,13 +23,15 @@ namespace Adopcat.IoC
             container.Register<IUserRepository, UserRepository>(lifestyle);
             container.Register<ITokenRepository, TokenRepository>(lifestyle);
             container.Register<IPosterRepository, PosterRepository>(lifestyle);
+            container.Register<IPetPictureRepository, PetPictureRepository>(lifestyle);
 
             ////Services
             container.Register<IAuthenticationService, AuthenticationService>(lifestyle);
             container.Register<ILoggingService, LoggingService>(lifestyle);
-            //container.Register<IBlobStorageService, BlobStorageService>(lifestyle);
+            container.Register<IBlobStorageService, BlobStorageService>(lifestyle);
             container.Register<IUserService, UserService>(lifestyle);
             container.Register<IPosterService, PosterService>(lifestyle);
+            container.Register<IPetPictureService, PetPictureService>(lifestyle);
         }
     }
 }

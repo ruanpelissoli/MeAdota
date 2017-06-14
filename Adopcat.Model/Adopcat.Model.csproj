@@ -42,6 +42,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ApplicationParameter.cs" />
+    <Compile Include="DTO\PosterInputDTO.cs" />
     <Compile Include="Enums\ELogType.cs" />
     <Compile Include="Enums\EPetType.cs" />
     <Compile Include="PetPicture.cs" />

@@ -2,7 +2,7 @@
 
 namespace Adopcat.Mobile.Models
 {
-    public class Poster
+    public class PosterOutput
     {
         public int Id { get; set; }
         public int UserId { get; set; }

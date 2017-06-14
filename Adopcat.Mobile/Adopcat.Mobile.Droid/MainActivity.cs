@@ -6,6 +6,7 @@ using Android.OS;
 using Prism.Unity;
 using Microsoft.Practices.Unity;
 using PCLAppConfig;
+using Plugin.Permissions;
 
 namespace Adopcat.Mobile.Droid
 {
@@ -39,6 +40,11 @@ namespace Adopcat.Mobile.Droid
             ConfigurationManager.Initialise(PCLAppConfig.FileSystemStream.PortableStream.Current);
             Microsoft.WindowsAzure.MobileServices.CurrentPlatform.Init();
             LoadApplication(new App(new AndroidInitializer()));
+        }
+
+        public override void OnRequestPermissionsResult(int requestCode, string[] permissions, Permission[] grantResults)
+        {
+            PermissionsImplementation.Current.OnRequestPermissionsResult(requestCode, permissions, grantResults);
         }
     }
 

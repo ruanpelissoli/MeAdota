@@ -42,17 +42,20 @@ namespace Adopcat.Services
         //    };
         //}
 
-        public async Task AddImageToBlobStorageAsync(byte[] file)
+        public async Task<string> AddImageToBlobStorageAsync(byte[] file)
         {
             //  get the container reference
             var container = GetImagesBlobContainer();
 
             // using the container reference, get a block blob reference and set its type
-            CloudBlockBlob blockBlob = container.GetBlockBlobReference($"{_blobName}/{Guid.NewGuid().ToString()}");
-            blockBlob.Properties.ContentType = "jpg";
+            var guidName = Guid.NewGuid().ToString();
+            CloudBlockBlob blockBlob = container.GetBlockBlobReference($"{_blobName}/{guidName}");
+            blockBlob.Properties.ContentType = "image/jpg";
 
             // finally, upload the image into blob storage using the block blob reference
             await blockBlob.UploadFromByteArrayAsync(file, 0, file.Length);
+
+            return $"{_imageRootPath}/{_containerName}/{_blobName}/{guidName}";
         }
 
         private CloudBlobContainer GetImagesBlobContainer()
