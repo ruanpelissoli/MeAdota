@@ -9,13 +9,13 @@ using Adopcat.Mobile.Models;
 using Adopcat.Mobile.Helpers;
 using System.Linq;
 using System.Diagnostics;
+using Adopcat.Mobile.Services;
+using Adopcat.Mobile.Views;
 
 namespace Adopcat.Mobile.ViewModels
 {
     public class NewPosterPageViewModel : BaseViewModel
     {
-        private IPictureService _pictureService;
-
         private ObservableCollection<byte[]> _petImages;
         public ObservableCollection<byte[]> PetImages
         {
@@ -72,10 +72,13 @@ namespace Adopcat.Mobile.ViewModels
 
         public NewPosterPageViewModel(
             INavigationService navigationService,
-            IPageDialogService dialogService,
-            IPictureService pictureService) : base(navigationService, dialogService)
+            IPageDialogService dialogService) : base(navigationService, dialogService)
         {
             Title = "Novo Anúncio";
+
+            PickPhotoCommand = new DelegateCommand(PickPhotoCommandExecute);
+            CreatePosterCommand = new DelegateCommand(CreatePosterCommandExecute, CreatePosterCommandCanExecute);
+            PetTypeSelectCommand = new DelegateCommand<string>(PetTypeSelectCommandExecute);
 
             PetImages = new ObservableCollection<byte[]>();
             PetTypeList = new ObservableCollection<string>()
@@ -84,13 +87,7 @@ namespace Adopcat.Mobile.ViewModels
             };
             IsCastrated = false;
             IsDewormed = false;
-            DeliverToAdopter = false;
-
-            PickPhotoCommand = new DelegateCommand(PickPhotoCommandExecute);
-            CreatePosterCommand = new DelegateCommand(CreatePosterCommandExecute, CreatePosterCommandCanExecute);
-            PetTypeSelectCommand = new DelegateCommand<string>(PetTypeSelectCommandExecute);
-
-            _pictureService = pictureService;
+            DeliverToAdopter = false;           
         }
 
         private void PetTypeSelectCommandExecute(string petType)
@@ -110,9 +107,14 @@ namespace Adopcat.Mobile.ViewModels
                     Castrated = IsCastrated,
                     Dewormed = IsDewormed,
                     DeliverToAdopter = DeliverToAdopter,
+                    Country = "Brasil",
+                    State = "RS",
+                    City = "Porto Alegre"
                 };
 
-                await App.ApiService.CreatePoster(posterInput, Settings.AuthToken);
+                await App.ApiService.CreatePoster(posterInput, "bearer " + Settings.AuthToken);
+                await _dialogService.DisplayAlertAsync("Sucesso!", "Anúncio criado com sucesso.", "Ok");
+                await _navigationService.NavigateAsync($"{nameof(MenuPage)}/NavigationPage/{nameof(MyPostersPage)}");
             }
             catch (Exception ex)
             {
@@ -122,13 +124,15 @@ namespace Adopcat.Mobile.ViewModels
 
         private bool CreatePosterCommandCanExecute()
         {
-            return PetImages.Any() &&
-                   !string.IsNullOrEmpty(PetType);
+            //return PetImages.Any() &&
+            //       !string.IsNullOrEmpty(PetType);
+            return true;
         }
 
         private async void PickPhotoCommandExecute()
         {
-            var file = await _pictureService.TakePhotoFromDevice();
+            var file = await Xamarin.Forms.DependencyService.Get<PictureService>()
+                                                                .TakePhotoFromDevice();
 
             if (file != null)
             {

@@ -3,7 +3,8 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:prism="clr-namespace:Prism.Mvvm;assembly=Prism.Forms"
              prism:ViewModelLocator.AutowireViewModel="True"
-             x:Class="Adopcat.Mobile.Views.ConfigurationPage">
+             x:Class="Adopcat.Mobile.Views.ConfigurationPage"
+             Title="{Binding Title}">
     <StackLayout>
         <Button Text="Logout" Command="{Binding LogoutCommand}" />
     </StackLayout>

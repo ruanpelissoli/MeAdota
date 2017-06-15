@@ -12,19 +12,19 @@ namespace Adopcat.Services
     {
         private IApplicationParameterRepository _applicationParameterRepository;
 
-        private string _imageRootPath;
-        private string _containerName;
-        private string _blobStorageConnectionString;
-        private string _blobName;
+        private string _azureStorageUrl;
+        private string _azureStoragePublicContainer;
+        private string _azureStorageConnectionString;
+        private string _petPicturesBlobName;
 
         public BlobStorageService(ILoggingService log, IApplicationParameterRepository applicationParameterRepository) : base(log)
         {
             _applicationParameterRepository = applicationParameterRepository;
             var parameters = _applicationParameterRepository.LoadParameters();
-            parameters.TryGetValue("ImageRootPath", out _imageRootPath);
-            parameters.TryGetValue("ErrorImagesContainer", out _containerName);
-            parameters.TryGetValue("ErrorImagesBlob", out _blobName);
-            parameters.TryGetValue("BlobStorageConnectionString", out _blobStorageConnectionString);
+            parameters.TryGetValue("AzureStorageURL", out _azureStorageUrl);
+            parameters.TryGetValue("AzureStoragePublicContainer", out _azureStoragePublicContainer);
+            parameters.TryGetValue("PetPicturesBlobName", out _petPicturesBlobName);
+            parameters.TryGetValue("AzureStorageConnectionString", out _azureStorageConnectionString);
         }
 
         //public PetPicture UploadedImageStorage(ProposalViewModel proposalViewModel)
@@ -49,25 +49,25 @@ namespace Adopcat.Services
 
             // using the container reference, get a block blob reference and set its type
             var guidName = Guid.NewGuid().ToString();
-            CloudBlockBlob blockBlob = container.GetBlockBlobReference($"{_blobName}/{guidName}");
+            CloudBlockBlob blockBlob = container.GetBlockBlobReference($"{_petPicturesBlobName}/{guidName}");
             blockBlob.Properties.ContentType = "image/jpg";
 
             // finally, upload the image into blob storage using the block blob reference
             await blockBlob.UploadFromByteArrayAsync(file, 0, file.Length);
 
-            return $"{_imageRootPath}/{_containerName}/{_blobName}/{guidName}";
+            return $"{_azureStorageUrl}/{_azureStoragePublicContainer}/{_petPicturesBlobName}/{guidName}";
         }
 
         private CloudBlobContainer GetImagesBlobContainer()
         {
             // use the connection string to get the storage account
-            var storageAccount = CloudStorageAccount.Parse(_blobStorageConnectionString);
+            var storageAccount = CloudStorageAccount.Parse(_azureStorageConnectionString);
 
             // using the storage account, create the blob client
             var blobClient = storageAccount.CreateCloudBlobClient();
 
             // finally, using the blob client, get a reference to our container
-            var container = blobClient.GetContainerReference(_containerName);
+            var container = blobClient.GetContainerReference(_azureStoragePublicContainer);
 
             // if we had not created the container in the portal, this would automatically create it for us at run time
             container.CreateIfNotExists();

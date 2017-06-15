@@ -10,7 +10,6 @@ namespace Adopcat.Model
         [Key]
         public int Id { get; set; }
         public int UserId { get; set; }
-        public List<PetPicture> PetPictures { get; set; }
         public EPetType PetType { get; set; }
         public bool Castrated { get; set; }
         public bool Dewormed { get; set; }
@@ -20,6 +19,8 @@ namespace Adopcat.Model
         public string City { get; set; }
         public bool IsAdopted { get; set; }
         public int? AdopterId { get; set; }
+
+        public virtual List<PetPicture> PetPictures { get; set; }
 
         [ForeignKey("UserId")]
         public virtual User User { get; set; }

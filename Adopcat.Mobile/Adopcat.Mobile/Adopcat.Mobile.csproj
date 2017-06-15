@@ -47,8 +47,8 @@
     <Compile Include="Models\User.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Interfaces\IApiService.cs" />
-    <Compile Include="Interfaces\IPictureService.cs" />
     <Compile Include="Services\AzureService.cs" />
+    <Compile Include="Services\PictureService.cs" />
     <Compile Include="Util\ApplicationParameters.cs" />
     <Compile Include="Util\ByteToImageFieldConverter.cs" />
     <Compile Include="ViewModels\BaseViewModel.cs" />

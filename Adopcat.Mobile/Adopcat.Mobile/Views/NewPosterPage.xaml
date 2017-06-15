@@ -14,7 +14,6 @@
     <ScrollView>
         <StackLayout VerticalOptions="FillAndExpand">
             <StackLayout 
-                VerticalOptions="FillAndExpand"
                 HorizontalOptions="Center">
                 <ListView
                     ItemsSource="{Binding PetImages}">
@@ -22,7 +21,7 @@
                         <DataTemplate>
                             <ViewCell>
                                 <StackLayout HorizontalOptions="Center">
-                                    <Image Source="{Binding ., Converter={StaticResource Key=ByteArrayToImage}}" />
+                                    <Image Source="{Binding ., Converter={StaticResource Key=ByteArrayToImage}}" HeightRequest="100" WidthRequest="100" />
                                 </StackLayout>                                
                             </ViewCell>
                         </DataTemplate>
@@ -43,6 +42,7 @@
                 <Label Text="Leva até o adotante?" HorizontalOptions="StartAndExpand" />
                 <Switch IsToggled="{Binding DeliverToAdopter}" HorizontalOptions="End"/>
             </StackLayout>
+            <Button Text="Criar Anúncio" Command="{Binding CreatePosterCommand}" />
         </StackLayout>
     </ScrollView>
 </ContentPage>

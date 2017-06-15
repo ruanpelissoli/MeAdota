@@ -11,13 +11,15 @@ namespace Adopcat.Mobile.ViewModels
 
         public ConfigurationPageViewModel(INavigationService navigationService, IPageDialogService dialogService) : base(navigationService, dialogService)
         {
+            Title = "Configurações";
+
             LogoutCommand = new DelegateCommand(LogoutCommandExecute);
         }
 
         private async void LogoutCommandExecute()
         {
             await App.MobileService.LogoutAsync();
-            await _navigationService.NavigateAsync(nameof(LoginPage));
+            await _navigationService.NavigateAsync($"app:///NavigationPage/{nameof(LoginPage)}");            
         }
     }
 }

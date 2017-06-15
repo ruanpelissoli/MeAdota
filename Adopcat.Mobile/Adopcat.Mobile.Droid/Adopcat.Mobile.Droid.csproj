@@ -184,7 +184,6 @@
     <Compile Include="Services\AuthenticationService.cs" />
     <Compile Include="Services\GcmService.cs" />
     <Compile Include="Services\GeoLocatorService.cs" />
-    <Compile Include="Services\PictureService.cs" />
   </ItemGroup>
   <ItemGroup>
     <AndroidAsset Include="..\Adopcat.Mobile\App.config">

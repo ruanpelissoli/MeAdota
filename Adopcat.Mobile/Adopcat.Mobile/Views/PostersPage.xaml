@@ -16,8 +16,7 @@
                 <StackLayout 
                     HorizontalOptions="CenterAndExpand"
                     VerticalOptions="CenterAndExpand">
-                    <Label Text="Nenhum anúncio encontrado!" IsVisible="{Binding IsEmpty}" />
-                    <Image Source="{Binding PetPictures.Url}" />
+                    <Image Source="{Binding MainPictureUrl}" />
                     <Label Text="{Binding Country}" />
                     <Label Text="{Binding State}" />
                     <Label Text="{Binding City}" />

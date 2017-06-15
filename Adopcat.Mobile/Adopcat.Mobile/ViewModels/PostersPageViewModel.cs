@@ -20,13 +20,6 @@ namespace Adopcat.Mobile.ViewModels
             set { SetProperty(ref _posters, value); }
         }
 
-        private bool _isEmpty;
-        public bool IsEmpty
-        {
-            get { return _isEmpty; }
-            set { SetProperty(ref _isEmpty, value); }
-        }
-
         public DelegateCommand FilterCommand { get; set; }
 
         public PostersPageViewModel(INavigationService navigationService, IPageDialogService dialogService) : base(navigationService, dialogService)
@@ -55,7 +48,10 @@ namespace Adopcat.Mobile.ViewModels
                 Posters = new ObservableCollection<PosterOutput>(
                     await App.ApiService.GetPosters("bearer " + Settings.AuthToken));
 
-                IsEmpty = !Posters.Any();
+                foreach (var poster in Posters)
+                {
+                    poster.MainPictureUrl = poster.PetPictures.FirstOrDefault()?.Url;
+                }
             }
             catch (Exception ex)
             {

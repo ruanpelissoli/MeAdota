@@ -18,6 +18,7 @@ namespace Adopcat.Mobile.Views
         private void Picker_SelectedIndexChanged(object sender, System.EventArgs e)
         {
             var selectedItem = (sender as Picker).SelectedItem as string;
+            ViewModel.PetTypeSelectCommand.Execute(selectedItem);
         }
     }
 }

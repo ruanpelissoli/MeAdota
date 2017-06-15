@@ -1,8 +1,8 @@
 ﻿using System.Collections.Generic;
 
-namespace Adopcat.Mobile.Models
+namespace Adopcat.Model.DTO
 {
-    public class PosterOutput
+    public class PosterOutputDTO
     {
         public int Id { get; set; }
         public int UserId { get; set; }
@@ -15,9 +15,8 @@ namespace Adopcat.Mobile.Models
         public string City { get; set; }
         public bool IsAdopted { get; set; }
         public int? AdopterId { get; set; }
-        public string MainPictureUrl { get; set; }
 
-        public List<PetPicture> PetPictures { get; set; }
+        public List<PetPictureOutputDTO> PetPictures { get; set; }
         public User User { get; set; }
         public User AdoptedBy { get; set; }
     }

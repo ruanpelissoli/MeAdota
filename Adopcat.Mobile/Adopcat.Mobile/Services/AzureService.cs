@@ -24,9 +24,9 @@ namespace Adopcat.Mobile.Services
 
             _auth = DependencyService.Get<IAuthentication>();
 
-            if (!string.IsNullOrWhiteSpace(Settings.FacebookAuthToken) && !string.IsNullOrWhiteSpace(Settings.UserId))
+            if (!string.IsNullOrWhiteSpace(Settings.FacebookAuthToken) && !string.IsNullOrWhiteSpace(Settings.FacebookUserId))
             {
-                Client.CurrentUser = new MobileServiceUser(Settings.UserId)
+                Client.CurrentUser = new MobileServiceUser(Settings.FacebookUserId)
                 {
                     MobileServiceAuthenticationToken = Settings.FacebookAuthToken
                 };
@@ -52,10 +52,10 @@ namespace Adopcat.Mobile.Services
             }
             else
             {
+                Settings.FacebookUserId = user.UserId;
                 Settings.FacebookAuthToken = user.MobileServiceAuthenticationToken;
 
-                //TODO: Buscar usuario da api aqui
-                //Settings.UserId = user.UserId;
+                //TODO: Buscar usuario da api aqui                
 
                 _auth.RegisterPush();
             }
@@ -68,7 +68,8 @@ namespace Adopcat.Mobile.Services
             try
             {
                 Settings.Clear();
-                await _auth.Logout();
+                if (!string.IsNullOrEmpty(Settings.FacebookUserId))
+                    await _auth.Logout();
             }
             catch (Exception ex)
             {

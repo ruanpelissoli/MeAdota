@@ -13,6 +13,9 @@ namespace Adopcat.Mobile.Helpers
         const string AuthTokenKey = "authtoken";
         static readonly string AuthTokenDefault = string.Empty;
 
+        const string FacebookUserIdKey = "facebookuserid";
+        static readonly string FacebookUserIdDefault = string.Empty;
+
         const string FacebookAuthTokenKey = "facebookauthtoken";
         static readonly string FacebookAuthTokenDefault = string.Empty;
 
@@ -40,6 +43,18 @@ namespace Adopcat.Mobile.Helpers
             }
         }
 
+        public static string FacebookUserId
+        {
+            get
+            {
+                return AppSettings.GetValueOrDefault(FacebookUserIdKey, FacebookUserIdDefault);
+            }
+            set
+            {
+                AppSettings.AddOrUpdateValue(FacebookUserIdKey, value);
+            }
+        }
+
         public static string FacebookAuthToken
         {
             get
@@ -51,13 +66,14 @@ namespace Adopcat.Mobile.Helpers
                 AppSettings.AddOrUpdateValue(FacebookAuthTokenKey, value);
             }
         }
-
+        
         public static bool IsLoggedIn => !string.IsNullOrEmpty(AuthToken);
 
         public static void Clear()
         {
             AuthToken = null;
             UserId = null;
+            FacebookUserId = null;
             FacebookAuthToken = null;
         }
     }    

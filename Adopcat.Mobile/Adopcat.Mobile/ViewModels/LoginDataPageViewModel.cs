@@ -63,7 +63,7 @@ namespace Adopcat.Mobile.ViewModels
                 Settings.AuthToken = loginResponse.AuthToken;
                 Settings.UserId = loginResponse.UserId.ToString();
 
-                await _navigationService.NavigateAsync($"{nameof(MenuPage)}/NavigationPage/{nameof(PostersPage)}");
+                await _navigationService.NavigateAsync($"app:///{nameof(MenuPage)}/NavigationPage/{nameof(PostersPage)}");
             }
             catch (Exception ex)
             {
