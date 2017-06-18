@@ -11,13 +11,14 @@ using System.Linq;
 using System.Diagnostics;
 using Adopcat.Mobile.Services;
 using Adopcat.Mobile.Views;
+using Plugin.Media.Abstractions;
 
 namespace Adopcat.Mobile.ViewModels
 {
     public class NewPosterPageViewModel : BaseViewModel
     {
-        private ObservableCollection<byte[]> _petImages;
-        public ObservableCollection<byte[]> PetImages
+        private ObservableCollection<PetPictureItem> _petImages;
+        public ObservableCollection<PetPictureItem> PetImages
         {
             get { return _petImages; }
             set
@@ -32,6 +33,17 @@ namespace Adopcat.Mobile.ViewModels
         {
             get { return _petTypeList; }
             set { SetProperty(ref _petTypeList, value); }
+        }
+
+        private string _petName;
+        public string PetName
+        {
+            get { return _petName; }
+            set
+            {
+                SetProperty(ref _petName, value);
+                CreatePosterCommand.RaiseCanExecuteChanged();
+            }
         }
 
         private string _petType;
@@ -65,10 +77,11 @@ namespace Adopcat.Mobile.ViewModels
             get { return _deliverToAdopter; }
             set { SetProperty(ref _deliverToAdopter, value); }
         }
-        
+
         public DelegateCommand PickPhotoCommand { get; set; }
         public DelegateCommand CreatePosterCommand { get; set; }
         public DelegateCommand<string> PetTypeSelectCommand { get; set; }
+        public DelegateCommand<string> DeletePetPictureCommand { get; set; }
 
         public NewPosterPageViewModel(
             INavigationService navigationService,
@@ -79,15 +92,16 @@ namespace Adopcat.Mobile.ViewModels
             PickPhotoCommand = new DelegateCommand(PickPhotoCommandExecute);
             CreatePosterCommand = new DelegateCommand(CreatePosterCommandExecute, CreatePosterCommandCanExecute);
             PetTypeSelectCommand = new DelegateCommand<string>(PetTypeSelectCommandExecute);
+            DeletePetPictureCommand = new DelegateCommand<string>(DeletePetPictureCommandExecute);
 
-            PetImages = new ObservableCollection<byte[]>();
+            PetImages = new ObservableCollection<PetPictureItem>();
             PetTypeList = new ObservableCollection<string>()
             {
                 "Cachorro", "Gato"
             };
             IsCastrated = false;
             IsDewormed = false;
-            DeliverToAdopter = false;           
+            DeliverToAdopter = false;
         }
 
         private void PetTypeSelectCommandExecute(string petType)
@@ -102,7 +116,8 @@ namespace Adopcat.Mobile.ViewModels
                 var posterInput = new PosterInput
                 {
                     UserId = int.Parse(Settings.UserId),
-                    PetPictures = PetImages.ToList(),
+                    PetName = PetName,
+                    PetPictures = PetImages.Select(s => s.Image).ToList(),
                     PetType = PetType == "Cachorro" ? 1 : 2,
                     Castrated = IsCastrated,
                     Dewormed = IsDewormed,
@@ -114,7 +129,7 @@ namespace Adopcat.Mobile.ViewModels
 
                 await App.ApiService.CreatePoster(posterInput, "bearer " + Settings.AuthToken);
                 await _dialogService.DisplayAlertAsync("Sucesso!", "Anúncio criado com sucesso.", "Ok");
-                await _navigationService.NavigateAsync($"{nameof(MenuPage)}/NavigationPage/{nameof(MyPostersPage)}");
+                await _navigationService.NavigateAsync($"app:///{nameof(MenuPage)}/NavigationPage/{nameof(MyPostersPage)}");
             }
             catch (Exception ex)
             {
@@ -124,15 +139,22 @@ namespace Adopcat.Mobile.ViewModels
 
         private bool CreatePosterCommandCanExecute()
         {
-            //return PetImages.Any() &&
-            //       !string.IsNullOrEmpty(PetType);
-            return true;
+            return PetImages.Any() &&
+                   !string.IsNullOrEmpty(PetName) &&
+                   !string.IsNullOrEmpty(PetType);
         }
 
         private async void PickPhotoCommandExecute()
         {
-            var file = await Xamarin.Forms.DependencyService.Get<PictureService>()
-                                                                .TakePhotoFromDevice();
+            var action = await _dialogService.DisplayActionSheetAsync("Foto", "Cancel", null, "Tirar foto", "Álbum");
+
+            MediaFile file;
+            var pictureService = Xamarin.Forms.DependencyService.Get<PictureService>();
+
+            if (action.ToLower().Equals("tirar foto"))
+                file = await pictureService.TakePhotoAsync();
+            else
+                file = await pictureService.PickPhotoAsync();
 
             if (file != null)
             {
@@ -140,9 +162,20 @@ namespace Adopcat.Mobile.ViewModels
                 {
                     file.GetStream().CopyTo(memoryStream);
                     file.Dispose();
-                    PetImages.Add(memoryStream.ToArray());
+                    PetImages.Add(new PetPictureItem
+                    {
+                        Id = Guid.NewGuid().ToString(),
+                        Image = memoryStream.ToArray()
+                    });
+                    CreatePosterCommand.RaiseCanExecuteChanged();
                 }
             }
+        }
+
+        private void DeletePetPictureCommandExecute(string imageId)
+        {
+            PetImages.Remove(PetImages.Single(w => w.Id == imageId));
+            CreatePosterCommand.RaiseCanExecuteChanged();
         }
     }
 }

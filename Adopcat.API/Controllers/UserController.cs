@@ -11,16 +11,25 @@ namespace Adopcat.API.Controllers
     public class UserController : BaseApiController
     {
         private IUserService _userService;
+        private IBlobStorageService _blobService;
 
-        public UserController(IUserService userService)
+        public UserController(IUserService userService, IBlobStorageService blobService)
         {
             _userService = userService;
+            _blobService = blobService;
         }
 
         [HttpGet]
         public async Task<IHttpActionResult> Get(int id)
         {
             return Ok(await _userService.GetById(id));
+        }
+
+        [HttpGet]
+        [Route("byemail")]
+        public async Task<IHttpActionResult> GetByEmail(string email)
+        {
+            return Ok(await _userService.GetByEmail(email));
         }
 
         [HttpPost]
@@ -37,9 +46,32 @@ namespace Adopcat.API.Controllers
                 Phone = model.Phone
             };
 
-            await _userService.UpdateOrCreateAsync(user);
+            user.PictureUrl = await _blobService.AddImageToBlobStorageAsync(model.Picture);
 
-            return Ok();
+            user = await _userService.UpdateOrCreateAsync(user);
+
+            return Ok(user);
+        }
+
+        [HttpPost]
+        [Route("fb")]
+        public async Task<IHttpActionResult> CreateFacebookUser(FacebookUserViewModel model)
+        {
+            if (!ModelState.IsValid)
+                return BadRequest();
+
+            var user = new User
+            {
+                Email = model.Email,
+                FacebookId = model.FacebookId,
+                Name = model.Name,
+                PictureUrl = model.PictureUrl,
+                Phone = model.Phone
+            };
+
+            user = await _userService.UpdateOrCreateAsync(user);
+
+            return Ok(user);
         }
     }
 }

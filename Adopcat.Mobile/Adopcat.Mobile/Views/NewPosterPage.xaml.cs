@@ -1,4 +1,7 @@
-﻿using Adopcat.Mobile.ViewModels;
+﻿using Adopcat.Mobile.Models;
+using Adopcat.Mobile.ViewModels;
+using Prism.Commands;
+using System.Diagnostics;
 using Xamarin.Forms;
 
 namespace Adopcat.Mobile.Views
@@ -19,6 +22,13 @@ namespace Adopcat.Mobile.Views
         {
             var selectedItem = (sender as Picker).SelectedItem as string;
             ViewModel.PetTypeSelectCommand.Execute(selectedItem);
+        }
+
+        private void ListView_ItemSelected(object sender, SelectedItemChangedEventArgs e)
+        {
+            var list = (sender as ListView);
+            if (list.SelectedItem == null) return;
+            list.SelectedItem = null;
         }
     }
 }

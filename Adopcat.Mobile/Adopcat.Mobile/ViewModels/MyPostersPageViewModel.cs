@@ -6,6 +6,7 @@ using Prism.Services;
 using System;
 using System.Collections.ObjectModel;
 using System.Diagnostics;
+using System.Linq;
 
 namespace Adopcat.Mobile.ViewModels
 {
@@ -18,13 +19,14 @@ namespace Adopcat.Mobile.ViewModels
             set { SetProperty(ref _myPosters, value); }
         }
 
-        public DelegateCommand<int> SelectedPosterCommand { get; set; }
+        public DelegateCommand<int?> SelectedPosterCommand { get; set; }
 
-        public MyPostersPageViewModel(INavigationService navigationService, IPageDialogService dialogService) : base(navigationService, dialogService)
+        public MyPostersPageViewModel(INavigationService navigationService, IPageDialogService dialogService)
+            : base(navigationService, dialogService)
         {
             Title = "Meus Anúncios";
 
-            SelectedPosterCommand = new DelegateCommand<int>(SelectedPosterCommandExecute);
+            SelectedPosterCommand = new DelegateCommand<int?>(SelectedPosterCommandExecute);
         }
 
         public async override void OnNavigatedTo(NavigationParameters parameters)
@@ -34,7 +36,12 @@ namespace Adopcat.Mobile.ViewModels
             try
             {
                 MyPosters = new ObservableCollection<PosterOutput>(
-                                    await App.ApiService.GetMyPosters(int.Parse(Settings.UserId), Settings.AuthToken));
+                                    await App.ApiService.GetMyPosters(int.Parse(Settings.UserId), "bearer " + Settings.AuthToken));
+
+                foreach (var poster in MyPosters)
+                {
+                    poster.MainPictureUrl = poster.PetPictures.FirstOrDefault()?.Url;
+                }
             }
             catch (Exception ex)
             {
@@ -42,9 +49,12 @@ namespace Adopcat.Mobile.ViewModels
             }
         }
 
-        private void SelectedPosterCommandExecute(int posterId)
+        private void SelectedPosterCommandExecute(int? posterId)
         {
-            
+            if (posterId != null)
+            {
+
+            }
         }
     }
 }

@@ -6,6 +6,7 @@ namespace Adopcat.Model.DTO
     {
         public int Id { get; set; }
         public int UserId { get; set; }
+        public string PetName { get; set; }
         public List<byte[]> PetPictures { get; set; }
         public int PetType { get; set; }
         public bool Castrated { get; set; }

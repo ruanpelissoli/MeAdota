@@ -70,7 +70,6 @@ namespace Adopcat.Mobile.Droid.Services
             catch (Exception ex)
             {
                 Debug.WriteLine(ex.Message);
-                Debugger.Break();
             }
         }
 

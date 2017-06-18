@@ -26,13 +26,21 @@ namespace Adopcat.API.Controllers
             var poster = await _posterService.GetAsync(id).ConfigureAwait(false);
 
             if (poster == null) return BadRequest();
-            return Ok(poster);
+            return Ok(MappingConfig.Mapper().Map<PosterOutputDTO>(poster));
         }
 
         [HttpGet]
-        public async Task<IHttpActionResult> Get()
+        public async Task<IHttpActionResult> GetAllPosters(int userId)
         {
-            var posters = await _posterService.GetAsync().ConfigureAwait(false);
+            var posters = await _posterService.GetAllPostersAsync(userId).ConfigureAwait(false);
+            return Ok(MappingConfig.Mapper().Map<List<PosterOutputDTO>>(posters));
+        }
+
+        [HttpGet]
+        [Route("filter")]
+        public async Task<IHttpActionResult> GetAllPosters(int userId, FilterDTO filter)
+        {
+            var posters = await _posterService.GetAllPostersAsync(userId).ConfigureAwait(false);
             return Ok(MappingConfig.Mapper().Map<List<PosterOutputDTO>>(posters));
         }
 
@@ -40,13 +48,15 @@ namespace Adopcat.API.Controllers
         [Route("my")]
         public async Task<IHttpActionResult> GetMyPosters(int userId)
         {
-            return Ok(await _posterService.GetByUserIdAsync(userId).ConfigureAwait(false));
+            var posters = await _posterService.GetByUserIdAsync(userId).ConfigureAwait(false);
+            return Ok(MappingConfig.Mapper().Map<List<PosterOutputDTO>>(posters));
         }
 
         [HttpPost]
         public async Task<IHttpActionResult> Post(PosterInputDTO model)
         {
-            return Ok(await _posterService.CreateAsync(model).ConfigureAwait(false));
+            var poster = await _posterService.CreateAsync(model).ConfigureAwait(false);
+            return Ok(MappingConfig.Mapper().Map<PosterOutputDTO>(poster));
         }
     }
 }

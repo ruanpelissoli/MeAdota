@@ -8,7 +8,8 @@ namespace Adopcat.Services.Interfaces
     public interface IPosterService
     {
         Task<Poster> GetAsync(int id);
-        Task<List<Poster>> GetAsync();
+        Task<List<Poster>> GetAllPostersAsync(int userId);
+        Task<List<Poster>> GetAllPostersAsync(int userId, FilterDTO filter);
         Task<Poster> CreateAsync(PosterInputDTO poster);
         Task<int> UpdateAsync(Poster poster);
         Task<List<Poster>> GetByUserIdAsync(int id);

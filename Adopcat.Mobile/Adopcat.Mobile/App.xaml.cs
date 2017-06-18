@@ -29,7 +29,7 @@ namespace Adopcat.Mobile
                 MobileService.Initialize();
 
                 ApiService = RestService.For<IApiService>(ApplicationParameters.ApiUrl);
-
+                
                 if (!Settings.IsLoggedIn)
                     NavigationService.NavigateAsync($"NavigationPage/{nameof(LoginPage)}");
                 else
@@ -53,6 +53,7 @@ namespace Adopcat.Mobile
             Container.RegisterTypeForNavigation<ConfigurationPage, ConfigurationPageViewModel>();
             Container.RegisterTypeForNavigation<MyPostersPage, MyPostersPageViewModel>();
             Container.RegisterTypeForNavigation<FilterPage, FilterPageViewModel>();
+            Container.RegisterTypeForNavigation<PosterDetailPage>();
         }
     }
 }

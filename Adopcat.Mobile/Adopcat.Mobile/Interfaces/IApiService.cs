@@ -1,5 +1,4 @@
-﻿using Adopcat.Mobile.Helpers;
-using Adopcat.Mobile.Models;
+﻿using Adopcat.Mobile.Models;
 using Refit;
 using System.Collections.Generic;
 using System.Threading.Tasks;
@@ -13,6 +12,9 @@ namespace Adopcat.Mobile.Interfaces
         [Post("/auth/login")]
         Task<LoginResponse> Login(Login model);
 
+        [Post("/auth/login/fb")]
+        Task<LoginResponse> LoginFacebook(Login model);
+
         [Get("/auth/logout")]
         Task Logout();
         #endregion
@@ -21,22 +23,31 @@ namespace Adopcat.Mobile.Interfaces
         [Get("/user")]
         Task<User> GetUser(int id);
 
+        [Get("/user/byemail")]
+        Task<User> GetUserByEmail(string email);
+
         [Post("/user")]
-        Task CreateUser(User model);
+        Task<User> CreateUser(User model);
+
+        [Post("/user/fb")]
+        Task<User> CreateFacebookUser(User model);
         #endregion
 
         #region Poster
         [Get("/poster")]
-        Task<PosterOutput> GetPoster(int id);
+        Task<PosterOutput> GetPoster(int id, [Header("Authorization")] string token);
 
         [Get("/poster")]
-        Task<List<PosterOutput>> GetPosters([Header("Authorization")] string token);
+        Task<List<PosterOutput>> GetPosters(int userId, [Header("Authorization")] string token);
+
+        [Get("/poster/filter")]
+        Task<List<PosterOutput>> GetFilteredPosters(int userId, Filter filter, [Header("Authorization")] string token);
 
         [Get("/poster/my")]
         Task<List<PosterOutput>> GetMyPosters(int userId, [Header("Authorization")] string token);
 
         [Post("/poster")]
-        Task<List<PosterOutput>> CreatePoster(PosterInput poster, [Header("Authorization")] string token);
+        Task<PosterOutput> CreatePoster(PosterInput poster, [Header("Authorization")] string token);
         #endregion
     }
 

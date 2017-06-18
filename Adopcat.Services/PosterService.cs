@@ -5,6 +5,7 @@ using Adopcat.Data.Interfaces;
 using System.Threading.Tasks;
 using Adopcat.Model.DTO;
 using Adopcat.Model.Enums;
+using System.Linq;
 
 namespace Adopcat.Services
 {
@@ -28,6 +29,7 @@ namespace Adopcat.Services
                 var poster = new Poster
                 {
                     UserId = posterDto.UserId,
+                    PetName = posterDto.PetName,
                     PetType = (EPetType)posterDto.PetType,
                     Castrated = posterDto.Castrated,
                     Dewormed = posterDto.Dewormed,
@@ -63,11 +65,36 @@ namespace Adopcat.Services
             });
         }
 
-        public async Task<List<Poster>> GetAsync()
+        public async Task<List<Poster>> GetAllPostersAsync(int userId)
         {
             return await TryCatch(async () =>
             {
-                return await _repository.GetAllAsync();
+                return await _repository.GetAllAsync(w => w.UserId != userId && !w.IsAdopted);
+            });
+        }
+
+        public async Task<List<Poster>> GetAllPostersAsync(int userId, FilterDTO filter)
+        {
+            return await TryCatch(async () =>
+            {
+                var list = await _repository.GetAllAsync(w => w.UserId != userId && !w.IsAdopted);
+
+                if (filter.PetType.HasValue)
+                    list = list.Where(w => (int)w.PetType == filter.PetType.Value).ToList();
+
+                if (filter.Castrated.HasValue)
+                    list = list.Where(w => w.Castrated == filter.Castrated.Value).ToList();
+
+                if (filter.Dewormed.HasValue)
+                    list = list.Where(w => w.Dewormed == filter.Dewormed.Value).ToList();
+
+                if (filter.DeliverToAdopter.HasValue)
+                    list = list.Where(w => w.Dewormed == filter.DeliverToAdopter.Value).ToList();
+
+                if(!string.IsNullOrEmpty(filter.City))
+                    list = list.Where(w => w.City == filter.City).ToList();
+
+                return list;
             });
         }
 

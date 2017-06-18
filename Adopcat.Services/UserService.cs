@@ -82,6 +82,9 @@ namespace Adopcat.Services
 
                 user.Name = model.Name;
                 user.Email = model.Email;
+                user.PictureUrl = model.PictureUrl;
+                user.FacebookId = model.FacebookId;
+                user.Phone = model.Phone;
 
                 if (model.Id == 0)
                     return await _userRepository.CreateAsync(user);

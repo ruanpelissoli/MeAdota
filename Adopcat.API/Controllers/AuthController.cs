@@ -25,7 +25,24 @@ namespace Adopcat.API.Controllers
         {
             var token = await _authenticationService.GenerateToken(loginModel.Email, loginModel.Password);
             var userId = _authenticationService.GetByAccessToken(token).UserId;
-            
+
+            var loginResponse = new LoginResponseViewModel
+            {
+                AuthToken = token,
+                UserId = userId
+            };
+
+            return Ok(loginResponse);
+        }
+
+        [Route("login/fb")]
+        [HttpPost]
+        [AllowAnonymous]
+        public async Task<IHttpActionResult> LoginFacebook(LoginViewModel loginModel)
+        {
+            var token = await _authenticationService.GenerateTokenByFacebook(loginModel.Email, loginModel.Password);
+            var userId = _authenticationService.GetByAccessToken(token).UserId;
+
             var loginResponse = new LoginResponseViewModel
             {
                 AuthToken = token,

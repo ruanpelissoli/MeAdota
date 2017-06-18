@@ -5,6 +5,7 @@
              prism:ViewModelLocator.AutowireViewModel="True"
              xmlns:converters="clr-namespace:Adopcat.Mobile.Util"
              x:Class="Adopcat.Mobile.Views.NewPosterPage"
+             x:Name="MyPage"
              Title="{Binding Title}">
     <ContentPage.Resources>
         <ResourceDictionary>
@@ -12,16 +13,37 @@
         </ResourceDictionary>
     </ContentPage.Resources>
     <ScrollView>
-        <StackLayout VerticalOptions="FillAndExpand">
+        <StackLayout VerticalOptions="FillAndExpand" Padding="10">
             <StackLayout 
-                HorizontalOptions="Center">
+                HorizontalOptions="Start">
                 <ListView
-                    ItemsSource="{Binding PetImages}">
+                    HasUnevenRows="True"
+                    VerticalOptions="StartAndExpand"
+                    HeightRequest="200"
+                    ItemsSource="{Binding PetImages}"
+                    ItemSelected="ListView_ItemSelected">
                     <ListView.ItemTemplate>
                         <DataTemplate>
                             <ViewCell>
-                                <StackLayout HorizontalOptions="Center">
-                                    <Image Source="{Binding ., Converter={StaticResource Key=ByteArrayToImage}}" HeightRequest="100" WidthRequest="100" />
+                                <StackLayout Orientation="Horizontal" Padding="5">
+                                    <Image 
+                                        Source="{Binding Image, Converter={StaticResource Key=ByteArrayToImage}}" 
+                                        HorizontalOptions="Start" 
+                                        HeightRequest="100" 
+                                        WidthRequest="100" />
+                                    <Image 
+                                        Source="icon_delete.png" 
+                                        Aspect="AspectFit" 
+                                        HorizontalOptions="EndAndExpand" 
+                                        HeightRequest="35" 
+                                        WidthRequest="35">
+                                        <Image.GestureRecognizers>
+                                            <TapGestureRecognizer 
+                                                NumberOfTapsRequired="1" 
+                                                Command="{Binding Path=BindingContext.DeletePetPictureCommand, Source={x:Reference MyPage}}" 
+                                                CommandParameter="{Binding Id}" />
+                                        </Image.GestureRecognizers>
+                                    </Image>
                                 </StackLayout>                                
                             </ViewCell>
                         </DataTemplate>
@@ -29,6 +51,7 @@
                 </ListView>
                 <Button Text="Adicionar foto" Command="{Binding PickPhotoCommand}" />
             </StackLayout>
+            <Entry Placeholder="Nome" Text="{Binding PetName}" />
             <Picker ItemsSource="{Binding PetTypeList}" SelectedIndexChanged="Picker_SelectedIndexChanged" />
             <StackLayout Orientation="Horizontal">
                 <Label Text="Castrado?" HorizontalOptions="StartAndExpand" />

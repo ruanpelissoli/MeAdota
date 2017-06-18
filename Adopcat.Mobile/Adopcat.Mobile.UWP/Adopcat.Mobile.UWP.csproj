@@ -112,6 +112,15 @@
     <None Include="Adopcat.Mobile.UWP_TemporaryKey.pfx" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Assets\icon_backbutton.png" />
+    <Content Include="Assets\icon_checked.png" />
+    <Content Include="Assets\icon_delete.png" />
+    <Content Include="Assets\icon_filter.png" />
+    <Content Include="Assets\icon_menu_config.png" />
+    <Content Include="Assets\icon_menu_myposters.png" />
+    <Content Include="Assets\icon_menu_newposter.png" />
+    <Content Include="Assets\icon_menu_posters.png" />
+    <Content Include="Assets\icon_not_checked.png" />
     <Content Include="Properties\Default.rd.xml" />
     <Content Include="Assets\LockScreenLogo.scale-200.png" />
     <Content Include="Assets\SplashScreen.scale-200.png" />

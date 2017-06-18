@@ -33,10 +33,10 @@ namespace Adopcat.Mobile.ViewModels
         {
             var menuItemsList = new List<MenuItem>
             {
-                new MenuItem { Text = "Anúncios", Icon = "", GoTo = nameof(PostersPage) },
-                new MenuItem { Text = "Anunciar", Icon = "", GoTo = nameof(NewPosterPage) },
-                new MenuItem { Text = "Meus Anúncios", Icon = "", GoTo = nameof(PostersPage) },
-                new MenuItem { Text = "Configurações", Icon = "", GoTo = nameof(ConfigurationPage) },
+                new MenuItem { Text = "Anúncios", Icon = "icon_menu_posters.png", GoTo = nameof(PostersPage) },
+                new MenuItem { Text = "Anunciar", Icon = "icon_menu_newposter.png", GoTo = nameof(NewPosterPage) },
+                new MenuItem { Text = "Meus Anúncios", Icon = "icon_menu_myposters.png", GoTo = nameof(MyPostersPage) },
+                new MenuItem { Text = "Configurações", Icon = "icon_menu_config.png", GoTo = nameof(ConfigurationPage) },
             };
 
             MenuItems = new ObservableCollection<MenuItem>(menuItemsList);

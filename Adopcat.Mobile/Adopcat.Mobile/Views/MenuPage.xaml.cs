@@ -20,8 +20,12 @@ namespace Adopcat.Mobile.Views
 
         private void ListView_ItemTapped(object sender, ItemTappedEventArgs e)
         {
-            var menuItem = ((sender as ListView).SelectedItem as Models.MenuItem);
+            var listView = (sender as ListView);
+            if (listView.SelectedItem == null) return;
+            var menuItem = listView.SelectedItem as Models.MenuItem;
             ViewModel.MenuClickedCommand.Execute(menuItem.GoTo);
+
+            listView.SelectedItem = null;
         }
     }
 }

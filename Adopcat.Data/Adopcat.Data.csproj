@@ -65,6 +65,18 @@
     <Compile Include="Migrations\201706150151444_InsertAppParameters.Designer.cs">
       <DependentUpon>201706150151444_InsertAppParameters.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201706161747145_AddedPetNameColumn.cs" />
+    <Compile Include="Migrations\201706161747145_AddedPetNameColumn.Designer.cs">
+      <DependentUpon>201706161747145_AddedPetNameColumn.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201706162312147_ChangedDeviceIdToFacebookId.cs" />
+    <Compile Include="Migrations\201706162312147_ChangedDeviceIdToFacebookId.Designer.cs">
+      <DependentUpon>201706162312147_ChangedDeviceIdToFacebookId.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201706162340372_ChangedPasswordToNull.cs" />
+    <Compile Include="Migrations\201706162340372_ChangedPasswordToNull.Designer.cs">
+      <DependentUpon>201706162340372_ChangedPasswordToNull.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Repository\ApplicationParameterRepository.cs" />
@@ -91,6 +103,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201706150151444_InsertAppParameters.resx">
       <DependentUpon>201706150151444_InsertAppParameters.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201706161747145_AddedPetNameColumn.resx">
+      <DependentUpon>201706161747145_AddedPetNameColumn.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201706162312147_ChangedDeviceIdToFacebookId.resx">
+      <DependentUpon>201706162312147_ChangedDeviceIdToFacebookId.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201706162340372_ChangedPasswordToNull.resx">
+      <DependentUpon>201706162340372_ChangedPasswordToNull.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

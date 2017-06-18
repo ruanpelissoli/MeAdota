@@ -28,6 +28,7 @@ namespace Adopcat.Mobile.iOS
             global::Xamarin.Forms.Forms.Init();
             ConfigurationManager.Initialise(PCLAppConfig.FileSystemStream.PortableStream.Current);
             Microsoft.WindowsAzure.MobileServices.CurrentPlatform.Init();
+            
             LoadApplication(new App(new iOSInitializer()));
 
             return base.FinishedLaunching(app, options);

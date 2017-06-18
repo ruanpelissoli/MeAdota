@@ -7,17 +7,34 @@
                   x:Class="Adopcat.Mobile.Views.MenuPage">
     <MasterDetailPage.Master>
         <ContentPage Title="Menu">
-            <StackLayout>
-                <Image Source="http://lorempixel.com/output/animals-q-c-400-400-8.jpg" />
-                <Label Text="{Binding User.Name}" />
+            <StackLayout VerticalOptions="FillAndExpand">
+                <StackLayout BackgroundColor="#006df0"
+                             Orientation="Horizontal"
+                             HorizontalOptions="FillAndExpand"
+                             VerticalOptions="Start">
+                    <Image Source="{Binding User.PictureUrl}" 
+                           HorizontalOptions="Center"
+                           Aspect="Fill"
+                           HeightRequest="50"
+                           WidthRequest="50" />
+                    <Label Text="{Binding User.Name}" 
+                           HorizontalOptions="StartAndExpand"
+                           VerticalTextAlignment="Center"
+                           TextColor="White" />
+                </StackLayout>
+                <Label Text="Menu" FontSize="Medium" FontAttributes="Bold" />
                 <ListView
+                    VerticalOptions="FillAndExpand"
                     ItemsSource="{Binding MenuItems}"
                     ItemTapped="ListView_ItemTapped">
                     <ListView.ItemTemplate>
                         <DataTemplate>
-                            <ImageCell 
-                                ImageSource="http://lorempixel.com/output/animals-q-c-400-400-8.jpg"
-                                Text="{Binding Text}" />
+                            <ViewCell>
+                                <StackLayout Orientation="Horizontal" Padding="10">
+                                    <Image Source="{Binding Icon}" WidthRequest="16" HeightRequest="16" HorizontalOptions="Start"/>
+                                    <Label Text="{Binding Text}" HorizontalOptions="StartAndExpand" VerticalTextAlignment="Center" />
+                                </StackLayout>
+                            </ViewCell>
                         </DataTemplate>
                     </ListView.ItemTemplate>
                 </ListView>

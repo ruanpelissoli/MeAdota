@@ -7,14 +7,13 @@ namespace Adopcat.Model
     {
         [Key]
         public int Id { get; set; }
-        public string DeviceId { get; set; }
+        public string FacebookId { get; set; }
         [Required]
         [StringLength(100)]
         public string Name { get; set; }
         [Required]
         [StringLength(100)]
         public string Email { get; set; }
-        [Required]
         [StringLength(100)]
         public string Password { get; set; }
         [StringLength(20)]

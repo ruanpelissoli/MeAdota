@@ -3,8 +3,29 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:prism="clr-namespace:Prism.Mvvm;assembly=Prism.Forms"
              prism:ViewModelLocator.AutowireViewModel="True"
-             x:Class="Adopcat.Mobile.Views.FilterPage">
-    <StackLayout>
-        <Label Text="teste" />
-    </StackLayout>
+             x:Class="Adopcat.Mobile.Views.FilterPage"
+             Title="{Binding Title}">
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Icon="icon_backbutton.png" Priority="1" Order="Default" Command="{Binding BackCommand}"></ToolbarItem>
+    </ContentPage.ToolbarItems>    
+    <StackLayout Padding="10" VerticalOptions="StartAndExpand" HorizontalOptions="FillAndExpand">
+        <Picker ItemsSource="{Binding PetTypeList}" SelectedIndexChanged="Picker_SelectedIndexChanged" />
+        <StackLayout Orientation="Horizontal">
+            <Label Text="Castrado?" HorizontalOptions="StartAndExpand" />
+            <Switch IsToggled="{Binding IsCastrated}" HorizontalOptions="End"/>
+        </StackLayout>
+        <StackLayout Orientation="Horizontal">
+            <Label Text="Vermifugado?" HorizontalOptions="StartAndExpand" />
+            <Switch IsToggled="{Binding IsDewormed}" HorizontalOptions="End"/>
+        </StackLayout>
+        <StackLayout Orientation="Horizontal">
+            <Label Text="Leva até o adotante?" HorizontalOptions="StartAndExpand" />
+            <Switch IsToggled="{Binding DeliverToAdopter}" HorizontalOptions="End"/>
+        </StackLayout>
+        <Entry Placeholder="Cidade" Text="{Binding City}" />
+        <StackLayout VerticalOptions="End" Orientation="Horizontal" Spacing="5">
+            <Button Text="Filtrar" Command="{Binding FilterCommand}" HorizontalOptions="FillAndExpand"/>
+            <Button Text="Limpar Filtro" Command="{Binding ClearFilterCommand}" HorizontalOptions="FillAndExpand"/>
+        </StackLayout>
+    </StackLayout>    
 </ContentPage>

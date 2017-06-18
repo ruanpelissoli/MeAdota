@@ -58,6 +58,33 @@ namespace Adopcat.Services
             });
         }
 
+        public async Task<string> GenerateTokenByFacebook(string email, string facebookUserId)
+        {
+            return await TryCatch(async () =>
+            {
+                var user = _userRepository.GetAll(x => x.Email == email && x.FacebookId == facebookUserId && x.IsActive).FirstOrDefault();
+                if (user != null)
+                {
+                    await KillExpiredTokens(user);
+                    string accessToken = CreateToken(email, facebookUserId);
+                    var token = new Token()
+                    {
+                        Access_token = accessToken,
+                        Token_type = "Bearer",
+                        IssuedUtc = DateTime.UtcNow,
+                        UserId = user.Id
+                    };
+
+                    token.ExpiresUtc = DateTime.UtcNow.Add(TimeSpan.FromDays(1));
+
+                    await _tokenRepository.CreateAsync(token);
+                    return token.Access_token;
+                }
+
+                throw new UnauthorizedException("Unauthorized");
+            });
+        }
+
         public async Task KillToken(int idToken)
         {
             await TryCatch(async () =>

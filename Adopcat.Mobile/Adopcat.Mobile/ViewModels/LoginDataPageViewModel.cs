@@ -86,7 +86,7 @@ namespace Adopcat.Mobile.ViewModels
             if (!(await LoginAsync()))
                 return;
 
-            await _navigationService.NavigateAsync($"{nameof(MenuPage)}/NavigationPage/{nameof(PostersPage)}");
+            await _navigationService.NavigateAsync($"app:///{nameof(MenuPage)}/NavigationPage/{nameof(PostersPage)}");
         }
 
         private async Task<bool> LoginAsync()

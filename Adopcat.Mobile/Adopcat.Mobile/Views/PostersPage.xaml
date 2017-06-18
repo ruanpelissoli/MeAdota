@@ -6,22 +6,49 @@
              xmlns:converters="clr-namespace:Adopcat.Mobile.Util"
              x:Class="Adopcat.Mobile.Views.PostersPage"
              Title="{Binding Title}"
-             ItemsSource="{Binding Posters}">
+             ItemsSource="{Binding Posters}"
+             x:Name="MyPosterPage"
+             Padding="30">
     <CarouselPage.ToolbarItems>
-        <ToolbarItem Text="Filtro" Order="Primary" Command="{Binding FilterCommand}" />
+        <ToolbarItem Icon="icon_filter.png" Order="Primary" Command="{Binding FilterCommand}" />
     </CarouselPage.ToolbarItems>
     <CarouselPage.ItemTemplate>
         <DataTemplate>
             <ContentPage>
                 <StackLayout 
-                    HorizontalOptions="CenterAndExpand"
-                    VerticalOptions="CenterAndExpand">
-                    <Image Source="{Binding MainPictureUrl}" />
-                    <Label Text="{Binding Country}" />
-                    <Label Text="{Binding State}" />
-                    <Label Text="{Binding City}" />
-                    <ActivityIndicator IsVisible="{Binding ShowLoading}" IsRunning="{Binding ShowLoading}" Color="Black" />
-                </StackLayout>                
+                    Padding="20"
+                    HorizontalOptions="Center"
+                    VerticalOptions="StartAndExpand"
+                    BackgroundColor="LightGray">
+                    <Label Text="{Binding PetName}" 
+                           FontAttributes="Bold" 
+                           FontSize="Medium"
+                           HorizontalTextAlignment="Center"/>
+                    <StackLayout.GestureRecognizers>
+                        <TapGestureRecognizer 
+                           NumberOfTapsRequired="1" 
+                           Command="{Binding Path=BindingContext.PosterSelectedCommand, Source={x:Reference MyPosterPage}}" 
+                           CommandParameter="{Binding Id}" />
+                    </StackLayout.GestureRecognizers>
+                    <Image Source="{Binding MainPictureUrl}"
+                           Aspect="AspectFill"
+                           HeightRequest="250" 
+                           WidthRequest="250" />
+                    <StackLayout Orientation="Horizontal">
+                        <Label Text="Castrado" HorizontalOptions="StartAndExpand" FontSize="Small" />
+                        <Image Source="icon_checked.png" HorizontalOptions="End" HeightRequest="20" WidthRequest="20" />
+                    </StackLayout>
+                    <StackLayout Orientation="Horizontal">
+                        <Label Text="Vermifugado" HorizontalOptions="StartAndExpand" FontSize="Small"/>
+                        <Image Source="icon_checked.png" HorizontalOptions="End" HeightRequest="20" WidthRequest="20" />
+                    </StackLayout>
+                    <StackLayout Orientation="Horizontal">
+                        <Label Text="Entrega" HorizontalOptions="StartAndExpand" FontSize="Small"/>
+                        <Image Source="icon_checked.png" HorizontalOptions="End" HeightRequest="20" WidthRequest="20" />
+                    </StackLayout>
+                    <Label Text="Cidade:" FontSize="Small"/>
+                    <Label Text="{Binding City}" FontAttributes="Bold" FontSize="Small"/>
+                </StackLayout>
             </ContentPage>
         </DataTemplate>
     </CarouselPage.ItemTemplate>

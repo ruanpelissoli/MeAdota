@@ -13,5 +13,7 @@ namespace Adopcat.API.Models
         public string Password { get; set; }
         [Required]
         public string Phone { get; set; }
+        public string PictureUrl { get; set; }
+        public byte[] Picture { get; set; }
     }
 }
