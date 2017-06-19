@@ -12,7 +12,7 @@ namespace Adopcat.Mobile.ViewModels
 
         public LoginPageViewModel(INavigationService navigationService, IPageDialogService dialogService) : base(navigationService, dialogService)
         {
-            Title = "Login";
+            Title = "MeAdota! - Login";
 
             LoginCommand = new DelegateCommand(LoginCommandExecute);
             RegisterCommand = new DelegateCommand(RegisterCommandExecute);

@@ -5,9 +5,6 @@
              prism:ViewModelLocator.AutowireViewModel="True"
              x:Class="Adopcat.Mobile.Views.FilterPage"
              Title="{Binding Title}">
-    <ContentPage.ToolbarItems>
-        <ToolbarItem Icon="icon_backbutton.png" Priority="1" Order="Default" Command="{Binding BackCommand}"></ToolbarItem>
-    </ContentPage.ToolbarItems>    
     <StackLayout Padding="10" VerticalOptions="StartAndExpand" HorizontalOptions="FillAndExpand">
         <Picker ItemsSource="{Binding PetTypeList}" SelectedIndexChanged="Picker_SelectedIndexChanged" />
         <StackLayout Orientation="Horizontal">

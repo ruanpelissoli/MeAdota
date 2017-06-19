@@ -5,19 +5,23 @@
                         x:Class="Adopcat.Mobile.App">
     <prism:PrismApplication.Resources>
         <ResourceDictionary>
+            <x:String x:Key="AppDefaultColor">#00ad97</x:String>
+
+            <Style TargetType="Page">
+                <Setter Property="BackgroundColor" Value="White"/>                
+            </Style>
+
             <Style TargetType="NavigationPage">
-                <Setter Property="BarBackgroundColor" Value="Green"/>
+                <Setter Property="BarBackgroundColor" Value="{StaticResource AppDefaultColor}"/>
                 <Setter Property="BarTextColor" Value="White"/>
             </Style>
 
-            <Style TargetType="Button" x:Key="defaultButton">
+            <Style TargetType="Button" x:Key="DefaultButton">
                 <Setter Property="HorizontalOptions" Value="Center" />
                 <Setter Property="VerticalOptions" Value="CenterAndExpand" />
-                <Setter Property="BorderColor" Value="Lime" />
+                <Setter Property="BackgroundColor" Value="{StaticResource AppDefaultColor}" />
                 <Setter Property="BorderRadius" Value="50" />
-                <Setter Property="BorderWidth" Value="5" />
-                <Setter Property="WidthRequest" Value="200" />
-                <Setter Property="TextColor" Value="Teal" />
+                <Setter Property="TextColor" Value="White" />
             </Style>
         </ResourceDictionary>
     </prism:PrismApplication.Resources>

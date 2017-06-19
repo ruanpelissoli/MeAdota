@@ -64,7 +64,6 @@ namespace Adopcat.Mobile.ViewModels
             set { SetProperty(ref _city, value); }
         }
 
-        public DelegateCommand BackCommand { get; set; }
         public DelegateCommand<string> PetTypeSelectCommand { get; set; }
         public DelegateCommand FilterCommand { get; set; }
         public DelegateCommand ClearFilterCommand { get; set; }
@@ -73,7 +72,6 @@ namespace Adopcat.Mobile.ViewModels
         {
             Title = "Filtro";
 
-            BackCommand = new DelegateCommand(BackCommandExecute);
             PetTypeSelectCommand = new DelegateCommand<string>(PetTypeSelectCommandExecute);
             FilterCommand = new DelegateCommand(FilterCommandExecute);
             ClearFilterCommand = new DelegateCommand(ClearFilterCommandExecute);
@@ -89,7 +87,7 @@ namespace Adopcat.Mobile.ViewModels
 
         private void ClearFilterCommandExecute()
         {
-            _navigationService.GoBackAsync(null, true);
+            _navigationService.GoBackAsync(null);
         }
 
         private async void FilterCommandExecute()
@@ -104,15 +102,10 @@ namespace Adopcat.Mobile.ViewModels
 
             var paramenters = new NavigationParameters
             {
-                {"filter", filter }
+                { "filter", filter }
             };
 
-            await _navigationService.GoBackAsync(paramenters, true);
-        }
-
-        private async void BackCommandExecute()
-        {
-            await _navigationService.GoBackAsync(null, true);
+            await _navigationService.GoBackAsync(paramenters);
         }
 
         private void PetTypeSelectCommandExecute(string petType)

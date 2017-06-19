@@ -8,7 +8,7 @@
     <MasterDetailPage.Master>
         <ContentPage Title="Menu">
             <StackLayout VerticalOptions="FillAndExpand">
-                <StackLayout BackgroundColor="Green"
+                <StackLayout BackgroundColor="{StaticResource AppDefaultColor}"
                              Orientation="Horizontal"
                              HorizontalOptions="FillAndExpand"
                              VerticalOptions="Start">

@@ -10,9 +10,9 @@
          HorizontalOptions="CenterAndExpand">
         <Entry Placeholder="E-mail" Text="{Binding Email}" />
         <Entry Placeholder="Senha" IsPassword="True" Text="{Binding Password}" />
-        <Button Text="Login" Command="{Binding LoginCommand}"/>
+        <Button Text="Login" Command="{Binding LoginCommand}" Style="{StaticResource DefaultButton}"/>
         <Label Text="ou" HorizontalTextAlignment="Center" />
-        <Button Text="Login com Facebook" Command="{Binding FacebookLoginCommand}" />
+        <Button Text="Login com Facebook" Command="{Binding FacebookLoginCommand}" Style="{StaticResource DefaultButton}"/>
         <ActivityIndicator IsVisible="{Binding ShowLoading}" IsRunning="{Binding ShowLoading}" Color="Black" />
     </StackLayout>
 </ContentPage>

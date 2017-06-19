@@ -4,13 +4,24 @@
              xmlns:prism="clr-namespace:Prism.Mvvm;assembly=Prism.Forms"
              prism:ViewModelLocator.AutowireViewModel="True"
              x:Class="Adopcat.Mobile.Views.LoginPage"
-             Title="{Binding Title}">
-    <StackLayout 
-        VerticalOptions="CenterAndExpand"
-        HorizontalOptions="CenterAndExpand">
-        <Label Text="Adopcat" HorizontalTextAlignment="Center" />
-        <Button Text="Login" Command="{Binding LoginCommand}" />
-        <Label Text="ou" HorizontalTextAlignment="Center" />
-        <Button Text="Casdastre-se" Command="{Binding RegisterCommand}" />        
-    </StackLayout>
+             Title="{Binding Title}"
+             BackgroundColor="White">
+    <RelativeLayout>
+        <Image 
+            Aspect="AspectFit"
+            Source="login_bg.jpg" 
+            RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width}"
+            RelativeLayout.HeightConstraint="{ConstraintExpression Type=RelativeToParent, Property=Height}"/>
+        <Grid 
+            RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width}"
+            RelativeLayout.HeightConstraint="{ConstraintExpression Type=RelativeToParent, Property=Height}">
+            <StackLayout 
+                VerticalOptions="CenterAndExpand"
+                HorizontalOptions="CenterAndExpand">
+                <Button Text="Login" Command="{Binding LoginCommand}" Style="{StaticResource DefaultButton}"/>
+                <Label Text="ou" HorizontalTextAlignment="Center" />
+                <Button Text="Casdastre-se" Command="{Binding RegisterCommand}" Style="{StaticResource DefaultButton}" />
+            </StackLayout>
+        </Grid>
+    </RelativeLayout>   
 </ContentPage>

@@ -23,6 +23,21 @@ namespace Adopcat.Mobile.ViewModels
 
         public DelegateCommand FilterCommand { get; set; }
         public DelegateCommand<int?> PosterSelectedCommand { get; set; }
+        public DelegateCommand<PosterOutput> ShowCarouselArrowsCommand;
+
+        private bool _isNotFirstItem;
+        public bool IsNotFirstItem
+        {
+            get { return _isNotFirstItem; }
+            set { SetProperty(ref _isNotFirstItem, value); }
+        }
+
+        private bool _isNotLastItem;
+        public bool IsNotLastItem
+        {
+            get { return _isNotLastItem; }
+            set { SetProperty(ref _isNotLastItem, value); }
+        }
 
         public PostersPageViewModel(INavigationService navigationService, IPageDialogService dialogService) : base(navigationService, dialogService)
         {
@@ -30,6 +45,25 @@ namespace Adopcat.Mobile.ViewModels
 
             FilterCommand = new DelegateCommand(FilterCommandExecute);
             PosterSelectedCommand = new DelegateCommand<int?>(PosterSelectedCommandExecute);
+            ShowCarouselArrowsCommand = new DelegateCommand<PosterOutput>(ShowCarouselArrowsCommandExecute);
+        }
+
+        private void ShowCarouselArrowsCommandExecute(PosterOutput poster)
+        {
+            IsNotFirstItem = true;
+            IsNotLastItem = true;
+
+            if (Posters.First() == poster)
+            {
+                IsNotFirstItem = false;
+                return;
+            }
+
+            if (Posters.Last() == poster)
+            {
+                IsNotLastItem = false;
+                return;
+            }
         }
 
         private async void PosterSelectedCommandExecute(int? posterId)
@@ -46,7 +80,7 @@ namespace Adopcat.Mobile.ViewModels
 
         private async void FilterCommandExecute()
         {
-            await _navigationService.NavigateAsync($"NavigationPage/{nameof(FilterPage)}", null, true);
+            await _navigationService.NavigateAsync($"NavigationPage/{nameof(FilterPage)}");
         }
 
         public async override void OnNavigatedTo(NavigationParameters parameters)
@@ -81,6 +115,10 @@ namespace Adopcat.Mobile.ViewModels
             {
                 if (ex.ReasonPhrase.Equals("Unauthorized"))
                     await App.MobileService.LogoutAsync();
+                Debug.WriteLine(ex.StackTrace);
+            }
+            catch (Exception ex)
+            {
                 Debug.WriteLine(ex.StackTrace);
             }
         }

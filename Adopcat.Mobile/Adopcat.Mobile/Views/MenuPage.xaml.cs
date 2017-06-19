@@ -23,7 +23,11 @@ namespace Adopcat.Mobile.Views
             var listView = (sender as ListView);
             if (listView.SelectedItem == null) return;
             var menuItem = listView.SelectedItem as Models.MenuItem;
-            ViewModel.MenuClickedCommand.Execute(menuItem.GoTo);
+
+            if (menuItem.CommandExecute == null)
+                ViewModel.MenuClickedCommand.Execute(menuItem.GoTo);
+            else
+                menuItem.CommandExecute.Execute();
 
             listView.SelectedItem = null;
         }
