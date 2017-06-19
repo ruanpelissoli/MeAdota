@@ -10,7 +10,7 @@
         <Setter Property="VerticalOptions" Value="CenterAndExpand" />
         <Setter Property="BorderColor" Value="Lime" />
         <Setter Property="BorderRadius" Value="50" />
-        <Setter Property="BorderWidth" Value="50" />
+        <Setter Property="BorderWidth" Value="5" />
         <Setter Property="WidthRequest" Value="200" />
         <Setter Property="TextColor" Value="Teal" />
       </Style>
