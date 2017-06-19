@@ -17,13 +17,6 @@ namespace Adopcat.Mobile.ViewModels
             set { SetProperty(ref _poster, value); }
         }
 
-        private ObservableCollection<PetPicture> _petPictures;
-        public ObservableCollection<PetPicture> PetPictures
-        {
-            get { return _petPictures; }
-            set { SetProperty(ref _petPictures, value); }
-        }
-
         public PosterDetailPageViewModel(INavigationService navigationService, IPageDialogService dialogService) 
             : base(navigationService, dialogService)
         {
@@ -38,8 +31,7 @@ namespace Adopcat.Mobile.ViewModels
             {
                 if (parameters.Any(a => a.Key.Equals("posterId")))
                 {
-                    Poster = await App.ApiService.GetPoster(parameters.GetValue<int>("posterId"), "bearer " + Settings.AuthToken);
-                    PetPictures = new ObservableCollection<PetPicture>(Poster.PetPictures);
+                    Poster = await App.ApiService.GetPoster(parameters.GetValue<int>("posterId"), "bearer " + Settings.AuthToken);                    
                 }
             }
             catch (Refit.ApiException ex)

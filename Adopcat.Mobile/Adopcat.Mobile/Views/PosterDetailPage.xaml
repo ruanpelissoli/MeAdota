@@ -14,7 +14,7 @@
             <RowDefinition Height=".5*"/>
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
-        <cv:CarouselView ItemsSource="{Binding PetPictures}">
+        <cv:CarouselView ItemsSource="{Binding Poster.PetPictures}">
             <cv:CarouselView.ItemTemplate>
                 <DataTemplate>
                     <Grid>
@@ -31,10 +31,27 @@
                      Padding="10"
                      VerticalOptions="FillAndExpand"
                      HorizontalOptions="FillAndExpand">
-            <Label Text="{Binding Poster.PetName}" />
-            <Label Text="{Binding Poster.Country}" />
-            <Label Text="{Binding Poster.State}" />
-            <Label Text="{Binding Poster.City}" />
+            <StackLayout Orientation="Horizontal" 
+                         HorizontalOptions="StartAndExpand">
+                <Label Text="Nome:" FontAttributes="Bold" HorizontalOptions="Start"/>
+                <Label Text="{Binding Poster.PetName}" HorizontalOptions="EndAndExpand" HorizontalTextAlignment="End" />
+            </StackLayout>
+            <StackLayout Orientation="Horizontal" 
+                         HorizontalOptions="StartAndExpand">
+                <Label Text="Cidade:" FontAttributes="Bold" HorizontalOptions="Start"/>
+                <Label Text="{Binding Poster.City}" HorizontalOptions="EndAndExpand" HorizontalTextAlignment="End" />
+            </StackLayout>
+            <Label Text="Informações do Usuário:" FontAttributes="Bold" />
+            <StackLayout Orientation="Horizontal" 
+                         HorizontalOptions="StartAndExpand">
+                <Label Text="Nome:" FontAttributes="Bold" HorizontalOptions="Start"/>
+                <Label Text="{Binding Path=Poster.User.Name}" HorizontalOptions="EndAndExpand" HorizontalTextAlignment="End" />
+            </StackLayout>
+            <StackLayout Orientation="Horizontal" 
+                         HorizontalOptions="StartAndExpand">
+                <Label Text="Telefone:" FontAttributes="Bold" HorizontalOptions="Start"/>
+                <Label Text="{Binding Path=Poster.User.Phone}" HorizontalOptions="EndAndExpand" HorizontalTextAlignment="End" />
+            </StackLayout>
             <StackLayout VerticalOptions="EndAndExpand">
                 <Button Text="Entre em contato" VerticalOptions="EndAndExpand" HorizontalOptions="FillAndExpand" />
             </StackLayout>
