@@ -54,9 +54,7 @@
     <Compile Include="Util\ApplicationParameters.cs" />
     <Compile Include="Util\ByteToImageFieldConverter.cs" />
     <Compile Include="ViewModels\BaseViewModel.cs" />
-    <Compile Include="ViewModels\ConfigurationPageViewModel.cs" />
     <Compile Include="ViewModels\FilterPageViewModel.cs" />
-    <Compile Include="ViewModels\LoginDataPageViewModel.cs" />
     <Compile Include="ViewModels\LoginPageViewModel.cs" />
     <Compile Include="ViewModels\MenuPageViewModel.cs" />
     <Compile Include="ViewModels\MyPostersPageViewModel.cs" />
@@ -64,14 +62,8 @@
     <Compile Include="ViewModels\PosterDetailPageViewModel.cs" />
     <Compile Include="ViewModels\PostersPageViewModel.cs" />
     <Compile Include="ViewModels\RegisterPageViewModel.cs" />
-    <Compile Include="Views\ConfigurationPage.xaml.cs">
-      <DependentUpon>ConfigurationPage.xaml</DependentUpon>
-    </Compile>
     <Compile Include="Views\FilterPage.xaml.cs">
       <DependentUpon>FilterPage.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="Views\LoginDataPage.xaml.cs">
-      <DependentUpon>LoginDataPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="Views\LoginPage.xaml.cs">
       <DependentUpon>LoginPage.xaml</DependentUpon>
@@ -218,12 +210,6 @@
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Views\LoginDataPage.xaml">
-      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
-  </ItemGroup>
-  <ItemGroup>
     <EmbeddedResource Include="Views\RegisterPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
       <SubType>Designer</SubType>
@@ -237,12 +223,6 @@
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Views\NewPosterPage.xaml">
-      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="Views\ConfigurationPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
       <SubType>Designer</SubType>
     </EmbeddedResource>

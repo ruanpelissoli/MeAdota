@@ -4,25 +4,28 @@
                   xmlns:prism="clr-namespace:Prism.Mvvm;assembly=Prism.Forms"
                   xmlns:b="clr-namespace:Prism.Behaviors;assembly=Prism.Forms"
                   prism:ViewModelLocator.AutowireViewModel="True"
+                  xmlns:roundimage="clr-namespace:ImageCircle.Forms.Plugin.Abstractions;assembly=ImageCircle.Forms.Plugin.Abstractions"
                   x:Class="Adopcat.Mobile.Views.MenuPage">
     <MasterDetailPage.Master>
         <ContentPage Title="Menu">
             <StackLayout VerticalOptions="FillAndExpand">
-                <StackLayout BackgroundColor="{StaticResource AppDefaultColor}"
-                             Orientation="Horizontal"
+                <StackLayout BackgroundColor="#00ad97"
                              HorizontalOptions="FillAndExpand"
-                             VerticalOptions="Start">
-                    <Image Source="{Binding User.PictureUrl}" 
+                             VerticalOptions="Start"
+                             Padding="10">
+                    <roundimage:CircleImage Source="{Binding User.PictureUrl}" 
                            HorizontalOptions="Center"
-                           Aspect="Fill"
-                           HeightRequest="50"
-                           WidthRequest="50" />
+                           Aspect="AspectFit"
+                           HeightRequest="100"
+                           WidthRequest="100" />
                     <Label Text="{Binding User.Name}" 
-                           HorizontalOptions="StartAndExpand"
+                           HorizontalOptions="FillAndExpand"
                            VerticalTextAlignment="Center"
+                           HorizontalTextAlignment="Center"
+                           FontSize="Medium"
                            TextColor="White" />
                 </StackLayout>
-                <Label Text="Menu" FontSize="Medium" FontAttributes="Bold" />
+                <Label Text="Menu" FontSize="Medium" FontAttributes="Bold" Margin="10, 0" />
                 <ListView
                     VerticalOptions="FillAndExpand"
                     ItemsSource="{Binding MenuItems}"
@@ -31,7 +34,7 @@
                         <DataTemplate>
                             <ViewCell>
                                 <StackLayout Orientation="Horizontal" Padding="10">
-                                    <Image Source="{Binding Icon}" WidthRequest="16" HeightRequest="16" HorizontalOptions="Start"/>
+                                    <Image Source="{Binding Icon}" WidthRequest="24" HeightRequest="24" HorizontalOptions="Start"/>
                                     <Label Text="{Binding Text}" HorizontalOptions="StartAndExpand" VerticalTextAlignment="Center" />
                                 </StackLayout>
                             </ViewCell>

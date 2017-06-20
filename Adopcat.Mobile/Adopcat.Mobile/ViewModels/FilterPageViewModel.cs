@@ -4,6 +4,7 @@ using Prism.Services;
 using System.Collections.ObjectModel;
 using System;
 using Adopcat.Mobile.Models;
+using Adopcat.Mobile.Views;
 
 namespace Adopcat.Mobile.ViewModels
 {
@@ -100,12 +101,12 @@ namespace Adopcat.Mobile.ViewModels
             filter.DeliverToAdopter = DeliverToAdopter;
             filter.City = City;
 
-            var paramenters = new NavigationParameters
+            var parameters = new NavigationParameters
             {
                 { "filter", filter }
             };
 
-            await _navigationService.GoBackAsync(paramenters);
+            await _navigationService.NavigateAsync($"{nameof(PostersPage)}", parameters);
         }
 
         private void PetTypeSelectCommandExecute(string petType)

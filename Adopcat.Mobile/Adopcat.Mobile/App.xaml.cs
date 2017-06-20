@@ -46,11 +46,9 @@ namespace Adopcat.Mobile
             Container.RegisterTypeForNavigation<NavigationPage>();
             Container.RegisterTypeForNavigation<MenuPage, MenuPageViewModel>();
             Container.RegisterTypeForNavigation<LoginPage, LoginPageViewModel>();
-            Container.RegisterTypeForNavigation<LoginDataPage, LoginDataPageViewModel>();
             Container.RegisterTypeForNavigation<RegisterPage, RegisterPageViewModel>();
             Container.RegisterTypeForNavigation<PostersPage, PostersPageViewModel>();
             Container.RegisterTypeForNavigation<NewPosterPage, NewPosterPageViewModel>();
-            Container.RegisterTypeForNavigation<ConfigurationPage, ConfigurationPageViewModel>();
             Container.RegisterTypeForNavigation<MyPostersPage, MyPostersPageViewModel>();
             Container.RegisterTypeForNavigation<FilterPage, FilterPageViewModel>();
             Container.RegisterTypeForNavigation<PosterDetailPage>();

@@ -23,7 +23,7 @@ namespace Adopcat.API.Filters
                 {
                     if (((BaseApiController)actionContext.ControllerContext.Controller).Token == null && actionContext.ActionDescriptor.ActionName != "Logout")
                         authenticationService.RefreshToken(token);
-                    ((BaseApiController)actionContext.ControllerContext.Controller).Token = token;
+                    ((BaseApiController)actionContext.ControllerContext.Controller).Token = token.Access_token;
                 }
                 else
                     authenticationService.RefreshToken(token);

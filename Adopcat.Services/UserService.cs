@@ -12,12 +12,12 @@ namespace Adopcat.Services
     public class UserService : BaseService, IUserService
     {
         private IUserRepository _userRepository;
-        
+
         private readonly IApplicationParameterRepository _applicationParameterRepository;
         private IAuthenticationService _authService;
 
-        public UserService(ILoggingService log, 
-                           IUserRepository userRepository, 
+        public UserService(ILoggingService log,
+                           IUserRepository userRepository,
                            IApplicationParameterRepository applicationParameterRepository,
                            IAuthenticationService authService) : base(log)
         {
@@ -94,6 +94,14 @@ namespace Adopcat.Services
             });
         }
 
+        public async Task Update(User model)
+        {
+            await TryCatch(async () =>
+            {
+                await _userRepository.UpdateAsync(model);
+            });
+        }
+
         public async Task<bool> EmailExists(int idUser, string email)
         {
             return await TryCatch(async () =>
@@ -108,7 +116,7 @@ namespace Adopcat.Services
             return await TryCatch(async () =>
             {
                 var token = _authService.GetByAccessToken(authToken);
-                return await _userRepository.FindAsync(token.UserId);                
+                return await _userRepository.FindAsync(token.UserId);
             });
         }
     }

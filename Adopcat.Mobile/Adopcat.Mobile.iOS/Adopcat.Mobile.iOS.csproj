@@ -227,7 +227,19 @@
     <BundleResource Include="Resources\icon_delete.png" />
   </ItemGroup>
   <ItemGroup>
-    <BundleResource Include="Resources\icon_menu_config.png" />
+    <BundleResource Include="Resources\icon_checked.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\icon_not_checked.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\icon_left_arrow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\icon_right_arrow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\login_bg.jpg" />
   </ItemGroup>
   <ItemGroup>
     <BundleResource Include="Resources\icon_menu_myposters.png" />
@@ -239,22 +251,7 @@
     <BundleResource Include="Resources\icon_menu_posters.png" />
   </ItemGroup>
   <ItemGroup>
-    <BundleResource Include="Resources\icon_checked.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <BundleResource Include="Resources\icon_not_checked.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <BundleResource Include="Resources\icon_left_arrow.png" />
-  </ItemGroup>
-  <ItemGroup>
     <BundleResource Include="Resources\icon_logout.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <BundleResource Include="Resources\icon_right_arrow.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <BundleResource Include="Resources\login_bg.jpg" />
   </ItemGroup>
   <ItemGroup>
     <BundleResource Include="Resources\icon_filter.png" />

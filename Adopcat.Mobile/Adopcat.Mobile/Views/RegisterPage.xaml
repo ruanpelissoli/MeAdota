@@ -15,20 +15,20 @@
                  VerticalOptions="FillAndExpand"
                  HorizontalOptions="FillAndExpand">
         <StackLayout VerticalOptions="Start"
-                     HorizontalOptions="Center">
-            <Image Source="{Binding Image, Converter={StaticResource Key=ByteArrayToImage}}"  
+                     HorizontalOptions="FillAndExpand">
+            <Image Source="{Binding Image, Converter={StaticResource Key=ByteArrayToImage}}"
+                   HorizontalOptions="Center"
                    BackgroundColor="Gray" 
                    HeightRequest="150"
                    WidthRequest="150"
                    Aspect="AspectFit" />
-            <Button Text="Escolher foto" Command="{Binding PickPhotoCommand}"/>
+            <Button Text="Escolher foto" Command="{Binding PickPhotoCommand}" Style="{StaticResource SecondaryButton}" />
         </StackLayout>
         <Entry Placeholder="Nome" Text="{Binding Name}" />
         <Entry Placeholder="E-mail" Text="{Binding Email}" />
         <Entry Placeholder="Senha" IsPassword="True" Text="{Binding Password}" />
         <Entry Placeholder="Confirmacao de senha" IsPassword="True" Text="{Binding PasswordConfirm}" />
         <Entry Placeholder="Telefone" Text="{Binding Phone}" />
-        <Button Text="Registrar" Command="{Binding RegisterCommand}" />
-        <ActivityIndicator IsVisible="{Binding ShowLoading}" IsRunning="{Binding ShowLoading}" Color="Black" />
+        <Button Text="Registrar" Command="{Binding RegisterCommand}" Style="{StaticResource DefaultButton}"  HorizontalOptions="FillAndExpand" />        
     </StackLayout>
 </ContentPage>

@@ -57,7 +57,8 @@ namespace Adopcat.API.Controllers
         [CustomAuthorize]
         public async Task<IHttpActionResult> Logout()
         {
-            await _authenticationService.KillToken(Token.Id);
+            var authToken = _authenticationService.GetByAccessToken(Token);
+            await _authenticationService.KillToken(authToken.Id);
             return Ok();
         }
     }

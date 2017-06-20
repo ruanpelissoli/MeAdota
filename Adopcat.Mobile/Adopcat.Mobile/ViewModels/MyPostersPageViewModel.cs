@@ -36,7 +36,7 @@ namespace Adopcat.Mobile.ViewModels
             try
             {
                 MyPosters = new ObservableCollection<PosterOutput>(
-                                    await App.ApiService.GetMyPosters(int.Parse(Settings.UserId), Settings.AuthToken));
+                                    await App.ApiService.GetMyPosters(Settings.AuthToken));
 
                 foreach (var poster in MyPosters)
                 {

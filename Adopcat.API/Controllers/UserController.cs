@@ -2,6 +2,7 @@
 using Adopcat.API.Models;
 using Adopcat.Model;
 using Adopcat.Services.Interfaces;
+using System.Linq;
 using System.Threading.Tasks;
 using System.Web.Http;
 
@@ -72,6 +73,28 @@ namespace Adopcat.API.Controllers
             user = await _userService.UpdateOrCreateAsync(user);
 
             return Ok(user);
+        }
+
+        [HttpPut]
+        [CustomAuthorize]
+        public async Task<IHttpActionResult> Update(string email, UserViewModel model)
+        {
+            if (!ModelState.IsValid)
+                return BadRequest();
+
+            var token = Request.Headers.GetValues("Authorization").FirstOrDefault();
+            if (token == null || !token.Any()) return Unauthorized();
+
+            var user = await _userService.GetByToken(token.Replace("bearer ", ""));
+
+            if (user == null || !user.Email.Equals(email)) return Unauthorized();
+
+            user.PictureUrl = model.PictureUrl;
+            user.Phone = model.Phone;
+
+            await _userService.Update(user);
+
+            return Ok();
         }
     }
 }

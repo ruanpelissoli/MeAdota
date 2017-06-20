@@ -13,5 +13,6 @@ namespace Adopcat.Services.Interfaces
         Task<bool> Deactivate(int idUser);
         Task<User> UpdateOrCreateAsync(User model);
         Task<bool> EmailExists(int idUser, string email);
+        Task Update(User model);
     }
 }

@@ -31,23 +31,26 @@ namespace Adopcat.Mobile.Interfaces
 
         [Post("/user/fb")]
         Task<User> CreateFacebookUser(User model);
+
+        [Put("/user")]
+        Task UpdateUser(string email, User model, [Header("Authorization")] string token);
         #endregion
 
         #region Poster
         [Get("/poster")]
-        Task<PosterOutput> GetPoster(int id, [Header("Authorization")] string token);
+        Task<PosterOutput> GetPoster(int posterId, [Header("Authorization")] string token);
 
         [Get("/poster")]
-        Task<List<PosterOutput>> GetPosters(int userId, [Header("Authorization")] string token);
+        Task<List<PosterOutput>> GetPosters([Header("Authorization")] string token);
 
         [Get("/poster/filter")]
-        Task<List<PosterOutput>> GetFilteredPosters(int userId, Filter filter, [Header("Authorization")] string token);
+        Task<List<PosterOutput>> GetFilteredPosters(string city, int? petType, bool? castrated, bool? dewormed, [Header("Authorization")] string token);
 
         [Get("/poster/my")]
-        Task<List<PosterOutput>> GetMyPosters(int userId, [Header("Authorization")] string token);
+        Task<List<PosterOutput>> GetMyPosters([Header("Authorization")] string token);
 
         [Post("/poster")]
-        Task<PosterOutput> CreatePoster(PosterInput poster, [Header("Authorization")] string token);
+        Task<PosterOutput> CreatePoster(PosterInput poster, [Header("Authorization")] string token);        
         #endregion
     }
 

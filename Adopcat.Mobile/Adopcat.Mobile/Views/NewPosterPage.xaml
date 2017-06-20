@@ -49,23 +49,24 @@
                         </DataTemplate>
                     </ListView.ItemTemplate>
                 </ListView>
-                <Button Text="Adicionar foto" Command="{Binding PickPhotoCommand}" />
+                <Button Text="Adicionar foto" Command="{Binding PickPhotoCommand}" Style="{StaticResource SecondaryButton}" />
             </StackLayout>
             <Entry Placeholder="Nome" Text="{Binding PetName}" />
-            <Picker ItemsSource="{Binding PetTypeList}" SelectedIndexChanged="Picker_SelectedIndexChanged" />
             <StackLayout Orientation="Horizontal">
-                <Label Text="Castrado?" HorizontalOptions="StartAndExpand" />
+                <Label Text="Tipo:" Style="{StaticResource TitleLabel}" HorizontalOptions="Start"/>
+                <Picker ItemsSource="{Binding PetTypeList}" 
+                    SelectedIndexChanged="Picker_SelectedIndexChanged" 
+                    HorizontalOptions="FillAndExpand" />
+            </StackLayout>           
+            <StackLayout Orientation="Horizontal">
+                <Label Text="Castrado?" HorizontalOptions="StartAndExpand" Style="{StaticResource TitleLabel}" />
                 <Switch IsToggled="{Binding IsCastrated}" HorizontalOptions="End"/>
             </StackLayout>
             <StackLayout Orientation="Horizontal">
-                <Label Text="Vermifugado?" HorizontalOptions="StartAndExpand" />
+                <Label Text="Vermifugado?" HorizontalOptions="StartAndExpand" Style="{StaticResource TitleLabel}" />
                 <Switch IsToggled="{Binding IsDewormed}" HorizontalOptions="End"/>
             </StackLayout>
-            <StackLayout Orientation="Horizontal">
-                <Label Text="Leva até o adotante?" HorizontalOptions="StartAndExpand" />
-                <Switch IsToggled="{Binding DeliverToAdopter}" HorizontalOptions="End"/>
-            </StackLayout>
-            <Button Text="Criar Anúncio" Command="{Binding CreatePosterCommand}" />
+            <Button Text="Criar Anúncio" Command="{Binding CreatePosterCommand}" Style="{StaticResource DefaultButton}" HorizontalOptions="FillAndExpand" />
         </StackLayout>
     </ScrollView>
 </ContentPage>

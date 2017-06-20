@@ -54,16 +54,10 @@ namespace Adopcat.Mobile.ViewModels
             IsNotLastItem = true;
 
             if (Posters.First() == poster)
-            {
                 IsNotFirstItem = false;
-                return;
-            }
 
             if (Posters.Last() == poster)
-            {
                 IsNotLastItem = false;
-                return;
-            }
         }
 
         private async void PosterSelectedCommandExecute(int? posterId)
@@ -80,7 +74,7 @@ namespace Adopcat.Mobile.ViewModels
 
         private async void FilterCommandExecute()
         {
-            await _navigationService.NavigateAsync($"NavigationPage/{nameof(FilterPage)}");
+            await _navigationService.NavigateAsync($"{nameof(FilterPage)}");
         }
 
         public async override void OnNavigatedTo(NavigationParameters parameters)
@@ -98,12 +92,13 @@ namespace Adopcat.Mobile.ViewModels
                 if (filter != null)
                 {
                     Posters = new ObservableCollection<PosterOutput>(
-                                    await App.ApiService.GetFilteredPosters(int.Parse(Settings.UserId), filter, "bearer " + Settings.AuthToken));
+                                    await App.ApiService.GetFilteredPosters(filter.City ?? string.Empty,
+                                        filter.PetType, filter.Castrated, filter.Dewormed, "bearer " + Settings.AuthToken));
                 }
                 else
                 {
                     Posters = new ObservableCollection<PosterOutput>(
-                                    await App.ApiService.GetPosters(int.Parse(Settings.UserId), "bearer " + Settings.AuthToken));
+                                    await App.ApiService.GetPosters("bearer " + Settings.AuthToken));
                 }
 
                 foreach (var poster in Posters)
