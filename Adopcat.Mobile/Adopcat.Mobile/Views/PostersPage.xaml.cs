@@ -26,7 +26,13 @@ namespace Adopcat.Mobile.Views
             var backArrow = currentPage.Content.FindByName<Image>("imgBackArrow");
             var frontArrow = currentPage.Content.FindByName<Image>("imgForwardArrow");
 
+            var castrated = currentPage.Content.FindByName<Image>("imgCastrated");
+            var dewormed = currentPage.Content.FindByName<Image>("imgDewormed");
+
             var selectedPoster = SelectedItem as PosterOutput;
+
+            castrated.Source = selectedPoster.Castrated ? ImageSource.FromFile("icon_checked.png") : ImageSource.FromFile("icon_not_checked.png");
+            dewormed.Source = selectedPoster.Dewormed ? ImageSource.FromFile("icon_checked.png") : ImageSource.FromFile("icon_not_checked.png");
 
             if (selectedPoster == null) return;
             ViewModel.ShowCarouselArrowsCommand.Execute(selectedPoster);

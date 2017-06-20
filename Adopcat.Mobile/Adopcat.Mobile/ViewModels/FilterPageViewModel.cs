@@ -86,9 +86,9 @@ namespace Adopcat.Mobile.ViewModels
             DeliverToAdopter = false;
         }
 
-        private void ClearFilterCommandExecute()
+        private async void ClearFilterCommandExecute()
         {
-            _navigationService.GoBackAsync(null);
+            await _navigationService.GoBackAsync(null, true);
         }
 
         private async void FilterCommandExecute()
@@ -106,12 +106,22 @@ namespace Adopcat.Mobile.ViewModels
                 { "filter", filter }
             };
 
-            await _navigationService.NavigateAsync($"{nameof(PostersPage)}", parameters);
+            await _navigationService.GoBackAsync(parameters, true);
         }
 
         private void PetTypeSelectCommandExecute(string petType)
         {
             PetType = petType;
+        }
+
+        public override void OnNavigatedTo(NavigationParameters parameters)
+        {
+            base.OnNavigatedTo(parameters);
+        }
+
+        public override void OnNavigatedFrom(NavigationParameters parameters)
+        {
+            base.OnNavigatedFrom(parameters);
         }
     }
 }

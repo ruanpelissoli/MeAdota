@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:prism="clr-namespace:Prism.Mvvm;assembly=Prism.Forms"
+             prism:ViewModelLocator.AutowireViewModel="True"
+             x:Class="Adopcat.Mobile.Views.EditMyPosterPage"
+             Title="{Binding Title}">
+    <ScrollView>
+        <!--<StackLayout VerticalOptions="FillAndExpand" Padding="10">
+            <StackLayout 
+                HorizontalOptions="Start">
+                <ListView
+                    HasUnevenRows="True"
+                    VerticalOptions="StartAndExpand"
+                    HeightRequest="200"
+                    ItemsSource="{Binding PetImages}"
+                    ItemSelected="ListView_ItemSelected">
+                    <ListView.ItemTemplate>
+                        <DataTemplate>
+                            <ViewCell>
+                                <StackLayout Orientation="Horizontal" Padding="5">
+                                    <Image 
+                                        Source="{Binding Image, Converter={StaticResource Key=ByteArrayToImage}}" 
+                                        HorizontalOptions="Start" 
+                                        HeightRequest="100" 
+                                        WidthRequest="100" />
+                                    <Image 
+                                        Source="icon_delete.png" 
+                                        Aspect="AspectFit" 
+                                        HorizontalOptions="EndAndExpand" 
+                                        HeightRequest="35" 
+                                        WidthRequest="35">
+                                        <Image.GestureRecognizers>
+                                            <TapGestureRecognizer 
+                                                NumberOfTapsRequired="1" 
+                                                Command="{Binding Path=BindingContext.DeletePetPictureCommand, Source={x:Reference MyPage}}" 
+                                                CommandParameter="{Binding Id}" />
+                                        </Image.GestureRecognizers>
+                                    </Image>
+                                </StackLayout>
+                            </ViewCell>
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                </ListView>
+                <Button Text="Adicionar foto" Command="{Binding PickPhotoCommand}" Style="{StaticResource SecondaryButton}" />
+            </StackLayout>
+            <Entry Placeholder="Nome" Text="{Binding PetName}" />
+            <StackLayout Orientation="Horizontal">
+                <Label Text="Tipo:" Style="{StaticResource TitleLabel}" HorizontalOptions="Start"/>
+                <Picker ItemsSource="{Binding PetTypeList}" 
+                    SelectedIndexChanged="Picker_SelectedIndexChanged" 
+                    HorizontalOptions="FillAndExpand" />
+            </StackLayout>
+            <StackLayout Orientation="Horizontal">
+                <Label Text="Castrado?" HorizontalOptions="StartAndExpand" Style="{StaticResource TitleLabel}" />
+                <Switch IsToggled="{Binding IsCastrated}" HorizontalOptions="End"/>
+            </StackLayout>
+            <StackLayout Orientation="Horizontal">
+                <Label Text="Vermifugado?" HorizontalOptions="StartAndExpand" Style="{StaticResource TitleLabel}" />
+                <Switch IsToggled="{Binding IsDewormed}" HorizontalOptions="End"/>
+            </StackLayout>
+            <Button Text="Criar Anúncio" Command="{Binding CreatePosterCommand}" Style="{StaticResource DefaultButton}" HorizontalOptions="FillAndExpand" />
+        </StackLayout>-->
+    </ScrollView>
+</ContentPage>

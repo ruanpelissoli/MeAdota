@@ -5,16 +5,21 @@
              prism:ViewModelLocator.AutowireViewModel="True"
              x:Class="Adopcat.Mobile.Views.PosterDetailPage"
              xmlns:cv="clr-namespace:Xamarin.Forms;assembly=Xamarin.Forms.CarouselView"
+             xmlns:control="clr-namespace:Adopcat.Mobile.Controls"
              Title="{Binding Poster.PetName}">
     <ContentPage.ToolbarItems>
         <ToolbarItem Order="Secondary" Text="Denunciar Anúncio" Command="{Binding ReportPosterCommand}" />
     </ContentPage.ToolbarItems>
     <Grid RowSpacing="0">
         <Grid.RowDefinitions>
-            <RowDefinition Height=".5*"/>
+            <RowDefinition Height="250"/>
+            <RowDefinition Height=".2*"/>
             <RowDefinition Height="*"/>
+            <RowDefinition Height=".3*"/>
         </Grid.RowDefinitions>
-        <cv:CarouselView ItemsSource="{Binding Poster.PetPictures}">
+        <cv:CarouselView Grid.Row="0"
+                         ItemsSource="{Binding Poster.PetPictures}"
+                         PositionSelected="CarouselView_PositionSelected">
             <cv:CarouselView.ItemTemplate>
                 <DataTemplate>
                     <Grid>
@@ -27,34 +32,81 @@
                 </DataTemplate>
             </cv:CarouselView.ItemTemplate>
         </cv:CarouselView>
-        <StackLayout Grid.Row="1"
+        <StackLayout Grid.Row="1" 
+                     VerticalOptions="Center"
+                     HorizontalOptions="CenterAndExpand"
+                     Padding="0, 8">
+            <control:CarouselIndicators IndicatorHeight="16" 
+                                        IndicatorWidth="16"
+                                        UnselectedIndicator="unselected_circle.png" 
+                                        SelectedIndicator="selected_circle.png" 
+                                        Position="{Binding Position}" 
+                                        ItemsSource="{Binding Poster.PetPictures}" />
+        </StackLayout>
+        <StackLayout Grid.Row="2"
                      Padding="10"
+                     Orientation="Horizontal"
                      VerticalOptions="FillAndExpand"
                      HorizontalOptions="FillAndExpand">
-            <StackLayout Orientation="Horizontal" 
+            <StackLayout HorizontalOptions="FillAndExpand">
+                <StackLayout Orientation="Horizontal" 
+                             HorizontalOptions="StartAndExpand">
+                    <Label Text="Nome:" FontAttributes="Bold" HorizontalOptions="Start" Style="{StaticResource TitleLabel}"/>
+                    <Label Text="{Binding Poster.PetName}" HorizontalOptions="EndAndExpand" HorizontalTextAlignment="End" />
+                </StackLayout>
+                <StackLayout Orientation="Horizontal">
+                    <Label Text="Castrado:" HorizontalOptions="StartAndExpand" Style="{StaticResource TitleLabel}" />
+                    <Image  Source="{Binding ImgCastrated}" HorizontalOptions="End" HeightRequest="20" WidthRequest="20" />
+                </StackLayout>
+                <StackLayout Orientation="Horizontal">
+                    <Label Text="Vermifugado:" HorizontalOptions="StartAndExpand" Style="{StaticResource TitleLabel}" />
+                    <Image  Source="{Binding ImgDewormed}" HorizontalOptions="End" HeightRequest="20" WidthRequest="20" />
+                </StackLayout>
+                <StackLayout Orientation="Horizontal" 
+                             HorizontalOptions="StartAndExpand">
+                    <Label Text="Estado:" FontAttributes="Bold" HorizontalOptions="Start" Style="{StaticResource TitleLabel}"/>
+                    <Label Text="{Binding Poster.State}" HorizontalOptions="EndAndExpand" HorizontalTextAlignment="End" />
+                </StackLayout>
+                <StackLayout Orientation="Horizontal" 
+                             HorizontalOptions="StartAndExpand">
+                    <Label Text="Cidade:" FontAttributes="Bold" HorizontalOptions="Start" Style="{StaticResource TitleLabel}"/>
+                    <Label Text="{Binding Poster.City}" HorizontalOptions="EndAndExpand" HorizontalTextAlignment="End" />
+                </StackLayout>              
+            </StackLayout>
+            <BoxView WidthRequest="10" HeightRequest="300" VerticalOptions="FillAndExpand"></BoxView>
+            <StackLayout HorizontalOptions="FillAndExpand">
+                <StackLayout Orientation="Horizontal" 
                          HorizontalOptions="StartAndExpand">
-                <Label Text="Nome:" FontAttributes="Bold" HorizontalOptions="Start"/>
-                <Label Text="{Binding Poster.PetName}" HorizontalOptions="EndAndExpand" HorizontalTextAlignment="End" />
-            </StackLayout>
-            <StackLayout Orientation="Horizontal" 
+                    <Label Text="Nome:" FontAttributes="Bold" HorizontalOptions="Start"/>
+                    <Label Text="{Binding Poster.PetName}" HorizontalOptions="EndAndExpand" HorizontalTextAlignment="End" />
+                </StackLayout>
+                <StackLayout Orientation="Horizontal" 
                          HorizontalOptions="StartAndExpand">
-                <Label Text="Cidade:" FontAttributes="Bold" HorizontalOptions="Start"/>
-                <Label Text="{Binding Poster.City}" HorizontalOptions="EndAndExpand" HorizontalTextAlignment="End" />
-            </StackLayout>
-            <Label Text="Informações do Usuário:" FontAttributes="Bold" />
-            <StackLayout Orientation="Horizontal" 
+                    <Label Text="Cidade:" FontAttributes="Bold" HorizontalOptions="Start"/>
+                    <Label Text="{Binding Poster.City}" HorizontalOptions="EndAndExpand" HorizontalTextAlignment="End" />
+                </StackLayout>
+                <Label Text="Informações do Usuário:" FontAttributes="Bold" />
+                <StackLayout Orientation="Horizontal" 
                          HorizontalOptions="StartAndExpand">
-                <Label Text="Nome:" FontAttributes="Bold" HorizontalOptions="Start"/>
-                <Label Text="{Binding Path=Poster.User.Name}" HorizontalOptions="EndAndExpand" HorizontalTextAlignment="End" />
-            </StackLayout>
-            <StackLayout Orientation="Horizontal" 
+                    <Label Text="Nome:" FontAttributes="Bold" HorizontalOptions="Start"/>
+                    <Label Text="{Binding Path=Poster.User.Name}" HorizontalOptions="EndAndExpand" HorizontalTextAlignment="End" />
+                </StackLayout>
+                <StackLayout Orientation="Horizontal" 
                          HorizontalOptions="StartAndExpand">
-                <Label Text="Telefone:" FontAttributes="Bold" HorizontalOptions="Start"/>
-                <Label Text="{Binding Path=Poster.User.Phone}" HorizontalOptions="EndAndExpand" HorizontalTextAlignment="End" />
-            </StackLayout>
-            <StackLayout VerticalOptions="EndAndExpand">
-                <Button Text="Entre em contato" VerticalOptions="EndAndExpand" HorizontalOptions="FillAndExpand" />
-            </StackLayout>
+                    <Label Text="Telefone:" FontAttributes="Bold" HorizontalOptions="Start"/>
+                    <Label Text="{Binding Path=Poster.User.Phone}" HorizontalOptions="EndAndExpand" HorizontalTextAlignment="End" />
+                </StackLayout>
+            </StackLayout>            
+        </StackLayout>
+        <StackLayout 
+                Padding="5"
+                Grid.Row="3"
+                VerticalOptions="End">
+            <Button Text="Entre em contato" 
+                        Style="{StaticResource DefaultButton}"
+                        Command="{Binding CallCommand}" 
+                        VerticalOptions="EndAndExpand" 
+                        HorizontalOptions="FillAndExpand" />
         </StackLayout>
     </Grid>
 </ContentPage>

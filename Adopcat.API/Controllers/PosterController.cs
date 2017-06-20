@@ -24,9 +24,9 @@ namespace Adopcat.API.Controllers
         }
 
         [HttpGet]
-        public async Task<IHttpActionResult> Get(int idPoster)
+        public async Task<IHttpActionResult> Get(int id)
         {
-            var poster = await _posterService.GetAsync(idPoster).ConfigureAwait(false);
+            var poster = await _posterService.GetAsync(id).ConfigureAwait(false);
 
             if (poster == null) return BadRequest();
             return Ok(MappingConfig.Mapper().Map<PosterOutputDTO>(poster));

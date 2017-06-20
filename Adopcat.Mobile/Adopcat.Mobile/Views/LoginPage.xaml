@@ -18,19 +18,23 @@
             RelativeLayout.HeightConstraint="{ConstraintExpression Type=RelativeToParent, Property=Height}">
             <StackLayout 
                 VerticalOptions="FillAndExpand"
-                HorizontalOptions="CenterAndExpand">
-                <StackLayout VerticalOptions="CenterAndExpand">
-                    <Label Text="E-mail" Style="{StaticResource TitleLabel}" />
+                HorizontalOptions="FillAndExpand">
+                <StackLayout VerticalOptions="CenterAndExpand" Padding="20, 0">
+                    <Label Text="E-mail" Style="{StaticResource TitleLabel}" FontSize="Medium" />
                     <Entry Text="{Binding Email}" BackgroundColor="White" Opacity="0.5" />
-                    <Label Text="Senha" Style="{StaticResource TitleLabel}" />
+                    <Label Text="Senha" Style="{StaticResource TitleLabel}" FontSize="Medium" />
                     <Entry IsPassword="True" Text="{Binding Password}" BackgroundColor="White" Opacity="0.5" />
                     <Button Text="Login" Command="{Binding LoginCommand}" Style="{StaticResource DefaultButton}" HorizontalOptions="FillAndExpand" />
                     <Label Text="ou" Style="{StaticResource TitleLabel}" HorizontalTextAlignment="Center" />
-                    <Button Text="Login com Facebook" Command="{Binding FacebookLoginCommand}" Style="{StaticResource DefaultButton}" />
+                    <Button Text="Login com Facebook" Command="{Binding FacebookLoginCommand}" Style="{StaticResource DefaultButton}" HorizontalOptions="FillAndExpand" />
                     <ActivityIndicator IsVisible="{Binding ShowLoading}" IsRunning="{Binding ShowLoading}" Color="#00ad97" />
                 </StackLayout>               
-                <StackLayout VerticalOptions="End" HorizontalOptions="CenterAndExpand" Padding="10">
-                    <Label Text="Cadastre-se" Style="{StaticResource TitleLabel}" FontSize="Medium">
+                <StackLayout VerticalOptions="End" 
+                             HorizontalOptions="FillAndExpand" 
+                             Padding="10"
+                             BackgroundColor="White"
+                             Opacity="0.8">
+                    <Label Text="Cadastre-se" Style="{StaticResource TitleLabel}" FontSize="Medium" HorizontalTextAlignment="Center">
                         <Label.GestureRecognizers>
                             <TapGestureRecognizer NumberOfTapsRequired="1" Command="{Binding RegisterCommand}"></TapGestureRecognizer>
                         </Label.GestureRecognizers>

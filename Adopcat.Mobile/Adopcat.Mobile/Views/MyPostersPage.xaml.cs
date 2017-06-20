@@ -17,8 +17,13 @@ namespace Adopcat.Mobile.Views
 
         private void ListView_ItemTapped(object sender, ItemTappedEventArgs e)
         {
-            var poster = ((sender as ListView).SelectedItem as Models.PosterOutput);
+            var listView = (sender as ListView);
+            if (listView.SelectedItem == null) return;
+
+            var poster = listView.SelectedItem as Models.PosterOutput;
             ViewModel.SelectedPosterCommand.Execute(poster.Id);
+
+            listView.SelectedItem = null;
         }
     }
 }

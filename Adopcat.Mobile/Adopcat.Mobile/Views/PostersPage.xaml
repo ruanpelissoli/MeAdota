@@ -22,16 +22,16 @@
                         <RowDefinition Height="*" />
                     </Grid.RowDefinitions>
                     <Grid.ColumnDefinitions>
-                        <ColumnDefinition Width="20" />
+                        <ColumnDefinition Width="30" />
                         <ColumnDefinition Width="*" />
-                        <ColumnDefinition Width="20" />
+                        <ColumnDefinition Width="30" />
                     </Grid.ColumnDefinitions>
                     <Image x:Name="imgBackArrow" 
                            Source="icon_left_arrow.png" 
                            Grid.Column="0" 
                            VerticalOptions="Center" 
-                           WidthRequest="20" 
-                           HeightRequest="20"/>
+                           WidthRequest="30" 
+                           HeightRequest="30"/>
                     <StackLayout 
                         Grid.Column="1"
                         Padding="20"
@@ -39,7 +39,7 @@
                         VerticalOptions="FillAndExpand">
                         <Label Text="{Binding PetName}" 
                            FontAttributes="Bold" 
-                           FontSize="Medium"
+                           FontSize="Large"
                            HorizontalTextAlignment="Center"/>
                         <StackLayout.GestureRecognizers>
                             <TapGestureRecognizer 
@@ -52,27 +52,29 @@
                            Aspect="AspectFill"
                            HeightRequest="250" 
                            WidthRequest="250" />
-                        <StackLayout Orientation="Horizontal">
-                            <Label Text="Castrado" HorizontalOptions="StartAndExpand" FontSize="Small" />
-                            <Image Source="icon_checked.png" HorizontalOptions="End" HeightRequest="20" WidthRequest="20" />
+                        <StackLayout Orientation="Horizontal" Padding="0, 5">
+                            <Label Text="Castrado" HorizontalOptions="StartAndExpand" Style="{StaticResource TitleLabel}" />
+                            <Image x:Name="imgCastrated" HorizontalOptions="End" HeightRequest="20" WidthRequest="20" />
                         </StackLayout>
-                        <StackLayout Orientation="Horizontal">
-                            <Label Text="Vermifugado" HorizontalOptions="StartAndExpand" FontSize="Small"/>
-                            <Image Source="icon_checked.png" HorizontalOptions="End" HeightRequest="20" WidthRequest="20" />
+                        <StackLayout Orientation="Horizontal" Padding="0, 5">
+                            <Label Text="Vermifugado" HorizontalOptions="StartAndExpand" Style="{StaticResource TitleLabel}" />
+                            <Image x:Name="imgDewormed" HorizontalOptions="End" HeightRequest="20" WidthRequest="20" />
                         </StackLayout>
-                        <StackLayout Orientation="Horizontal">
-                            <Label Text="Entrega" HorizontalOptions="StartAndExpand" FontSize="Small"/>
-                            <Image Source="icon_checked.png" HorizontalOptions="End" HeightRequest="20" WidthRequest="20" />
+                        <StackLayout Orientation="Horizontal" Padding="0, 5">
+                            <Label Text="Estado:" Style="{StaticResource TitleLabel}" HorizontalOptions="StartAndExpand" />
+                            <Label Text="{Binding State}" FontAttributes="Bold" HorizontalOptions="End" />
                         </StackLayout>
-                        <Label Text="Cidade:" FontSize="Small"/>
-                        <Label Text="{Binding City}" FontAttributes="Bold" FontSize="Small"/>
+                        <StackLayout Orientation="Horizontal" Padding="0, 5">
+                            <Label Text="Cidade:" Style="{StaticResource TitleLabel}" HorizontalOptions="StartAndExpand" />
+                            <Label Text="{Binding City}" FontAttributes="Bold" HorizontalOptions="End" />
+                        </StackLayout>
                     </StackLayout>
                     <Image x:Name="imgForwardArrow" 
                            Source="icon_right_arrow.png" 
                            Grid.Column="2" 
                            VerticalOptions="Center" 
-                           WidthRequest="20" 
-                           HeightRequest="20" />
+                           WidthRequest="30" 
+                           HeightRequest="30" />
                 </Grid>
             </ContentPage>
         </DataTemplate>

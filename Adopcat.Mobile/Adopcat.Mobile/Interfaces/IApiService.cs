@@ -38,7 +38,7 @@ namespace Adopcat.Mobile.Interfaces
 
         #region Poster
         [Get("/poster")]
-        Task<PosterOutput> GetPoster(int posterId, [Header("Authorization")] string token);
+        Task<PosterOutput> GetPoster(int id, [Header("Authorization")] string token);
 
         [Get("/poster")]
         Task<List<PosterOutput>> GetPosters([Header("Authorization")] string token);

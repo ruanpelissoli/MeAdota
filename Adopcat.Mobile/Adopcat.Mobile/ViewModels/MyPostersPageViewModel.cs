@@ -1,5 +1,6 @@
 ﻿using Adopcat.Mobile.Helpers;
 using Adopcat.Mobile.Models;
+using Adopcat.Mobile.Views;
 using Prism.Commands;
 using Prism.Navigation;
 using Prism.Services;
@@ -36,7 +37,7 @@ namespace Adopcat.Mobile.ViewModels
             try
             {
                 MyPosters = new ObservableCollection<PosterOutput>(
-                                    await App.ApiService.GetMyPosters(Settings.AuthToken));
+                                    await App.ApiService.GetMyPosters("bearer " + Settings.AuthToken));
 
                 foreach (var poster in MyPosters)
                 {
@@ -49,11 +50,15 @@ namespace Adopcat.Mobile.ViewModels
             }
         }
 
-        private void SelectedPosterCommandExecute(int? posterId)
+        private async void SelectedPosterCommandExecute(int? posterId)
         {
             if (posterId != null)
             {
-
+                var parameters = new NavigationParameters
+                {
+                    { "posterId", posterId.Value }
+                };
+                await _navigationService.NavigateAsync(nameof(EditMyPosterPage), parameters);
             }
         }
     }

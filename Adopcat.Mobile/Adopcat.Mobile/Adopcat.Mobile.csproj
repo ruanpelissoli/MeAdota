@@ -35,8 +35,10 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="Controls\CarouselIndicators.cs" />
     <Compile Include="Helpers\Settings.cs" />
     <Compile Include="Interfaces\IAuthentication.cs" />
+    <Compile Include="Interfaces\IPhoneCall.cs" />
     <Compile Include="Models\AppServiceIdentity.cs" />
     <Compile Include="Models\FacebookProfile.cs" />
     <Compile Include="Models\Filter.cs" />
@@ -54,6 +56,7 @@
     <Compile Include="Util\ApplicationParameters.cs" />
     <Compile Include="Util\ByteToImageFieldConverter.cs" />
     <Compile Include="ViewModels\BaseViewModel.cs" />
+    <Compile Include="ViewModels\EditMyPosterPageViewModel.cs" />
     <Compile Include="ViewModels\FilterPageViewModel.cs" />
     <Compile Include="ViewModels\LoginPageViewModel.cs" />
     <Compile Include="ViewModels\MenuPageViewModel.cs" />
@@ -62,6 +65,9 @@
     <Compile Include="ViewModels\PosterDetailPageViewModel.cs" />
     <Compile Include="ViewModels\PostersPageViewModel.cs" />
     <Compile Include="ViewModels\RegisterPageViewModel.cs" />
+    <Compile Include="Views\EditMyPosterPage.xaml.cs">
+      <DependentUpon>EditMyPosterPage.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Views\FilterPage.xaml.cs">
       <DependentUpon>FilterPage.xaml</DependentUpon>
     </Compile>
@@ -241,6 +247,12 @@
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Views\PosterDetailPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Views\EditMyPosterPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
       <SubType>Designer</SubType>
     </EmbeddedResource>

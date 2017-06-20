@@ -74,7 +74,7 @@ namespace Adopcat.Mobile.ViewModels
 
         private async void FilterCommandExecute()
         {
-            await _navigationService.NavigateAsync($"{nameof(FilterPage)}");
+            await _navigationService.NavigateAsync($"NavigationPage/{nameof(FilterPage)}", null, true);
         }
 
         public async override void OnNavigatedTo(NavigationParameters parameters)
