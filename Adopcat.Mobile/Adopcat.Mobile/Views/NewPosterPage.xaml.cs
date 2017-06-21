@@ -1,4 +1,5 @@
 ﻿using Adopcat.Mobile.ViewModels;
+using System.Collections.Specialized;
 using Xamarin.Forms;
 
 namespace Adopcat.Mobile.Views
@@ -13,6 +14,13 @@ namespace Adopcat.Mobile.Views
         public NewPosterPage()
         {
             InitializeComponent();
+
+            ViewModel.PetImages.CollectionChanged += PetImagesCollectionChangedEvent;
+        }
+
+        private void PetImagesCollectionChangedEvent(object sender, NotifyCollectionChangedEventArgs e)
+        {
+            lsvPetImages.HeightRequest = (ViewModel.PetImages.Count * 100);
         }
 
         private void Picker_SelectedIndexChanged(object sender, System.EventArgs e)
@@ -26,6 +34,12 @@ namespace Adopcat.Mobile.Views
             var list = (sender as ListView);
             if (list.SelectedItem == null) return;
             list.SelectedItem = null;
+        }
+
+        private void Picker_SelectedIndexChanged_1(object sender, System.EventArgs e)
+        {
+            var selectedItem = (sender as Picker).SelectedItem as string;
+            ViewModel.StateSelectCommand.Execute(selectedItem);
         }
     }
 }

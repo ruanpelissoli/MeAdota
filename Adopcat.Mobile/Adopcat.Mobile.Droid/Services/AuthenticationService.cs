@@ -64,10 +64,10 @@ namespace Adopcat.Mobile.Droid.Services
             }
         }
 
-        public async Task Logout()
+        public async Task Logout(MobileServiceClient client)
         {
             CookieManager.Instance.RemoveAllCookie();
-            await App.MobileService.LoginAsync();
+            await client.LogoutAsync();
         }
     }
 }

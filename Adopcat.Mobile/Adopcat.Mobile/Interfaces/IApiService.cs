@@ -16,7 +16,7 @@ namespace Adopcat.Mobile.Interfaces
         Task<LoginResponse> LoginFacebook(Login model);
 
         [Get("/auth/logout")]
-        Task Logout();
+        Task Logout([Header("Authorization")] string token);
         #endregion
 
         #region User

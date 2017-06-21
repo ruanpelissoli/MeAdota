@@ -126,10 +126,10 @@ namespace Adopcat.Mobile.Services
             try
             {
                 if (!string.IsNullOrEmpty(Settings.FacebookUserId))
-                    await _auth.Logout();
+                    await _auth.Logout(Client);
 
-                await App.ApiService.Logout();
-                Settings.Clear();
+                await App.ApiService.Logout("bearer " + Settings.AuthToken);
+                Settings.Clear();                              
             }
             catch (Exception ex)
             {

@@ -5,11 +5,9 @@ using Adopcat.Mobile.Util;
 using Adopcat.Mobile.Views;
 using Plugin.Media.Abstractions;
 using Prism.Commands;
-using Prism.Mvvm;
 using Prism.Navigation;
 using Prism.Services;
 using System;
-using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Diagnostics;
 using System.IO;
@@ -109,7 +107,9 @@ namespace Adopcat.Mobile.ViewModels
         {
             return PetImages.Any() &&
                    !string.IsNullOrEmpty(Poster.PetName) &&
-                   Poster.PetType > 0;
+                   Poster.PetType > 0 &&
+                   !string.IsNullOrEmpty(Poster.State) &&
+                   !string.IsNullOrEmpty(Poster.City);
         }
 
         private async void EditPosterCommandExecute()

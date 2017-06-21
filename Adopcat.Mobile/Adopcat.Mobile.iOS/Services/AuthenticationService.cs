@@ -33,13 +33,13 @@ namespace Adopcat.Mobile.iOS.Services
             }
         }
 
-        public async Task Logout()
+        public async Task Logout(MobileServiceClient client)
         {
             foreach (var cookie in NSHttpCookieStorage.SharedStorage.Cookies)
             {
                 NSHttpCookieStorage.SharedStorage.DeleteCookie(cookie);
             }
-            await App.MobileService.LoginAsync();
+            await client.LogoutAsync();
         }
 
         public void RegisterPush() { }

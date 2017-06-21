@@ -12,6 +12,7 @@ using System.Diagnostics;
 using Adopcat.Mobile.Services;
 using Adopcat.Mobile.Views;
 using Plugin.Media.Abstractions;
+using Adopcat.Mobile.Util;
 
 namespace Adopcat.Mobile.ViewModels
 {
@@ -33,6 +34,27 @@ namespace Adopcat.Mobile.ViewModels
         {
             get { return _petTypeList; }
             set { SetProperty(ref _petTypeList, value); }
+        }
+
+        private string _state;
+        public string State
+        {
+            get { return _state; }
+            set { SetProperty(ref _state, value); }
+        }
+
+        private string _city;
+        public string City
+        {
+            get { return _city; }
+            set { SetProperty(ref _city, value); }
+        }
+
+        private ObservableCollection<string> _stateList;
+        public ObservableCollection<string> StatesList
+        {
+            get { return _stateList; }
+            set { SetProperty(ref _stateList, value); }
         }
 
         private string _petName;
@@ -71,17 +93,11 @@ namespace Adopcat.Mobile.ViewModels
             set { SetProperty(ref _isDewormed, value); }
         }
 
-        private bool _deliverToAdopter;
-        public bool DeliverToAdopter
-        {
-            get { return _deliverToAdopter; }
-            set { SetProperty(ref _deliverToAdopter, value); }
-        }
-
         public DelegateCommand PickPhotoCommand { get; set; }
         public DelegateCommand CreatePosterCommand { get; set; }
         public DelegateCommand<string> PetTypeSelectCommand { get; set; }
         public DelegateCommand<string> DeletePetPictureCommand { get; set; }
+        public DelegateCommand<string> StateSelectCommand { get; set; }
 
         public NewPosterPageViewModel(
             INavigationService navigationService,
@@ -93,6 +109,7 @@ namespace Adopcat.Mobile.ViewModels
             CreatePosterCommand = new DelegateCommand(CreatePosterCommandExecute, CreatePosterCommandCanExecute);
             PetTypeSelectCommand = new DelegateCommand<string>(PetTypeSelectCommandExecute);
             DeletePetPictureCommand = new DelegateCommand<string>(DeletePetPictureCommandExecute);
+            StateSelectCommand = new DelegateCommand<string>(StateSelectCommandExecute);
 
             PetImages = new ObservableCollection<PetPictureItem>();
             PetTypeList = new ObservableCollection<string>()
@@ -101,7 +118,13 @@ namespace Adopcat.Mobile.ViewModels
             };
             IsCastrated = false;
             IsDewormed = false;
-            DeliverToAdopter = false;
+
+            StatesList = new ObservableCollection<string>(StateList.Get());
+        }
+
+        private void StateSelectCommandExecute(string state)
+        {
+            State = state;
         }
 
         private void PetTypeSelectCommandExecute(string petType)
@@ -121,10 +144,9 @@ namespace Adopcat.Mobile.ViewModels
                     PetType = PetType == "Cachorro" ? 1 : 2,
                     Castrated = IsCastrated,
                     Dewormed = IsDewormed,
-                    DeliverToAdopter = DeliverToAdopter,
                     Country = "Brasil",
-                    State = "RS",
-                    City = "Porto Alegre"
+                    State = State,
+                    City = City
                 };
 
                 await App.ApiService.CreatePoster(posterInput, "bearer " + Settings.AuthToken);
@@ -141,7 +163,9 @@ namespace Adopcat.Mobile.ViewModels
         {
             return PetImages.Any() &&
                    !string.IsNullOrEmpty(PetName) &&
-                   !string.IsNullOrEmpty(PetType);
+                   !string.IsNullOrEmpty(PetType) &&
+                   !string.IsNullOrEmpty(State) &&
+                   !string.IsNullOrEmpty(City);
         }
 
         private async void PickPhotoCommandExecute()

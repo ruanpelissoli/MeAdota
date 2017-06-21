@@ -14,43 +14,41 @@
     </ContentPage.Resources>
     <ScrollView>
         <StackLayout VerticalOptions="FillAndExpand" Padding="10">
-            <StackLayout 
-                HorizontalOptions="Start">
-                <ListView
-                    HasUnevenRows="True"
-                    VerticalOptions="StartAndExpand"
-                    HeightRequest="200"
-                    ItemsSource="{Binding PetImages}"
-                    ItemSelected="ListView_ItemSelected">
-                    <ListView.ItemTemplate>
-                        <DataTemplate>
-                            <ViewCell>
-                                <StackLayout Orientation="Horizontal" Padding="5">
-                                    <Image 
-                                        Source="{Binding Image, Converter={StaticResource Key=ByteArrayToImage}}" 
-                                        HorizontalOptions="Start" 
-                                        HeightRequest="100" 
-                                        WidthRequest="100" />
-                                    <Image 
-                                        Source="icon_delete.png" 
-                                        Aspect="AspectFit" 
-                                        HorizontalOptions="EndAndExpand" 
-                                        HeightRequest="35" 
-                                        WidthRequest="35">
-                                        <Image.GestureRecognizers>
-                                            <TapGestureRecognizer 
+            <ListView
+                x:Name="lsvPetImages"
+                HasUnevenRows="True"
+                HeightRequest="0"
+                HorizontalOptions="FillAndExpand"
+                ItemsSource="{Binding PetImages}"
+                ItemSelected="ListView_ItemSelected">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <StackLayout Orientation="Horizontal" Padding="5">
+                                <Image 
+                                    Source="{Binding Image, Converter={StaticResource Key=ByteArrayToImage}}" 
+                                    HorizontalOptions="Start" 
+                                    HeightRequest="100" 
+                                    WidthRequest="100" />
+                                <Image 
+                                    Source="icon_delete.png" 
+                                    Aspect="AspectFit" 
+                                    HorizontalOptions="EndAndExpand" 
+                                    HeightRequest="35" 
+                                    WidthRequest="35">
+                                    <Image.GestureRecognizers>
+                                        <TapGestureRecognizer 
                                                 NumberOfTapsRequired="1" 
                                                 Command="{Binding Path=BindingContext.DeletePetPictureCommand, Source={x:Reference MyPage}}" 
                                                 CommandParameter="{Binding Id}" />
-                                        </Image.GestureRecognizers>
-                                    </Image>
-                                </StackLayout>                                
-                            </ViewCell>
-                        </DataTemplate>
-                    </ListView.ItemTemplate>
-                </ListView>
-                <Button Text="Adicionar foto" Command="{Binding PickPhotoCommand}" Style="{StaticResource SecondaryButton}" />
-            </StackLayout>
+                                    </Image.GestureRecognizers>
+                                </Image>
+                            </StackLayout>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+            <Button Text="Adicionar foto" Command="{Binding PickPhotoCommand}" Style="{StaticResource SecondaryButton}" />
             <Entry Placeholder="Nome" Text="{Binding PetName}" />
             <StackLayout Orientation="Horizontal">
                 <Label Text="Tipo:" Style="{StaticResource TitleLabel}" HorizontalOptions="Start"/>
@@ -62,6 +60,14 @@
                 <Label Text="Castrado?" HorizontalOptions="StartAndExpand" Style="{StaticResource TitleLabel}" />
                 <Switch IsToggled="{Binding IsCastrated}" HorizontalOptions="End"/>
             </StackLayout>
+            <StackLayout Orientation="Horizontal">
+                <Label Text="Estado:" Style="{StaticResource TitleLabel}" HorizontalOptions="Start"/>
+                <Picker ItemsSource="{Binding StatesList}" 
+                        SelectedItem="{Binding State}"
+                        SelectedIndexChanged="Picker_SelectedIndexChanged_1" 
+                        HorizontalOptions="FillAndExpand" />
+            </StackLayout>
+            <Entry Placeholder="Cidade" Text="{Binding Poster.City}" />
             <StackLayout Orientation="Horizontal">
                 <Label Text="Vermifugado?" HorizontalOptions="StartAndExpand" Style="{StaticResource TitleLabel}" />
                 <Switch IsToggled="{Binding IsDewormed}" HorizontalOptions="End"/>

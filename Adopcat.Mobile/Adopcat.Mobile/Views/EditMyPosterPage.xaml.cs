@@ -1,4 +1,6 @@
-﻿using Adopcat.Mobile.ViewModels;
+﻿using System;
+using System.Collections.Specialized;
+using Adopcat.Mobile.ViewModels;
 using Xamarin.Forms;
 
 namespace Adopcat.Mobile.Views
@@ -13,6 +15,13 @@ namespace Adopcat.Mobile.Views
         public EditMyPosterPage()
         {
             InitializeComponent();
+
+            ViewModel.PetImages.CollectionChanged += PetImagesCollectionChangedEvent;
+        }
+
+        private void PetImagesCollectionChangedEvent(object sender, NotifyCollectionChangedEventArgs e)
+        {
+            lsvPetImages.HeightRequest = (ViewModel.PetImages.Count * 100);
         }
 
         private void ListView_ItemSelected(object sender, SelectedItemChangedEventArgs e)
