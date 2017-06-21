@@ -14,8 +14,9 @@
                 <DataTemplate>
                     <ImageCell 
                         ImageSource="{Binding MainPictureUrl}" 
-                        Text="{Binding PetName}" TextColor="{StaticResource AppDefaultColor}"
-                        Detail="{Binding City}"></ImageCell>
+                        Text="{Binding PetName}" TextColor="#00ad97"
+                        Detail="{Binding City}">.
+                    </ImageCell>
                 </DataTemplate>
             </ListView.ItemTemplate>
         </ListView>

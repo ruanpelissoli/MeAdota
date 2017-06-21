@@ -13,13 +13,16 @@ namespace Adopcat.Services
     {
         private IPosterRepository _repository;
         private IPetPictureService _petPictureService;
+        private IBlobStorageService _blobService;
 
         public PosterService(ILoggingService log,
                              IPosterRepository repository,
-                             IPetPictureService petPictureService) : base(log)
+                             IPetPictureService petPictureService,
+                             IBlobStorageService blobService) : base(log)
         {
             _repository = repository;
             _petPictureService = petPictureService;
+            _blobService = blobService;
         }
 
         public async Task<Poster> CreateAsync(PosterInputDTO posterDto)
@@ -49,11 +52,32 @@ namespace Adopcat.Services
             });
         }
 
-        public async Task<int> UpdateAsync(Poster poster)
+        public async Task UpdateAsync(PosterInputDTO posterDto)
         {
-            return await TryCatch(async () =>
+            await TryCatch(async () =>
             {
-                return await _repository.UpdateAsync(poster);
+                var poster = await _repository.FindAsync(posterDto.Id);
+                
+                poster.PetName = posterDto.PetName;
+                poster.PetType = (EPetType)posterDto.PetType;
+                poster.Castrated = posterDto.Castrated;
+                poster.Dewormed = posterDto.Dewormed;
+                poster.DeliverToAdopter = false;
+                poster.Country = posterDto.Country;
+                poster.State = posterDto.State;
+                poster.City = posterDto.City;
+                poster.IsAdopted = posterDto.IsAdopted;
+
+                await _repository.UpdateAsync(poster);
+
+                foreach (var p in poster.PetPictures)
+                {
+                    await _blobService.DeleteBlobStorageAsync(p.Url);
+                    await _petPictureService.Delete(p);
+                }                
+
+                foreach (var pic in posterDto.PetPictures)
+                    await _petPictureService.Create(pic, poster.Id);
             });
         }
 
@@ -91,7 +115,7 @@ namespace Adopcat.Services
                 if (filter.DeliverToAdopter.HasValue)
                     list = list.Where(w => w.Dewormed == filter.DeliverToAdopter.Value).ToList();
 
-                if(!string.IsNullOrEmpty(filter.City))
+                if (!string.IsNullOrEmpty(filter.City))
                     list = list.Where(w => w.City == filter.City).ToList();
 
                 return list;

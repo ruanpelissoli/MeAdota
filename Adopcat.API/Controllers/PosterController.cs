@@ -77,5 +77,12 @@ namespace Adopcat.API.Controllers
             var poster = await _posterService.CreateAsync(model).ConfigureAwait(false);
             return Ok(MappingConfig.Mapper().Map<PosterOutputDTO>(poster));
         }
+
+        [HttpPut]
+        public async Task<IHttpActionResult> Put(PosterInputDTO model)
+        {
+            await _posterService.UpdateAsync(model).ConfigureAwait(false);
+            return Ok();
+        }
     }
 }

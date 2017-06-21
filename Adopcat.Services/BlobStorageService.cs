@@ -4,6 +4,7 @@ using Adopcat.Services.Interfaces;
 using Microsoft.WindowsAzure.Storage;
 using Microsoft.WindowsAzure.Storage.Blob;
 using System;
+using System.Linq;
 using System.Threading.Tasks;
 
 namespace Adopcat.Services
@@ -27,21 +28,6 @@ namespace Adopcat.Services
             parameters.TryGetValue("AzureStorageConnectionString", out _azureStorageConnectionString);
         }
 
-        //public PetPicture UploadedImageStorage(ProposalViewModel proposalViewModel)
-        //{
-        //    var screenError = Convert.FromBase64String(proposalViewModel.ScreenErrorBase64);
-
-        //    var imageName = $"{proposalViewModel.ProposalId}_{DateTime.Now.ToString("yyyy-MM-dd_hhmmss")}.jpg";
-
-        //    return new UploadedImageModel
-        //    {
-        //        ContentType = "image/jpeg",
-        //        Data = screenError,
-        //        Name = imageName,
-        //        Url = $"{_imageRootPath}/{_containerName}/{_blobName}/{imageName}"
-        //    };
-        //}
-
         public async Task<string> AddImageToBlobStorageAsync(byte[] file)
         {
             //  get the container reference
@@ -56,6 +42,19 @@ namespace Adopcat.Services
             await blockBlob.UploadFromByteArrayAsync(file, 0, file.Length);
 
             return $"{_azureStorageUrl}/{_azureStoragePublicContainer}/{_petPicturesBlobName}/{guidName}";
+        }
+
+        public async Task DeleteBlobStorageAsync(string url)
+        {
+            //  get the container reference
+            var container = GetImagesBlobContainer();
+
+            var blobName = url.Split('/').Last();
+            // using the container reference, get a block blob reference and set its type
+            CloudBlockBlob blockBlob = container.GetBlockBlobReference($"{_petPicturesBlobName}/{blobName}");
+
+            // finally, upload the image into blob storage using the block blob reference
+            await blockBlob.DeleteAsync();
         }
 
         private CloudBlobContainer GetImagesBlobContainer()

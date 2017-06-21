@@ -1,7 +1,4 @@
-﻿using Adopcat.Mobile.Models;
-using Adopcat.Mobile.ViewModels;
-using Prism.Commands;
-using System.Diagnostics;
+﻿using Adopcat.Mobile.ViewModels;
 using Xamarin.Forms;
 
 namespace Adopcat.Mobile.Views

@@ -55,6 +55,7 @@
     <Compile Include="Services\PictureService.cs" />
     <Compile Include="Util\ApplicationParameters.cs" />
     <Compile Include="Util\ByteToImageFieldConverter.cs" />
+    <Compile Include="Util\StateList.cs" />
     <Compile Include="ViewModels\BaseViewModel.cs" />
     <Compile Include="ViewModels\EditMyPosterPageViewModel.cs" />
     <Compile Include="ViewModels\FilterPageViewModel.cs" />

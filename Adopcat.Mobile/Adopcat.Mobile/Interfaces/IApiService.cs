@@ -50,7 +50,15 @@ namespace Adopcat.Mobile.Interfaces
         Task<List<PosterOutput>> GetMyPosters([Header("Authorization")] string token);
 
         [Post("/poster")]
-        Task<PosterOutput> CreatePoster(PosterInput poster, [Header("Authorization")] string token);        
+        Task<PosterOutput> CreatePoster(PosterInput poster, [Header("Authorization")] string token);
+
+        [Put("/poster")]
+        Task UpdatePoster(PosterInput poster, [Header("Authorization")] string token);
+        #endregion
+
+        #region Download
+        [Get("/download")]
+        Task<byte[]> Download(string url);
         #endregion
     }
 

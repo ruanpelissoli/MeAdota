@@ -6,5 +6,6 @@ namespace Adopcat.Services.Interfaces
     public interface IPetPictureService
     {
         Task<PetPicture> Create(byte[] picture, int posterId);
+        Task Delete(PetPicture petPicture);
     }
 }

@@ -34,5 +34,13 @@ namespace Adopcat.Services
                 return await _petPictureRepository.CreateAsync(petPicture);
             });
         }
+
+        public async Task Delete(PetPicture petPicture)
+        {
+            await TryCatch(async () =>
+            {
+                await _petPictureRepository.DeleteAsync(petPicture);
+            });
+        }
     }
 }
