@@ -6,6 +6,7 @@ using Prism.Services;
 using System.Diagnostics;
 using System.Linq;
 using Adopcat.Mobile.Interfaces;
+using System;
 
 namespace Adopcat.Mobile.ViewModels
 {
@@ -48,10 +49,17 @@ namespace Adopcat.Mobile.ViewModels
             CallCommand = new DelegateCommand(CallCommandExecute);
         }
 
-        private void CallCommandExecute()
+        private async void CallCommandExecute()
         {
-            if (!string.IsNullOrEmpty(Poster.User.Phone))
-                Xamarin.Forms.DependencyService.Get<IPhoneCall>().CallNumber(Poster.User.Phone);
+            try
+            {
+                if (!string.IsNullOrEmpty(Poster.User.Phone))
+                    Xamarin.Forms.DependencyService.Get<IPhoneCall>().CallNumber(Poster.User.Phone);
+            }
+            catch (Exception ex)
+            {
+                await _dialogService.DisplayAlertAsync("Erro", ex.Message, "Fechar");
+            }
         }
 
         public async override void OnNavigatedTo(NavigationParameters parameters)

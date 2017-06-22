@@ -131,25 +131,33 @@ namespace Adopcat.Mobile.ViewModels
 
         private async void PickPhotoCommandExecute()
         {
-            var action = await _dialogService.DisplayActionSheetAsync("Foto", "Cancel", null, "Tirar foto", "Álbum");
-
-            MediaFile file;
-            var pictureService = Xamarin.Forms.DependencyService.Get<PictureService>();
-
-            if (action.ToLower().Equals("tirar foto"))
-                file = await pictureService.TakePhotoAsync();
-            else
-                file = await pictureService.PickPhotoAsync();
-
-            if (file != null)
+            try
             {
-                using (var memoryStream = new MemoryStream())
+                var action = await _dialogService.DisplayActionSheetAsync("Foto", "Cancel", null, "Tirar foto", "Álbum");
+
+                MediaFile file = null;
+                var pictureService = Xamarin.Forms.DependencyService.Get<PictureService>();
+
+                if (action.ToLower().Equals("tirar foto"))
+                    file = await pictureService.TakePhotoAsync();
+                else if (action.ToLower().Equals("álbum"))
+                    file = await pictureService.PickPhotoAsync();
+                else return;
+
+                if (file != null)
                 {
-                    file.GetStream().CopyTo(memoryStream);
-                    file.Dispose();
-                    Image = memoryStream.ToArray();
+                    using (var memoryStream = new MemoryStream())
+                    {
+                        file.GetStream().CopyTo(memoryStream);
+                        file.Dispose();
+                        Image = memoryStream.ToArray();
+                    }
                 }
             }
+            catch (Exception ex)
+            {
+                await _dialogService.DisplayAlertAsync("Erro", ex.Message, "Fechar");
+            }            
         }
     }
 }

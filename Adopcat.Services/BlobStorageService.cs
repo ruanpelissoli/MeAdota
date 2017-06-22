@@ -46,15 +46,22 @@ namespace Adopcat.Services
 
         public async Task DeleteBlobStorageAsync(string url)
         {
-            //  get the container reference
-            var container = GetImagesBlobContainer();
+            try
+            {
+                //  get the container reference
+                var container = GetImagesBlobContainer();
 
-            var blobName = url.Split('/').Last();
-            // using the container reference, get a block blob reference and set its type
-            CloudBlockBlob blockBlob = container.GetBlockBlobReference($"{_petPicturesBlobName}/{blobName}");
+                var blobName = url.Split('/').Last();
+                // using the container reference, get a block blob reference and set its type
+                CloudBlockBlob blockBlob = container.GetBlockBlobReference($"{_petPicturesBlobName}/{blobName}");
 
-            // finally, upload the image into blob storage using the block blob reference
-            await blockBlob.DeleteAsync();
+                // finally, upload the image into blob storage using the block blob reference
+                await blockBlob.DeleteAsync();
+            }
+            catch (Exception)
+            {
+            }
+            
         }
 
         private CloudBlobContainer GetImagesBlobContainer()

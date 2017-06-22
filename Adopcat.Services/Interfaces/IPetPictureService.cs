@@ -7,5 +7,6 @@ namespace Adopcat.Services.Interfaces
     {
         Task<PetPicture> Create(byte[] picture, int posterId);
         Task Delete(PetPicture petPicture);
+        Task DeleteMany(int posterId);
     }
 }

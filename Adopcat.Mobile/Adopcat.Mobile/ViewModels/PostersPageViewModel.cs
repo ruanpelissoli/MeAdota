@@ -106,12 +106,6 @@ namespace Adopcat.Mobile.ViewModels
                     poster.MainPictureUrl = poster.PetPictures.FirstOrDefault()?.Url;
                 }
             }
-            catch (Refit.ApiException ex)
-            {
-                if (ex.ReasonPhrase.Equals("Unauthorized"))
-                    await App.MobileService.LogoutAsync();
-                Debug.WriteLine(ex.StackTrace);
-            }
             catch (Exception ex)
             {
                 Debug.WriteLine(ex.StackTrace);

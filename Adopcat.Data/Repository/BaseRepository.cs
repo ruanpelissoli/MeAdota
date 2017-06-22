@@ -77,7 +77,7 @@ namespace Adopcat.Data.Repository
         {
             try
             {
-                return DbSet.Where(filterExpression).AsNoTracking().AsQueryable();
+                return DbSet.Where(filterExpression).AsQueryable();
             }
             catch (Exception)
             {
@@ -239,7 +239,7 @@ namespace Adopcat.Data.Repository
                     return await Context.SaveChangesAsync();
                 return 0;
             }
-            catch (Exception)
+            catch (Exception ex)
             {
                 throw;
             }

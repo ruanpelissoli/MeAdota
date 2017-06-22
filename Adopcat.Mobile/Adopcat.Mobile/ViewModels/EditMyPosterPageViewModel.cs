@@ -132,7 +132,7 @@ namespace Adopcat.Mobile.ViewModels
 
                 await App.ApiService.UpdatePoster(posterInput, "bearer " + Settings.AuthToken);
                 await _dialogService.DisplayAlertAsync("Sucesso!", "Anúncio atualizado com sucesso.", "Ok");
-                await _navigationService.NavigateAsync($"app:///{nameof(MenuPage)}/NavigationPage/{nameof(MyPostersPage)}");
+                await _navigationService.NavigateAsync($"{nameof(MyPostersPage)}");
             }
             catch (Exception ex)
             {
@@ -142,30 +142,38 @@ namespace Adopcat.Mobile.ViewModels
 
         private async void PickPhotoCommandExecute()
         {
-            var action = await _dialogService.DisplayActionSheetAsync("Foto", "Cancel", null, "Tirar foto", "Álbum");
-
-            MediaFile file;
-            var pictureService = Xamarin.Forms.DependencyService.Get<PictureService>();
-
-            if (action.ToLower().Equals("tirar foto"))
-                file = await pictureService.TakePhotoAsync();
-            else
-                file = await pictureService.PickPhotoAsync();
-
-            if (file != null)
+            try
             {
-                using (var memoryStream = new MemoryStream())
+                var action = await _dialogService.DisplayActionSheetAsync("Foto", "Fechar", null, "Tirar foto", "Álbum");
+
+                MediaFile file = null;
+                var pictureService = Xamarin.Forms.DependencyService.Get<PictureService>();
+
+                if (action.ToLower().Equals("tirar foto"))
+                    file = await pictureService.TakePhotoAsync();
+                else if (action.ToLower().Equals("álbum"))
+                    file = await pictureService.PickPhotoAsync();
+                else return;
+
+                if (file != null)
                 {
-                    file.GetStream().CopyTo(memoryStream);
-                    file.Dispose();
-                    PetImages.Add(new PetPictureItem
+                    using (var memoryStream = new MemoryStream())
                     {
-                        Id = Guid.NewGuid().ToString(),
-                        Image = memoryStream.ToArray()
-                    });
-                    EditPosterCommand.RaiseCanExecuteChanged();
+                        file.GetStream().CopyTo(memoryStream);
+                        file.Dispose();
+                        PetImages.Add(new PetPictureItem
+                        {
+                            Id = Guid.NewGuid().ToString(),
+                            Image = memoryStream.ToArray()
+                        });
+                        EditPosterCommand.RaiseCanExecuteChanged();
+                    }
                 }
             }
+            catch (Exception ex)
+            {
+                await _dialogService.DisplayAlertAsync("Erro", ex.Message, "Fechar");
+            }            
         }
 
         public async override void OnNavigatedTo(NavigationParameters parameters)
