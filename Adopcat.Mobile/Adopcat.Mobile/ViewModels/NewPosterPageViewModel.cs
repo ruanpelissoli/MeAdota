@@ -36,20 +36,6 @@ namespace Adopcat.Mobile.ViewModels
             set { SetProperty(ref _petTypeList, value); }
         }
 
-        private string _state;
-        public string State
-        {
-            get { return _state; }
-            set { SetProperty(ref _state, value); }
-        }
-
-        private string _city;
-        public string City
-        {
-            get { return _city; }
-            set { SetProperty(ref _city, value); }
-        }
-
         private ObservableCollection<string> _stateList;
         public ObservableCollection<string> StatesList
         {
@@ -93,6 +79,29 @@ namespace Adopcat.Mobile.ViewModels
             set { SetProperty(ref _isDewormed, value); }
         }
 
+
+        private string _state;
+        public string State
+        {
+            get { return _state; }
+            set
+            {
+                SetProperty(ref _state, value);
+                CreatePosterCommand.RaiseCanExecuteChanged();
+            }
+        }
+
+        private string _city;
+        public string City
+        {
+            get { return _city; }
+            set
+            {
+                SetProperty(ref _city, value);
+                CreatePosterCommand.RaiseCanExecuteChanged();
+            }
+        }
+
         public DelegateCommand PickPhotoCommand { get; set; }
         public DelegateCommand CreatePosterCommand { get; set; }
         public DelegateCommand<string> PetTypeSelectCommand { get; set; }
@@ -134,6 +143,7 @@ namespace Adopcat.Mobile.ViewModels
 
         private async void CreatePosterCommandExecute()
         {
+            ShowLoading = true;
             try
             {
                 var posterInput = new PosterInput
@@ -157,6 +167,10 @@ namespace Adopcat.Mobile.ViewModels
             {
                 Debug.WriteLine(ex.StackTrace);
             }
+            finally
+            {
+                ShowLoading = false;
+            }
         }
 
         private bool CreatePosterCommandCanExecute()
@@ -170,15 +184,10 @@ namespace Adopcat.Mobile.ViewModels
 
         private async void PickPhotoCommandExecute()
         {
-            var action = await _dialogService.DisplayActionSheetAsync("Foto", "Cancel", null, "Tirar foto", "Álbum");
+            var action = await DisplayPictureAlert();
 
-            MediaFile file;
             var pictureService = Xamarin.Forms.DependencyService.Get<PictureService>();
-
-            if (action.ToLower().Equals("tirar foto"))
-                file = await pictureService.TakePhotoAsync();
-            else
-                file = await pictureService.PickPhotoAsync();
+            var file = await pictureService.GetPicture(action);
 
             if (file != null)
             {

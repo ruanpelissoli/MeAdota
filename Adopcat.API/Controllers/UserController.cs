@@ -89,8 +89,11 @@ namespace Adopcat.API.Controllers
 
             if (user == null || !user.Email.Equals(email)) return Unauthorized();
 
+            user.Password = model.Password;
             user.PictureUrl = model.PictureUrl;
             user.Phone = model.Phone;
+            user.ReceiveNotifications = model.ReceiveNotifications;
+            user.RegistrationId = model.RegistrationId;
 
             await _userService.Update(user);
 

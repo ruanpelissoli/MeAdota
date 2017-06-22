@@ -1,10 +1,7 @@
-﻿using Prism.Mvvm;
+﻿using Adopcat.Mobile.Util;
+using Prism.Mvvm;
 using Prism.Navigation;
 using Prism.Services;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 using System.Threading.Tasks;
 
 namespace Adopcat.Mobile.ViewModels
@@ -34,6 +31,17 @@ namespace Adopcat.Mobile.ViewModels
             _dialogService = dialogService;
 
             Title = string.Empty;
+        }
+
+        protected async Task<EPictureOptions> DisplayPictureAlert()
+        {
+            var action = await _dialogService.DisplayActionSheetAsync("Foto", "Fechar", null, "Tirar foto", "Álbum");
+
+            if (action == null) return EPictureOptions.Invalid;
+
+            if (action.ToLower().Equals("foto")) return EPictureOptions.Take;
+
+            return EPictureOptions.Pick;
         }
 
         public virtual void OnNavigatedFrom(NavigationParameters parameters)

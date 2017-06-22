@@ -18,6 +18,8 @@ namespace Adopcat.Mobile.Services
     public class AzureService
     {
         IAuthentication _auth;
+        IPushNotification _pushNotification;
+
         List<AppServiceIdentity> identities = null;
 
         public MobileServiceClient Client { get; set; } = null;
@@ -28,6 +30,7 @@ namespace Adopcat.Mobile.Services
             Client = new MobileServiceClient(ApplicationParameters.AzureAppServiceUrl);
 
             _auth = DependencyService.Get<IAuthentication>();
+            _pushNotification = DependencyService.Get<IPushNotification>();
 
             if (!string.IsNullOrWhiteSpace(Settings.FacebookAuthToken) && !string.IsNullOrWhiteSpace(Settings.FacebookUserId))
             {
@@ -109,7 +112,7 @@ namespace Adopcat.Mobile.Services
                         catch { }
                     }
 
-                    _auth.RegisterPush();
+                    _pushNotification.RegisterPush();
 
                     return true;
                 }
@@ -118,7 +121,7 @@ namespace Adopcat.Mobile.Services
             {
                 Debug.WriteLine(ex.StackTrace);
                 return false;
-            }                     
+            }
         }
 
         public async Task LogoutAsync()
@@ -128,12 +131,14 @@ namespace Adopcat.Mobile.Services
                 if (!string.IsNullOrEmpty(Settings.FacebookUserId))
                     await _auth.Logout(Client);
 
-                await App.ApiService.Logout("bearer " + Settings.AuthToken);
-                Settings.Clear();                              
+                await App.ApiService.Logout("bearer " + Settings.AuthToken);                
             }
             catch (Exception ex)
             {
                 Debug.WriteLine(ex.StackTrace);
+            } finally
+            {
+                Settings.Clear();
             }
         }
     }

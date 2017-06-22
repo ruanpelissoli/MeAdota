@@ -11,6 +11,7 @@ using Newtonsoft.Json.Linq;
 using System.Diagnostics;
 using Android.Support.V4.App;
 using Android.Media;
+using Adopcat.Mobile.Helpers;
 
 [assembly: Permission(Name = "@PACKAGE_NAME@.permission.C2D_MESSAGE")]
 [assembly: UsesPermission(Name = "@PACKAGE_NAME@.permission.C2D_MESSAGE")]
@@ -64,6 +65,10 @@ namespace Adopcat.Mobile.Droid.Services
                 };
 
                 await push.RegisterAsync(RegistrationID, templates);
+
+                var user = await App.ApiService.GetUser(int.Parse(Settings.UserId));
+                user.RegistrationId = RegistrationID;
+                await App.ApiService.UpdateUser(user.Email, user, "bearer " + Settings.AuthToken);
 
                 Log.Info("Push Installation Id", push.InstallationId.ToString());
             }

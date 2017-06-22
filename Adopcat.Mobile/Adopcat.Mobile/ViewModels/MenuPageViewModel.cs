@@ -36,7 +36,7 @@ namespace Adopcat.Mobile.ViewModels
                 new MenuItem { Text = "Anúncios", Icon = "icon_menu_posters.png", GoTo = nameof(PostersPage) },
                 new MenuItem { Text = "Anunciar", Icon = "icon_menu_newposter.png", GoTo = nameof(NewPosterPage) },
                 new MenuItem { Text = "Meus Anúncios", Icon = "icon_menu_myposters.png", GoTo = nameof(MyPostersPage) },
-                new MenuItem { Text = "Sair", Icon = "icon_logout.png", GoTo = "Logout" },
+                new MenuItem { Text = "Configurações", Icon = "icon_settings.png", GoTo = nameof(ConfigurationPage) },
             };
 
             MenuItems = new ObservableCollection<MenuItem>(menuItemsList);
@@ -46,13 +46,7 @@ namespace Adopcat.Mobile.ViewModels
 
         private async void MenuClickedCommandExecute(string page)
         {
-            if (page.Equals("Logout"))
-            {
-                await App.MobileService.LogoutAsync();
-                await _navigationService.NavigateAsync($"app:///NavigationPage/{nameof(LoginPage)}");
-            }
-            else
-                await _navigationService.NavigateAsync($"NavigationPage/{page}");
+            await _navigationService.NavigateAsync($"NavigationPage/{page}");
         }
 
         public async override void OnNavigatedTo(NavigationParameters parameters)

@@ -1,6 +1,9 @@
 ﻿using Adopcat.Mobile.Services;
+using Adopcat.Mobile.Util;
 using Plugin.Media;
 using Plugin.Media.Abstractions;
+using Prism.Services;
+using System.Diagnostics;
 using System.Threading.Tasks;
 using Xamarin.Forms;
 
@@ -9,7 +12,28 @@ namespace Adopcat.Mobile.Services
 {
     public class PictureService
     {
-        public async Task<MediaFile> PickPhotoAsync()
+        public async Task<MediaFile> GetPicture(EPictureOptions options)
+        {
+            try
+            {
+                switch (options)
+                {
+                    case EPictureOptions.Pick:
+                        return await PickPhotoAsync();
+                    case EPictureOptions.Take:
+                        return await TakePhotoAsync();
+                    default:
+                        break;
+                }
+            }
+            catch (System.Exception ex)
+            {
+                Debug.WriteLine(ex.StackTrace);
+            }
+            return null;
+        }
+
+        private async Task<MediaFile> PickPhotoAsync()
         {
             await CrossMedia.Current.Initialize();
 
@@ -17,15 +41,17 @@ namespace Adopcat.Mobile.Services
             return file;
         }
 
-        public async Task<MediaFile> TakePhotoAsync()
+        private async Task<MediaFile> TakePhotoAsync()
         {
             await CrossMedia.Current.Initialize();
 
             var file = await CrossMedia.Current.TakePhotoAsync(
                 new StoreCameraMediaOptions
                 {
+                    AllowCropping = true,
                     SaveToAlbum = true,
-                    DefaultCamera = CameraDevice.Rear                    
+                    Directory = "MeAdota",
+                    DefaultCamera = CameraDevice.Rear
                 });
 
             return file;

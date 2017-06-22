@@ -15,7 +15,7 @@
                              Padding="10">
                     <roundimage:CircleImage Source="{Binding User.PictureUrl}" 
                            HorizontalOptions="Center"
-                           Aspect="AspectFit"
+                           Aspect="AspectFill"
                            HeightRequest="100"
                            WidthRequest="100" />
                     <Label Text="{Binding User.Name}" 
@@ -34,7 +34,7 @@
                         <DataTemplate>
                             <ViewCell>
                                 <StackLayout Orientation="Horizontal" Padding="10">
-                                    <Image Source="{Binding Icon}" WidthRequest="24" HeightRequest="24" HorizontalOptions="Start"/>
+                                    <Image Source="{Binding Icon}" WidthRequest="60" HeightRequest="60" HorizontalOptions="Start"/>
                                     <Label Text="{Binding Text}" HorizontalOptions="StartAndExpand" VerticalTextAlignment="Center" />
                                 </StackLayout>
                             </ViewCell>

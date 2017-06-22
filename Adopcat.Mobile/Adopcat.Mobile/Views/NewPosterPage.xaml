@@ -3,15 +3,9 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:prism="clr-namespace:Prism.Mvvm;assembly=Prism.Forms"
              prism:ViewModelLocator.AutowireViewModel="True"
-             xmlns:converters="clr-namespace:Adopcat.Mobile.Util"
              x:Class="Adopcat.Mobile.Views.NewPosterPage"
              x:Name="MyPage"
              Title="{Binding Title}">
-    <ContentPage.Resources>
-        <ResourceDictionary>
-            <converters:ByteToImageFieldConverter x:Key="ByteArrayToImage" />
-        </ResourceDictionary>
-    </ContentPage.Resources>
     <ScrollView>
         <StackLayout VerticalOptions="FillAndExpand" Padding="10">
             <ListView
@@ -32,7 +26,7 @@
                                     WidthRequest="100" />
                                 <Image 
                                     Source="icon_delete.png" 
-                                    Aspect="AspectFit" 
+                                    Aspect="AspectFill" 
                                     HorizontalOptions="EndAndExpand" 
                                     HeightRequest="35" 
                                     WidthRequest="35">
@@ -49,7 +43,11 @@
                 </ListView.ItemTemplate>
             </ListView>
             <Button Text="Adicionar foto" Command="{Binding PickPhotoCommand}" Style="{StaticResource SecondaryButton}" />
-            <Entry Placeholder="Nome" Text="{Binding PetName}" />
+
+            <StackLayout Orientation="Horizontal">
+                <Label Text="Nome:" Style="{StaticResource TitleLabel}" HorizontalOptions="Start"/>
+                <Entry Text="{Binding PetName}" HorizontalOptions="FillAndExpand" />
+            </StackLayout>           
             <StackLayout Orientation="Horizontal">
                 <Label Text="Tipo:" Style="{StaticResource TitleLabel}" HorizontalOptions="Start"/>
                 <Picker ItemsSource="{Binding PetTypeList}" 
@@ -61,18 +59,26 @@
                 <Switch IsToggled="{Binding IsCastrated}" HorizontalOptions="End"/>
             </StackLayout>
             <StackLayout Orientation="Horizontal">
+                <Label Text="Vermifugado?" HorizontalOptions="StartAndExpand" Style="{StaticResource TitleLabel}" />
+                <Switch IsToggled="{Binding IsDewormed}" HorizontalOptions="End"/>
+            </StackLayout>
+            <StackLayout Orientation="Horizontal">
                 <Label Text="Estado:" Style="{StaticResource TitleLabel}" HorizontalOptions="Start"/>
                 <Picker ItemsSource="{Binding StatesList}" 
                         SelectedItem="{Binding State}"
                         SelectedIndexChanged="Picker_SelectedIndexChanged_1" 
                         HorizontalOptions="FillAndExpand" />
             </StackLayout>
-            <Entry Placeholder="Cidade" Text="{Binding Poster.City}" />
             <StackLayout Orientation="Horizontal">
-                <Label Text="Vermifugado?" HorizontalOptions="StartAndExpand" Style="{StaticResource TitleLabel}" />
-                <Switch IsToggled="{Binding IsDewormed}" HorizontalOptions="End"/>
+                <Label Text="Cidade:" Style="{StaticResource TitleLabel}" HorizontalOptions="Start"/>
+                <Entry Text="{Binding City}" HorizontalOptions="FillAndExpand" />
             </StackLayout>
-            <Button Text="Criar Anúncio" Command="{Binding CreatePosterCommand}" Style="{StaticResource DefaultButton}" HorizontalOptions="FillAndExpand" />
+            <Button Text="Criar Anúncio"
+                    Command="{Binding CreatePosterCommand}" 
+                    Style="{StaticResource DefaultButton}" 
+                    HorizontalOptions="FillAndExpand" 
+                    IsVisible="{Binding ShowLoading, Converter={StaticResource NegateBooleanConverter}"/>
+            <ActivityIndicator IsVisible="{Binding ShowLoading}" IsRunning="{Binding ShowLoading}" Color="#00ad97" />
         </StackLayout>
     </ScrollView>
 </ContentPage>

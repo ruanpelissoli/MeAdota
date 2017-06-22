@@ -4,14 +4,8 @@
              xmlns:prism="clr-namespace:Prism.Mvvm;assembly=Prism.Forms"
              prism:ViewModelLocator.AutowireViewModel="True"
              x:Class="Adopcat.Mobile.Views.EditMyPosterPage"
-             xmlns:converters="clr-namespace:Adopcat.Mobile.Util"
              x:Name="MyPage"
              Title="{Binding Title}">
-    <ContentPage.Resources>
-        <ResourceDictionary>
-            <converters:ByteToImageFieldConverter x:Key="ByteArrayToImage" />
-        </ResourceDictionary>
-    </ContentPage.Resources>
     <ScrollView>
         <StackLayout VerticalOptions="FillAndExpand" Padding="10">
             <ListView
@@ -31,7 +25,7 @@
                                      WidthRequest="100" />
                                 <Image 
                                      Source="icon_delete.png" 
-                                     Aspect="AspectFit" 
+                                     Aspect="AspectFill" 
                                      HorizontalOptions="EndAndExpand" 
                                      HeightRequest="35" 
                                      WidthRequest="35">
@@ -76,7 +70,14 @@
                 <Label Text="Foi adotado?" HorizontalOptions="StartAndExpand" Style="{StaticResource TitleLabel}" />
                 <Switch IsToggled="{Binding Poster.IsAdopted}" HorizontalOptions="End"/>
             </StackLayout>
-            <Button Text="Editar Anúncio" Command="{Binding EditPosterCommand}" Style="{StaticResource DefaultButton}" HorizontalOptions="FillAndExpand" />
+            <Button Text="Editar Anúncio" 
+                    Command="{Binding EditPosterCommand}" 
+                    Style="{StaticResource DefaultButton}" 
+                    HorizontalOptions="FillAndExpand" 
+                    IsVisible="{Binding ShowLoading, Converter={StaticResource NegateBooleanConverter}" />
+            <ActivityIndicator IsVisible="{Binding ShowLoading}" 
+                               IsRunning="{Binding ShowLoading}" 
+                               Color="#00ad97" />
         </StackLayout>
     </ScrollView>
 </ContentPage>

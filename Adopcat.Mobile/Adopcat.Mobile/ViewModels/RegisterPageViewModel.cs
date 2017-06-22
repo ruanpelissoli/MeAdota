@@ -8,11 +8,14 @@ using Adopcat.Mobile.Views;
 using Plugin.Media.Abstractions;
 using Adopcat.Mobile.Services;
 using System.IO;
+using Adopcat.Mobile.Interfaces;
 
 namespace Adopcat.Mobile.ViewModels
 {
     public class RegisterPageViewModel : BaseViewModel
     {
+        IPushNotification _pushNotification;
+
         private string _name;
         public string Name
         {
@@ -88,6 +91,8 @@ namespace Adopcat.Mobile.ViewModels
 
             RegisterCommand = new DelegateCommand(RegisterCommandExecute, RegisterCommandCanExecute);
             PickPhotoCommand = new DelegateCommand(PickPhotoCommandExecute);
+
+            _pushNotification = Xamarin.Forms.DependencyService.Get<IPushNotification>();
         }
 
         private bool RegisterCommandCanExecute()
@@ -117,29 +122,28 @@ namespace Adopcat.Mobile.ViewModels
                 };
 
                 await App.ApiService.CreateUser(user);
+                _pushNotification.RegisterPush();
 
                 await _dialogService.DisplayAlertAsync("Sucesso", "Usuário criado com sucesso.", "Ok");
 
-                ShowLoading = false;
                 await _navigationService.NavigateAsync($"app:///NavigationPage/{nameof(LoginPage)}");
             }
             catch (Exception ex)
             {
                 Debug.WriteLine(ex.StackTrace);
             }
+            finally
+            {
+                ShowLoading = false;
+            }
         }
 
         private async void PickPhotoCommandExecute()
         {
-            var action = await _dialogService.DisplayActionSheetAsync("Foto", "Cancel", null, "Tirar foto", "Álbum");
+            var action = await DisplayPictureAlert();
 
-            MediaFile file;
             var pictureService = Xamarin.Forms.DependencyService.Get<PictureService>();
-
-            if (action.ToLower().Equals("tirar foto"))
-                file = await pictureService.TakePhotoAsync();
-            else
-                file = await pictureService.PickPhotoAsync();
+            var file = await pictureService.GetPicture(action);
 
             if (file != null)
             {

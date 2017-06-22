@@ -1,4 +1,5 @@
 ﻿using Adopcat.Mobile.Helpers;
+using Adopcat.Mobile.Interfaces;
 using Adopcat.Mobile.Models;
 using Adopcat.Mobile.Views;
 using Prism.Commands;

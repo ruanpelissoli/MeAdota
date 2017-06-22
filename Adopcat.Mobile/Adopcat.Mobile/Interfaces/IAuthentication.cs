@@ -8,6 +8,5 @@ namespace Adopcat.Mobile.Interfaces
     {
         Task<MobileServiceUser> LoginAsync(MobileServiceClient client, MobileServiceAuthenticationProvider provider, IDictionary<string, string> parameters = null);
         Task Logout(MobileServiceClient client);
-        void RegisterPush();
     }
 }

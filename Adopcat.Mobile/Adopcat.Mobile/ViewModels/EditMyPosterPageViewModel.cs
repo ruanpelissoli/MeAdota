@@ -142,15 +142,10 @@ namespace Adopcat.Mobile.ViewModels
 
         private async void PickPhotoCommandExecute()
         {
-            var action = await _dialogService.DisplayActionSheetAsync("Foto", "Cancel", null, "Tirar foto", "Álbum");
+            var action = await DisplayPictureAlert();
 
-            MediaFile file;
             var pictureService = Xamarin.Forms.DependencyService.Get<PictureService>();
-
-            if (action.ToLower().Equals("tirar foto"))
-                file = await pictureService.TakePhotoAsync();
-            else
-                file = await pictureService.PickPhotoAsync();
+            var file = await pictureService.GetPicture(action);
 
             if (file != null)
             {
@@ -199,7 +194,6 @@ namespace Adopcat.Mobile.ViewModels
             catch (Exception ex)
             {
                 Debug.WriteLine(ex.StackTrace);
-                throw;
             }           
         }
     }

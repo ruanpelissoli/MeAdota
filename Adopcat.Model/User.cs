@@ -20,6 +20,8 @@ namespace Adopcat.Model
         public string Phone { get; set; }
         [StringLength(200)]
         public string PictureUrl { get; set; }
+        public string RegistrationId { get; set; }
+        public bool ReceiveNotifications { get; set; }
         public bool IsActive { get; set; }
         public DateTime CreatedAt { get; set; }
     }

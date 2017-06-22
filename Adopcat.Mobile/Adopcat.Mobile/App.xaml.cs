@@ -53,6 +53,8 @@ namespace Adopcat.Mobile
             Container.RegisterTypeForNavigation<FilterPage, FilterPageViewModel>();
             Container.RegisterTypeForNavigation<PosterDetailPage, PosterDetailPageViewModel>();
             Container.RegisterTypeForNavigation<EditMyPosterPage, EditMyPosterPageViewModel>();
+            Container.RegisterTypeForNavigation<ConfigurationPage, ConfigurationPageViewModel>();
+            Container.RegisterTypeForNavigation<EmptyPostersPage, EmptyPostersPageViewModel>();
         }
     }
 }

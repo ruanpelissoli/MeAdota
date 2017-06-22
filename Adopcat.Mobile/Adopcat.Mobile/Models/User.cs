@@ -10,5 +10,7 @@
         public string Phone { get; set; }
         public byte[] Picture { get; set; }
         public string PictureUrl { get; set; }
+        public string RegistrationId { get; set; }
+        public bool ReceiveNotifications { get; set; }
     }
 }

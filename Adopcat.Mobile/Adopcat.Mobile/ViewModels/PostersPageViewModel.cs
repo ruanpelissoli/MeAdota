@@ -105,11 +105,18 @@ namespace Adopcat.Mobile.ViewModels
                 {
                     poster.MainPictureUrl = poster.PetPictures.FirstOrDefault()?.Url;
                 }
+
+                if (!Posters.Any())
+                    await _navigationService.NavigateAsync($"app:///{nameof(MenuPage)}/NavigationPage/{nameof(EmptyPostersPage)}");
             }
             catch (Refit.ApiException ex)
             {
                 if (ex.ReasonPhrase.Equals("Unauthorized"))
+                {
                     await App.MobileService.LogoutAsync();
+                    await _navigationService.NavigateAsync($"app:///NavigationPage/{nameof(LoginPage)}");
+                }
+                    
                 Debug.WriteLine(ex.StackTrace);
             }
             catch (Exception ex)

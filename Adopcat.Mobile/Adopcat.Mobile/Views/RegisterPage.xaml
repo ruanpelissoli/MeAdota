@@ -3,32 +3,42 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:prism="clr-namespace:Prism.Mvvm;assembly=Prism.Forms"
              prism:ViewModelLocator.AutowireViewModel="True"
-             xmlns:converters="clr-namespace:Adopcat.Mobile.Util"
              x:Class="Adopcat.Mobile.Views.RegisterPage"
+             xmlns:roundimage="clr-namespace:ImageCircle.Forms.Plugin.Abstractions;assembly=ImageCircle.Forms.Plugin.Abstractions"
              Title="{Binding Title}">
-    <ContentPage.Resources>
-        <ResourceDictionary>
-            <converters:ByteToImageFieldConverter x:Key="ByteArrayToImage" />
-        </ResourceDictionary>
-    </ContentPage.Resources>
-    <StackLayout Padding="10"
+    <ScrollView>
+        <StackLayout Padding="10"
                  VerticalOptions="FillAndExpand"
                  HorizontalOptions="FillAndExpand">
-        <StackLayout VerticalOptions="Start"
+            <StackLayout VerticalOptions="Start"
                      HorizontalOptions="FillAndExpand">
-            <Image Source="{Binding Image, Converter={StaticResource Key=ByteArrayToImage}}"
+                <roundimage:CircleImage Source="{Binding Image, Converter={StaticResource Key=ByteArrayToImage}}"
                    HorizontalOptions="Center"
-                   BackgroundColor="Gray" 
                    HeightRequest="150"
                    WidthRequest="150"
-                   Aspect="AspectFit" />
-            <Button Text="Escolher foto" Command="{Binding PickPhotoCommand}" Style="{StaticResource SecondaryButton}" />
+                   BorderColor="#00ad97"
+                   BorderThickness="1"
+                   Aspect="AspectFill" />
+                <Button Text="Escolher foto" Command="{Binding PickPhotoCommand}" Style="{StaticResource SecondaryButton}" />
+            </StackLayout>
+            <Label Text="Nome:" Style="{StaticResource TitleLabel}" FontSize="Medium" />
+            <Entry Text="{Binding Name}" />
+            <Label Text="E-mail:" Style="{StaticResource TitleLabel}" FontSize="Medium" />
+            <Entry Text="{Binding Email}" />
+            <Label Text="Senha:" Style="{StaticResource TitleLabel}" FontSize="Medium" />
+            <Entry IsPassword="True" Text="{Binding Password}" />
+            <Label Text="Confirmação de senha:" Style="{StaticResource TitleLabel}" FontSize="Medium" />
+            <Entry IsPassword="True" Text="{Binding PasswordConfirm}" />
+            <Label Text="Telefone:" Style="{StaticResource TitleLabel}" FontSize="Medium" />
+            <Entry Text="{Binding Phone}" />
+            <Button Text="Registrar" 
+                    Command="{Binding RegisterCommand}" 
+                    Style="{StaticResource DefaultButton}"  
+                    HorizontalOptions="FillAndExpand"
+                    IsVisible="{Binding ShowLoading, Converter={StaticResource NegateBooleanConverter}"/>
+            <ActivityIndicator IsVisible="{Binding ShowLoading}" 
+                               IsRunning="{Binding ShowLoading}" 
+                               Color="#00ad97" />
         </StackLayout>
-        <Entry Placeholder="Nome" Text="{Binding Name}" />
-        <Entry Placeholder="E-mail" Text="{Binding Email}" />
-        <Entry Placeholder="Senha" IsPassword="True" Text="{Binding Password}" />
-        <Entry Placeholder="Confirmacao de senha" IsPassword="True" Text="{Binding PasswordConfirm}" />
-        <Entry Placeholder="Telefone" Text="{Binding Phone}" />
-        <Button Text="Registrar" Command="{Binding RegisterCommand}" Style="{StaticResource DefaultButton}"  HorizontalOptions="FillAndExpand" />        
-    </StackLayout>
+    </ScrollView>
 </ContentPage>

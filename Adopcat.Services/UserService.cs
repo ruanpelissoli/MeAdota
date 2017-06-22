@@ -85,6 +85,7 @@ namespace Adopcat.Services
                 user.PictureUrl = model.PictureUrl;
                 user.FacebookId = model.FacebookId;
                 user.Phone = model.Phone;
+                user.ReceiveNotifications = true;
 
                 if (model.Id == 0)
                     return await _userRepository.CreateAsync(user);
@@ -98,6 +99,9 @@ namespace Adopcat.Services
         {
             await TryCatch(async () =>
             {
+                if (!string.IsNullOrEmpty(model.Password))
+                    model.Password = Cryptography.GetMD5Hash(model.Password);
+
                 await _userRepository.UpdateAsync(model);
             });
         }

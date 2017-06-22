@@ -9,11 +9,11 @@ namespace Adopcat.API.Models
         [Required]
         [EmailAddress]
         public string Email { get; set; }
-        [Required]
         public string Password { get; set; }
-        [Required]
         public string Phone { get; set; }
         public string PictureUrl { get; set; }
         public byte[] Picture { get; set; }
+        public bool ReceiveNotifications { get; set; }
+        public string RegistrationId { get; set; }
     }
 }
