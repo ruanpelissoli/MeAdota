@@ -37,7 +37,12 @@ namespace Adopcat.Mobile.Droid
             };
 
             global::Xamarin.Forms.Forms.Init(this, bundle);
-            ConfigurationManager.Initialise(PCLAppConfig.FileSystemStream.PortableStream.Current);
+            try
+            {
+                ConfigurationManager.Initialise(PCLAppConfig.FileSystemStream.PortableStream.Current);
+            }
+            catch { }
+            
             Microsoft.WindowsAzure.MobileServices.CurrentPlatform.Init();
             LoadApplication(new App(new AndroidInitializer()));
         }
