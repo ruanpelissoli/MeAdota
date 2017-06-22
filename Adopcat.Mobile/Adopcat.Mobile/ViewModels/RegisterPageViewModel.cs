@@ -140,10 +140,12 @@ namespace Adopcat.Mobile.ViewModels
 
         private async void PickPhotoCommandExecute()
         {
-            var action = await DisplayPictureAlert();
+            try
+            {
+                var action = await DisplayPictureAlert();
 
-            var pictureService = Xamarin.Forms.DependencyService.Get<PictureService>();
-            var file = await pictureService.GetPicture(action);
+                var pictureService = Xamarin.Forms.DependencyService.Get<PictureService>();
+                var file = await pictureService.GetPicture(action);
 
                 if (file != null)
                 {
@@ -152,13 +154,15 @@ namespace Adopcat.Mobile.ViewModels
                         file.GetStream().CopyTo(memoryStream);
                         file.Dispose();
                         Image = memoryStream.ToArray();
+                        
+                        RegisterCommand.RaiseCanExecuteChanged();
                     }
                 }
             }
             catch (Exception ex)
             {
                 await _dialogService.DisplayAlertAsync("Erro", ex.Message, "Fechar");
-            }            
+            }
         }
     }
 }
