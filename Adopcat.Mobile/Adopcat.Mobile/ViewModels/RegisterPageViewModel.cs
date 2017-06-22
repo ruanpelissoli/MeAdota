@@ -145,15 +145,20 @@ namespace Adopcat.Mobile.ViewModels
             var pictureService = Xamarin.Forms.DependencyService.Get<PictureService>();
             var file = await pictureService.GetPicture(action);
 
-            if (file != null)
-            {
-                using (var memoryStream = new MemoryStream())
+                if (file != null)
                 {
-                    file.GetStream().CopyTo(memoryStream);
-                    file.Dispose();
-                    Image = memoryStream.ToArray();
+                    using (var memoryStream = new MemoryStream())
+                    {
+                        file.GetStream().CopyTo(memoryStream);
+                        file.Dispose();
+                        Image = memoryStream.ToArray();
+                    }
                 }
             }
+            catch (Exception ex)
+            {
+                await _dialogService.DisplayAlertAsync("Erro", ex.Message, "Fechar");
+            }            
         }
     }
 }

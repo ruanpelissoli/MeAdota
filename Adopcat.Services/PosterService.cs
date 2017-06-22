@@ -71,11 +71,10 @@ namespace Adopcat.Services
                 await _repository.UpdateAsync(poster);
 
                 foreach (var p in poster.PetPictures)
-                {
                     await _blobService.DeleteBlobStorageAsync(p.Url);
-                    await _petPictureService.Delete(p);
-                }                
 
+                await _petPictureService.DeleteMany(poster.Id);
+                
                 foreach (var pic in posterDto.PetPictures)
                     await _petPictureService.Create(pic, poster.Id);
             });

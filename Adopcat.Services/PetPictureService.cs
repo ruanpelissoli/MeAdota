@@ -42,5 +42,13 @@ namespace Adopcat.Services
                 await _petPictureRepository.DeleteAsync(petPicture);
             });
         }
+
+        public async Task DeleteMany(int posterId)
+        {
+            await TryCatch(async () =>
+            {
+                await _petPictureRepository.DeleteAsync(w => w.PosterId == posterId);
+            });
+        }
     }
 }
