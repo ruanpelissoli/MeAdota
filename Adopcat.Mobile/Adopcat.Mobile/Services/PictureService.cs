@@ -37,7 +37,11 @@ namespace Adopcat.Mobile.Services
         {
             await CrossMedia.Current.Initialize();
 
-            var file = await CrossMedia.Current.PickPhotoAsync();
+            var file = await CrossMedia.Current.PickPhotoAsync(new PickMediaOptions
+            {
+                CompressionQuality = 60,
+                PhotoSize = PhotoSize.Medium
+            });
             return file;
         }
 
@@ -51,7 +55,9 @@ namespace Adopcat.Mobile.Services
                     AllowCropping = true,
                     SaveToAlbum = true,
                     Directory = "MeAdota",
-                    DefaultCamera = CameraDevice.Rear
+                    DefaultCamera = CameraDevice.Rear,
+                    CompressionQuality = 60,
+                    PhotoSize = PhotoSize.Medium
                 });
 
             return file;
