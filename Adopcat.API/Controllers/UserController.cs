@@ -90,7 +90,7 @@ namespace Adopcat.API.Controllers
 
             if (user == null || !user.Email.Equals(email)) return Unauthorized();
 
-            if (!user.Password.Equals(model.Password))
+            if (!string.IsNullOrEmpty(user.Password) && !user.Password.Equals(model.Password))
             {
                 user.Password = Cryptography.GetMD5Hash(model.Password);
             }

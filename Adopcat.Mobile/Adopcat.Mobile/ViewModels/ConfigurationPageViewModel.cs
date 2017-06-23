@@ -97,9 +97,9 @@ namespace Adopcat.Mobile.ViewModels
             ShowLoading = true;
             try
             {
-                User.Picture = Image;
                 if(!IsNotFacebookUser && !string.IsNullOrEmpty(Password))
                 {
+                    User.Picture = Image;
                     User.Password = Password;
                 }
                 await App.ApiService.UpdateUser(User.Email, User, "bearer " + Settings.AuthToken);
@@ -112,6 +112,7 @@ namespace Adopcat.Mobile.ViewModels
             }
             catch (Exception ex)
             {
+                await _dialogService.DisplayAlertAsync("Erro!", "Não foi possível salvar suas alterações, tenta novamente mais tarde.", "Ok");
                 Debug.WriteLine(ex.StackTrace);
             }
             finally

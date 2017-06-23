@@ -7,7 +7,7 @@ namespace Adopcat.Data
     public class DatabaseContext : DbContext
     {
         public DatabaseContext()
-            : base("name=AdopcatDb")
+            : base("name=MeAdota")
         {
         }
 

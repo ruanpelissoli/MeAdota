@@ -52,6 +52,7 @@ namespace Adopcat.Mobile.Services
                 if (user == null)
                 {
                     Settings.FacebookAuthToken = string.Empty;
+                    Settings.FacebookUserId = string.Empty;
 
                     Device.BeginInvokeOnMainThread(async () =>
                     {
@@ -100,9 +101,6 @@ namespace Adopcat.Mobile.Services
                     {
                         Settings.AuthToken = loginResponse.AuthToken;
                         Settings.UserId = loginResponse.UserId.ToString();
-
-                        Settings.FacebookUserId = user.UserId;
-                        Settings.FacebookAuthToken = user.MobileServiceAuthenticationToken;
                     }
 
                     if (!appUser.PictureUrl.Equals(facebookProfile.Picture.Data.Url))

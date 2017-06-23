@@ -92,10 +92,13 @@ namespace Adopcat.Mobile.ViewModels
 
         private async void FacebookLoginCommandExecute()
         {
+            ShowLoading = true;
             if (!(await LoginAsync()))
                 return;
 
             await _navigationService.NavigateAsync($"app:///{nameof(MenuPage)}/NavigationPage/{nameof(LoadingPostersPage)}");
+
+            ShowLoading = false;
         }
 
         private async Task<bool> LoginAsync()

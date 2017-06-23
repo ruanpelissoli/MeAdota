@@ -225,6 +225,8 @@
     </Content>
     <None Include="Properties\PublishProfiles\adopcat - FTP.pubxml" />
     <None Include="Properties\PublishProfiles\adopcat - Web Deploy.pubxml" />
+    <None Include="Properties\PublishProfiles\meadota - FTP.pubxml" />
+    <None Include="Properties\PublishProfiles\meadota - Web Deploy.pubxml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

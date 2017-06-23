@@ -92,7 +92,6 @@
     </Win32Resource>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="Helpers\Settings.cs" />
     <Compile Include="Main.cs" />
     <Compile Include="AppDelegate.cs" />
     <Compile Include="Services\AuthenticationService.cs" />

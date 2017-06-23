@@ -6,8 +6,8 @@ using Adopcat.Mobile.Interfaces;
 using Android.Webkit;
 using System.Threading.Tasks;
 using Microsoft.WindowsAzure.MobileServices;
-using Adopcat.Mobile.Droid.Helpers;
 using System.Diagnostics;
+using Adopcat.Mobile.Helpers;
 
 [assembly: Dependency(typeof(AuthenticationService))]
 namespace Adopcat.Mobile.Droid.Services
