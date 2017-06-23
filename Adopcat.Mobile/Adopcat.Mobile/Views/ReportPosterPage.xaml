@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:prism="clr-namespace:Prism.Mvvm;assembly=Prism.Forms"
+             prism:ViewModelLocator.AutowireViewModel="True"
+             x:Class="Adopcat.Mobile.Views.ReportPosterPage"
+             Title="{Binding Title}">
+    <StackLayout HorizontalOptions="FillAndExpand"
+                 VerticalOptions="FillAndExpand"
+                 Padding="10">
+        <StackLayout Orientation="Horizontal"
+                     HorizontalOptions="FillAndExpand">
+            <Label Text="Achei essa publicação ofensiva." 
+                   Style="{StaticResource TitleLabel}"
+                   HorizontalOptions="StartAndExpand"
+                   VerticalOptions="Center" />
+            <Switch IsToggled="{Binding IsOffensive}"
+                    HorizontalOptions="End" 
+                    Toggled="IsOffensive_Toggled"/>
+        </StackLayout>
+        <StackLayout Orientation="Horizontal"
+                     HorizontalOptions="FillAndExpand">
+            <Label Text="Essa publicação não é nem de um gato nem de um cachorro." 
+                   Style="{StaticResource TitleLabel}"
+                   HorizontalOptions="StartAndExpand"
+                   VerticalOptions="Center" />
+            <Switch IsToggled="{Binding IsNotADogOrCat}"
+                    HorizontalOptions="End" 
+                    Toggled="IsNotADogOrCat_Toggled"/>
+        </StackLayout>
+        <StackLayout Orientation="Horizontal"
+                     HorizontalOptions="FillAndExpand">
+            <Label Text="Tive problemas com o usuário que criou a publicação." 
+                   Style="{StaticResource TitleLabel}"
+                   HorizontalOptions="StartAndExpand"
+                   VerticalOptions="Center" />
+            <Switch IsToggled="{Binding ProblemWithUser}"
+                    HorizontalOptions="End" 
+                    Toggled="ProblemWithUser_Toggled"/>
+        </StackLayout>
+        <Label Text="Descrição:" 
+                   Style="{StaticResource TitleLabel}" />
+        <Entry Text="{Binding Description}" 
+               HorizontalOptions="FillAndExpand" 
+               VerticalOptions="FillAndExpand" />
+        <StackLayout Orientation="Horizontal"
+                     HorizontalOptions="FillAndExpand">
+            <Button Text="Enviar" 
+                    Command="{Binding SendReportCommand}"
+                    Style="{StaticResource DefaultButton}"
+                    HorizontalOptions="FillAndExpand" 
+                    IsVisible="{Binding ShowLoading, Converter={StaticResource NegateBooleanConverter}"/>
+            <Button Text="Fechar"
+                    Command="{Binding CloseCommand}"
+                    Style="{StaticResource SecondaryButton}"
+                    HorizontalOptions="FillAndExpand"
+                    IsVisible="{Binding ShowLoading, Converter={StaticResource NegateBooleanConverter}"/>
+        </StackLayout>
+        <ActivityIndicator IsVisible="{Binding ShowLoading}" 
+                           IsRunning="{Binding ShowLoading}" 
+                           HorizontalOptions="Center"
+                           Color="#00ad97" />
+    </StackLayout>
+</ContentPage>

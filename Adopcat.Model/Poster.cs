@@ -27,5 +27,7 @@ namespace Adopcat.Model
         public virtual User User { get; set; }
         [ForeignKey("AdopterId")]
         public virtual User AdoptedBy { get; set; }
+        
+        public virtual List<Reports> Reports { get; set; }
     }
 }

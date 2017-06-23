@@ -38,7 +38,7 @@ namespace Adopcat.Mobile.ViewModels
         public DelegateCommand LoginCommand { get; set; }
         public DelegateCommand RegisterCommand { get; set; }
         public DelegateCommand FacebookLoginCommand { get; set; }
-
+        
         public LoginPageViewModel(INavigationService navigationService, IPageDialogService dialogService) : base(navigationService, dialogService)
         {
             Title = "MeAdota! - Login";
@@ -65,10 +65,17 @@ namespace Adopcat.Mobile.ViewModels
                 Settings.AuthToken = loginResponse.AuthToken;
                 Settings.UserId = loginResponse.UserId.ToString();
 
-                await _navigationService.NavigateAsync($"app:///{nameof(MenuPage)}/NavigationPage/{nameof(PostersPage)}");
+                await _navigationService.NavigateAsync($"app:///{nameof(MenuPage)}/NavigationPage/{nameof(LoadingPostersPage)}");
             }
             catch (Exception ex)
             {
+                if(ex is Refit.ApiException)
+                {
+                    var refiEx = ex as Refit.ApiException;
+                    if (refiEx.Content.Equals("Unauthorized")) {
+                        await _dialogService.DisplayAlertAsync("Erro!", "Usuário ou senha inválidos.", "Ok");
+                    }
+                }
                 Debug.WriteLine(ex.StackTrace);
             }
             finally
@@ -88,7 +95,7 @@ namespace Adopcat.Mobile.ViewModels
             if (!(await LoginAsync()))
                 return;
 
-            await _navigationService.NavigateAsync($"app:///{nameof(MenuPage)}/NavigationPage/{nameof(PostersPage)}");
+            await _navigationService.NavigateAsync($"app:///{nameof(MenuPage)}/NavigationPage/{nameof(LoadingPostersPage)}");
         }
 
         private async Task<bool> LoginAsync()

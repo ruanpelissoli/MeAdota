@@ -79,11 +79,13 @@
     <Compile Include="Interfaces\ILoggingService.cs" />
     <Compile Include="Interfaces\IPetPictureService.cs" />
     <Compile Include="Interfaces\IPosterService.cs" />
+    <Compile Include="Interfaces\IReportsService.cs" />
     <Compile Include="Interfaces\IUserService.cs" />
     <Compile Include="LoggingService.cs" />
     <Compile Include="PetPictureService.cs" />
     <Compile Include="PosterService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ReportsService.cs" />
     <Compile Include="UserService.cs" />
     <Compile Include="Util\Cryptography.cs" />
   </ItemGroup>

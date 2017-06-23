@@ -19,7 +19,7 @@
                            HeightRequest="100"
                            WidthRequest="100" />
                     <Label Text="{Binding User.Name}" 
-                           HorizontalOptions="FillAndExpand"
+                           HorizontalOptions="CenterAndExpand"
                            VerticalTextAlignment="Center"
                            HorizontalTextAlignment="Center"
                            FontSize="Medium"

@@ -2,9 +2,9 @@
 
 namespace Adopcat.Mobile.Views
 {
-    public partial class EmptyPostersPage : ContentPage
+    public partial class LoadingPostersPage : ContentPage
     {
-        public EmptyPostersPage()
+        public LoadingPostersPage()
         {
             InitializeComponent();
         }

@@ -33,7 +33,7 @@ namespace Adopcat.Mobile.ViewModels
         {
             var menuItemsList = new List<MenuItem>
             {
-                new MenuItem { Text = "Anúncios", Icon = "icon_menu_posters.png", GoTo = nameof(PostersPage) },
+                new MenuItem { Text = "Anúncios", Icon = "icon_menu_posters.png", GoTo = nameof(LoadingPostersPage) },
                 new MenuItem { Text = "Anunciar", Icon = "icon_menu_newposter.png", GoTo = nameof(NewPosterPage) },
                 new MenuItem { Text = "Meus Anúncios", Icon = "icon_menu_myposters.png", GoTo = nameof(MyPostersPage) },
                 new MenuItem { Text = "Configurações", Icon = "icon_settings.png", GoTo = nameof(ConfigurationPage) },

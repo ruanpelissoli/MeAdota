@@ -23,6 +23,7 @@ namespace Adopcat.Mobile.Views
             var currentPage = CurrentPage;
 
             if (currentPage == null) return;
+
             var backArrow = currentPage.Content.FindByName<Image>("imgBackArrow");
             var frontArrow = currentPage.Content.FindByName<Image>("imgForwardArrow");
 

@@ -33,7 +33,7 @@ namespace Adopcat.Mobile
                 if (!Settings.IsLoggedIn)
                     NavigationService.NavigateAsync($"NavigationPage/{nameof(LoginPage)}");
                 else
-                    NavigationService.NavigateAsync($"{nameof(MenuPage)}/NavigationPage/{nameof(PostersPage)}");
+                    NavigationService.NavigateAsync($"{nameof(MenuPage)}/NavigationPage/{nameof(LoadingPostersPage)}");
             }
             catch (Exception ex)
             {
@@ -54,7 +54,8 @@ namespace Adopcat.Mobile
             Container.RegisterTypeForNavigation<PosterDetailPage, PosterDetailPageViewModel>();
             Container.RegisterTypeForNavigation<EditMyPosterPage, EditMyPosterPageViewModel>();
             Container.RegisterTypeForNavigation<ConfigurationPage, ConfigurationPageViewModel>();
-            Container.RegisterTypeForNavigation<EmptyPostersPage, EmptyPostersPageViewModel>();
+            Container.RegisterTypeForNavigation<LoadingPostersPage, LoadingPostersPageViewModel>();
+            Container.RegisterTypeForNavigation<ReportPosterPage, ReportPosterPageViewModel>();
         }
     }
 }

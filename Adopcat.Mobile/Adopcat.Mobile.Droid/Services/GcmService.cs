@@ -29,7 +29,7 @@ namespace Adopcat.Mobile.Droid.Services
     [IntentFilter(new string[] { Constants.INTENT_FROM_GCM_LIBRARY_RETRY }, Categories = new string[] { "@PACKAGE_NAME@" })]
     public class PushHandlerBroadcastReceiver : GcmBroadcastReceiverBase<GcmService>
     {
-        public static string[] SENDER_IDS = new string[] { "148835952164 " };
+        public static string[] SENDER_IDS = new string[] { "148835952164" };
     }
 
     [Service]

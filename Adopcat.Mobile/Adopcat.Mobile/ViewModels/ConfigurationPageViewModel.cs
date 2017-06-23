@@ -97,6 +97,11 @@ namespace Adopcat.Mobile.ViewModels
             ShowLoading = true;
             try
             {
+                User.Picture = Image;
+                if(!IsNotFacebookUser && !string.IsNullOrEmpty(Password))
+                {
+                    User.Password = Password;
+                }
                 await App.ApiService.UpdateUser(User.Email, User, "bearer " + Settings.AuthToken);
                 await _dialogService.DisplayAlertAsync("Sucesso!", "Informações alteradas com sucesso.", "Ok");
 
@@ -117,7 +122,7 @@ namespace Adopcat.Mobile.ViewModels
 
         private bool SaveInfoCommandCanExecute()
         {
-            if (IsNotFacebookUser) return true;
+            if (!IsNotFacebookUser) return true;
 
             if (!string.IsNullOrEmpty(Password) || !string.IsNullOrEmpty(NewPassword))
             {

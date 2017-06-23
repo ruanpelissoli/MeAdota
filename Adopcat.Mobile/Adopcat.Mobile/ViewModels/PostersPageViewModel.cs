@@ -1,11 +1,10 @@
-﻿using Adopcat.Mobile.Helpers;
-using Adopcat.Mobile.Models;
-using Adopcat.Mobile.Services;
+﻿using Adopcat.Mobile.Models;
 using Adopcat.Mobile.Views;
 using Prism.Commands;
 using Prism.Navigation;
 using Prism.Services;
 using System;
+using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Diagnostics;
 using System.Linq;
@@ -77,47 +76,13 @@ namespace Adopcat.Mobile.ViewModels
             await _navigationService.NavigateAsync($"NavigationPage/{nameof(FilterPage)}", null, true);
         }
 
-        public async override void OnNavigatedTo(NavigationParameters parameters)
+        public override void OnNavigatedTo(NavigationParameters parameters)
         {
             base.OnNavigatedTo(parameters);
 
             try
             {
-                Filter filter = null;
-                if (parameters.Any(a => a.Key.Equals("filter")))
-                {
-                    filter = parameters.GetValue<Filter>("filter");
-                }
-
-                if (filter != null)
-                {
-                    Posters = new ObservableCollection<PosterOutput>(
-                                    await App.ApiService.GetFilteredPosters(filter.City ?? string.Empty,
-                                        filter.PetType, filter.Castrated, filter.Dewormed, "bearer " + Settings.AuthToken));
-                }
-                else
-                {
-                    Posters = new ObservableCollection<PosterOutput>(
-                                    await App.ApiService.GetPosters("bearer " + Settings.AuthToken));
-                }
-
-                foreach (var poster in Posters)
-                {
-                    poster.MainPictureUrl = poster.PetPictures.FirstOrDefault()?.Url;
-                }
-
-                if (!Posters.Any())
-                    await _navigationService.NavigateAsync($"app:///{nameof(MenuPage)}/NavigationPage/{nameof(EmptyPostersPage)}");
-            }
-            catch (Refit.ApiException ex)
-            {
-                if (ex.ReasonPhrase.Equals("Unauthorized"))
-                {
-                    await App.MobileService.LogoutAsync();
-                    await _navigationService.NavigateAsync($"app:///NavigationPage/{nameof(LoginPage)}");
-                }
-                    
-                Debug.WriteLine(ex.StackTrace);
+                Posters = new ObservableCollection<PosterOutput>(parameters.GetValue<List<PosterOutput>>("posters"));
             }
             catch (Exception ex)
             {

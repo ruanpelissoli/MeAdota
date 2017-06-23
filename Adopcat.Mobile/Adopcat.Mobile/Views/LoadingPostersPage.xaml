@@ -3,14 +3,18 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:prism="clr-namespace:Prism.Mvvm;assembly=Prism.Forms"
              prism:ViewModelLocator.AutowireViewModel="True"
-             x:Class="Adopcat.Mobile.Views.EmptyPostersPage"
+             x:Class="Adopcat.Mobile.Views.LoadingPostersPage"
              Title="{Binding Title}">
+    <CarouselPage.ToolbarItems>
+        <ToolbarItem Icon="icon_filter.png" Order="Primary" Command="{Binding FilterCommand}" />
+    </CarouselPage.ToolbarItems>
     <StackLayout HorizontalOptions="FillAndExpand"
                  VerticalOptions="Center">
         <Label Text="Não há nenhum anúncio aqui :(" 
                HorizontalTextAlignment="Center" 
                Style="{StaticResource TitleLabel}"
-               FontSize="Medium" />
+               FontSize="Medium"
+               IsVisible="{Binding HasNoPosters}"/>
         <Image Source="refresh.png" 
                HorizontalOptions="Center" 
                HeightRequest="60" 

@@ -7,14 +7,14 @@ using System.Diagnostics;
 using System.Linq;
 using Adopcat.Mobile.Interfaces;
 using System;
+using Adopcat.Mobile.Views;
 
 namespace Adopcat.Mobile.ViewModels
 {
     public class PosterDetailPageViewModel : BaseViewModel
     {
-        private PosterOutput _poster;
-
         public DelegateCommand CallCommand { get; set; }
+        public DelegateCommand ReportPosterCommand { get; set; }
 
         private int _position;
         public int Position
@@ -37,6 +37,7 @@ namespace Adopcat.Mobile.ViewModels
             set { SetProperty(ref _imgDewormed, value); }
         }
 
+        private PosterOutput _poster;
         public PosterOutput Poster
         {
             get { return _poster; }
@@ -47,6 +48,16 @@ namespace Adopcat.Mobile.ViewModels
             : base(navigationService, dialogService)
         {
             CallCommand = new DelegateCommand(CallCommandExecute);
+            ReportPosterCommand = new DelegateCommand(ReportPosterCommandExecute);
+        }
+
+        private async void ReportPosterCommandExecute()
+        {
+            var parameters = new NavigationParameters
+            {
+                { "posterId", Poster.Id }
+            };
+            await _navigationService.NavigateAsync($"NavigationPage/{nameof(ReportPosterPage)}", parameters, true);
         }
 
         private async void CallCommandExecute()

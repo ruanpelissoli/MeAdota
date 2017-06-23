@@ -39,6 +39,7 @@
                         <Label Text="{Binding PetName}" 
                            FontAttributes="Bold" 
                            FontSize="Large"
+                           HorizontalOptions="CenterAndExpand"
                            HorizontalTextAlignment="Center"/>
                         <StackLayout.GestureRecognizers>
                             <TapGestureRecognizer 
@@ -49,21 +50,23 @@
                         <roundimage:CircleImage
                            Source="{Binding MainPictureUrl}"
                            Aspect="AspectFill"
+                           BorderColor="#00ad97"
+                           BorderThickness="5"
                            HeightRequest="250" 
                            WidthRequest="250" />
-                        <StackLayout Orientation="Horizontal" Padding="0, 5">
+                        <StackLayout Orientation="Horizontal" Padding="0, 2">
                             <Label Text="Castrado" HorizontalOptions="StartAndExpand" Style="{StaticResource TitleLabel}" />
                             <Image x:Name="imgCastrated" HorizontalOptions="End" HeightRequest="20" WidthRequest="20" />
                         </StackLayout>
-                        <StackLayout Orientation="Horizontal" Padding="0, 5">
+                        <StackLayout Orientation="Horizontal" Padding="0, 2">
                             <Label Text="Vermifugado" HorizontalOptions="StartAndExpand" Style="{StaticResource TitleLabel}" />
                             <Image x:Name="imgDewormed" HorizontalOptions="End" HeightRequest="20" WidthRequest="20" />
                         </StackLayout>
-                        <StackLayout Orientation="Horizontal" Padding="0, 5">
+                        <StackLayout Orientation="Horizontal" Padding="0, 2">
                             <Label Text="Estado:" Style="{StaticResource TitleLabel}" HorizontalOptions="StartAndExpand" />
                             <Label Text="{Binding State}" FontAttributes="Bold" HorizontalOptions="End" />
                         </StackLayout>
-                        <StackLayout Orientation="Horizontal" Padding="0, 5">
+                        <StackLayout Orientation="Horizontal" Padding="0, 2">
                             <Label Text="Cidade:" Style="{StaticResource TitleLabel}" HorizontalOptions="StartAndExpand" />
                             <Label Text="{Binding City}" FontAttributes="Bold" HorizontalOptions="End" />
                         </StackLayout>

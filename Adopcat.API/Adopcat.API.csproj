@@ -201,6 +201,7 @@
     <Compile Include="Controllers\BaseApiController.cs" />
     <Compile Include="Controllers\DownloadController.cs" />
     <Compile Include="Controllers\PosterController.cs" />
+    <Compile Include="Controllers\ReportsController.cs" />
     <Compile Include="Controllers\UserController.cs" />
     <Compile Include="Extensions\RequestExtension.cs" />
     <Compile Include="Filters\CustomAuthorizeAttribute.cs" />

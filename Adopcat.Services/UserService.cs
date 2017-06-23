@@ -1,5 +1,6 @@
 ﻿using Adopcat.Data.Interfaces;
 using Adopcat.Model;
+using Adopcat.Services.Exceptions;
 using Adopcat.Services.Interfaces;
 using Adopcat.Services.Util;
 using System;
@@ -77,6 +78,9 @@ namespace Adopcat.Services
                     user.CreatedAt = DateTime.Now;
                 }
 
+                if (_userRepository.GetAll(u => u.Email == model.Email).Any())
+                    throw new BadRequestException("Já existe um usuário cadastrado com esse e-mail.");
+
                 if (!string.IsNullOrEmpty(model.Password))
                     user.Password = Cryptography.GetMD5Hash(model.Password);
 
@@ -99,9 +103,6 @@ namespace Adopcat.Services
         {
             await TryCatch(async () =>
             {
-                if (!string.IsNullOrEmpty(model.Password))
-                    model.Password = Cryptography.GetMD5Hash(model.Password);
-
                 await _userRepository.UpdateAsync(model);
             });
         }

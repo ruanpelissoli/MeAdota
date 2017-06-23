@@ -17,6 +17,7 @@ namespace Adopcat.Data
         public virtual DbSet<Token> Token { get; set; }
         public virtual DbSet<Poster> Poster { get; set; }
         public virtual DbSet<PetPicture> PetPicture { get; set; }
+        public virtual DbSet<Reports> Reports { get; set; }
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {

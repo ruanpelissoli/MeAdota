@@ -23,7 +23,7 @@ namespace Adopcat.Services
         {
             return await TryCatch(async () =>
             {
-                var petPictureBlobStorageUrl = await _blobStorageService.AddImageToBlobStorageAsync(picture);
+                var petPictureBlobStorageUrl = await _blobStorageService.AddPetImageToStorageAsync(picture);
 
                 var petPicture = new PetPicture
                 {
