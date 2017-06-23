@@ -1,10 +1,16 @@
-﻿namespace Adopcat.Model
+﻿using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
+
+namespace Adopcat.Model
 {
     public class PetPicture
     {
-        public string ContentType { get; set; }
-        public byte[] Data { get; set; }
-        public string Name { get; set; }
+        [Key]
+        public int Id { get; set; }
+        public int PosterId { get; set; }
         public string Url { get; set; }
+
+        [ForeignKey("PosterId")]
+        public virtual Poster Poster { get; set; }
     }
 }

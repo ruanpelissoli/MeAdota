@@ -1,0 +1,84 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<CarouselPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:prism="clr-namespace:Prism.Mvvm;assembly=Prism.Forms"
+             prism:ViewModelLocator.AutowireViewModel="True"
+             xmlns:roundimage="clr-namespace:ImageCircle.Forms.Plugin.Abstractions;assembly=ImageCircle.Forms.Plugin.Abstractions"
+             x:Class="Adopcat.Mobile.Views.PostersPage"
+             Title="{Binding Title}"
+             ItemsSource="{Binding Posters}"
+             x:Name="MyPosterPage"
+             Padding="20">
+    <CarouselPage.ToolbarItems>
+        <ToolbarItem Icon="icon_filter.png" Order="Primary" Command="{Binding FilterCommand}" />
+    </CarouselPage.ToolbarItems>
+    <CarouselPage.ItemTemplate>
+        <DataTemplate>
+            <ContentPage>
+                <Grid VerticalOptions="FillAndExpand"
+                      HorizontalOptions="FillAndExpand">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*" />
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="30" />
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="30" />
+                    </Grid.ColumnDefinitions>
+                    <Image x:Name="imgBackArrow" 
+                           Source="icon_left_arrow.png" 
+                           Grid.Column="0" 
+                           VerticalOptions="Center" 
+                           WidthRequest="30" 
+                           HeightRequest="30"/>
+                    <StackLayout 
+                        Grid.Column="1"
+                        Padding="20"
+                        HorizontalOptions="CenterAndExpand"
+                        VerticalOptions="FillAndExpand">
+                        <Label Text="{Binding PetName}" 
+                           FontAttributes="Bold" 
+                           FontSize="Large"
+                           HorizontalOptions="CenterAndExpand"
+                           HorizontalTextAlignment="Center"/>
+                        <StackLayout.GestureRecognizers>
+                            <TapGestureRecognizer 
+                           NumberOfTapsRequired="1" 
+                           Command="{Binding Path=BindingContext.PosterSelectedCommand, Source={x:Reference MyPosterPage}}" 
+                           CommandParameter="{Binding Id}" />
+                        </StackLayout.GestureRecognizers>
+                        <roundimage:CircleImage
+                           Source="{Binding MainPictureUrl}"
+                           Aspect="AspectFill"
+                           BorderColor="#00ad97"
+                           BorderThickness="5"
+                           HeightRequest="250" 
+                           WidthRequest="250" />
+                        <StackLayout Orientation="Horizontal" Padding="0, 2">
+                            <Label Text="Castrado" HorizontalOptions="StartAndExpand" Style="{StaticResource TitleLabel}" />
+                            <Image x:Name="imgCastrated" HorizontalOptions="End" HeightRequest="20" WidthRequest="20" />
+                        </StackLayout>
+                        <StackLayout Orientation="Horizontal" Padding="0, 2">
+                            <Label Text="Vermifugado" HorizontalOptions="StartAndExpand" Style="{StaticResource TitleLabel}" />
+                            <Image x:Name="imgDewormed" HorizontalOptions="End" HeightRequest="20" WidthRequest="20" />
+                        </StackLayout>
+                        <StackLayout Orientation="Horizontal" Padding="0, 2">
+                            <Label Text="Estado:" Style="{StaticResource TitleLabel}" HorizontalOptions="StartAndExpand" />
+                            <Label Text="{Binding State}" FontAttributes="Bold" HorizontalOptions="End" />
+                        </StackLayout>
+                        <StackLayout Orientation="Horizontal" Padding="0, 2">
+                            <Label Text="Cidade:" Style="{StaticResource TitleLabel}" HorizontalOptions="StartAndExpand" />
+                            <Label Text="{Binding City}" FontAttributes="Bold" HorizontalOptions="End" />
+                        </StackLayout>
+                    </StackLayout>
+                    <Image x:Name="imgForwardArrow" 
+                           Source="icon_right_arrow.png" 
+                           Grid.Column="2" 
+                           VerticalOptions="Center" 
+                           WidthRequest="30" 
+                           HeightRequest="30" />
+                </Grid>
+            </ContentPage>
+        </DataTemplate>
+    </CarouselPage.ItemTemplate>
+</CarouselPage>

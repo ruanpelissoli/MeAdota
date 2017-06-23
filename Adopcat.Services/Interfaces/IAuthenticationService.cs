@@ -1,17 +1,15 @@
 ﻿using Adopcat.Model;
+using System.Threading.Tasks;
 
 namespace Adopcat.Services.Interfaces
 {
     public interface IAuthenticationService
     {
         Token GetByAccessToken(string accessToken);
-
-        string GenerateToken(string email, string password);
-
-        void KillToken(long idToken);
-
+        Task<string> GenerateTokenByFacebook(string email, string facebookUserId);
+        Task<string> GenerateToken(string email, string password);
+        Task KillToken(int idToken);
         void RefreshToken(Token token);
-
-        void ChangePassword(int idUser, string newPassword);
+        Task ChangePassword(int idUser, string newPassword);
     }
 }

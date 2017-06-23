@@ -2,11 +2,9 @@
 using Adopcat.API.Extensions;
 using Adopcat.API.Util;
 using Adopcat.Services.Interfaces;
-using Newtonsoft.Json.Serialization;
 using System.Linq;
 using System.Net;
 using System.Net.Http;
-using System.Net.Http.Formatting;
 using System.Web.Http;
 using System.Web.Http.Controllers;
 
@@ -25,7 +23,7 @@ namespace Adopcat.API.Filters
                 {
                     if (((BaseApiController)actionContext.ControllerContext.Controller).Token == null && actionContext.ActionDescriptor.ActionName != "Logout")
                         authenticationService.RefreshToken(token);
-                    ((BaseApiController)actionContext.ControllerContext.Controller).Token = token;
+                    ((BaseApiController)actionContext.ControllerContext.Controller).Token = token.Access_token;
                 }
                 else
                     authenticationService.RefreshToken(token);
@@ -46,14 +44,6 @@ namespace Adopcat.API.Filters
         {
             return actionContext.ActionDescriptor.GetCustomAttributes<AllowAnonymousAttribute>().Any()
                    || actionContext.ControllerContext.ControllerDescriptor.GetCustomAttributes<AllowAnonymousAttribute>().Any();
-        }
-
-        private MediaTypeFormatter ResponseFormatter()
-        {
-            var formatter = new JsonMediaTypeFormatter();
-            formatter.SerializerSettings.ContractResolver = new CamelCasePropertyNamesContractResolver();
-
-            return formatter;
         }
     }
 }

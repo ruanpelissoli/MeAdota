@@ -26,6 +26,1795 @@ namespace Adopcat.Mobile.Droid
 		
 		public static void UpdateIdValues()
 		{
+			global::Gcm.Client.Resource.String.library_name = global::Adopcat.Mobile.Droid.Resource.String.library_name;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Animation.abc_fade_in = global::Adopcat.Mobile.Droid.Resource.Animation.abc_fade_in;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Animation.abc_fade_out = global::Adopcat.Mobile.Droid.Resource.Animation.abc_fade_out;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Animation.abc_grow_fade_in_from_bottom = global::Adopcat.Mobile.Droid.Resource.Animation.abc_grow_fade_in_from_bottom;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Animation.abc_popup_enter = global::Adopcat.Mobile.Droid.Resource.Animation.abc_popup_enter;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Animation.abc_popup_exit = global::Adopcat.Mobile.Droid.Resource.Animation.abc_popup_exit;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Animation.abc_shrink_fade_out_from_bottom = global::Adopcat.Mobile.Droid.Resource.Animation.abc_shrink_fade_out_from_bottom;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Animation.abc_slide_in_bottom = global::Adopcat.Mobile.Droid.Resource.Animation.abc_slide_in_bottom;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Animation.abc_slide_in_top = global::Adopcat.Mobile.Droid.Resource.Animation.abc_slide_in_top;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Animation.abc_slide_out_bottom = global::Adopcat.Mobile.Droid.Resource.Animation.abc_slide_out_bottom;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Animation.abc_slide_out_top = global::Adopcat.Mobile.Droid.Resource.Animation.abc_slide_out_top;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Animation.design_bottom_sheet_slide_in = global::Adopcat.Mobile.Droid.Resource.Animation.design_bottom_sheet_slide_in;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Animation.design_bottom_sheet_slide_out = global::Adopcat.Mobile.Droid.Resource.Animation.design_bottom_sheet_slide_out;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Animation.design_fab_in = global::Adopcat.Mobile.Droid.Resource.Animation.design_fab_in;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Animation.design_fab_out = global::Adopcat.Mobile.Droid.Resource.Animation.design_fab_out;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Animation.design_snackbar_in = global::Adopcat.Mobile.Droid.Resource.Animation.design_snackbar_in;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Animation.design_snackbar_out = global::Adopcat.Mobile.Droid.Resource.Animation.design_snackbar_out;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Attribute.MediaRouteControllerWindowBackground = global::Adopcat.Mobile.Droid.Resource.Attribute.MediaRouteControllerWindowBackground;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Attribute.actionBarDivider = global::Adopcat.Mobile.Droid.Resource.Attribute.actionBarDivider;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Attribute.actionBarItemBackground = global::Adopcat.Mobile.Droid.Resource.Attribute.actionBarItemBackground;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Attribute.actionBarPopupTheme = global::Adopcat.Mobile.Droid.Resource.Attribute.actionBarPopupTheme;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Attribute.actionBarSize = global::Adopcat.Mobile.Droid.Resource.Attribute.actionBarSize;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Attribute.actionBarSplitStyle = global::Adopcat.Mobile.Droid.Resource.Attribute.actionBarSplitStyle;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Attribute.actionBarStyle = global::Adopcat.Mobile.Droid.Resource.Attribute.actionBarStyle;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Attribute.actionBarTabBarStyle = global::Adopcat.Mobile.Droid.Resource.Attribute.actionBarTabBarStyle;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Attribute.actionBarTabStyle = global::Adopcat.Mobile.Droid.Resource.Attribute.actionBarTabStyle;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Attribute.actionBarTabTextStyle = global::Adopcat.Mobile.Droid.Resource.Attribute.actionBarTabTextStyle;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Attribute.actionBarTheme = global::Adopcat.Mobile.Droid.Resource.Attribute.actionBarTheme;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Attribute.actionBarWidgetTheme = global::Adopcat.Mobile.Droid.Resource.Attribute.actionBarWidgetTheme;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Attribute.actionButtonStyle = global::Adopcat.Mobile.Droid.Resource.Attribute.actionButtonStyle;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Attribute.actionDropDownStyle = global::Adopcat.Mobile.Droid.Resource.Attribute.actionDropDownStyle;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Attribute.actionLayout = global::Adopcat.Mobile.Droid.Resource.Attribute.actionLayout;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Attribute.actionMenuTextAppearance = global::Adopcat.Mobile.Droid.Resource.Attribute.actionMenuTextAppearance;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Attribute.actionMenuTextColor = global::Adopcat.Mobile.Droid.Resource.Attribute.actionMenuTextColor;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Attribute.actionModeBackground = global::Adopcat.Mobile.Droid.Resource.Attribute.actionModeBackground;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Attribute.actionModeCloseButtonStyle = global::Adopcat.Mobile.Droid.Resource.Attribute.actionModeCloseButtonStyle;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Attribute.actionModeCloseDrawable = global::Adopcat.Mobile.Droid.Resource.Attribute.actionModeCloseDrawable;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Attribute.actionModeCopyDrawable = global::Adopcat.Mobile.Droid.Resource.Attribute.actionModeCopyDrawable;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Attribute.actionModeCutDrawable = global::Adopcat.Mobile.Droid.Resource.Attribute.actionModeCutDrawable;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Attribute.actionModeFindDrawable = global::Adopcat.Mobile.Droid.Resource.Attribute.actionModeFindDrawable;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Attribute.actionModePasteDrawable = global::Adopcat.Mobile.Droid.Resource.Attribute.actionModePasteDrawable;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Attribute.actionModePopupWindowStyle = global::Adopcat.Mobile.Droid.Resource.Attribute.actionModePopupWindowStyle;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Attribute.actionModeSelectAllDrawable = global::Adopcat.Mobile.Droid.Resource.Attribute.actionModeSelectAllDrawable;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Attribute.actionModeShareDrawable = global::Adopcat.Mobile.Droid.Resource.Attribute.actionModeShareDrawable;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Attribute.actionModeSplitBackground = global::Adopcat.Mobile.Droid.Resource.Attribute.actionModeSplitBackground;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Attribute.actionModeStyle = global::Adopcat.Mobile.Droid.Resource.Attribute.actionModeStyle;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Attribute.actionModeWebSearchDrawable = global::Adopcat.Mobile.Droid.Resource.Attribute.actionModeWebSearchDrawable;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Attribute.actionOverflowButtonStyle = global::Adopcat.Mobile.Droid.Resource.Attribute.actionOverflowButtonStyle;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Attribute.actionOverflowMenuStyle = global::Adopcat.Mobile.Droid.Resource.Attribute.actionOverflowMenuStyle;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Attribute.actionProviderClass = global::Adopcat.Mobile.Droid.Resource.Attribute.actionProviderClass;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Attribute.actionViewClass = global::Adopcat.Mobile.Droid.Resource.Attribute.actionViewClass;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Attribute.activityChooserViewStyle = global::Adopcat.Mobile.Droid.Resource.Attribute.activityChooserViewStyle;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Attribute.alertDialogButtonGroupStyle = global::Adopcat.Mobile.Droid.Resource.Attribute.alertDialogButtonGroupStyle;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Attribute.alertDialogCenterButtons = global::Adopcat.Mobile.Droid.Resource.Attribute.alertDialogCenterButtons;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Attribute.alertDialogStyle = global::Adopcat.Mobile.Droid.Resource.Attribute.alertDialogStyle;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Attribute.alertDialogTheme = global::Adopcat.Mobile.Droid.Resource.Attribute.alertDialogTheme;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Attribute.allowStacking = global::Adopcat.Mobile.Droid.Resource.Attribute.allowStacking;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Attribute.arrowHeadLength = global::Adopcat.Mobile.Droid.Resource.Attribute.arrowHeadLength;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Attribute.arrowShaftLength = global::Adopcat.Mobile.Droid.Resource.Attribute.arrowShaftLength;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Attribute.autoCompleteTextViewStyle = global::Adopcat.Mobile.Droid.Resource.Attribute.autoCompleteTextViewStyle;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Attribute.background = global::Adopcat.Mobile.Droid.Resource.Attribute.background;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Attribute.backgroundSplit = global::Adopcat.Mobile.Droid.Resource.Attribute.backgroundSplit;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Attribute.backgroundStacked = global::Adopcat.Mobile.Droid.Resource.Attribute.backgroundStacked;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Attribute.backgroundTint = global::Adopcat.Mobile.Droid.Resource.Attribute.backgroundTint;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Attribute.backgroundTintMode = global::Adopcat.Mobile.Droid.Resource.Attribute.backgroundTintMode;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Attribute.barLength = global::Adopcat.Mobile.Droid.Resource.Attribute.barLength;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Attribute.behavior_hideable = global::Adopcat.Mobile.Droid.Resource.Attribute.behavior_hideable;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Attribute.behavior_overlapTop = global::Adopcat.Mobile.Droid.Resource.Attribute.behavior_overlapTop;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Attribute.behavior_peekHeight = global::Adopcat.Mobile.Droid.Resource.Attribute.behavior_peekHeight;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Attribute.borderWidth = global::Adopcat.Mobile.Droid.Resource.Attribute.borderWidth;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Attribute.borderlessButtonStyle = global::Adopcat.Mobile.Droid.Resource.Attribute.borderlessButtonStyle;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Attribute.bottomSheetDialogTheme = global::Adopcat.Mobile.Droid.Resource.Attribute.bottomSheetDialogTheme;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Attribute.bottomSheetStyle = global::Adopcat.Mobile.Droid.Resource.Attribute.bottomSheetStyle;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Attribute.buttonBarButtonStyle = global::Adopcat.Mobile.Droid.Resource.Attribute.buttonBarButtonStyle;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Attribute.buttonBarNegativeButtonStyle = global::Adopcat.Mobile.Droid.Resource.Attribute.buttonBarNegativeButtonStyle;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Attribute.buttonBarNeutralButtonStyle = global::Adopcat.Mobile.Droid.Resource.Attribute.buttonBarNeutralButtonStyle;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Attribute.buttonBarPositiveButtonStyle = global::Adopcat.Mobile.Droid.Resource.Attribute.buttonBarPositiveButtonStyle;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Attribute.buttonBarStyle = global::Adopcat.Mobile.Droid.Resource.Attribute.buttonBarStyle;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Attribute.buttonPanelSideLayout = global::Adopcat.Mobile.Droid.Resource.Attribute.buttonPanelSideLayout;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Attribute.buttonStyle = global::Adopcat.Mobile.Droid.Resource.Attribute.buttonStyle;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Attribute.buttonStyleSmall = global::Adopcat.Mobile.Droid.Resource.Attribute.buttonStyleSmall;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Attribute.buttonTint = global::Adopcat.Mobile.Droid.Resource.Attribute.buttonTint;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Attribute.buttonTintMode = global::Adopcat.Mobile.Droid.Resource.Attribute.buttonTintMode;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Attribute.cardBackgroundColor = global::Adopcat.Mobile.Droid.Resource.Attribute.cardBackgroundColor;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Attribute.cardCornerRadius = global::Adopcat.Mobile.Droid.Resource.Attribute.cardCornerRadius;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Attribute.cardElevation = global::Adopcat.Mobile.Droid.Resource.Attribute.cardElevation;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Attribute.cardMaxElevation = global::Adopcat.Mobile.Droid.Resource.Attribute.cardMaxElevation;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Attribute.cardPreventCornerOverlap = global::Adopcat.Mobile.Droid.Resource.Attribute.cardPreventCornerOverlap;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Attribute.cardUseCompatPadding = global::Adopcat.Mobile.Droid.Resource.Attribute.cardUseCompatPadding;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Attribute.checkboxStyle = global::Adopcat.Mobile.Droid.Resource.Attribute.checkboxStyle;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Attribute.checkedTextViewStyle = global::Adopcat.Mobile.Droid.Resource.Attribute.checkedTextViewStyle;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Attribute.closeIcon = global::Adopcat.Mobile.Droid.Resource.Attribute.closeIcon;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Attribute.closeItemLayout = global::Adopcat.Mobile.Droid.Resource.Attribute.closeItemLayout;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Attribute.collapseContentDescription = global::Adopcat.Mobile.Droid.Resource.Attribute.collapseContentDescription;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Attribute.collapseIcon = global::Adopcat.Mobile.Droid.Resource.Attribute.collapseIcon;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Attribute.collapsedTitleGravity = global::Adopcat.Mobile.Droid.Resource.Attribute.collapsedTitleGravity;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Attribute.collapsedTitleTextAppearance = global::Adopcat.Mobile.Droid.Resource.Attribute.collapsedTitleTextAppearance;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Attribute.color = global::Adopcat.Mobile.Droid.Resource.Attribute.color;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Attribute.colorAccent = global::Adopcat.Mobile.Droid.Resource.Attribute.colorAccent;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Attribute.colorButtonNormal = global::Adopcat.Mobile.Droid.Resource.Attribute.colorButtonNormal;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Attribute.colorControlActivated = global::Adopcat.Mobile.Droid.Resource.Attribute.colorControlActivated;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Attribute.colorControlHighlight = global::Adopcat.Mobile.Droid.Resource.Attribute.colorControlHighlight;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Attribute.colorControlNormal = global::Adopcat.Mobile.Droid.Resource.Attribute.colorControlNormal;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Attribute.colorPrimary = global::Adopcat.Mobile.Droid.Resource.Attribute.colorPrimary;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Attribute.colorPrimaryDark = global::Adopcat.Mobile.Droid.Resource.Attribute.colorPrimaryDark;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Attribute.colorSwitchThumbNormal = global::Adopcat.Mobile.Droid.Resource.Attribute.colorSwitchThumbNormal;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Attribute.commitIcon = global::Adopcat.Mobile.Droid.Resource.Attribute.commitIcon;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Attribute.contentInsetEnd = global::Adopcat.Mobile.Droid.Resource.Attribute.contentInsetEnd;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Attribute.contentInsetLeft = global::Adopcat.Mobile.Droid.Resource.Attribute.contentInsetLeft;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Attribute.contentInsetRight = global::Adopcat.Mobile.Droid.Resource.Attribute.contentInsetRight;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Attribute.contentInsetStart = global::Adopcat.Mobile.Droid.Resource.Attribute.contentInsetStart;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Attribute.contentPadding = global::Adopcat.Mobile.Droid.Resource.Attribute.contentPadding;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Attribute.contentPaddingBottom = global::Adopcat.Mobile.Droid.Resource.Attribute.contentPaddingBottom;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Attribute.contentPaddingLeft = global::Adopcat.Mobile.Droid.Resource.Attribute.contentPaddingLeft;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Attribute.contentPaddingRight = global::Adopcat.Mobile.Droid.Resource.Attribute.contentPaddingRight;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Attribute.contentPaddingTop = global::Adopcat.Mobile.Droid.Resource.Attribute.contentPaddingTop;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Attribute.contentScrim = global::Adopcat.Mobile.Droid.Resource.Attribute.contentScrim;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Attribute.controlBackground = global::Adopcat.Mobile.Droid.Resource.Attribute.controlBackground;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Attribute.counterEnabled = global::Adopcat.Mobile.Droid.Resource.Attribute.counterEnabled;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Attribute.counterMaxLength = global::Adopcat.Mobile.Droid.Resource.Attribute.counterMaxLength;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Attribute.counterOverflowTextAppearance = global::Adopcat.Mobile.Droid.Resource.Attribute.counterOverflowTextAppearance;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Attribute.counterTextAppearance = global::Adopcat.Mobile.Droid.Resource.Attribute.counterTextAppearance;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Attribute.customNavigationLayout = global::Adopcat.Mobile.Droid.Resource.Attribute.customNavigationLayout;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Attribute.defaultQueryHint = global::Adopcat.Mobile.Droid.Resource.Attribute.defaultQueryHint;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Attribute.dialogPreferredPadding = global::Adopcat.Mobile.Droid.Resource.Attribute.dialogPreferredPadding;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Attribute.dialogTheme = global::Adopcat.Mobile.Droid.Resource.Attribute.dialogTheme;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Attribute.displayOptions = global::Adopcat.Mobile.Droid.Resource.Attribute.displayOptions;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Attribute.divider = global::Adopcat.Mobile.Droid.Resource.Attribute.divider;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Attribute.dividerHorizontal = global::Adopcat.Mobile.Droid.Resource.Attribute.dividerHorizontal;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Attribute.dividerPadding = global::Adopcat.Mobile.Droid.Resource.Attribute.dividerPadding;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Attribute.dividerVertical = global::Adopcat.Mobile.Droid.Resource.Attribute.dividerVertical;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Attribute.drawableSize = global::Adopcat.Mobile.Droid.Resource.Attribute.drawableSize;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Attribute.drawerArrowStyle = global::Adopcat.Mobile.Droid.Resource.Attribute.drawerArrowStyle;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Attribute.dropDownListViewStyle = global::Adopcat.Mobile.Droid.Resource.Attribute.dropDownListViewStyle;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Attribute.dropdownListPreferredItemHeight = global::Adopcat.Mobile.Droid.Resource.Attribute.dropdownListPreferredItemHeight;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Attribute.editTextBackground = global::Adopcat.Mobile.Droid.Resource.Attribute.editTextBackground;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Attribute.editTextColor = global::Adopcat.Mobile.Droid.Resource.Attribute.editTextColor;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Attribute.editTextStyle = global::Adopcat.Mobile.Droid.Resource.Attribute.editTextStyle;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Attribute.elevation = global::Adopcat.Mobile.Droid.Resource.Attribute.elevation;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Attribute.errorEnabled = global::Adopcat.Mobile.Droid.Resource.Attribute.errorEnabled;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Attribute.errorTextAppearance = global::Adopcat.Mobile.Droid.Resource.Attribute.errorTextAppearance;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Attribute.expandActivityOverflowButtonDrawable = global::Adopcat.Mobile.Droid.Resource.Attribute.expandActivityOverflowButtonDrawable;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Attribute.expanded = global::Adopcat.Mobile.Droid.Resource.Attribute.expanded;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Attribute.expandedTitleGravity = global::Adopcat.Mobile.Droid.Resource.Attribute.expandedTitleGravity;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Attribute.expandedTitleMargin = global::Adopcat.Mobile.Droid.Resource.Attribute.expandedTitleMargin;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Attribute.expandedTitleMarginBottom = global::Adopcat.Mobile.Droid.Resource.Attribute.expandedTitleMarginBottom;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Attribute.expandedTitleMarginEnd = global::Adopcat.Mobile.Droid.Resource.Attribute.expandedTitleMarginEnd;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Attribute.expandedTitleMarginStart = global::Adopcat.Mobile.Droid.Resource.Attribute.expandedTitleMarginStart;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Attribute.expandedTitleMarginTop = global::Adopcat.Mobile.Droid.Resource.Attribute.expandedTitleMarginTop;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Attribute.expandedTitleTextAppearance = global::Adopcat.Mobile.Droid.Resource.Attribute.expandedTitleTextAppearance;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Attribute.externalRouteEnabledDrawable = global::Adopcat.Mobile.Droid.Resource.Attribute.externalRouteEnabledDrawable;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Attribute.fabSize = global::Adopcat.Mobile.Droid.Resource.Attribute.fabSize;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Attribute.foregroundInsidePadding = global::Adopcat.Mobile.Droid.Resource.Attribute.foregroundInsidePadding;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Attribute.gapBetweenBars = global::Adopcat.Mobile.Droid.Resource.Attribute.gapBetweenBars;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Attribute.goIcon = global::Adopcat.Mobile.Droid.Resource.Attribute.goIcon;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Attribute.headerLayout = global::Adopcat.Mobile.Droid.Resource.Attribute.headerLayout;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Attribute.height = global::Adopcat.Mobile.Droid.Resource.Attribute.height;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Attribute.hideOnContentScroll = global::Adopcat.Mobile.Droid.Resource.Attribute.hideOnContentScroll;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Attribute.hintAnimationEnabled = global::Adopcat.Mobile.Droid.Resource.Attribute.hintAnimationEnabled;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Attribute.hintEnabled = global::Adopcat.Mobile.Droid.Resource.Attribute.hintEnabled;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Attribute.hintTextAppearance = global::Adopcat.Mobile.Droid.Resource.Attribute.hintTextAppearance;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Attribute.homeAsUpIndicator = global::Adopcat.Mobile.Droid.Resource.Attribute.homeAsUpIndicator;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Attribute.homeLayout = global::Adopcat.Mobile.Droid.Resource.Attribute.homeLayout;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Attribute.icon = global::Adopcat.Mobile.Droid.Resource.Attribute.icon;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Attribute.iconifiedByDefault = global::Adopcat.Mobile.Droid.Resource.Attribute.iconifiedByDefault;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Attribute.imageButtonStyle = global::Adopcat.Mobile.Droid.Resource.Attribute.imageButtonStyle;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Attribute.indeterminateProgressStyle = global::Adopcat.Mobile.Droid.Resource.Attribute.indeterminateProgressStyle;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Attribute.initialActivityCount = global::Adopcat.Mobile.Droid.Resource.Attribute.initialActivityCount;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Attribute.insetForeground = global::Adopcat.Mobile.Droid.Resource.Attribute.insetForeground;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Attribute.isLightTheme = global::Adopcat.Mobile.Droid.Resource.Attribute.isLightTheme;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Attribute.itemBackground = global::Adopcat.Mobile.Droid.Resource.Attribute.itemBackground;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Attribute.itemIconTint = global::Adopcat.Mobile.Droid.Resource.Attribute.itemIconTint;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Attribute.itemPadding = global::Adopcat.Mobile.Droid.Resource.Attribute.itemPadding;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Attribute.itemTextAppearance = global::Adopcat.Mobile.Droid.Resource.Attribute.itemTextAppearance;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Attribute.itemTextColor = global::Adopcat.Mobile.Droid.Resource.Attribute.itemTextColor;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Attribute.keylines = global::Adopcat.Mobile.Droid.Resource.Attribute.keylines;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Attribute.layout = global::Adopcat.Mobile.Droid.Resource.Attribute.layout;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Attribute.layoutManager = global::Adopcat.Mobile.Droid.Resource.Attribute.layoutManager;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Attribute.layout_anchor = global::Adopcat.Mobile.Droid.Resource.Attribute.layout_anchor;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Attribute.layout_anchorGravity = global::Adopcat.Mobile.Droid.Resource.Attribute.layout_anchorGravity;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Attribute.layout_behavior = global::Adopcat.Mobile.Droid.Resource.Attribute.layout_behavior;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Attribute.layout_collapseMode = global::Adopcat.Mobile.Droid.Resource.Attribute.layout_collapseMode;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Attribute.layout_collapseParallaxMultiplier = global::Adopcat.Mobile.Droid.Resource.Attribute.layout_collapseParallaxMultiplier;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Attribute.layout_keyline = global::Adopcat.Mobile.Droid.Resource.Attribute.layout_keyline;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Attribute.layout_scrollFlags = global::Adopcat.Mobile.Droid.Resource.Attribute.layout_scrollFlags;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Attribute.layout_scrollInterpolator = global::Adopcat.Mobile.Droid.Resource.Attribute.layout_scrollInterpolator;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Attribute.listChoiceBackgroundIndicator = global::Adopcat.Mobile.Droid.Resource.Attribute.listChoiceBackgroundIndicator;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Attribute.listDividerAlertDialog = global::Adopcat.Mobile.Droid.Resource.Attribute.listDividerAlertDialog;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Attribute.listItemLayout = global::Adopcat.Mobile.Droid.Resource.Attribute.listItemLayout;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Attribute.listLayout = global::Adopcat.Mobile.Droid.Resource.Attribute.listLayout;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Attribute.listPopupWindowStyle = global::Adopcat.Mobile.Droid.Resource.Attribute.listPopupWindowStyle;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Attribute.listPreferredItemHeight = global::Adopcat.Mobile.Droid.Resource.Attribute.listPreferredItemHeight;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Attribute.listPreferredItemHeightLarge = global::Adopcat.Mobile.Droid.Resource.Attribute.listPreferredItemHeightLarge;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Attribute.listPreferredItemHeightSmall = global::Adopcat.Mobile.Droid.Resource.Attribute.listPreferredItemHeightSmall;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Attribute.listPreferredItemPaddingLeft = global::Adopcat.Mobile.Droid.Resource.Attribute.listPreferredItemPaddingLeft;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Attribute.listPreferredItemPaddingRight = global::Adopcat.Mobile.Droid.Resource.Attribute.listPreferredItemPaddingRight;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Attribute.logo = global::Adopcat.Mobile.Droid.Resource.Attribute.logo;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Attribute.logoDescription = global::Adopcat.Mobile.Droid.Resource.Attribute.logoDescription;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Attribute.maxActionInlineWidth = global::Adopcat.Mobile.Droid.Resource.Attribute.maxActionInlineWidth;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Attribute.maxButtonHeight = global::Adopcat.Mobile.Droid.Resource.Attribute.maxButtonHeight;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Attribute.measureWithLargestChild = global::Adopcat.Mobile.Droid.Resource.Attribute.measureWithLargestChild;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Attribute.mediaRouteAudioTrackDrawable = global::Adopcat.Mobile.Droid.Resource.Attribute.mediaRouteAudioTrackDrawable;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Attribute.mediaRouteBluetoothIconDrawable = global::Adopcat.Mobile.Droid.Resource.Attribute.mediaRouteBluetoothIconDrawable;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Attribute.mediaRouteButtonStyle = global::Adopcat.Mobile.Droid.Resource.Attribute.mediaRouteButtonStyle;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Attribute.mediaRouteCastDrawable = global::Adopcat.Mobile.Droid.Resource.Attribute.mediaRouteCastDrawable;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Attribute.mediaRouteChooserPrimaryTextStyle = global::Adopcat.Mobile.Droid.Resource.Attribute.mediaRouteChooserPrimaryTextStyle;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Attribute.mediaRouteChooserSecondaryTextStyle = global::Adopcat.Mobile.Droid.Resource.Attribute.mediaRouteChooserSecondaryTextStyle;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Attribute.mediaRouteCloseDrawable = global::Adopcat.Mobile.Droid.Resource.Attribute.mediaRouteCloseDrawable;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Attribute.mediaRouteCollapseGroupDrawable = global::Adopcat.Mobile.Droid.Resource.Attribute.mediaRouteCollapseGroupDrawable;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Attribute.mediaRouteConnectingDrawable = global::Adopcat.Mobile.Droid.Resource.Attribute.mediaRouteConnectingDrawable;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Attribute.mediaRouteControllerPrimaryTextStyle = global::Adopcat.Mobile.Droid.Resource.Attribute.mediaRouteControllerPrimaryTextStyle;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Attribute.mediaRouteControllerSecondaryTextStyle = global::Adopcat.Mobile.Droid.Resource.Attribute.mediaRouteControllerSecondaryTextStyle;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Attribute.mediaRouteControllerTitleTextStyle = global::Adopcat.Mobile.Droid.Resource.Attribute.mediaRouteControllerTitleTextStyle;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Attribute.mediaRouteDefaultIconDrawable = global::Adopcat.Mobile.Droid.Resource.Attribute.mediaRouteDefaultIconDrawable;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Attribute.mediaRouteExpandGroupDrawable = global::Adopcat.Mobile.Droid.Resource.Attribute.mediaRouteExpandGroupDrawable;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Attribute.mediaRouteOffDrawable = global::Adopcat.Mobile.Droid.Resource.Attribute.mediaRouteOffDrawable;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Attribute.mediaRouteOnDrawable = global::Adopcat.Mobile.Droid.Resource.Attribute.mediaRouteOnDrawable;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Attribute.mediaRoutePauseDrawable = global::Adopcat.Mobile.Droid.Resource.Attribute.mediaRoutePauseDrawable;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Attribute.mediaRoutePlayDrawable = global::Adopcat.Mobile.Droid.Resource.Attribute.mediaRoutePlayDrawable;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Attribute.mediaRouteSpeakerGroupIconDrawable = global::Adopcat.Mobile.Droid.Resource.Attribute.mediaRouteSpeakerGroupIconDrawable;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Attribute.mediaRouteSpeakerIconDrawable = global::Adopcat.Mobile.Droid.Resource.Attribute.mediaRouteSpeakerIconDrawable;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Attribute.mediaRouteTvIconDrawable = global::Adopcat.Mobile.Droid.Resource.Attribute.mediaRouteTvIconDrawable;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Attribute.menu = global::Adopcat.Mobile.Droid.Resource.Attribute.menu;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Attribute.multiChoiceItemLayout = global::Adopcat.Mobile.Droid.Resource.Attribute.multiChoiceItemLayout;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Attribute.navigationContentDescription = global::Adopcat.Mobile.Droid.Resource.Attribute.navigationContentDescription;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Attribute.navigationIcon = global::Adopcat.Mobile.Droid.Resource.Attribute.navigationIcon;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Attribute.navigationMode = global::Adopcat.Mobile.Droid.Resource.Attribute.navigationMode;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Attribute.overlapAnchor = global::Adopcat.Mobile.Droid.Resource.Attribute.overlapAnchor;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Attribute.paddingEnd = global::Adopcat.Mobile.Droid.Resource.Attribute.paddingEnd;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Attribute.paddingStart = global::Adopcat.Mobile.Droid.Resource.Attribute.paddingStart;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Attribute.panelBackground = global::Adopcat.Mobile.Droid.Resource.Attribute.panelBackground;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Attribute.panelMenuListTheme = global::Adopcat.Mobile.Droid.Resource.Attribute.panelMenuListTheme;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Attribute.panelMenuListWidth = global::Adopcat.Mobile.Droid.Resource.Attribute.panelMenuListWidth;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Attribute.popupMenuStyle = global::Adopcat.Mobile.Droid.Resource.Attribute.popupMenuStyle;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Attribute.popupTheme = global::Adopcat.Mobile.Droid.Resource.Attribute.popupTheme;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Attribute.popupWindowStyle = global::Adopcat.Mobile.Droid.Resource.Attribute.popupWindowStyle;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Attribute.preserveIconSpacing = global::Adopcat.Mobile.Droid.Resource.Attribute.preserveIconSpacing;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Attribute.pressedTranslationZ = global::Adopcat.Mobile.Droid.Resource.Attribute.pressedTranslationZ;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Attribute.progressBarPadding = global::Adopcat.Mobile.Droid.Resource.Attribute.progressBarPadding;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Attribute.progressBarStyle = global::Adopcat.Mobile.Droid.Resource.Attribute.progressBarStyle;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Attribute.queryBackground = global::Adopcat.Mobile.Droid.Resource.Attribute.queryBackground;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Attribute.queryHint = global::Adopcat.Mobile.Droid.Resource.Attribute.queryHint;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Attribute.radioButtonStyle = global::Adopcat.Mobile.Droid.Resource.Attribute.radioButtonStyle;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Attribute.ratingBarStyle = global::Adopcat.Mobile.Droid.Resource.Attribute.ratingBarStyle;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Attribute.ratingBarStyleIndicator = global::Adopcat.Mobile.Droid.Resource.Attribute.ratingBarStyleIndicator;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Attribute.ratingBarStyleSmall = global::Adopcat.Mobile.Droid.Resource.Attribute.ratingBarStyleSmall;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Attribute.reverseLayout = global::Adopcat.Mobile.Droid.Resource.Attribute.reverseLayout;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Attribute.rippleColor = global::Adopcat.Mobile.Droid.Resource.Attribute.rippleColor;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Attribute.searchHintIcon = global::Adopcat.Mobile.Droid.Resource.Attribute.searchHintIcon;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Attribute.searchIcon = global::Adopcat.Mobile.Droid.Resource.Attribute.searchIcon;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Attribute.searchViewStyle = global::Adopcat.Mobile.Droid.Resource.Attribute.searchViewStyle;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Attribute.seekBarStyle = global::Adopcat.Mobile.Droid.Resource.Attribute.seekBarStyle;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Attribute.selectableItemBackground = global::Adopcat.Mobile.Droid.Resource.Attribute.selectableItemBackground;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Attribute.selectableItemBackgroundBorderless = global::Adopcat.Mobile.Droid.Resource.Attribute.selectableItemBackgroundBorderless;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Attribute.showAsAction = global::Adopcat.Mobile.Droid.Resource.Attribute.showAsAction;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Attribute.showDividers = global::Adopcat.Mobile.Droid.Resource.Attribute.showDividers;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Attribute.showText = global::Adopcat.Mobile.Droid.Resource.Attribute.showText;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Attribute.singleChoiceItemLayout = global::Adopcat.Mobile.Droid.Resource.Attribute.singleChoiceItemLayout;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Attribute.spanCount = global::Adopcat.Mobile.Droid.Resource.Attribute.spanCount;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Attribute.spinBars = global::Adopcat.Mobile.Droid.Resource.Attribute.spinBars;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Attribute.spinnerDropDownItemStyle = global::Adopcat.Mobile.Droid.Resource.Attribute.spinnerDropDownItemStyle;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Attribute.spinnerStyle = global::Adopcat.Mobile.Droid.Resource.Attribute.spinnerStyle;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Attribute.splitTrack = global::Adopcat.Mobile.Droid.Resource.Attribute.splitTrack;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Attribute.srcCompat = global::Adopcat.Mobile.Droid.Resource.Attribute.srcCompat;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Attribute.stackFromEnd = global::Adopcat.Mobile.Droid.Resource.Attribute.stackFromEnd;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Attribute.state_above_anchor = global::Adopcat.Mobile.Droid.Resource.Attribute.state_above_anchor;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Attribute.statusBarBackground = global::Adopcat.Mobile.Droid.Resource.Attribute.statusBarBackground;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Attribute.statusBarScrim = global::Adopcat.Mobile.Droid.Resource.Attribute.statusBarScrim;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Attribute.submitBackground = global::Adopcat.Mobile.Droid.Resource.Attribute.submitBackground;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Attribute.subtitle = global::Adopcat.Mobile.Droid.Resource.Attribute.subtitle;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Attribute.subtitleTextAppearance = global::Adopcat.Mobile.Droid.Resource.Attribute.subtitleTextAppearance;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Attribute.subtitleTextColor = global::Adopcat.Mobile.Droid.Resource.Attribute.subtitleTextColor;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Attribute.subtitleTextStyle = global::Adopcat.Mobile.Droid.Resource.Attribute.subtitleTextStyle;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Attribute.suggestionRowLayout = global::Adopcat.Mobile.Droid.Resource.Attribute.suggestionRowLayout;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Attribute.switchMinWidth = global::Adopcat.Mobile.Droid.Resource.Attribute.switchMinWidth;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Attribute.switchPadding = global::Adopcat.Mobile.Droid.Resource.Attribute.switchPadding;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Attribute.switchStyle = global::Adopcat.Mobile.Droid.Resource.Attribute.switchStyle;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Attribute.switchTextAppearance = global::Adopcat.Mobile.Droid.Resource.Attribute.switchTextAppearance;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Attribute.tabBackground = global::Adopcat.Mobile.Droid.Resource.Attribute.tabBackground;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Attribute.tabContentStart = global::Adopcat.Mobile.Droid.Resource.Attribute.tabContentStart;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Attribute.tabGravity = global::Adopcat.Mobile.Droid.Resource.Attribute.tabGravity;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Attribute.tabIndicatorColor = global::Adopcat.Mobile.Droid.Resource.Attribute.tabIndicatorColor;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Attribute.tabIndicatorHeight = global::Adopcat.Mobile.Droid.Resource.Attribute.tabIndicatorHeight;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Attribute.tabMaxWidth = global::Adopcat.Mobile.Droid.Resource.Attribute.tabMaxWidth;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Attribute.tabMinWidth = global::Adopcat.Mobile.Droid.Resource.Attribute.tabMinWidth;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Attribute.tabMode = global::Adopcat.Mobile.Droid.Resource.Attribute.tabMode;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Attribute.tabPadding = global::Adopcat.Mobile.Droid.Resource.Attribute.tabPadding;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Attribute.tabPaddingBottom = global::Adopcat.Mobile.Droid.Resource.Attribute.tabPaddingBottom;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Attribute.tabPaddingEnd = global::Adopcat.Mobile.Droid.Resource.Attribute.tabPaddingEnd;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Attribute.tabPaddingStart = global::Adopcat.Mobile.Droid.Resource.Attribute.tabPaddingStart;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Attribute.tabPaddingTop = global::Adopcat.Mobile.Droid.Resource.Attribute.tabPaddingTop;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Attribute.tabSelectedTextColor = global::Adopcat.Mobile.Droid.Resource.Attribute.tabSelectedTextColor;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Attribute.tabTextAppearance = global::Adopcat.Mobile.Droid.Resource.Attribute.tabTextAppearance;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Attribute.tabTextColor = global::Adopcat.Mobile.Droid.Resource.Attribute.tabTextColor;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Attribute.textAllCaps = global::Adopcat.Mobile.Droid.Resource.Attribute.textAllCaps;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Attribute.textAppearanceLargePopupMenu = global::Adopcat.Mobile.Droid.Resource.Attribute.textAppearanceLargePopupMenu;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Attribute.textAppearanceListItem = global::Adopcat.Mobile.Droid.Resource.Attribute.textAppearanceListItem;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Attribute.textAppearanceListItemSmall = global::Adopcat.Mobile.Droid.Resource.Attribute.textAppearanceListItemSmall;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Attribute.textAppearanceSearchResultSubtitle = global::Adopcat.Mobile.Droid.Resource.Attribute.textAppearanceSearchResultSubtitle;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Attribute.textAppearanceSearchResultTitle = global::Adopcat.Mobile.Droid.Resource.Attribute.textAppearanceSearchResultTitle;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Attribute.textAppearanceSmallPopupMenu = global::Adopcat.Mobile.Droid.Resource.Attribute.textAppearanceSmallPopupMenu;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Attribute.textColorAlertDialogListItem = global::Adopcat.Mobile.Droid.Resource.Attribute.textColorAlertDialogListItem;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Attribute.textColorError = global::Adopcat.Mobile.Droid.Resource.Attribute.textColorError;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Attribute.textColorSearchUrl = global::Adopcat.Mobile.Droid.Resource.Attribute.textColorSearchUrl;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Attribute.theme = global::Adopcat.Mobile.Droid.Resource.Attribute.theme;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Attribute.thickness = global::Adopcat.Mobile.Droid.Resource.Attribute.thickness;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Attribute.thumbTextPadding = global::Adopcat.Mobile.Droid.Resource.Attribute.thumbTextPadding;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Attribute.title = global::Adopcat.Mobile.Droid.Resource.Attribute.title;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Attribute.titleEnabled = global::Adopcat.Mobile.Droid.Resource.Attribute.titleEnabled;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Attribute.titleMarginBottom = global::Adopcat.Mobile.Droid.Resource.Attribute.titleMarginBottom;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Attribute.titleMarginEnd = global::Adopcat.Mobile.Droid.Resource.Attribute.titleMarginEnd;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Attribute.titleMarginStart = global::Adopcat.Mobile.Droid.Resource.Attribute.titleMarginStart;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Attribute.titleMarginTop = global::Adopcat.Mobile.Droid.Resource.Attribute.titleMarginTop;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Attribute.titleMargins = global::Adopcat.Mobile.Droid.Resource.Attribute.titleMargins;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Attribute.titleTextAppearance = global::Adopcat.Mobile.Droid.Resource.Attribute.titleTextAppearance;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Attribute.titleTextColor = global::Adopcat.Mobile.Droid.Resource.Attribute.titleTextColor;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Attribute.titleTextStyle = global::Adopcat.Mobile.Droid.Resource.Attribute.titleTextStyle;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Attribute.toolbarId = global::Adopcat.Mobile.Droid.Resource.Attribute.toolbarId;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Attribute.toolbarNavigationButtonStyle = global::Adopcat.Mobile.Droid.Resource.Attribute.toolbarNavigationButtonStyle;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Attribute.toolbarStyle = global::Adopcat.Mobile.Droid.Resource.Attribute.toolbarStyle;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Attribute.track = global::Adopcat.Mobile.Droid.Resource.Attribute.track;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Attribute.useCompatPadding = global::Adopcat.Mobile.Droid.Resource.Attribute.useCompatPadding;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Attribute.voiceIcon = global::Adopcat.Mobile.Droid.Resource.Attribute.voiceIcon;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Attribute.windowActionBar = global::Adopcat.Mobile.Droid.Resource.Attribute.windowActionBar;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Attribute.windowActionBarOverlay = global::Adopcat.Mobile.Droid.Resource.Attribute.windowActionBarOverlay;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Attribute.windowActionModeOverlay = global::Adopcat.Mobile.Droid.Resource.Attribute.windowActionModeOverlay;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Attribute.windowFixedHeightMajor = global::Adopcat.Mobile.Droid.Resource.Attribute.windowFixedHeightMajor;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Attribute.windowFixedHeightMinor = global::Adopcat.Mobile.Droid.Resource.Attribute.windowFixedHeightMinor;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Attribute.windowFixedWidthMajor = global::Adopcat.Mobile.Droid.Resource.Attribute.windowFixedWidthMajor;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Attribute.windowFixedWidthMinor = global::Adopcat.Mobile.Droid.Resource.Attribute.windowFixedWidthMinor;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Attribute.windowMinWidthMajor = global::Adopcat.Mobile.Droid.Resource.Attribute.windowMinWidthMajor;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Attribute.windowMinWidthMinor = global::Adopcat.Mobile.Droid.Resource.Attribute.windowMinWidthMinor;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Attribute.windowNoTitle = global::Adopcat.Mobile.Droid.Resource.Attribute.windowNoTitle;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Boolean.abc_action_bar_embed_tabs = global::Adopcat.Mobile.Droid.Resource.Boolean.abc_action_bar_embed_tabs;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Boolean.abc_action_bar_embed_tabs_pre_jb = global::Adopcat.Mobile.Droid.Resource.Boolean.abc_action_bar_embed_tabs_pre_jb;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Boolean.abc_action_bar_expanded_action_views_exclusive = global::Adopcat.Mobile.Droid.Resource.Boolean.abc_action_bar_expanded_action_views_exclusive;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Boolean.abc_allow_stacked_button_bar = global::Adopcat.Mobile.Droid.Resource.Boolean.abc_allow_stacked_button_bar;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Boolean.abc_config_actionMenuItemAllCaps = global::Adopcat.Mobile.Droid.Resource.Boolean.abc_config_actionMenuItemAllCaps;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Boolean.abc_config_allowActionMenuItemTextWithIcon = global::Adopcat.Mobile.Droid.Resource.Boolean.abc_config_allowActionMenuItemTextWithIcon;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Boolean.abc_config_closeDialogWhenTouchOutside = global::Adopcat.Mobile.Droid.Resource.Boolean.abc_config_closeDialogWhenTouchOutside;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Boolean.abc_config_showMenuShortcutsWhenKeyboardPresent = global::Adopcat.Mobile.Droid.Resource.Boolean.abc_config_showMenuShortcutsWhenKeyboardPresent;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Color.abc_background_cache_hint_selector_material_dark = global::Adopcat.Mobile.Droid.Resource.Color.abc_background_cache_hint_selector_material_dark;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Color.abc_background_cache_hint_selector_material_light = global::Adopcat.Mobile.Droid.Resource.Color.abc_background_cache_hint_selector_material_light;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Color.abc_color_highlight_material = global::Adopcat.Mobile.Droid.Resource.Color.abc_color_highlight_material;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Color.abc_input_method_navigation_guard = global::Adopcat.Mobile.Droid.Resource.Color.abc_input_method_navigation_guard;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Color.abc_primary_text_disable_only_material_dark = global::Adopcat.Mobile.Droid.Resource.Color.abc_primary_text_disable_only_material_dark;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Color.abc_primary_text_disable_only_material_light = global::Adopcat.Mobile.Droid.Resource.Color.abc_primary_text_disable_only_material_light;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Color.abc_primary_text_material_dark = global::Adopcat.Mobile.Droid.Resource.Color.abc_primary_text_material_dark;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Color.abc_primary_text_material_light = global::Adopcat.Mobile.Droid.Resource.Color.abc_primary_text_material_light;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Color.abc_search_url_text = global::Adopcat.Mobile.Droid.Resource.Color.abc_search_url_text;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Color.abc_search_url_text_normal = global::Adopcat.Mobile.Droid.Resource.Color.abc_search_url_text_normal;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Color.abc_search_url_text_pressed = global::Adopcat.Mobile.Droid.Resource.Color.abc_search_url_text_pressed;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Color.abc_search_url_text_selected = global::Adopcat.Mobile.Droid.Resource.Color.abc_search_url_text_selected;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Color.abc_secondary_text_material_dark = global::Adopcat.Mobile.Droid.Resource.Color.abc_secondary_text_material_dark;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Color.abc_secondary_text_material_light = global::Adopcat.Mobile.Droid.Resource.Color.abc_secondary_text_material_light;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Color.accent_material_dark = global::Adopcat.Mobile.Droid.Resource.Color.accent_material_dark;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Color.accent_material_light = global::Adopcat.Mobile.Droid.Resource.Color.accent_material_light;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Color.background_floating_material_dark = global::Adopcat.Mobile.Droid.Resource.Color.background_floating_material_dark;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Color.background_floating_material_light = global::Adopcat.Mobile.Droid.Resource.Color.background_floating_material_light;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Color.background_material_dark = global::Adopcat.Mobile.Droid.Resource.Color.background_material_dark;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Color.background_material_light = global::Adopcat.Mobile.Droid.Resource.Color.background_material_light;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Color.bright_foreground_disabled_material_dark = global::Adopcat.Mobile.Droid.Resource.Color.bright_foreground_disabled_material_dark;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Color.bright_foreground_disabled_material_light = global::Adopcat.Mobile.Droid.Resource.Color.bright_foreground_disabled_material_light;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Color.bright_foreground_inverse_material_dark = global::Adopcat.Mobile.Droid.Resource.Color.bright_foreground_inverse_material_dark;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Color.bright_foreground_inverse_material_light = global::Adopcat.Mobile.Droid.Resource.Color.bright_foreground_inverse_material_light;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Color.bright_foreground_material_dark = global::Adopcat.Mobile.Droid.Resource.Color.bright_foreground_material_dark;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Color.bright_foreground_material_light = global::Adopcat.Mobile.Droid.Resource.Color.bright_foreground_material_light;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Color.button_material_dark = global::Adopcat.Mobile.Droid.Resource.Color.button_material_dark;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Color.button_material_light = global::Adopcat.Mobile.Droid.Resource.Color.button_material_light;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Color.cardview_dark_background = global::Adopcat.Mobile.Droid.Resource.Color.cardview_dark_background;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Color.cardview_light_background = global::Adopcat.Mobile.Droid.Resource.Color.cardview_light_background;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Color.cardview_shadow_end_color = global::Adopcat.Mobile.Droid.Resource.Color.cardview_shadow_end_color;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Color.cardview_shadow_start_color = global::Adopcat.Mobile.Droid.Resource.Color.cardview_shadow_start_color;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Color.design_fab_shadow_end_color = global::Adopcat.Mobile.Droid.Resource.Color.design_fab_shadow_end_color;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Color.design_fab_shadow_mid_color = global::Adopcat.Mobile.Droid.Resource.Color.design_fab_shadow_mid_color;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Color.design_fab_shadow_start_color = global::Adopcat.Mobile.Droid.Resource.Color.design_fab_shadow_start_color;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Color.design_fab_stroke_end_inner_color = global::Adopcat.Mobile.Droid.Resource.Color.design_fab_stroke_end_inner_color;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Color.design_fab_stroke_end_outer_color = global::Adopcat.Mobile.Droid.Resource.Color.design_fab_stroke_end_outer_color;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Color.design_fab_stroke_top_inner_color = global::Adopcat.Mobile.Droid.Resource.Color.design_fab_stroke_top_inner_color;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Color.design_fab_stroke_top_outer_color = global::Adopcat.Mobile.Droid.Resource.Color.design_fab_stroke_top_outer_color;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Color.design_snackbar_background_color = global::Adopcat.Mobile.Droid.Resource.Color.design_snackbar_background_color;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Color.design_textinput_error_color_dark = global::Adopcat.Mobile.Droid.Resource.Color.design_textinput_error_color_dark;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Color.design_textinput_error_color_light = global::Adopcat.Mobile.Droid.Resource.Color.design_textinput_error_color_light;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Color.dim_foreground_disabled_material_dark = global::Adopcat.Mobile.Droid.Resource.Color.dim_foreground_disabled_material_dark;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Color.dim_foreground_disabled_material_light = global::Adopcat.Mobile.Droid.Resource.Color.dim_foreground_disabled_material_light;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Color.dim_foreground_material_dark = global::Adopcat.Mobile.Droid.Resource.Color.dim_foreground_material_dark;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Color.dim_foreground_material_light = global::Adopcat.Mobile.Droid.Resource.Color.dim_foreground_material_light;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Color.foreground_material_dark = global::Adopcat.Mobile.Droid.Resource.Color.foreground_material_dark;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Color.foreground_material_light = global::Adopcat.Mobile.Droid.Resource.Color.foreground_material_light;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Color.highlighted_text_material_dark = global::Adopcat.Mobile.Droid.Resource.Color.highlighted_text_material_dark;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Color.highlighted_text_material_light = global::Adopcat.Mobile.Droid.Resource.Color.highlighted_text_material_light;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Color.hint_foreground_material_dark = global::Adopcat.Mobile.Droid.Resource.Color.hint_foreground_material_dark;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Color.hint_foreground_material_light = global::Adopcat.Mobile.Droid.Resource.Color.hint_foreground_material_light;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Color.material_blue_grey_800 = global::Adopcat.Mobile.Droid.Resource.Color.material_blue_grey_800;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Color.material_blue_grey_900 = global::Adopcat.Mobile.Droid.Resource.Color.material_blue_grey_900;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Color.material_blue_grey_950 = global::Adopcat.Mobile.Droid.Resource.Color.material_blue_grey_950;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Color.material_deep_teal_200 = global::Adopcat.Mobile.Droid.Resource.Color.material_deep_teal_200;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Color.material_deep_teal_500 = global::Adopcat.Mobile.Droid.Resource.Color.material_deep_teal_500;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Color.material_grey_100 = global::Adopcat.Mobile.Droid.Resource.Color.material_grey_100;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Color.material_grey_300 = global::Adopcat.Mobile.Droid.Resource.Color.material_grey_300;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Color.material_grey_50 = global::Adopcat.Mobile.Droid.Resource.Color.material_grey_50;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Color.material_grey_600 = global::Adopcat.Mobile.Droid.Resource.Color.material_grey_600;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Color.material_grey_800 = global::Adopcat.Mobile.Droid.Resource.Color.material_grey_800;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Color.material_grey_850 = global::Adopcat.Mobile.Droid.Resource.Color.material_grey_850;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Color.material_grey_900 = global::Adopcat.Mobile.Droid.Resource.Color.material_grey_900;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Color.primary_dark_material_dark = global::Adopcat.Mobile.Droid.Resource.Color.primary_dark_material_dark;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Color.primary_dark_material_light = global::Adopcat.Mobile.Droid.Resource.Color.primary_dark_material_light;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Color.primary_material_dark = global::Adopcat.Mobile.Droid.Resource.Color.primary_material_dark;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Color.primary_material_light = global::Adopcat.Mobile.Droid.Resource.Color.primary_material_light;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Color.primary_text_default_material_dark = global::Adopcat.Mobile.Droid.Resource.Color.primary_text_default_material_dark;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Color.primary_text_default_material_light = global::Adopcat.Mobile.Droid.Resource.Color.primary_text_default_material_light;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Color.primary_text_disabled_material_dark = global::Adopcat.Mobile.Droid.Resource.Color.primary_text_disabled_material_dark;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Color.primary_text_disabled_material_light = global::Adopcat.Mobile.Droid.Resource.Color.primary_text_disabled_material_light;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Color.ripple_material_dark = global::Adopcat.Mobile.Droid.Resource.Color.ripple_material_dark;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Color.ripple_material_light = global::Adopcat.Mobile.Droid.Resource.Color.ripple_material_light;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Color.secondary_text_default_material_dark = global::Adopcat.Mobile.Droid.Resource.Color.secondary_text_default_material_dark;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Color.secondary_text_default_material_light = global::Adopcat.Mobile.Droid.Resource.Color.secondary_text_default_material_light;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Color.secondary_text_disabled_material_dark = global::Adopcat.Mobile.Droid.Resource.Color.secondary_text_disabled_material_dark;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Color.secondary_text_disabled_material_light = global::Adopcat.Mobile.Droid.Resource.Color.secondary_text_disabled_material_light;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Color.switch_thumb_disabled_material_dark = global::Adopcat.Mobile.Droid.Resource.Color.switch_thumb_disabled_material_dark;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Color.switch_thumb_disabled_material_light = global::Adopcat.Mobile.Droid.Resource.Color.switch_thumb_disabled_material_light;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Color.switch_thumb_material_dark = global::Adopcat.Mobile.Droid.Resource.Color.switch_thumb_material_dark;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Color.switch_thumb_material_light = global::Adopcat.Mobile.Droid.Resource.Color.switch_thumb_material_light;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Color.switch_thumb_normal_material_dark = global::Adopcat.Mobile.Droid.Resource.Color.switch_thumb_normal_material_dark;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Color.switch_thumb_normal_material_light = global::Adopcat.Mobile.Droid.Resource.Color.switch_thumb_normal_material_light;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Dimension.abc_action_bar_content_inset_material = global::Adopcat.Mobile.Droid.Resource.Dimension.abc_action_bar_content_inset_material;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Dimension.abc_action_bar_default_height_material = global::Adopcat.Mobile.Droid.Resource.Dimension.abc_action_bar_default_height_material;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Dimension.abc_action_bar_default_padding_end_material = global::Adopcat.Mobile.Droid.Resource.Dimension.abc_action_bar_default_padding_end_material;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Dimension.abc_action_bar_default_padding_start_material = global::Adopcat.Mobile.Droid.Resource.Dimension.abc_action_bar_default_padding_start_material;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Dimension.abc_action_bar_icon_vertical_padding_material = global::Adopcat.Mobile.Droid.Resource.Dimension.abc_action_bar_icon_vertical_padding_material;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Dimension.abc_action_bar_overflow_padding_end_material = global::Adopcat.Mobile.Droid.Resource.Dimension.abc_action_bar_overflow_padding_end_material;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Dimension.abc_action_bar_overflow_padding_start_material = global::Adopcat.Mobile.Droid.Resource.Dimension.abc_action_bar_overflow_padding_start_material;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Dimension.abc_action_bar_progress_bar_size = global::Adopcat.Mobile.Droid.Resource.Dimension.abc_action_bar_progress_bar_size;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Dimension.abc_action_bar_stacked_max_height = global::Adopcat.Mobile.Droid.Resource.Dimension.abc_action_bar_stacked_max_height;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Dimension.abc_action_bar_stacked_tab_max_width = global::Adopcat.Mobile.Droid.Resource.Dimension.abc_action_bar_stacked_tab_max_width;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Dimension.abc_action_bar_subtitle_bottom_margin_material = global::Adopcat.Mobile.Droid.Resource.Dimension.abc_action_bar_subtitle_bottom_margin_material;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Dimension.abc_action_bar_subtitle_top_margin_material = global::Adopcat.Mobile.Droid.Resource.Dimension.abc_action_bar_subtitle_top_margin_material;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Dimension.abc_action_button_min_height_material = global::Adopcat.Mobile.Droid.Resource.Dimension.abc_action_button_min_height_material;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Dimension.abc_action_button_min_width_material = global::Adopcat.Mobile.Droid.Resource.Dimension.abc_action_button_min_width_material;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Dimension.abc_action_button_min_width_overflow_material = global::Adopcat.Mobile.Droid.Resource.Dimension.abc_action_button_min_width_overflow_material;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Dimension.abc_alert_dialog_button_bar_height = global::Adopcat.Mobile.Droid.Resource.Dimension.abc_alert_dialog_button_bar_height;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Dimension.abc_button_inset_horizontal_material = global::Adopcat.Mobile.Droid.Resource.Dimension.abc_button_inset_horizontal_material;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Dimension.abc_button_inset_vertical_material = global::Adopcat.Mobile.Droid.Resource.Dimension.abc_button_inset_vertical_material;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Dimension.abc_button_padding_horizontal_material = global::Adopcat.Mobile.Droid.Resource.Dimension.abc_button_padding_horizontal_material;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Dimension.abc_button_padding_vertical_material = global::Adopcat.Mobile.Droid.Resource.Dimension.abc_button_padding_vertical_material;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Dimension.abc_config_prefDialogWidth = global::Adopcat.Mobile.Droid.Resource.Dimension.abc_config_prefDialogWidth;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Dimension.abc_control_corner_material = global::Adopcat.Mobile.Droid.Resource.Dimension.abc_control_corner_material;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Dimension.abc_control_inset_material = global::Adopcat.Mobile.Droid.Resource.Dimension.abc_control_inset_material;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Dimension.abc_control_padding_material = global::Adopcat.Mobile.Droid.Resource.Dimension.abc_control_padding_material;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Dimension.abc_dialog_fixed_height_major = global::Adopcat.Mobile.Droid.Resource.Dimension.abc_dialog_fixed_height_major;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Dimension.abc_dialog_fixed_height_minor = global::Adopcat.Mobile.Droid.Resource.Dimension.abc_dialog_fixed_height_minor;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Dimension.abc_dialog_fixed_width_major = global::Adopcat.Mobile.Droid.Resource.Dimension.abc_dialog_fixed_width_major;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Dimension.abc_dialog_fixed_width_minor = global::Adopcat.Mobile.Droid.Resource.Dimension.abc_dialog_fixed_width_minor;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Dimension.abc_dialog_list_padding_vertical_material = global::Adopcat.Mobile.Droid.Resource.Dimension.abc_dialog_list_padding_vertical_material;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Dimension.abc_dialog_min_width_major = global::Adopcat.Mobile.Droid.Resource.Dimension.abc_dialog_min_width_major;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Dimension.abc_dialog_min_width_minor = global::Adopcat.Mobile.Droid.Resource.Dimension.abc_dialog_min_width_minor;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Dimension.abc_dialog_padding_material = global::Adopcat.Mobile.Droid.Resource.Dimension.abc_dialog_padding_material;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Dimension.abc_dialog_padding_top_material = global::Adopcat.Mobile.Droid.Resource.Dimension.abc_dialog_padding_top_material;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Dimension.abc_disabled_alpha_material_dark = global::Adopcat.Mobile.Droid.Resource.Dimension.abc_disabled_alpha_material_dark;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Dimension.abc_disabled_alpha_material_light = global::Adopcat.Mobile.Droid.Resource.Dimension.abc_disabled_alpha_material_light;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Dimension.abc_dropdownitem_icon_width = global::Adopcat.Mobile.Droid.Resource.Dimension.abc_dropdownitem_icon_width;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Dimension.abc_dropdownitem_text_padding_left = global::Adopcat.Mobile.Droid.Resource.Dimension.abc_dropdownitem_text_padding_left;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Dimension.abc_dropdownitem_text_padding_right = global::Adopcat.Mobile.Droid.Resource.Dimension.abc_dropdownitem_text_padding_right;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Dimension.abc_edit_text_inset_bottom_material = global::Adopcat.Mobile.Droid.Resource.Dimension.abc_edit_text_inset_bottom_material;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Dimension.abc_edit_text_inset_horizontal_material = global::Adopcat.Mobile.Droid.Resource.Dimension.abc_edit_text_inset_horizontal_material;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Dimension.abc_edit_text_inset_top_material = global::Adopcat.Mobile.Droid.Resource.Dimension.abc_edit_text_inset_top_material;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Dimension.abc_floating_window_z = global::Adopcat.Mobile.Droid.Resource.Dimension.abc_floating_window_z;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Dimension.abc_list_item_padding_horizontal_material = global::Adopcat.Mobile.Droid.Resource.Dimension.abc_list_item_padding_horizontal_material;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Dimension.abc_panel_menu_list_width = global::Adopcat.Mobile.Droid.Resource.Dimension.abc_panel_menu_list_width;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Dimension.abc_search_view_preferred_width = global::Adopcat.Mobile.Droid.Resource.Dimension.abc_search_view_preferred_width;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Dimension.abc_search_view_text_min_width = global::Adopcat.Mobile.Droid.Resource.Dimension.abc_search_view_text_min_width;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Dimension.abc_seekbar_track_background_height_material = global::Adopcat.Mobile.Droid.Resource.Dimension.abc_seekbar_track_background_height_material;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Dimension.abc_seekbar_track_progress_height_material = global::Adopcat.Mobile.Droid.Resource.Dimension.abc_seekbar_track_progress_height_material;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Dimension.abc_select_dialog_padding_start_material = global::Adopcat.Mobile.Droid.Resource.Dimension.abc_select_dialog_padding_start_material;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Dimension.abc_switch_padding = global::Adopcat.Mobile.Droid.Resource.Dimension.abc_switch_padding;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Dimension.abc_text_size_body_1_material = global::Adopcat.Mobile.Droid.Resource.Dimension.abc_text_size_body_1_material;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Dimension.abc_text_size_body_2_material = global::Adopcat.Mobile.Droid.Resource.Dimension.abc_text_size_body_2_material;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Dimension.abc_text_size_button_material = global::Adopcat.Mobile.Droid.Resource.Dimension.abc_text_size_button_material;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Dimension.abc_text_size_caption_material = global::Adopcat.Mobile.Droid.Resource.Dimension.abc_text_size_caption_material;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Dimension.abc_text_size_display_1_material = global::Adopcat.Mobile.Droid.Resource.Dimension.abc_text_size_display_1_material;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Dimension.abc_text_size_display_2_material = global::Adopcat.Mobile.Droid.Resource.Dimension.abc_text_size_display_2_material;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Dimension.abc_text_size_display_3_material = global::Adopcat.Mobile.Droid.Resource.Dimension.abc_text_size_display_3_material;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Dimension.abc_text_size_display_4_material = global::Adopcat.Mobile.Droid.Resource.Dimension.abc_text_size_display_4_material;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Dimension.abc_text_size_headline_material = global::Adopcat.Mobile.Droid.Resource.Dimension.abc_text_size_headline_material;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Dimension.abc_text_size_large_material = global::Adopcat.Mobile.Droid.Resource.Dimension.abc_text_size_large_material;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Dimension.abc_text_size_medium_material = global::Adopcat.Mobile.Droid.Resource.Dimension.abc_text_size_medium_material;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Dimension.abc_text_size_menu_material = global::Adopcat.Mobile.Droid.Resource.Dimension.abc_text_size_menu_material;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Dimension.abc_text_size_small_material = global::Adopcat.Mobile.Droid.Resource.Dimension.abc_text_size_small_material;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Dimension.abc_text_size_subhead_material = global::Adopcat.Mobile.Droid.Resource.Dimension.abc_text_size_subhead_material;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Dimension.abc_text_size_subtitle_material_toolbar = global::Adopcat.Mobile.Droid.Resource.Dimension.abc_text_size_subtitle_material_toolbar;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Dimension.abc_text_size_title_material = global::Adopcat.Mobile.Droid.Resource.Dimension.abc_text_size_title_material;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Dimension.abc_text_size_title_material_toolbar = global::Adopcat.Mobile.Droid.Resource.Dimension.abc_text_size_title_material_toolbar;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Dimension.cardview_compat_inset_shadow = global::Adopcat.Mobile.Droid.Resource.Dimension.cardview_compat_inset_shadow;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Dimension.cardview_default_elevation = global::Adopcat.Mobile.Droid.Resource.Dimension.cardview_default_elevation;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Dimension.cardview_default_radius = global::Adopcat.Mobile.Droid.Resource.Dimension.cardview_default_radius;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Dimension.design_appbar_elevation = global::Adopcat.Mobile.Droid.Resource.Dimension.design_appbar_elevation;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Dimension.design_bottom_sheet_modal_elevation = global::Adopcat.Mobile.Droid.Resource.Dimension.design_bottom_sheet_modal_elevation;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Dimension.design_bottom_sheet_modal_peek_height = global::Adopcat.Mobile.Droid.Resource.Dimension.design_bottom_sheet_modal_peek_height;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Dimension.design_fab_border_width = global::Adopcat.Mobile.Droid.Resource.Dimension.design_fab_border_width;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Dimension.design_fab_elevation = global::Adopcat.Mobile.Droid.Resource.Dimension.design_fab_elevation;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Dimension.design_fab_image_size = global::Adopcat.Mobile.Droid.Resource.Dimension.design_fab_image_size;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Dimension.design_fab_size_mini = global::Adopcat.Mobile.Droid.Resource.Dimension.design_fab_size_mini;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Dimension.design_fab_size_normal = global::Adopcat.Mobile.Droid.Resource.Dimension.design_fab_size_normal;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Dimension.design_fab_translation_z_pressed = global::Adopcat.Mobile.Droid.Resource.Dimension.design_fab_translation_z_pressed;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Dimension.design_navigation_elevation = global::Adopcat.Mobile.Droid.Resource.Dimension.design_navigation_elevation;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Dimension.design_navigation_icon_padding = global::Adopcat.Mobile.Droid.Resource.Dimension.design_navigation_icon_padding;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Dimension.design_navigation_icon_size = global::Adopcat.Mobile.Droid.Resource.Dimension.design_navigation_icon_size;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Dimension.design_navigation_max_width = global::Adopcat.Mobile.Droid.Resource.Dimension.design_navigation_max_width;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Dimension.design_navigation_padding_bottom = global::Adopcat.Mobile.Droid.Resource.Dimension.design_navigation_padding_bottom;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Dimension.design_navigation_separator_vertical_padding = global::Adopcat.Mobile.Droid.Resource.Dimension.design_navigation_separator_vertical_padding;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Dimension.design_snackbar_action_inline_max_width = global::Adopcat.Mobile.Droid.Resource.Dimension.design_snackbar_action_inline_max_width;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Dimension.design_snackbar_background_corner_radius = global::Adopcat.Mobile.Droid.Resource.Dimension.design_snackbar_background_corner_radius;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Dimension.design_snackbar_elevation = global::Adopcat.Mobile.Droid.Resource.Dimension.design_snackbar_elevation;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Dimension.design_snackbar_extra_spacing_horizontal = global::Adopcat.Mobile.Droid.Resource.Dimension.design_snackbar_extra_spacing_horizontal;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Dimension.design_snackbar_max_width = global::Adopcat.Mobile.Droid.Resource.Dimension.design_snackbar_max_width;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Dimension.design_snackbar_min_width = global::Adopcat.Mobile.Droid.Resource.Dimension.design_snackbar_min_width;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Dimension.design_snackbar_padding_horizontal = global::Adopcat.Mobile.Droid.Resource.Dimension.design_snackbar_padding_horizontal;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Dimension.design_snackbar_padding_vertical = global::Adopcat.Mobile.Droid.Resource.Dimension.design_snackbar_padding_vertical;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Dimension.design_snackbar_padding_vertical_2lines = global::Adopcat.Mobile.Droid.Resource.Dimension.design_snackbar_padding_vertical_2lines;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Dimension.design_snackbar_text_size = global::Adopcat.Mobile.Droid.Resource.Dimension.design_snackbar_text_size;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Dimension.design_tab_max_width = global::Adopcat.Mobile.Droid.Resource.Dimension.design_tab_max_width;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Dimension.design_tab_scrollable_min_width = global::Adopcat.Mobile.Droid.Resource.Dimension.design_tab_scrollable_min_width;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Dimension.design_tab_text_size = global::Adopcat.Mobile.Droid.Resource.Dimension.design_tab_text_size;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Dimension.design_tab_text_size_2line = global::Adopcat.Mobile.Droid.Resource.Dimension.design_tab_text_size_2line;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Dimension.disabled_alpha_material_dark = global::Adopcat.Mobile.Droid.Resource.Dimension.disabled_alpha_material_dark;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Dimension.disabled_alpha_material_light = global::Adopcat.Mobile.Droid.Resource.Dimension.disabled_alpha_material_light;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Dimension.highlight_alpha_material_colored = global::Adopcat.Mobile.Droid.Resource.Dimension.highlight_alpha_material_colored;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Dimension.highlight_alpha_material_dark = global::Adopcat.Mobile.Droid.Resource.Dimension.highlight_alpha_material_dark;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Dimension.highlight_alpha_material_light = global::Adopcat.Mobile.Droid.Resource.Dimension.highlight_alpha_material_light;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Dimension.item_touch_helper_max_drag_scroll_per_frame = global::Adopcat.Mobile.Droid.Resource.Dimension.item_touch_helper_max_drag_scroll_per_frame;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Dimension.item_touch_helper_swipe_escape_max_velocity = global::Adopcat.Mobile.Droid.Resource.Dimension.item_touch_helper_swipe_escape_max_velocity;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Dimension.item_touch_helper_swipe_escape_velocity = global::Adopcat.Mobile.Droid.Resource.Dimension.item_touch_helper_swipe_escape_velocity;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Dimension.mr_controller_volume_group_list_item_height = global::Adopcat.Mobile.Droid.Resource.Dimension.mr_controller_volume_group_list_item_height;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Dimension.mr_controller_volume_group_list_item_icon_size = global::Adopcat.Mobile.Droid.Resource.Dimension.mr_controller_volume_group_list_item_icon_size;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Dimension.mr_controller_volume_group_list_max_height = global::Adopcat.Mobile.Droid.Resource.Dimension.mr_controller_volume_group_list_max_height;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Dimension.mr_controller_volume_group_list_padding_top = global::Adopcat.Mobile.Droid.Resource.Dimension.mr_controller_volume_group_list_padding_top;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Dimension.mr_dialog_fixed_width_major = global::Adopcat.Mobile.Droid.Resource.Dimension.mr_dialog_fixed_width_major;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Dimension.mr_dialog_fixed_width_minor = global::Adopcat.Mobile.Droid.Resource.Dimension.mr_dialog_fixed_width_minor;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Dimension.notification_large_icon_height = global::Adopcat.Mobile.Droid.Resource.Dimension.notification_large_icon_height;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Dimension.notification_large_icon_width = global::Adopcat.Mobile.Droid.Resource.Dimension.notification_large_icon_width;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Dimension.notification_subtext_size = global::Adopcat.Mobile.Droid.Resource.Dimension.notification_subtext_size;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Drawable.abc_ab_share_pack_mtrl_alpha = global::Adopcat.Mobile.Droid.Resource.Drawable.abc_ab_share_pack_mtrl_alpha;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Drawable.abc_action_bar_item_background_material = global::Adopcat.Mobile.Droid.Resource.Drawable.abc_action_bar_item_background_material;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Drawable.abc_btn_borderless_material = global::Adopcat.Mobile.Droid.Resource.Drawable.abc_btn_borderless_material;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Drawable.abc_btn_check_material = global::Adopcat.Mobile.Droid.Resource.Drawable.abc_btn_check_material;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Drawable.abc_btn_check_to_on_mtrl_000 = global::Adopcat.Mobile.Droid.Resource.Drawable.abc_btn_check_to_on_mtrl_000;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Drawable.abc_btn_check_to_on_mtrl_015 = global::Adopcat.Mobile.Droid.Resource.Drawable.abc_btn_check_to_on_mtrl_015;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Drawable.abc_btn_colored_material = global::Adopcat.Mobile.Droid.Resource.Drawable.abc_btn_colored_material;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Drawable.abc_btn_default_mtrl_shape = global::Adopcat.Mobile.Droid.Resource.Drawable.abc_btn_default_mtrl_shape;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Drawable.abc_btn_radio_material = global::Adopcat.Mobile.Droid.Resource.Drawable.abc_btn_radio_material;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Drawable.abc_btn_radio_to_on_mtrl_000 = global::Adopcat.Mobile.Droid.Resource.Drawable.abc_btn_radio_to_on_mtrl_000;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Drawable.abc_btn_radio_to_on_mtrl_015 = global::Adopcat.Mobile.Droid.Resource.Drawable.abc_btn_radio_to_on_mtrl_015;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Drawable.abc_btn_rating_star_off_mtrl_alpha = global::Adopcat.Mobile.Droid.Resource.Drawable.abc_btn_rating_star_off_mtrl_alpha;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Drawable.abc_btn_rating_star_on_mtrl_alpha = global::Adopcat.Mobile.Droid.Resource.Drawable.abc_btn_rating_star_on_mtrl_alpha;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Drawable.abc_btn_switch_to_on_mtrl_00001 = global::Adopcat.Mobile.Droid.Resource.Drawable.abc_btn_switch_to_on_mtrl_00001;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Drawable.abc_btn_switch_to_on_mtrl_00012 = global::Adopcat.Mobile.Droid.Resource.Drawable.abc_btn_switch_to_on_mtrl_00012;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Drawable.abc_cab_background_internal_bg = global::Adopcat.Mobile.Droid.Resource.Drawable.abc_cab_background_internal_bg;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Drawable.abc_cab_background_top_material = global::Adopcat.Mobile.Droid.Resource.Drawable.abc_cab_background_top_material;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Drawable.abc_cab_background_top_mtrl_alpha = global::Adopcat.Mobile.Droid.Resource.Drawable.abc_cab_background_top_mtrl_alpha;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Drawable.abc_control_background_material = global::Adopcat.Mobile.Droid.Resource.Drawable.abc_control_background_material;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Drawable.abc_dialog_material_background_dark = global::Adopcat.Mobile.Droid.Resource.Drawable.abc_dialog_material_background_dark;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Drawable.abc_dialog_material_background_light = global::Adopcat.Mobile.Droid.Resource.Drawable.abc_dialog_material_background_light;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Drawable.abc_edit_text_material = global::Adopcat.Mobile.Droid.Resource.Drawable.abc_edit_text_material;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Drawable.abc_ic_ab_back_mtrl_am_alpha = global::Adopcat.Mobile.Droid.Resource.Drawable.abc_ic_ab_back_mtrl_am_alpha;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Drawable.abc_ic_clear_mtrl_alpha = global::Adopcat.Mobile.Droid.Resource.Drawable.abc_ic_clear_mtrl_alpha;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Drawable.abc_ic_commit_search_api_mtrl_alpha = global::Adopcat.Mobile.Droid.Resource.Drawable.abc_ic_commit_search_api_mtrl_alpha;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Drawable.abc_ic_go_search_api_mtrl_alpha = global::Adopcat.Mobile.Droid.Resource.Drawable.abc_ic_go_search_api_mtrl_alpha;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Drawable.abc_ic_menu_copy_mtrl_am_alpha = global::Adopcat.Mobile.Droid.Resource.Drawable.abc_ic_menu_copy_mtrl_am_alpha;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Drawable.abc_ic_menu_cut_mtrl_alpha = global::Adopcat.Mobile.Droid.Resource.Drawable.abc_ic_menu_cut_mtrl_alpha;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Drawable.abc_ic_menu_moreoverflow_mtrl_alpha = global::Adopcat.Mobile.Droid.Resource.Drawable.abc_ic_menu_moreoverflow_mtrl_alpha;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Drawable.abc_ic_menu_paste_mtrl_am_alpha = global::Adopcat.Mobile.Droid.Resource.Drawable.abc_ic_menu_paste_mtrl_am_alpha;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Drawable.abc_ic_menu_selectall_mtrl_alpha = global::Adopcat.Mobile.Droid.Resource.Drawable.abc_ic_menu_selectall_mtrl_alpha;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Drawable.abc_ic_menu_share_mtrl_alpha = global::Adopcat.Mobile.Droid.Resource.Drawable.abc_ic_menu_share_mtrl_alpha;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Drawable.abc_ic_search_api_mtrl_alpha = global::Adopcat.Mobile.Droid.Resource.Drawable.abc_ic_search_api_mtrl_alpha;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Drawable.abc_ic_star_black_16dp = global::Adopcat.Mobile.Droid.Resource.Drawable.abc_ic_star_black_16dp;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Drawable.abc_ic_star_black_36dp = global::Adopcat.Mobile.Droid.Resource.Drawable.abc_ic_star_black_36dp;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Drawable.abc_ic_star_half_black_16dp = global::Adopcat.Mobile.Droid.Resource.Drawable.abc_ic_star_half_black_16dp;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Drawable.abc_ic_star_half_black_36dp = global::Adopcat.Mobile.Droid.Resource.Drawable.abc_ic_star_half_black_36dp;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Drawable.abc_ic_voice_search_api_mtrl_alpha = global::Adopcat.Mobile.Droid.Resource.Drawable.abc_ic_voice_search_api_mtrl_alpha;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Drawable.abc_item_background_holo_dark = global::Adopcat.Mobile.Droid.Resource.Drawable.abc_item_background_holo_dark;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Drawable.abc_item_background_holo_light = global::Adopcat.Mobile.Droid.Resource.Drawable.abc_item_background_holo_light;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Drawable.abc_list_divider_mtrl_alpha = global::Adopcat.Mobile.Droid.Resource.Drawable.abc_list_divider_mtrl_alpha;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Drawable.abc_list_focused_holo = global::Adopcat.Mobile.Droid.Resource.Drawable.abc_list_focused_holo;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Drawable.abc_list_longpressed_holo = global::Adopcat.Mobile.Droid.Resource.Drawable.abc_list_longpressed_holo;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Drawable.abc_list_pressed_holo_dark = global::Adopcat.Mobile.Droid.Resource.Drawable.abc_list_pressed_holo_dark;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Drawable.abc_list_pressed_holo_light = global::Adopcat.Mobile.Droid.Resource.Drawable.abc_list_pressed_holo_light;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Drawable.abc_list_selector_background_transition_holo_dark = global::Adopcat.Mobile.Droid.Resource.Drawable.abc_list_selector_background_transition_holo_dark;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Drawable.abc_list_selector_background_transition_holo_light = global::Adopcat.Mobile.Droid.Resource.Drawable.abc_list_selector_background_transition_holo_light;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Drawable.abc_list_selector_disabled_holo_dark = global::Adopcat.Mobile.Droid.Resource.Drawable.abc_list_selector_disabled_holo_dark;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Drawable.abc_list_selector_disabled_holo_light = global::Adopcat.Mobile.Droid.Resource.Drawable.abc_list_selector_disabled_holo_light;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Drawable.abc_list_selector_holo_dark = global::Adopcat.Mobile.Droid.Resource.Drawable.abc_list_selector_holo_dark;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Drawable.abc_list_selector_holo_light = global::Adopcat.Mobile.Droid.Resource.Drawable.abc_list_selector_holo_light;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Drawable.abc_menu_hardkey_panel_mtrl_mult = global::Adopcat.Mobile.Droid.Resource.Drawable.abc_menu_hardkey_panel_mtrl_mult;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Drawable.abc_popup_background_mtrl_mult = global::Adopcat.Mobile.Droid.Resource.Drawable.abc_popup_background_mtrl_mult;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Drawable.abc_ratingbar_full_material = global::Adopcat.Mobile.Droid.Resource.Drawable.abc_ratingbar_full_material;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Drawable.abc_ratingbar_indicator_material = global::Adopcat.Mobile.Droid.Resource.Drawable.abc_ratingbar_indicator_material;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Drawable.abc_ratingbar_small_material = global::Adopcat.Mobile.Droid.Resource.Drawable.abc_ratingbar_small_material;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Drawable.abc_scrubber_control_off_mtrl_alpha = global::Adopcat.Mobile.Droid.Resource.Drawable.abc_scrubber_control_off_mtrl_alpha;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Drawable.abc_scrubber_control_to_pressed_mtrl_000 = global::Adopcat.Mobile.Droid.Resource.Drawable.abc_scrubber_control_to_pressed_mtrl_000;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Drawable.abc_scrubber_control_to_pressed_mtrl_005 = global::Adopcat.Mobile.Droid.Resource.Drawable.abc_scrubber_control_to_pressed_mtrl_005;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Drawable.abc_scrubber_primary_mtrl_alpha = global::Adopcat.Mobile.Droid.Resource.Drawable.abc_scrubber_primary_mtrl_alpha;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Drawable.abc_scrubber_track_mtrl_alpha = global::Adopcat.Mobile.Droid.Resource.Drawable.abc_scrubber_track_mtrl_alpha;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Drawable.abc_seekbar_thumb_material = global::Adopcat.Mobile.Droid.Resource.Drawable.abc_seekbar_thumb_material;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Drawable.abc_seekbar_track_material = global::Adopcat.Mobile.Droid.Resource.Drawable.abc_seekbar_track_material;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Drawable.abc_spinner_mtrl_am_alpha = global::Adopcat.Mobile.Droid.Resource.Drawable.abc_spinner_mtrl_am_alpha;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Drawable.abc_spinner_textfield_background_material = global::Adopcat.Mobile.Droid.Resource.Drawable.abc_spinner_textfield_background_material;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Drawable.abc_switch_thumb_material = global::Adopcat.Mobile.Droid.Resource.Drawable.abc_switch_thumb_material;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Drawable.abc_switch_track_mtrl_alpha = global::Adopcat.Mobile.Droid.Resource.Drawable.abc_switch_track_mtrl_alpha;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Drawable.abc_tab_indicator_material = global::Adopcat.Mobile.Droid.Resource.Drawable.abc_tab_indicator_material;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Drawable.abc_tab_indicator_mtrl_alpha = global::Adopcat.Mobile.Droid.Resource.Drawable.abc_tab_indicator_mtrl_alpha;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Drawable.abc_text_cursor_material = global::Adopcat.Mobile.Droid.Resource.Drawable.abc_text_cursor_material;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Drawable.abc_textfield_activated_mtrl_alpha = global::Adopcat.Mobile.Droid.Resource.Drawable.abc_textfield_activated_mtrl_alpha;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Drawable.abc_textfield_default_mtrl_alpha = global::Adopcat.Mobile.Droid.Resource.Drawable.abc_textfield_default_mtrl_alpha;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Drawable.abc_textfield_search_activated_mtrl_alpha = global::Adopcat.Mobile.Droid.Resource.Drawable.abc_textfield_search_activated_mtrl_alpha;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Drawable.abc_textfield_search_default_mtrl_alpha = global::Adopcat.Mobile.Droid.Resource.Drawable.abc_textfield_search_default_mtrl_alpha;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Drawable.abc_textfield_search_material = global::Adopcat.Mobile.Droid.Resource.Drawable.abc_textfield_search_material;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Drawable.design_fab_background = global::Adopcat.Mobile.Droid.Resource.Drawable.design_fab_background;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Drawable.design_snackbar_background = global::Adopcat.Mobile.Droid.Resource.Drawable.design_snackbar_background;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Drawable.ic_audiotrack = global::Adopcat.Mobile.Droid.Resource.Drawable.ic_audiotrack;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Drawable.ic_audiotrack_light = global::Adopcat.Mobile.Droid.Resource.Drawable.ic_audiotrack_light;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Drawable.ic_bluetooth_grey = global::Adopcat.Mobile.Droid.Resource.Drawable.ic_bluetooth_grey;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Drawable.ic_bluetooth_white = global::Adopcat.Mobile.Droid.Resource.Drawable.ic_bluetooth_white;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Drawable.ic_cast_dark = global::Adopcat.Mobile.Droid.Resource.Drawable.ic_cast_dark;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Drawable.ic_cast_disabled_light = global::Adopcat.Mobile.Droid.Resource.Drawable.ic_cast_disabled_light;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Drawable.ic_cast_grey = global::Adopcat.Mobile.Droid.Resource.Drawable.ic_cast_grey;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Drawable.ic_cast_light = global::Adopcat.Mobile.Droid.Resource.Drawable.ic_cast_light;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Drawable.ic_cast_off_light = global::Adopcat.Mobile.Droid.Resource.Drawable.ic_cast_off_light;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Drawable.ic_cast_on_0_light = global::Adopcat.Mobile.Droid.Resource.Drawable.ic_cast_on_0_light;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Drawable.ic_cast_on_1_light = global::Adopcat.Mobile.Droid.Resource.Drawable.ic_cast_on_1_light;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Drawable.ic_cast_on_2_light = global::Adopcat.Mobile.Droid.Resource.Drawable.ic_cast_on_2_light;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Drawable.ic_cast_on_light = global::Adopcat.Mobile.Droid.Resource.Drawable.ic_cast_on_light;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Drawable.ic_cast_white = global::Adopcat.Mobile.Droid.Resource.Drawable.ic_cast_white;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Drawable.ic_close_dark = global::Adopcat.Mobile.Droid.Resource.Drawable.ic_close_dark;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Drawable.ic_close_light = global::Adopcat.Mobile.Droid.Resource.Drawable.ic_close_light;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Drawable.ic_collapse = global::Adopcat.Mobile.Droid.Resource.Drawable.ic_collapse;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Drawable.ic_collapse_00000 = global::Adopcat.Mobile.Droid.Resource.Drawable.ic_collapse_00000;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Drawable.ic_collapse_00001 = global::Adopcat.Mobile.Droid.Resource.Drawable.ic_collapse_00001;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Drawable.ic_collapse_00002 = global::Adopcat.Mobile.Droid.Resource.Drawable.ic_collapse_00002;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Drawable.ic_collapse_00003 = global::Adopcat.Mobile.Droid.Resource.Drawable.ic_collapse_00003;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Drawable.ic_collapse_00004 = global::Adopcat.Mobile.Droid.Resource.Drawable.ic_collapse_00004;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Drawable.ic_collapse_00005 = global::Adopcat.Mobile.Droid.Resource.Drawable.ic_collapse_00005;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Drawable.ic_collapse_00006 = global::Adopcat.Mobile.Droid.Resource.Drawable.ic_collapse_00006;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Drawable.ic_collapse_00007 = global::Adopcat.Mobile.Droid.Resource.Drawable.ic_collapse_00007;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Drawable.ic_collapse_00008 = global::Adopcat.Mobile.Droid.Resource.Drawable.ic_collapse_00008;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Drawable.ic_collapse_00009 = global::Adopcat.Mobile.Droid.Resource.Drawable.ic_collapse_00009;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Drawable.ic_collapse_00010 = global::Adopcat.Mobile.Droid.Resource.Drawable.ic_collapse_00010;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Drawable.ic_collapse_00011 = global::Adopcat.Mobile.Droid.Resource.Drawable.ic_collapse_00011;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Drawable.ic_collapse_00012 = global::Adopcat.Mobile.Droid.Resource.Drawable.ic_collapse_00012;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Drawable.ic_collapse_00013 = global::Adopcat.Mobile.Droid.Resource.Drawable.ic_collapse_00013;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Drawable.ic_collapse_00014 = global::Adopcat.Mobile.Droid.Resource.Drawable.ic_collapse_00014;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Drawable.ic_collapse_00015 = global::Adopcat.Mobile.Droid.Resource.Drawable.ic_collapse_00015;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Drawable.ic_expand = global::Adopcat.Mobile.Droid.Resource.Drawable.ic_expand;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Drawable.ic_expand_00000 = global::Adopcat.Mobile.Droid.Resource.Drawable.ic_expand_00000;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Drawable.ic_expand_00001 = global::Adopcat.Mobile.Droid.Resource.Drawable.ic_expand_00001;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Drawable.ic_expand_00002 = global::Adopcat.Mobile.Droid.Resource.Drawable.ic_expand_00002;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Drawable.ic_expand_00003 = global::Adopcat.Mobile.Droid.Resource.Drawable.ic_expand_00003;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Drawable.ic_expand_00004 = global::Adopcat.Mobile.Droid.Resource.Drawable.ic_expand_00004;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Drawable.ic_expand_00005 = global::Adopcat.Mobile.Droid.Resource.Drawable.ic_expand_00005;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Drawable.ic_expand_00006 = global::Adopcat.Mobile.Droid.Resource.Drawable.ic_expand_00006;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Drawable.ic_expand_00007 = global::Adopcat.Mobile.Droid.Resource.Drawable.ic_expand_00007;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Drawable.ic_expand_00008 = global::Adopcat.Mobile.Droid.Resource.Drawable.ic_expand_00008;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Drawable.ic_expand_00009 = global::Adopcat.Mobile.Droid.Resource.Drawable.ic_expand_00009;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Drawable.ic_expand_00010 = global::Adopcat.Mobile.Droid.Resource.Drawable.ic_expand_00010;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Drawable.ic_expand_00011 = global::Adopcat.Mobile.Droid.Resource.Drawable.ic_expand_00011;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Drawable.ic_expand_00012 = global::Adopcat.Mobile.Droid.Resource.Drawable.ic_expand_00012;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Drawable.ic_expand_00013 = global::Adopcat.Mobile.Droid.Resource.Drawable.ic_expand_00013;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Drawable.ic_expand_00014 = global::Adopcat.Mobile.Droid.Resource.Drawable.ic_expand_00014;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Drawable.ic_expand_00015 = global::Adopcat.Mobile.Droid.Resource.Drawable.ic_expand_00015;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Drawable.ic_media_pause = global::Adopcat.Mobile.Droid.Resource.Drawable.ic_media_pause;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Drawable.ic_media_play = global::Adopcat.Mobile.Droid.Resource.Drawable.ic_media_play;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Drawable.ic_media_route_disabled_mono_dark = global::Adopcat.Mobile.Droid.Resource.Drawable.ic_media_route_disabled_mono_dark;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Drawable.ic_media_route_off_mono_dark = global::Adopcat.Mobile.Droid.Resource.Drawable.ic_media_route_off_mono_dark;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Drawable.ic_media_route_on_0_mono_dark = global::Adopcat.Mobile.Droid.Resource.Drawable.ic_media_route_on_0_mono_dark;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Drawable.ic_media_route_on_1_mono_dark = global::Adopcat.Mobile.Droid.Resource.Drawable.ic_media_route_on_1_mono_dark;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Drawable.ic_media_route_on_2_mono_dark = global::Adopcat.Mobile.Droid.Resource.Drawable.ic_media_route_on_2_mono_dark;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Drawable.ic_media_route_on_mono_dark = global::Adopcat.Mobile.Droid.Resource.Drawable.ic_media_route_on_mono_dark;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Drawable.ic_pause_dark = global::Adopcat.Mobile.Droid.Resource.Drawable.ic_pause_dark;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Drawable.ic_pause_light = global::Adopcat.Mobile.Droid.Resource.Drawable.ic_pause_light;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Drawable.ic_play_dark = global::Adopcat.Mobile.Droid.Resource.Drawable.ic_play_dark;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Drawable.ic_play_light = global::Adopcat.Mobile.Droid.Resource.Drawable.ic_play_light;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Drawable.ic_speaker_dark = global::Adopcat.Mobile.Droid.Resource.Drawable.ic_speaker_dark;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Drawable.ic_speaker_group_dark = global::Adopcat.Mobile.Droid.Resource.Drawable.ic_speaker_group_dark;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Drawable.ic_speaker_group_light = global::Adopcat.Mobile.Droid.Resource.Drawable.ic_speaker_group_light;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Drawable.ic_speaker_light = global::Adopcat.Mobile.Droid.Resource.Drawable.ic_speaker_light;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Drawable.ic_tv_dark = global::Adopcat.Mobile.Droid.Resource.Drawable.ic_tv_dark;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Drawable.ic_tv_light = global::Adopcat.Mobile.Droid.Resource.Drawable.ic_tv_light;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Drawable.mr_dialog_material_background_dark = global::Adopcat.Mobile.Droid.Resource.Drawable.mr_dialog_material_background_dark;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Drawable.mr_dialog_material_background_light = global::Adopcat.Mobile.Droid.Resource.Drawable.mr_dialog_material_background_light;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Drawable.mr_ic_audiotrack_light = global::Adopcat.Mobile.Droid.Resource.Drawable.mr_ic_audiotrack_light;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Drawable.mr_ic_cast_dark = global::Adopcat.Mobile.Droid.Resource.Drawable.mr_ic_cast_dark;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Drawable.mr_ic_cast_light = global::Adopcat.Mobile.Droid.Resource.Drawable.mr_ic_cast_light;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Drawable.mr_ic_close_dark = global::Adopcat.Mobile.Droid.Resource.Drawable.mr_ic_close_dark;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Drawable.mr_ic_close_light = global::Adopcat.Mobile.Droid.Resource.Drawable.mr_ic_close_light;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Drawable.mr_ic_media_route_connecting_mono_dark = global::Adopcat.Mobile.Droid.Resource.Drawable.mr_ic_media_route_connecting_mono_dark;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Drawable.mr_ic_media_route_connecting_mono_light = global::Adopcat.Mobile.Droid.Resource.Drawable.mr_ic_media_route_connecting_mono_light;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Drawable.mr_ic_media_route_mono_dark = global::Adopcat.Mobile.Droid.Resource.Drawable.mr_ic_media_route_mono_dark;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Drawable.mr_ic_media_route_mono_light = global::Adopcat.Mobile.Droid.Resource.Drawable.mr_ic_media_route_mono_light;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Drawable.mr_ic_pause_dark = global::Adopcat.Mobile.Droid.Resource.Drawable.mr_ic_pause_dark;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Drawable.mr_ic_pause_light = global::Adopcat.Mobile.Droid.Resource.Drawable.mr_ic_pause_light;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Drawable.mr_ic_play_dark = global::Adopcat.Mobile.Droid.Resource.Drawable.mr_ic_play_dark;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Drawable.mr_ic_play_light = global::Adopcat.Mobile.Droid.Resource.Drawable.mr_ic_play_light;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Drawable.notification_template_icon_bg = global::Adopcat.Mobile.Droid.Resource.Drawable.notification_template_icon_bg;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Id.action0 = global::Adopcat.Mobile.Droid.Resource.Id.action0;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Id.action_bar = global::Adopcat.Mobile.Droid.Resource.Id.action_bar;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Id.action_bar_activity_content = global::Adopcat.Mobile.Droid.Resource.Id.action_bar_activity_content;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Id.action_bar_container = global::Adopcat.Mobile.Droid.Resource.Id.action_bar_container;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Id.action_bar_root = global::Adopcat.Mobile.Droid.Resource.Id.action_bar_root;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Id.action_bar_spinner = global::Adopcat.Mobile.Droid.Resource.Id.action_bar_spinner;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Id.action_bar_subtitle = global::Adopcat.Mobile.Droid.Resource.Id.action_bar_subtitle;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Id.action_bar_title = global::Adopcat.Mobile.Droid.Resource.Id.action_bar_title;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Id.action_context_bar = global::Adopcat.Mobile.Droid.Resource.Id.action_context_bar;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Id.action_divider = global::Adopcat.Mobile.Droid.Resource.Id.action_divider;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Id.action_menu_divider = global::Adopcat.Mobile.Droid.Resource.Id.action_menu_divider;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Id.action_menu_presenter = global::Adopcat.Mobile.Droid.Resource.Id.action_menu_presenter;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Id.action_mode_bar = global::Adopcat.Mobile.Droid.Resource.Id.action_mode_bar;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Id.action_mode_bar_stub = global::Adopcat.Mobile.Droid.Resource.Id.action_mode_bar_stub;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Id.action_mode_close_button = global::Adopcat.Mobile.Droid.Resource.Id.action_mode_close_button;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Id.activity_chooser_view_content = global::Adopcat.Mobile.Droid.Resource.Id.activity_chooser_view_content;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Id.alertTitle = global::Adopcat.Mobile.Droid.Resource.Id.alertTitle;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Id.always = global::Adopcat.Mobile.Droid.Resource.Id.always;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Id.beginning = global::Adopcat.Mobile.Droid.Resource.Id.beginning;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Id.bottom = global::Adopcat.Mobile.Droid.Resource.Id.bottom;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Id.buttonPanel = global::Adopcat.Mobile.Droid.Resource.Id.buttonPanel;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Id.cancel_action = global::Adopcat.Mobile.Droid.Resource.Id.cancel_action;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Id.center = global::Adopcat.Mobile.Droid.Resource.Id.center;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Id.center_horizontal = global::Adopcat.Mobile.Droid.Resource.Id.center_horizontal;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Id.center_vertical = global::Adopcat.Mobile.Droid.Resource.Id.center_vertical;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Id.checkbox = global::Adopcat.Mobile.Droid.Resource.Id.checkbox;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Id.chronometer = global::Adopcat.Mobile.Droid.Resource.Id.chronometer;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Id.clip_horizontal = global::Adopcat.Mobile.Droid.Resource.Id.clip_horizontal;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Id.clip_vertical = global::Adopcat.Mobile.Droid.Resource.Id.clip_vertical;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Id.collapseActionView = global::Adopcat.Mobile.Droid.Resource.Id.collapseActionView;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Id.contentPanel = global::Adopcat.Mobile.Droid.Resource.Id.contentPanel;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Id.custom = global::Adopcat.Mobile.Droid.Resource.Id.custom;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Id.customPanel = global::Adopcat.Mobile.Droid.Resource.Id.customPanel;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Id.decor_content_parent = global::Adopcat.Mobile.Droid.Resource.Id.decor_content_parent;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Id.default_activity_button = global::Adopcat.Mobile.Droid.Resource.Id.default_activity_button;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Id.design_bottom_sheet = global::Adopcat.Mobile.Droid.Resource.Id.design_bottom_sheet;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Id.design_menu_item_action_area = global::Adopcat.Mobile.Droid.Resource.Id.design_menu_item_action_area;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Id.design_menu_item_action_area_stub = global::Adopcat.Mobile.Droid.Resource.Id.design_menu_item_action_area_stub;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Id.design_menu_item_text = global::Adopcat.Mobile.Droid.Resource.Id.design_menu_item_text;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Id.design_navigation_view = global::Adopcat.Mobile.Droid.Resource.Id.design_navigation_view;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Id.disableHome = global::Adopcat.Mobile.Droid.Resource.Id.disableHome;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Id.edit_query = global::Adopcat.Mobile.Droid.Resource.Id.edit_query;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Id.end = global::Adopcat.Mobile.Droid.Resource.Id.end;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Id.end_padder = global::Adopcat.Mobile.Droid.Resource.Id.end_padder;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Id.enterAlways = global::Adopcat.Mobile.Droid.Resource.Id.enterAlways;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Id.enterAlwaysCollapsed = global::Adopcat.Mobile.Droid.Resource.Id.enterAlwaysCollapsed;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Id.exitUntilCollapsed = global::Adopcat.Mobile.Droid.Resource.Id.exitUntilCollapsed;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Id.expand_activities_button = global::Adopcat.Mobile.Droid.Resource.Id.expand_activities_button;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Id.expanded_menu = global::Adopcat.Mobile.Droid.Resource.Id.expanded_menu;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Id.fill = global::Adopcat.Mobile.Droid.Resource.Id.fill;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Id.fill_horizontal = global::Adopcat.Mobile.Droid.Resource.Id.fill_horizontal;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Id.fill_vertical = global::Adopcat.Mobile.Droid.Resource.Id.fill_vertical;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Id.@fixed = global::Adopcat.Mobile.Droid.Resource.Id.@fixed;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Id.home = global::Adopcat.Mobile.Droid.Resource.Id.home;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Id.homeAsUp = global::Adopcat.Mobile.Droid.Resource.Id.homeAsUp;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Id.icon = global::Adopcat.Mobile.Droid.Resource.Id.icon;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Id.ifRoom = global::Adopcat.Mobile.Droid.Resource.Id.ifRoom;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Id.image = global::Adopcat.Mobile.Droid.Resource.Id.image;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Id.info = global::Adopcat.Mobile.Droid.Resource.Id.info;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Id.item_touch_helper_previous_elevation = global::Adopcat.Mobile.Droid.Resource.Id.item_touch_helper_previous_elevation;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Id.left = global::Adopcat.Mobile.Droid.Resource.Id.left;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Id.line1 = global::Adopcat.Mobile.Droid.Resource.Id.line1;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Id.line3 = global::Adopcat.Mobile.Droid.Resource.Id.line3;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Id.listMode = global::Adopcat.Mobile.Droid.Resource.Id.listMode;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Id.list_item = global::Adopcat.Mobile.Droid.Resource.Id.list_item;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Id.media_actions = global::Adopcat.Mobile.Droid.Resource.Id.media_actions;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Id.middle = global::Adopcat.Mobile.Droid.Resource.Id.middle;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Id.mini = global::Adopcat.Mobile.Droid.Resource.Id.mini;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Id.mr_art = global::Adopcat.Mobile.Droid.Resource.Id.mr_art;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Id.mr_chooser_list = global::Adopcat.Mobile.Droid.Resource.Id.mr_chooser_list;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Id.mr_chooser_route_desc = global::Adopcat.Mobile.Droid.Resource.Id.mr_chooser_route_desc;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Id.mr_chooser_route_icon = global::Adopcat.Mobile.Droid.Resource.Id.mr_chooser_route_icon;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Id.mr_chooser_route_name = global::Adopcat.Mobile.Droid.Resource.Id.mr_chooser_route_name;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Id.mr_close = global::Adopcat.Mobile.Droid.Resource.Id.mr_close;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Id.mr_control_divider = global::Adopcat.Mobile.Droid.Resource.Id.mr_control_divider;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Id.mr_control_play_pause = global::Adopcat.Mobile.Droid.Resource.Id.mr_control_play_pause;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Id.mr_control_subtitle = global::Adopcat.Mobile.Droid.Resource.Id.mr_control_subtitle;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Id.mr_control_title = global::Adopcat.Mobile.Droid.Resource.Id.mr_control_title;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Id.mr_control_title_container = global::Adopcat.Mobile.Droid.Resource.Id.mr_control_title_container;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Id.mr_custom_control = global::Adopcat.Mobile.Droid.Resource.Id.mr_custom_control;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Id.mr_default_control = global::Adopcat.Mobile.Droid.Resource.Id.mr_default_control;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Id.mr_dialog_area = global::Adopcat.Mobile.Droid.Resource.Id.mr_dialog_area;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Id.mr_expandable_area = global::Adopcat.Mobile.Droid.Resource.Id.mr_expandable_area;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Id.mr_group_expand_collapse = global::Adopcat.Mobile.Droid.Resource.Id.mr_group_expand_collapse;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Id.mr_media_main_control = global::Adopcat.Mobile.Droid.Resource.Id.mr_media_main_control;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Id.mr_name = global::Adopcat.Mobile.Droid.Resource.Id.mr_name;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Id.mr_playback_control = global::Adopcat.Mobile.Droid.Resource.Id.mr_playback_control;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Id.mr_title_bar = global::Adopcat.Mobile.Droid.Resource.Id.mr_title_bar;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Id.mr_volume_control = global::Adopcat.Mobile.Droid.Resource.Id.mr_volume_control;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Id.mr_volume_group_list = global::Adopcat.Mobile.Droid.Resource.Id.mr_volume_group_list;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Id.mr_volume_item_icon = global::Adopcat.Mobile.Droid.Resource.Id.mr_volume_item_icon;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Id.mr_volume_slider = global::Adopcat.Mobile.Droid.Resource.Id.mr_volume_slider;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Id.multiply = global::Adopcat.Mobile.Droid.Resource.Id.multiply;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Id.navigation_header_container = global::Adopcat.Mobile.Droid.Resource.Id.navigation_header_container;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Id.never = global::Adopcat.Mobile.Droid.Resource.Id.never;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Id.none = global::Adopcat.Mobile.Droid.Resource.Id.none;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Id.normal = global::Adopcat.Mobile.Droid.Resource.Id.normal;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Id.parallax = global::Adopcat.Mobile.Droid.Resource.Id.parallax;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Id.parentPanel = global::Adopcat.Mobile.Droid.Resource.Id.parentPanel;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Id.pin = global::Adopcat.Mobile.Droid.Resource.Id.pin;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Id.progress_circular = global::Adopcat.Mobile.Droid.Resource.Id.progress_circular;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Id.progress_horizontal = global::Adopcat.Mobile.Droid.Resource.Id.progress_horizontal;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Id.radio = global::Adopcat.Mobile.Droid.Resource.Id.radio;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Id.right = global::Adopcat.Mobile.Droid.Resource.Id.right;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Id.screen = global::Adopcat.Mobile.Droid.Resource.Id.screen;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Id.scroll = global::Adopcat.Mobile.Droid.Resource.Id.scroll;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Id.scrollIndicatorDown = global::Adopcat.Mobile.Droid.Resource.Id.scrollIndicatorDown;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Id.scrollIndicatorUp = global::Adopcat.Mobile.Droid.Resource.Id.scrollIndicatorUp;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Id.scrollView = global::Adopcat.Mobile.Droid.Resource.Id.scrollView;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Id.scrollable = global::Adopcat.Mobile.Droid.Resource.Id.scrollable;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Id.search_badge = global::Adopcat.Mobile.Droid.Resource.Id.search_badge;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Id.search_bar = global::Adopcat.Mobile.Droid.Resource.Id.search_bar;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Id.search_button = global::Adopcat.Mobile.Droid.Resource.Id.search_button;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Id.search_close_btn = global::Adopcat.Mobile.Droid.Resource.Id.search_close_btn;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Id.search_edit_frame = global::Adopcat.Mobile.Droid.Resource.Id.search_edit_frame;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Id.search_go_btn = global::Adopcat.Mobile.Droid.Resource.Id.search_go_btn;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Id.search_mag_icon = global::Adopcat.Mobile.Droid.Resource.Id.search_mag_icon;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Id.search_plate = global::Adopcat.Mobile.Droid.Resource.Id.search_plate;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Id.search_src_text = global::Adopcat.Mobile.Droid.Resource.Id.search_src_text;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Id.search_voice_btn = global::Adopcat.Mobile.Droid.Resource.Id.search_voice_btn;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Id.select_dialog_listview = global::Adopcat.Mobile.Droid.Resource.Id.select_dialog_listview;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Id.shortcut = global::Adopcat.Mobile.Droid.Resource.Id.shortcut;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Id.showCustom = global::Adopcat.Mobile.Droid.Resource.Id.showCustom;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Id.showHome = global::Adopcat.Mobile.Droid.Resource.Id.showHome;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Id.showTitle = global::Adopcat.Mobile.Droid.Resource.Id.showTitle;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Id.snackbar_action = global::Adopcat.Mobile.Droid.Resource.Id.snackbar_action;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Id.snackbar_text = global::Adopcat.Mobile.Droid.Resource.Id.snackbar_text;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Id.snap = global::Adopcat.Mobile.Droid.Resource.Id.snap;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Id.spacer = global::Adopcat.Mobile.Droid.Resource.Id.spacer;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Id.split_action_bar = global::Adopcat.Mobile.Droid.Resource.Id.split_action_bar;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Id.src_atop = global::Adopcat.Mobile.Droid.Resource.Id.src_atop;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Id.src_in = global::Adopcat.Mobile.Droid.Resource.Id.src_in;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Id.src_over = global::Adopcat.Mobile.Droid.Resource.Id.src_over;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Id.start = global::Adopcat.Mobile.Droid.Resource.Id.start;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Id.status_bar_latest_event_content = global::Adopcat.Mobile.Droid.Resource.Id.status_bar_latest_event_content;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Id.submit_area = global::Adopcat.Mobile.Droid.Resource.Id.submit_area;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Id.tabMode = global::Adopcat.Mobile.Droid.Resource.Id.tabMode;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Id.text = global::Adopcat.Mobile.Droid.Resource.Id.text;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Id.text2 = global::Adopcat.Mobile.Droid.Resource.Id.text2;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Id.textSpacerNoButtons = global::Adopcat.Mobile.Droid.Resource.Id.textSpacerNoButtons;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Id.time = global::Adopcat.Mobile.Droid.Resource.Id.time;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Id.title = global::Adopcat.Mobile.Droid.Resource.Id.title;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Id.title_template = global::Adopcat.Mobile.Droid.Resource.Id.title_template;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Id.top = global::Adopcat.Mobile.Droid.Resource.Id.top;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Id.topPanel = global::Adopcat.Mobile.Droid.Resource.Id.topPanel;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Id.touch_outside = global::Adopcat.Mobile.Droid.Resource.Id.touch_outside;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Id.up = global::Adopcat.Mobile.Droid.Resource.Id.up;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Id.useLogo = global::Adopcat.Mobile.Droid.Resource.Id.useLogo;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Id.view_offset_helper = global::Adopcat.Mobile.Droid.Resource.Id.view_offset_helper;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Id.volume_item_container = global::Adopcat.Mobile.Droid.Resource.Id.volume_item_container;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Id.withText = global::Adopcat.Mobile.Droid.Resource.Id.withText;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Id.wrap_content = global::Adopcat.Mobile.Droid.Resource.Id.wrap_content;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Integer.abc_config_activityDefaultDur = global::Adopcat.Mobile.Droid.Resource.Integer.abc_config_activityDefaultDur;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Integer.abc_config_activityShortDur = global::Adopcat.Mobile.Droid.Resource.Integer.abc_config_activityShortDur;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Integer.abc_max_action_buttons = global::Adopcat.Mobile.Droid.Resource.Integer.abc_max_action_buttons;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Integer.bottom_sheet_slide_duration = global::Adopcat.Mobile.Droid.Resource.Integer.bottom_sheet_slide_duration;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Integer.cancel_button_image_alpha = global::Adopcat.Mobile.Droid.Resource.Integer.cancel_button_image_alpha;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Integer.design_snackbar_text_max_lines = global::Adopcat.Mobile.Droid.Resource.Integer.design_snackbar_text_max_lines;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Integer.mr_controller_volume_group_list_animation_duration_ms = global::Adopcat.Mobile.Droid.Resource.Integer.mr_controller_volume_group_list_animation_duration_ms;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Integer.mr_controller_volume_group_list_fade_in_duration_ms = global::Adopcat.Mobile.Droid.Resource.Integer.mr_controller_volume_group_list_fade_in_duration_ms;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Integer.mr_controller_volume_group_list_fade_out_duration_ms = global::Adopcat.Mobile.Droid.Resource.Integer.mr_controller_volume_group_list_fade_out_duration_ms;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Integer.status_bar_notification_info_maxnum = global::Adopcat.Mobile.Droid.Resource.Integer.status_bar_notification_info_maxnum;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Interpolator.mr_fast_out_slow_in = global::Adopcat.Mobile.Droid.Resource.Interpolator.mr_fast_out_slow_in;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Interpolator.mr_linear_out_slow_in = global::Adopcat.Mobile.Droid.Resource.Interpolator.mr_linear_out_slow_in;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Layout.abc_action_bar_title_item = global::Adopcat.Mobile.Droid.Resource.Layout.abc_action_bar_title_item;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Layout.abc_action_bar_up_container = global::Adopcat.Mobile.Droid.Resource.Layout.abc_action_bar_up_container;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Layout.abc_action_bar_view_list_nav_layout = global::Adopcat.Mobile.Droid.Resource.Layout.abc_action_bar_view_list_nav_layout;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Layout.abc_action_menu_item_layout = global::Adopcat.Mobile.Droid.Resource.Layout.abc_action_menu_item_layout;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Layout.abc_action_menu_layout = global::Adopcat.Mobile.Droid.Resource.Layout.abc_action_menu_layout;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Layout.abc_action_mode_bar = global::Adopcat.Mobile.Droid.Resource.Layout.abc_action_mode_bar;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Layout.abc_action_mode_close_item_material = global::Adopcat.Mobile.Droid.Resource.Layout.abc_action_mode_close_item_material;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Layout.abc_activity_chooser_view = global::Adopcat.Mobile.Droid.Resource.Layout.abc_activity_chooser_view;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Layout.abc_activity_chooser_view_list_item = global::Adopcat.Mobile.Droid.Resource.Layout.abc_activity_chooser_view_list_item;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Layout.abc_alert_dialog_button_bar_material = global::Adopcat.Mobile.Droid.Resource.Layout.abc_alert_dialog_button_bar_material;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Layout.abc_alert_dialog_material = global::Adopcat.Mobile.Droid.Resource.Layout.abc_alert_dialog_material;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Layout.abc_dialog_title_material = global::Adopcat.Mobile.Droid.Resource.Layout.abc_dialog_title_material;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Layout.abc_expanded_menu_layout = global::Adopcat.Mobile.Droid.Resource.Layout.abc_expanded_menu_layout;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Layout.abc_list_menu_item_checkbox = global::Adopcat.Mobile.Droid.Resource.Layout.abc_list_menu_item_checkbox;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Layout.abc_list_menu_item_icon = global::Adopcat.Mobile.Droid.Resource.Layout.abc_list_menu_item_icon;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Layout.abc_list_menu_item_layout = global::Adopcat.Mobile.Droid.Resource.Layout.abc_list_menu_item_layout;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Layout.abc_list_menu_item_radio = global::Adopcat.Mobile.Droid.Resource.Layout.abc_list_menu_item_radio;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Layout.abc_popup_menu_item_layout = global::Adopcat.Mobile.Droid.Resource.Layout.abc_popup_menu_item_layout;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Layout.abc_screen_content_include = global::Adopcat.Mobile.Droid.Resource.Layout.abc_screen_content_include;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Layout.abc_screen_simple = global::Adopcat.Mobile.Droid.Resource.Layout.abc_screen_simple;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Layout.abc_screen_simple_overlay_action_mode = global::Adopcat.Mobile.Droid.Resource.Layout.abc_screen_simple_overlay_action_mode;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Layout.abc_screen_toolbar = global::Adopcat.Mobile.Droid.Resource.Layout.abc_screen_toolbar;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Layout.abc_search_dropdown_item_icons_2line = global::Adopcat.Mobile.Droid.Resource.Layout.abc_search_dropdown_item_icons_2line;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Layout.abc_search_view = global::Adopcat.Mobile.Droid.Resource.Layout.abc_search_view;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Layout.abc_select_dialog_material = global::Adopcat.Mobile.Droid.Resource.Layout.abc_select_dialog_material;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Layout.design_bottom_sheet_dialog = global::Adopcat.Mobile.Droid.Resource.Layout.design_bottom_sheet_dialog;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Layout.design_layout_snackbar = global::Adopcat.Mobile.Droid.Resource.Layout.design_layout_snackbar;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Layout.design_layout_snackbar_include = global::Adopcat.Mobile.Droid.Resource.Layout.design_layout_snackbar_include;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Layout.design_layout_tab_icon = global::Adopcat.Mobile.Droid.Resource.Layout.design_layout_tab_icon;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Layout.design_layout_tab_text = global::Adopcat.Mobile.Droid.Resource.Layout.design_layout_tab_text;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Layout.design_menu_item_action_area = global::Adopcat.Mobile.Droid.Resource.Layout.design_menu_item_action_area;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Layout.design_navigation_item = global::Adopcat.Mobile.Droid.Resource.Layout.design_navigation_item;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Layout.design_navigation_item_header = global::Adopcat.Mobile.Droid.Resource.Layout.design_navigation_item_header;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Layout.design_navigation_item_separator = global::Adopcat.Mobile.Droid.Resource.Layout.design_navigation_item_separator;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Layout.design_navigation_item_subheader = global::Adopcat.Mobile.Droid.Resource.Layout.design_navigation_item_subheader;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Layout.design_navigation_menu = global::Adopcat.Mobile.Droid.Resource.Layout.design_navigation_menu;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Layout.design_navigation_menu_item = global::Adopcat.Mobile.Droid.Resource.Layout.design_navigation_menu_item;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Layout.mr_chooser_dialog = global::Adopcat.Mobile.Droid.Resource.Layout.mr_chooser_dialog;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Layout.mr_chooser_list_item = global::Adopcat.Mobile.Droid.Resource.Layout.mr_chooser_list_item;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Layout.mr_controller_material_dialog_b = global::Adopcat.Mobile.Droid.Resource.Layout.mr_controller_material_dialog_b;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Layout.mr_controller_volume_item = global::Adopcat.Mobile.Droid.Resource.Layout.mr_controller_volume_item;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Layout.mr_playback_control = global::Adopcat.Mobile.Droid.Resource.Layout.mr_playback_control;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Layout.mr_volume_control = global::Adopcat.Mobile.Droid.Resource.Layout.mr_volume_control;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Layout.notification_media_action = global::Adopcat.Mobile.Droid.Resource.Layout.notification_media_action;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Layout.notification_media_cancel_action = global::Adopcat.Mobile.Droid.Resource.Layout.notification_media_cancel_action;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Layout.notification_template_big_media = global::Adopcat.Mobile.Droid.Resource.Layout.notification_template_big_media;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Layout.notification_template_big_media_narrow = global::Adopcat.Mobile.Droid.Resource.Layout.notification_template_big_media_narrow;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Layout.notification_template_lines = global::Adopcat.Mobile.Droid.Resource.Layout.notification_template_lines;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Layout.notification_template_media = global::Adopcat.Mobile.Droid.Resource.Layout.notification_template_media;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Layout.notification_template_part_chronometer = global::Adopcat.Mobile.Droid.Resource.Layout.notification_template_part_chronometer;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Layout.notification_template_part_time = global::Adopcat.Mobile.Droid.Resource.Layout.notification_template_part_time;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Layout.select_dialog_item_material = global::Adopcat.Mobile.Droid.Resource.Layout.select_dialog_item_material;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Layout.select_dialog_multichoice_material = global::Adopcat.Mobile.Droid.Resource.Layout.select_dialog_multichoice_material;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Layout.select_dialog_singlechoice_material = global::Adopcat.Mobile.Droid.Resource.Layout.select_dialog_singlechoice_material;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Layout.support_simple_spinner_dropdown_item = global::Adopcat.Mobile.Droid.Resource.Layout.support_simple_spinner_dropdown_item;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.String.ApplicationName = global::Adopcat.Mobile.Droid.Resource.String.ApplicationName;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.String.Hello = global::Adopcat.Mobile.Droid.Resource.String.Hello;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.String.abc_action_bar_home_description = global::Adopcat.Mobile.Droid.Resource.String.abc_action_bar_home_description;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.String.abc_action_bar_home_description_format = global::Adopcat.Mobile.Droid.Resource.String.abc_action_bar_home_description_format;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.String.abc_action_bar_home_subtitle_description_format = global::Adopcat.Mobile.Droid.Resource.String.abc_action_bar_home_subtitle_description_format;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.String.abc_action_bar_up_description = global::Adopcat.Mobile.Droid.Resource.String.abc_action_bar_up_description;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.String.abc_action_menu_overflow_description = global::Adopcat.Mobile.Droid.Resource.String.abc_action_menu_overflow_description;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.String.abc_action_mode_done = global::Adopcat.Mobile.Droid.Resource.String.abc_action_mode_done;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.String.abc_activity_chooser_view_see_all = global::Adopcat.Mobile.Droid.Resource.String.abc_activity_chooser_view_see_all;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.String.abc_activitychooserview_choose_application = global::Adopcat.Mobile.Droid.Resource.String.abc_activitychooserview_choose_application;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.String.abc_capital_off = global::Adopcat.Mobile.Droid.Resource.String.abc_capital_off;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.String.abc_capital_on = global::Adopcat.Mobile.Droid.Resource.String.abc_capital_on;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.String.abc_search_hint = global::Adopcat.Mobile.Droid.Resource.String.abc_search_hint;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.String.abc_searchview_description_clear = global::Adopcat.Mobile.Droid.Resource.String.abc_searchview_description_clear;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.String.abc_searchview_description_query = global::Adopcat.Mobile.Droid.Resource.String.abc_searchview_description_query;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.String.abc_searchview_description_search = global::Adopcat.Mobile.Droid.Resource.String.abc_searchview_description_search;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.String.abc_searchview_description_submit = global::Adopcat.Mobile.Droid.Resource.String.abc_searchview_description_submit;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.String.abc_searchview_description_voice = global::Adopcat.Mobile.Droid.Resource.String.abc_searchview_description_voice;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.String.abc_shareactionprovider_share_with = global::Adopcat.Mobile.Droid.Resource.String.abc_shareactionprovider_share_with;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.String.abc_shareactionprovider_share_with_application = global::Adopcat.Mobile.Droid.Resource.String.abc_shareactionprovider_share_with_application;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.String.abc_toolbar_collapse_description = global::Adopcat.Mobile.Droid.Resource.String.abc_toolbar_collapse_description;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.String.appbar_scrolling_view_behavior = global::Adopcat.Mobile.Droid.Resource.String.appbar_scrolling_view_behavior;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.String.bottom_sheet_behavior = global::Adopcat.Mobile.Droid.Resource.String.bottom_sheet_behavior;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.String.character_counter_pattern = global::Adopcat.Mobile.Droid.Resource.String.character_counter_pattern;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.String.mr_button_content_description = global::Adopcat.Mobile.Droid.Resource.String.mr_button_content_description;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.String.mr_chooser_searching = global::Adopcat.Mobile.Droid.Resource.String.mr_chooser_searching;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.String.mr_chooser_title = global::Adopcat.Mobile.Droid.Resource.String.mr_chooser_title;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.String.mr_controller_casting_screen = global::Adopcat.Mobile.Droid.Resource.String.mr_controller_casting_screen;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.String.mr_controller_close_description = global::Adopcat.Mobile.Droid.Resource.String.mr_controller_close_description;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.String.mr_controller_collapse_group = global::Adopcat.Mobile.Droid.Resource.String.mr_controller_collapse_group;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.String.mr_controller_disconnect = global::Adopcat.Mobile.Droid.Resource.String.mr_controller_disconnect;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.String.mr_controller_expand_group = global::Adopcat.Mobile.Droid.Resource.String.mr_controller_expand_group;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.String.mr_controller_no_info_available = global::Adopcat.Mobile.Droid.Resource.String.mr_controller_no_info_available;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.String.mr_controller_no_media_selected = global::Adopcat.Mobile.Droid.Resource.String.mr_controller_no_media_selected;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.String.mr_controller_pause = global::Adopcat.Mobile.Droid.Resource.String.mr_controller_pause;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.String.mr_controller_play = global::Adopcat.Mobile.Droid.Resource.String.mr_controller_play;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.String.mr_controller_stop = global::Adopcat.Mobile.Droid.Resource.String.mr_controller_stop;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.String.mr_system_route_name = global::Adopcat.Mobile.Droid.Resource.String.mr_system_route_name;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.String.mr_user_route_category_name = global::Adopcat.Mobile.Droid.Resource.String.mr_user_route_category_name;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.String.status_bar_notification_info_overflow = global::Adopcat.Mobile.Droid.Resource.String.status_bar_notification_info_overflow;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Style.AlertDialog_AppCompat = global::Adopcat.Mobile.Droid.Resource.Style.AlertDialog_AppCompat;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Style.AlertDialog_AppCompat_Light = global::Adopcat.Mobile.Droid.Resource.Style.AlertDialog_AppCompat_Light;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Style.Animation_AppCompat_Dialog = global::Adopcat.Mobile.Droid.Resource.Style.Animation_AppCompat_Dialog;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Style.Animation_AppCompat_DropDownUp = global::Adopcat.Mobile.Droid.Resource.Style.Animation_AppCompat_DropDownUp;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Style.Animation_Design_BottomSheetDialog = global::Adopcat.Mobile.Droid.Resource.Style.Animation_Design_BottomSheetDialog;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Style.Base_AlertDialog_AppCompat = global::Adopcat.Mobile.Droid.Resource.Style.Base_AlertDialog_AppCompat;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Style.Base_AlertDialog_AppCompat_Light = global::Adopcat.Mobile.Droid.Resource.Style.Base_AlertDialog_AppCompat_Light;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Style.Base_Animation_AppCompat_Dialog = global::Adopcat.Mobile.Droid.Resource.Style.Base_Animation_AppCompat_Dialog;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Style.Base_Animation_AppCompat_DropDownUp = global::Adopcat.Mobile.Droid.Resource.Style.Base_Animation_AppCompat_DropDownUp;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Style.Base_CardView = global::Adopcat.Mobile.Droid.Resource.Style.Base_CardView;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Style.Base_DialogWindowTitle_AppCompat = global::Adopcat.Mobile.Droid.Resource.Style.Base_DialogWindowTitle_AppCompat;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Style.Base_DialogWindowTitleBackground_AppCompat = global::Adopcat.Mobile.Droid.Resource.Style.Base_DialogWindowTitleBackground_AppCompat;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Style.Base_TextAppearance_AppCompat = global::Adopcat.Mobile.Droid.Resource.Style.Base_TextAppearance_AppCompat;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Style.Base_TextAppearance_AppCompat_Body1 = global::Adopcat.Mobile.Droid.Resource.Style.Base_TextAppearance_AppCompat_Body1;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Style.Base_TextAppearance_AppCompat_Body2 = global::Adopcat.Mobile.Droid.Resource.Style.Base_TextAppearance_AppCompat_Body2;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Style.Base_TextAppearance_AppCompat_Button = global::Adopcat.Mobile.Droid.Resource.Style.Base_TextAppearance_AppCompat_Button;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Style.Base_TextAppearance_AppCompat_Caption = global::Adopcat.Mobile.Droid.Resource.Style.Base_TextAppearance_AppCompat_Caption;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Style.Base_TextAppearance_AppCompat_Display1 = global::Adopcat.Mobile.Droid.Resource.Style.Base_TextAppearance_AppCompat_Display1;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Style.Base_TextAppearance_AppCompat_Display2 = global::Adopcat.Mobile.Droid.Resource.Style.Base_TextAppearance_AppCompat_Display2;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Style.Base_TextAppearance_AppCompat_Display3 = global::Adopcat.Mobile.Droid.Resource.Style.Base_TextAppearance_AppCompat_Display3;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Style.Base_TextAppearance_AppCompat_Display4 = global::Adopcat.Mobile.Droid.Resource.Style.Base_TextAppearance_AppCompat_Display4;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Style.Base_TextAppearance_AppCompat_Headline = global::Adopcat.Mobile.Droid.Resource.Style.Base_TextAppearance_AppCompat_Headline;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Style.Base_TextAppearance_AppCompat_Inverse = global::Adopcat.Mobile.Droid.Resource.Style.Base_TextAppearance_AppCompat_Inverse;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Style.Base_TextAppearance_AppCompat_Large = global::Adopcat.Mobile.Droid.Resource.Style.Base_TextAppearance_AppCompat_Large;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Style.Base_TextAppearance_AppCompat_Large_Inverse = global::Adopcat.Mobile.Droid.Resource.Style.Base_TextAppearance_AppCompat_Large_Inverse;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Style.Base_TextAppearance_AppCompat_Light_Widget_PopupMenu_Large = global::Adopcat.Mobile.Droid.Resource.Style.Base_TextAppearance_AppCompat_Light_Widget_PopupMenu_Large;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Style.Base_TextAppearance_AppCompat_Light_Widget_PopupMenu_Small = global::Adopcat.Mobile.Droid.Resource.Style.Base_TextAppearance_AppCompat_Light_Widget_PopupMenu_Small;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Style.Base_TextAppearance_AppCompat_Medium = global::Adopcat.Mobile.Droid.Resource.Style.Base_TextAppearance_AppCompat_Medium;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Style.Base_TextAppearance_AppCompat_Medium_Inverse = global::Adopcat.Mobile.Droid.Resource.Style.Base_TextAppearance_AppCompat_Medium_Inverse;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Style.Base_TextAppearance_AppCompat_Menu = global::Adopcat.Mobile.Droid.Resource.Style.Base_TextAppearance_AppCompat_Menu;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Style.Base_TextAppearance_AppCompat_SearchResult = global::Adopcat.Mobile.Droid.Resource.Style.Base_TextAppearance_AppCompat_SearchResult;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Style.Base_TextAppearance_AppCompat_SearchResult_Subtitle = global::Adopcat.Mobile.Droid.Resource.Style.Base_TextAppearance_AppCompat_SearchResult_Subtitle;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Style.Base_TextAppearance_AppCompat_SearchResult_Title = global::Adopcat.Mobile.Droid.Resource.Style.Base_TextAppearance_AppCompat_SearchResult_Title;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Style.Base_TextAppearance_AppCompat_Small = global::Adopcat.Mobile.Droid.Resource.Style.Base_TextAppearance_AppCompat_Small;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Style.Base_TextAppearance_AppCompat_Small_Inverse = global::Adopcat.Mobile.Droid.Resource.Style.Base_TextAppearance_AppCompat_Small_Inverse;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Style.Base_TextAppearance_AppCompat_Subhead = global::Adopcat.Mobile.Droid.Resource.Style.Base_TextAppearance_AppCompat_Subhead;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Style.Base_TextAppearance_AppCompat_Subhead_Inverse = global::Adopcat.Mobile.Droid.Resource.Style.Base_TextAppearance_AppCompat_Subhead_Inverse;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Style.Base_TextAppearance_AppCompat_Title = global::Adopcat.Mobile.Droid.Resource.Style.Base_TextAppearance_AppCompat_Title;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Style.Base_TextAppearance_AppCompat_Title_Inverse = global::Adopcat.Mobile.Droid.Resource.Style.Base_TextAppearance_AppCompat_Title_Inverse;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Menu = global::Adopcat.Mobile.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Menu;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Subtitle = global::Adopcat.Mobile.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Subtitle;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Subtitle_Inverse = global::Adopcat.Mobile.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Subtitle_Inverse;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Title = global::Adopcat.Mobile.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Title;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Title_Inverse = global::Adopcat.Mobile.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Title_Inverse;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionMode_Subtitle = global::Adopcat.Mobile.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionMode_Subtitle;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionMode_Title = global::Adopcat.Mobile.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionMode_Title;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Style.Base_TextAppearance_AppCompat_Widget_Button = global::Adopcat.Mobile.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_Button;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Style.Base_TextAppearance_AppCompat_Widget_Button_Inverse = global::Adopcat.Mobile.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_Button_Inverse;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Style.Base_TextAppearance_AppCompat_Widget_DropDownItem = global::Adopcat.Mobile.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_DropDownItem;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Style.Base_TextAppearance_AppCompat_Widget_PopupMenu_Large = global::Adopcat.Mobile.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_PopupMenu_Large;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Style.Base_TextAppearance_AppCompat_Widget_PopupMenu_Small = global::Adopcat.Mobile.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_PopupMenu_Small;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Style.Base_TextAppearance_AppCompat_Widget_Switch = global::Adopcat.Mobile.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_Switch;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Style.Base_TextAppearance_AppCompat_Widget_TextView_SpinnerItem = global::Adopcat.Mobile.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_TextView_SpinnerItem;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Style.Base_TextAppearance_Widget_AppCompat_ExpandedMenu_Item = global::Adopcat.Mobile.Droid.Resource.Style.Base_TextAppearance_Widget_AppCompat_ExpandedMenu_Item;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Style.Base_TextAppearance_Widget_AppCompat_Toolbar_Subtitle = global::Adopcat.Mobile.Droid.Resource.Style.Base_TextAppearance_Widget_AppCompat_Toolbar_Subtitle;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Style.Base_TextAppearance_Widget_AppCompat_Toolbar_Title = global::Adopcat.Mobile.Droid.Resource.Style.Base_TextAppearance_Widget_AppCompat_Toolbar_Title;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Style.Base_Theme_AppCompat = global::Adopcat.Mobile.Droid.Resource.Style.Base_Theme_AppCompat;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Style.Base_Theme_AppCompat_CompactMenu = global::Adopcat.Mobile.Droid.Resource.Style.Base_Theme_AppCompat_CompactMenu;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Style.Base_Theme_AppCompat_Dialog = global::Adopcat.Mobile.Droid.Resource.Style.Base_Theme_AppCompat_Dialog;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Style.Base_Theme_AppCompat_Dialog_Alert = global::Adopcat.Mobile.Droid.Resource.Style.Base_Theme_AppCompat_Dialog_Alert;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Style.Base_Theme_AppCompat_Dialog_FixedSize = global::Adopcat.Mobile.Droid.Resource.Style.Base_Theme_AppCompat_Dialog_FixedSize;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Style.Base_Theme_AppCompat_Dialog_MinWidth = global::Adopcat.Mobile.Droid.Resource.Style.Base_Theme_AppCompat_Dialog_MinWidth;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Style.Base_Theme_AppCompat_DialogWhenLarge = global::Adopcat.Mobile.Droid.Resource.Style.Base_Theme_AppCompat_DialogWhenLarge;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Style.Base_Theme_AppCompat_Light = global::Adopcat.Mobile.Droid.Resource.Style.Base_Theme_AppCompat_Light;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Style.Base_Theme_AppCompat_Light_DarkActionBar = global::Adopcat.Mobile.Droid.Resource.Style.Base_Theme_AppCompat_Light_DarkActionBar;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Style.Base_Theme_AppCompat_Light_Dialog = global::Adopcat.Mobile.Droid.Resource.Style.Base_Theme_AppCompat_Light_Dialog;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Style.Base_Theme_AppCompat_Light_Dialog_Alert = global::Adopcat.Mobile.Droid.Resource.Style.Base_Theme_AppCompat_Light_Dialog_Alert;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Style.Base_Theme_AppCompat_Light_Dialog_FixedSize = global::Adopcat.Mobile.Droid.Resource.Style.Base_Theme_AppCompat_Light_Dialog_FixedSize;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Style.Base_Theme_AppCompat_Light_Dialog_MinWidth = global::Adopcat.Mobile.Droid.Resource.Style.Base_Theme_AppCompat_Light_Dialog_MinWidth;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Style.Base_Theme_AppCompat_Light_DialogWhenLarge = global::Adopcat.Mobile.Droid.Resource.Style.Base_Theme_AppCompat_Light_DialogWhenLarge;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Style.Base_ThemeOverlay_AppCompat = global::Adopcat.Mobile.Droid.Resource.Style.Base_ThemeOverlay_AppCompat;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Style.Base_ThemeOverlay_AppCompat_ActionBar = global::Adopcat.Mobile.Droid.Resource.Style.Base_ThemeOverlay_AppCompat_ActionBar;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Style.Base_ThemeOverlay_AppCompat_Dark = global::Adopcat.Mobile.Droid.Resource.Style.Base_ThemeOverlay_AppCompat_Dark;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Style.Base_ThemeOverlay_AppCompat_Dark_ActionBar = global::Adopcat.Mobile.Droid.Resource.Style.Base_ThemeOverlay_AppCompat_Dark_ActionBar;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Style.Base_ThemeOverlay_AppCompat_Light = global::Adopcat.Mobile.Droid.Resource.Style.Base_ThemeOverlay_AppCompat_Light;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Style.Base_V11_Theme_AppCompat_Dialog = global::Adopcat.Mobile.Droid.Resource.Style.Base_V11_Theme_AppCompat_Dialog;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Style.Base_V11_Theme_AppCompat_Light_Dialog = global::Adopcat.Mobile.Droid.Resource.Style.Base_V11_Theme_AppCompat_Light_Dialog;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Style.Base_V12_Widget_AppCompat_AutoCompleteTextView = global::Adopcat.Mobile.Droid.Resource.Style.Base_V12_Widget_AppCompat_AutoCompleteTextView;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Style.Base_V12_Widget_AppCompat_EditText = global::Adopcat.Mobile.Droid.Resource.Style.Base_V12_Widget_AppCompat_EditText;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Style.Base_V21_Theme_AppCompat = global::Adopcat.Mobile.Droid.Resource.Style.Base_V21_Theme_AppCompat;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Style.Base_V21_Theme_AppCompat_Dialog = global::Adopcat.Mobile.Droid.Resource.Style.Base_V21_Theme_AppCompat_Dialog;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Style.Base_V21_Theme_AppCompat_Light = global::Adopcat.Mobile.Droid.Resource.Style.Base_V21_Theme_AppCompat_Light;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Style.Base_V21_Theme_AppCompat_Light_Dialog = global::Adopcat.Mobile.Droid.Resource.Style.Base_V21_Theme_AppCompat_Light_Dialog;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Style.Base_V22_Theme_AppCompat = global::Adopcat.Mobile.Droid.Resource.Style.Base_V22_Theme_AppCompat;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Style.Base_V22_Theme_AppCompat_Light = global::Adopcat.Mobile.Droid.Resource.Style.Base_V22_Theme_AppCompat_Light;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Style.Base_V23_Theme_AppCompat = global::Adopcat.Mobile.Droid.Resource.Style.Base_V23_Theme_AppCompat;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Style.Base_V23_Theme_AppCompat_Light = global::Adopcat.Mobile.Droid.Resource.Style.Base_V23_Theme_AppCompat_Light;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Style.Base_V7_Theme_AppCompat = global::Adopcat.Mobile.Droid.Resource.Style.Base_V7_Theme_AppCompat;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Style.Base_V7_Theme_AppCompat_Dialog = global::Adopcat.Mobile.Droid.Resource.Style.Base_V7_Theme_AppCompat_Dialog;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Style.Base_V7_Theme_AppCompat_Light = global::Adopcat.Mobile.Droid.Resource.Style.Base_V7_Theme_AppCompat_Light;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Style.Base_V7_Theme_AppCompat_Light_Dialog = global::Adopcat.Mobile.Droid.Resource.Style.Base_V7_Theme_AppCompat_Light_Dialog;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Style.Base_V7_Widget_AppCompat_AutoCompleteTextView = global::Adopcat.Mobile.Droid.Resource.Style.Base_V7_Widget_AppCompat_AutoCompleteTextView;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Style.Base_V7_Widget_AppCompat_EditText = global::Adopcat.Mobile.Droid.Resource.Style.Base_V7_Widget_AppCompat_EditText;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Style.Base_Widget_AppCompat_ActionBar = global::Adopcat.Mobile.Droid.Resource.Style.Base_Widget_AppCompat_ActionBar;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Style.Base_Widget_AppCompat_ActionBar_Solid = global::Adopcat.Mobile.Droid.Resource.Style.Base_Widget_AppCompat_ActionBar_Solid;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Style.Base_Widget_AppCompat_ActionBar_TabBar = global::Adopcat.Mobile.Droid.Resource.Style.Base_Widget_AppCompat_ActionBar_TabBar;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Style.Base_Widget_AppCompat_ActionBar_TabText = global::Adopcat.Mobile.Droid.Resource.Style.Base_Widget_AppCompat_ActionBar_TabText;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Style.Base_Widget_AppCompat_ActionBar_TabView = global::Adopcat.Mobile.Droid.Resource.Style.Base_Widget_AppCompat_ActionBar_TabView;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Style.Base_Widget_AppCompat_ActionButton = global::Adopcat.Mobile.Droid.Resource.Style.Base_Widget_AppCompat_ActionButton;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Style.Base_Widget_AppCompat_ActionButton_CloseMode = global::Adopcat.Mobile.Droid.Resource.Style.Base_Widget_AppCompat_ActionButton_CloseMode;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Style.Base_Widget_AppCompat_ActionButton_Overflow = global::Adopcat.Mobile.Droid.Resource.Style.Base_Widget_AppCompat_ActionButton_Overflow;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Style.Base_Widget_AppCompat_ActionMode = global::Adopcat.Mobile.Droid.Resource.Style.Base_Widget_AppCompat_ActionMode;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Style.Base_Widget_AppCompat_ActivityChooserView = global::Adopcat.Mobile.Droid.Resource.Style.Base_Widget_AppCompat_ActivityChooserView;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Style.Base_Widget_AppCompat_AutoCompleteTextView = global::Adopcat.Mobile.Droid.Resource.Style.Base_Widget_AppCompat_AutoCompleteTextView;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Style.Base_Widget_AppCompat_Button = global::Adopcat.Mobile.Droid.Resource.Style.Base_Widget_AppCompat_Button;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Style.Base_Widget_AppCompat_Button_Borderless = global::Adopcat.Mobile.Droid.Resource.Style.Base_Widget_AppCompat_Button_Borderless;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Style.Base_Widget_AppCompat_Button_Borderless_Colored = global::Adopcat.Mobile.Droid.Resource.Style.Base_Widget_AppCompat_Button_Borderless_Colored;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Style.Base_Widget_AppCompat_Button_ButtonBar_AlertDialog = global::Adopcat.Mobile.Droid.Resource.Style.Base_Widget_AppCompat_Button_ButtonBar_AlertDialog;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Style.Base_Widget_AppCompat_Button_Colored = global::Adopcat.Mobile.Droid.Resource.Style.Base_Widget_AppCompat_Button_Colored;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Style.Base_Widget_AppCompat_Button_Small = global::Adopcat.Mobile.Droid.Resource.Style.Base_Widget_AppCompat_Button_Small;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Style.Base_Widget_AppCompat_ButtonBar = global::Adopcat.Mobile.Droid.Resource.Style.Base_Widget_AppCompat_ButtonBar;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Style.Base_Widget_AppCompat_ButtonBar_AlertDialog = global::Adopcat.Mobile.Droid.Resource.Style.Base_Widget_AppCompat_ButtonBar_AlertDialog;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Style.Base_Widget_AppCompat_CompoundButton_CheckBox = global::Adopcat.Mobile.Droid.Resource.Style.Base_Widget_AppCompat_CompoundButton_CheckBox;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Style.Base_Widget_AppCompat_CompoundButton_RadioButton = global::Adopcat.Mobile.Droid.Resource.Style.Base_Widget_AppCompat_CompoundButton_RadioButton;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Style.Base_Widget_AppCompat_CompoundButton_Switch = global::Adopcat.Mobile.Droid.Resource.Style.Base_Widget_AppCompat_CompoundButton_Switch;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Style.Base_Widget_AppCompat_DrawerArrowToggle = global::Adopcat.Mobile.Droid.Resource.Style.Base_Widget_AppCompat_DrawerArrowToggle;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Style.Base_Widget_AppCompat_DrawerArrowToggle_Common = global::Adopcat.Mobile.Droid.Resource.Style.Base_Widget_AppCompat_DrawerArrowToggle_Common;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Style.Base_Widget_AppCompat_DropDownItem_Spinner = global::Adopcat.Mobile.Droid.Resource.Style.Base_Widget_AppCompat_DropDownItem_Spinner;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Style.Base_Widget_AppCompat_EditText = global::Adopcat.Mobile.Droid.Resource.Style.Base_Widget_AppCompat_EditText;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Style.Base_Widget_AppCompat_ImageButton = global::Adopcat.Mobile.Droid.Resource.Style.Base_Widget_AppCompat_ImageButton;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Style.Base_Widget_AppCompat_Light_ActionBar = global::Adopcat.Mobile.Droid.Resource.Style.Base_Widget_AppCompat_Light_ActionBar;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_Solid = global::Adopcat.Mobile.Droid.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_Solid;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_TabBar = global::Adopcat.Mobile.Droid.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_TabBar;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_TabText = global::Adopcat.Mobile.Droid.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_TabText;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_TabText_Inverse = global::Adopcat.Mobile.Droid.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_TabText_Inverse;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_TabView = global::Adopcat.Mobile.Droid.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_TabView;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Style.Base_Widget_AppCompat_Light_PopupMenu = global::Adopcat.Mobile.Droid.Resource.Style.Base_Widget_AppCompat_Light_PopupMenu;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Style.Base_Widget_AppCompat_Light_PopupMenu_Overflow = global::Adopcat.Mobile.Droid.Resource.Style.Base_Widget_AppCompat_Light_PopupMenu_Overflow;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Style.Base_Widget_AppCompat_ListPopupWindow = global::Adopcat.Mobile.Droid.Resource.Style.Base_Widget_AppCompat_ListPopupWindow;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Style.Base_Widget_AppCompat_ListView = global::Adopcat.Mobile.Droid.Resource.Style.Base_Widget_AppCompat_ListView;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Style.Base_Widget_AppCompat_ListView_DropDown = global::Adopcat.Mobile.Droid.Resource.Style.Base_Widget_AppCompat_ListView_DropDown;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Style.Base_Widget_AppCompat_ListView_Menu = global::Adopcat.Mobile.Droid.Resource.Style.Base_Widget_AppCompat_ListView_Menu;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Style.Base_Widget_AppCompat_PopupMenu = global::Adopcat.Mobile.Droid.Resource.Style.Base_Widget_AppCompat_PopupMenu;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Style.Base_Widget_AppCompat_PopupMenu_Overflow = global::Adopcat.Mobile.Droid.Resource.Style.Base_Widget_AppCompat_PopupMenu_Overflow;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Style.Base_Widget_AppCompat_PopupWindow = global::Adopcat.Mobile.Droid.Resource.Style.Base_Widget_AppCompat_PopupWindow;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Style.Base_Widget_AppCompat_ProgressBar = global::Adopcat.Mobile.Droid.Resource.Style.Base_Widget_AppCompat_ProgressBar;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Style.Base_Widget_AppCompat_ProgressBar_Horizontal = global::Adopcat.Mobile.Droid.Resource.Style.Base_Widget_AppCompat_ProgressBar_Horizontal;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Style.Base_Widget_AppCompat_RatingBar = global::Adopcat.Mobile.Droid.Resource.Style.Base_Widget_AppCompat_RatingBar;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Style.Base_Widget_AppCompat_RatingBar_Indicator = global::Adopcat.Mobile.Droid.Resource.Style.Base_Widget_AppCompat_RatingBar_Indicator;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Style.Base_Widget_AppCompat_RatingBar_Small = global::Adopcat.Mobile.Droid.Resource.Style.Base_Widget_AppCompat_RatingBar_Small;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Style.Base_Widget_AppCompat_SearchView = global::Adopcat.Mobile.Droid.Resource.Style.Base_Widget_AppCompat_SearchView;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Style.Base_Widget_AppCompat_SearchView_ActionBar = global::Adopcat.Mobile.Droid.Resource.Style.Base_Widget_AppCompat_SearchView_ActionBar;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Style.Base_Widget_AppCompat_SeekBar = global::Adopcat.Mobile.Droid.Resource.Style.Base_Widget_AppCompat_SeekBar;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Style.Base_Widget_AppCompat_Spinner = global::Adopcat.Mobile.Droid.Resource.Style.Base_Widget_AppCompat_Spinner;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Style.Base_Widget_AppCompat_Spinner_Underlined = global::Adopcat.Mobile.Droid.Resource.Style.Base_Widget_AppCompat_Spinner_Underlined;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Style.Base_Widget_AppCompat_TextView_SpinnerItem = global::Adopcat.Mobile.Droid.Resource.Style.Base_Widget_AppCompat_TextView_SpinnerItem;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Style.Base_Widget_AppCompat_Toolbar = global::Adopcat.Mobile.Droid.Resource.Style.Base_Widget_AppCompat_Toolbar;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Style.Base_Widget_AppCompat_Toolbar_Button_Navigation = global::Adopcat.Mobile.Droid.Resource.Style.Base_Widget_AppCompat_Toolbar_Button_Navigation;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Style.Base_Widget_Design_TabLayout = global::Adopcat.Mobile.Droid.Resource.Style.Base_Widget_Design_TabLayout;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Style.CardView = global::Adopcat.Mobile.Droid.Resource.Style.CardView;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Style.CardView_Dark = global::Adopcat.Mobile.Droid.Resource.Style.CardView_Dark;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Style.CardView_Light = global::Adopcat.Mobile.Droid.Resource.Style.CardView_Light;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Style.Platform_AppCompat = global::Adopcat.Mobile.Droid.Resource.Style.Platform_AppCompat;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Style.Platform_AppCompat_Light = global::Adopcat.Mobile.Droid.Resource.Style.Platform_AppCompat_Light;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Style.Platform_ThemeOverlay_AppCompat = global::Adopcat.Mobile.Droid.Resource.Style.Platform_ThemeOverlay_AppCompat;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Style.Platform_ThemeOverlay_AppCompat_Dark = global::Adopcat.Mobile.Droid.Resource.Style.Platform_ThemeOverlay_AppCompat_Dark;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Style.Platform_ThemeOverlay_AppCompat_Light = global::Adopcat.Mobile.Droid.Resource.Style.Platform_ThemeOverlay_AppCompat_Light;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Style.Platform_V11_AppCompat = global::Adopcat.Mobile.Droid.Resource.Style.Platform_V11_AppCompat;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Style.Platform_V11_AppCompat_Light = global::Adopcat.Mobile.Droid.Resource.Style.Platform_V11_AppCompat_Light;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Style.Platform_V14_AppCompat = global::Adopcat.Mobile.Droid.Resource.Style.Platform_V14_AppCompat;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Style.Platform_V14_AppCompat_Light = global::Adopcat.Mobile.Droid.Resource.Style.Platform_V14_AppCompat_Light;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Style.Platform_Widget_AppCompat_Spinner = global::Adopcat.Mobile.Droid.Resource.Style.Platform_Widget_AppCompat_Spinner;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Style.RtlOverlay_DialogWindowTitle_AppCompat = global::Adopcat.Mobile.Droid.Resource.Style.RtlOverlay_DialogWindowTitle_AppCompat;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Style.RtlOverlay_Widget_AppCompat_ActionBar_TitleItem = global::Adopcat.Mobile.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_ActionBar_TitleItem;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Style.RtlOverlay_Widget_AppCompat_DialogTitle_Icon = global::Adopcat.Mobile.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_DialogTitle_Icon;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Style.RtlOverlay_Widget_AppCompat_PopupMenuItem = global::Adopcat.Mobile.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_PopupMenuItem;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Style.RtlOverlay_Widget_AppCompat_PopupMenuItem_InternalGroup = global::Adopcat.Mobile.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_PopupMenuItem_InternalGroup;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Style.RtlOverlay_Widget_AppCompat_PopupMenuItem_Text = global::Adopcat.Mobile.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_PopupMenuItem_Text;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown = global::Adopcat.Mobile.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown_Icon1 = global::Adopcat.Mobile.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown_Icon1;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown_Icon2 = global::Adopcat.Mobile.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown_Icon2;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown_Query = global::Adopcat.Mobile.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown_Query;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown_Text = global::Adopcat.Mobile.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown_Text;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Style.RtlOverlay_Widget_AppCompat_SearchView_MagIcon = global::Adopcat.Mobile.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_SearchView_MagIcon;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Style.RtlUnderlay_Widget_AppCompat_ActionButton = global::Adopcat.Mobile.Droid.Resource.Style.RtlUnderlay_Widget_AppCompat_ActionButton;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Style.RtlUnderlay_Widget_AppCompat_ActionButton_Overflow = global::Adopcat.Mobile.Droid.Resource.Style.RtlUnderlay_Widget_AppCompat_ActionButton_Overflow;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Style.TextAppearance_AppCompat = global::Adopcat.Mobile.Droid.Resource.Style.TextAppearance_AppCompat;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Style.TextAppearance_AppCompat_Body1 = global::Adopcat.Mobile.Droid.Resource.Style.TextAppearance_AppCompat_Body1;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Style.TextAppearance_AppCompat_Body2 = global::Adopcat.Mobile.Droid.Resource.Style.TextAppearance_AppCompat_Body2;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Style.TextAppearance_AppCompat_Button = global::Adopcat.Mobile.Droid.Resource.Style.TextAppearance_AppCompat_Button;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Style.TextAppearance_AppCompat_Caption = global::Adopcat.Mobile.Droid.Resource.Style.TextAppearance_AppCompat_Caption;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Style.TextAppearance_AppCompat_Display1 = global::Adopcat.Mobile.Droid.Resource.Style.TextAppearance_AppCompat_Display1;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Style.TextAppearance_AppCompat_Display2 = global::Adopcat.Mobile.Droid.Resource.Style.TextAppearance_AppCompat_Display2;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Style.TextAppearance_AppCompat_Display3 = global::Adopcat.Mobile.Droid.Resource.Style.TextAppearance_AppCompat_Display3;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Style.TextAppearance_AppCompat_Display4 = global::Adopcat.Mobile.Droid.Resource.Style.TextAppearance_AppCompat_Display4;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Style.TextAppearance_AppCompat_Headline = global::Adopcat.Mobile.Droid.Resource.Style.TextAppearance_AppCompat_Headline;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Style.TextAppearance_AppCompat_Inverse = global::Adopcat.Mobile.Droid.Resource.Style.TextAppearance_AppCompat_Inverse;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Style.TextAppearance_AppCompat_Large = global::Adopcat.Mobile.Droid.Resource.Style.TextAppearance_AppCompat_Large;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Style.TextAppearance_AppCompat_Large_Inverse = global::Adopcat.Mobile.Droid.Resource.Style.TextAppearance_AppCompat_Large_Inverse;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Style.TextAppearance_AppCompat_Light_SearchResult_Subtitle = global::Adopcat.Mobile.Droid.Resource.Style.TextAppearance_AppCompat_Light_SearchResult_Subtitle;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Style.TextAppearance_AppCompat_Light_SearchResult_Title = global::Adopcat.Mobile.Droid.Resource.Style.TextAppearance_AppCompat_Light_SearchResult_Title;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Style.TextAppearance_AppCompat_Light_Widget_PopupMenu_Large = global::Adopcat.Mobile.Droid.Resource.Style.TextAppearance_AppCompat_Light_Widget_PopupMenu_Large;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Style.TextAppearance_AppCompat_Light_Widget_PopupMenu_Small = global::Adopcat.Mobile.Droid.Resource.Style.TextAppearance_AppCompat_Light_Widget_PopupMenu_Small;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Style.TextAppearance_AppCompat_Medium = global::Adopcat.Mobile.Droid.Resource.Style.TextAppearance_AppCompat_Medium;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Style.TextAppearance_AppCompat_Medium_Inverse = global::Adopcat.Mobile.Droid.Resource.Style.TextAppearance_AppCompat_Medium_Inverse;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Style.TextAppearance_AppCompat_Menu = global::Adopcat.Mobile.Droid.Resource.Style.TextAppearance_AppCompat_Menu;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Style.TextAppearance_AppCompat_SearchResult_Subtitle = global::Adopcat.Mobile.Droid.Resource.Style.TextAppearance_AppCompat_SearchResult_Subtitle;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Style.TextAppearance_AppCompat_SearchResult_Title = global::Adopcat.Mobile.Droid.Resource.Style.TextAppearance_AppCompat_SearchResult_Title;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Style.TextAppearance_AppCompat_Small = global::Adopcat.Mobile.Droid.Resource.Style.TextAppearance_AppCompat_Small;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Style.TextAppearance_AppCompat_Small_Inverse = global::Adopcat.Mobile.Droid.Resource.Style.TextAppearance_AppCompat_Small_Inverse;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Style.TextAppearance_AppCompat_Subhead = global::Adopcat.Mobile.Droid.Resource.Style.TextAppearance_AppCompat_Subhead;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Style.TextAppearance_AppCompat_Subhead_Inverse = global::Adopcat.Mobile.Droid.Resource.Style.TextAppearance_AppCompat_Subhead_Inverse;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Style.TextAppearance_AppCompat_Title = global::Adopcat.Mobile.Droid.Resource.Style.TextAppearance_AppCompat_Title;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Style.TextAppearance_AppCompat_Title_Inverse = global::Adopcat.Mobile.Droid.Resource.Style.TextAppearance_AppCompat_Title_Inverse;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Menu = global::Adopcat.Mobile.Droid.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Menu;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Subtitle = global::Adopcat.Mobile.Droid.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Subtitle;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Subtitle_Inverse = global::Adopcat.Mobile.Droid.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Subtitle_Inverse;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Title = global::Adopcat.Mobile.Droid.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Title;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Title_Inverse = global::Adopcat.Mobile.Droid.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Title_Inverse;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Style.TextAppearance_AppCompat_Widget_ActionMode_Subtitle = global::Adopcat.Mobile.Droid.Resource.Style.TextAppearance_AppCompat_Widget_ActionMode_Subtitle;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Style.TextAppearance_AppCompat_Widget_ActionMode_Subtitle_Inverse = global::Adopcat.Mobile.Droid.Resource.Style.TextAppearance_AppCompat_Widget_ActionMode_Subtitle_Inverse;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Style.TextAppearance_AppCompat_Widget_ActionMode_Title = global::Adopcat.Mobile.Droid.Resource.Style.TextAppearance_AppCompat_Widget_ActionMode_Title;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Style.TextAppearance_AppCompat_Widget_ActionMode_Title_Inverse = global::Adopcat.Mobile.Droid.Resource.Style.TextAppearance_AppCompat_Widget_ActionMode_Title_Inverse;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Style.TextAppearance_AppCompat_Widget_Button = global::Adopcat.Mobile.Droid.Resource.Style.TextAppearance_AppCompat_Widget_Button;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Style.TextAppearance_AppCompat_Widget_Button_Inverse = global::Adopcat.Mobile.Droid.Resource.Style.TextAppearance_AppCompat_Widget_Button_Inverse;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Style.TextAppearance_AppCompat_Widget_DropDownItem = global::Adopcat.Mobile.Droid.Resource.Style.TextAppearance_AppCompat_Widget_DropDownItem;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Style.TextAppearance_AppCompat_Widget_PopupMenu_Large = global::Adopcat.Mobile.Droid.Resource.Style.TextAppearance_AppCompat_Widget_PopupMenu_Large;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Style.TextAppearance_AppCompat_Widget_PopupMenu_Small = global::Adopcat.Mobile.Droid.Resource.Style.TextAppearance_AppCompat_Widget_PopupMenu_Small;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Style.TextAppearance_AppCompat_Widget_Switch = global::Adopcat.Mobile.Droid.Resource.Style.TextAppearance_AppCompat_Widget_Switch;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Style.TextAppearance_AppCompat_Widget_TextView_SpinnerItem = global::Adopcat.Mobile.Droid.Resource.Style.TextAppearance_AppCompat_Widget_TextView_SpinnerItem;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Style.TextAppearance_Design_CollapsingToolbar_Expanded = global::Adopcat.Mobile.Droid.Resource.Style.TextAppearance_Design_CollapsingToolbar_Expanded;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Style.TextAppearance_Design_Counter = global::Adopcat.Mobile.Droid.Resource.Style.TextAppearance_Design_Counter;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Style.TextAppearance_Design_Counter_Overflow = global::Adopcat.Mobile.Droid.Resource.Style.TextAppearance_Design_Counter_Overflow;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Style.TextAppearance_Design_Error = global::Adopcat.Mobile.Droid.Resource.Style.TextAppearance_Design_Error;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Style.TextAppearance_Design_Hint = global::Adopcat.Mobile.Droid.Resource.Style.TextAppearance_Design_Hint;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Style.TextAppearance_Design_Snackbar_Message = global::Adopcat.Mobile.Droid.Resource.Style.TextAppearance_Design_Snackbar_Message;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Style.TextAppearance_Design_Tab = global::Adopcat.Mobile.Droid.Resource.Style.TextAppearance_Design_Tab;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Style.TextAppearance_StatusBar_EventContent = global::Adopcat.Mobile.Droid.Resource.Style.TextAppearance_StatusBar_EventContent;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Style.TextAppearance_StatusBar_EventContent_Info = global::Adopcat.Mobile.Droid.Resource.Style.TextAppearance_StatusBar_EventContent_Info;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Style.TextAppearance_StatusBar_EventContent_Line2 = global::Adopcat.Mobile.Droid.Resource.Style.TextAppearance_StatusBar_EventContent_Line2;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Style.TextAppearance_StatusBar_EventContent_Time = global::Adopcat.Mobile.Droid.Resource.Style.TextAppearance_StatusBar_EventContent_Time;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Style.TextAppearance_StatusBar_EventContent_Title = global::Adopcat.Mobile.Droid.Resource.Style.TextAppearance_StatusBar_EventContent_Title;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Style.TextAppearance_Widget_AppCompat_ExpandedMenu_Item = global::Adopcat.Mobile.Droid.Resource.Style.TextAppearance_Widget_AppCompat_ExpandedMenu_Item;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Style.TextAppearance_Widget_AppCompat_Toolbar_Subtitle = global::Adopcat.Mobile.Droid.Resource.Style.TextAppearance_Widget_AppCompat_Toolbar_Subtitle;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Style.TextAppearance_Widget_AppCompat_Toolbar_Title = global::Adopcat.Mobile.Droid.Resource.Style.TextAppearance_Widget_AppCompat_Toolbar_Title;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Style.Theme_AppCompat = global::Adopcat.Mobile.Droid.Resource.Style.Theme_AppCompat;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Style.Theme_AppCompat_CompactMenu = global::Adopcat.Mobile.Droid.Resource.Style.Theme_AppCompat_CompactMenu;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Style.Theme_AppCompat_DayNight = global::Adopcat.Mobile.Droid.Resource.Style.Theme_AppCompat_DayNight;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Style.Theme_AppCompat_DayNight_DarkActionBar = global::Adopcat.Mobile.Droid.Resource.Style.Theme_AppCompat_DayNight_DarkActionBar;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Style.Theme_AppCompat_DayNight_Dialog = global::Adopcat.Mobile.Droid.Resource.Style.Theme_AppCompat_DayNight_Dialog;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Style.Theme_AppCompat_DayNight_Dialog_Alert = global::Adopcat.Mobile.Droid.Resource.Style.Theme_AppCompat_DayNight_Dialog_Alert;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Style.Theme_AppCompat_DayNight_Dialog_MinWidth = global::Adopcat.Mobile.Droid.Resource.Style.Theme_AppCompat_DayNight_Dialog_MinWidth;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Style.Theme_AppCompat_DayNight_DialogWhenLarge = global::Adopcat.Mobile.Droid.Resource.Style.Theme_AppCompat_DayNight_DialogWhenLarge;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Style.Theme_AppCompat_DayNight_NoActionBar = global::Adopcat.Mobile.Droid.Resource.Style.Theme_AppCompat_DayNight_NoActionBar;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Style.Theme_AppCompat_Dialog = global::Adopcat.Mobile.Droid.Resource.Style.Theme_AppCompat_Dialog;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Style.Theme_AppCompat_Dialog_Alert = global::Adopcat.Mobile.Droid.Resource.Style.Theme_AppCompat_Dialog_Alert;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Style.Theme_AppCompat_Dialog_MinWidth = global::Adopcat.Mobile.Droid.Resource.Style.Theme_AppCompat_Dialog_MinWidth;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Style.Theme_AppCompat_DialogWhenLarge = global::Adopcat.Mobile.Droid.Resource.Style.Theme_AppCompat_DialogWhenLarge;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Style.Theme_AppCompat_Light = global::Adopcat.Mobile.Droid.Resource.Style.Theme_AppCompat_Light;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Style.Theme_AppCompat_Light_DarkActionBar = global::Adopcat.Mobile.Droid.Resource.Style.Theme_AppCompat_Light_DarkActionBar;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Style.Theme_AppCompat_Light_Dialog = global::Adopcat.Mobile.Droid.Resource.Style.Theme_AppCompat_Light_Dialog;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Style.Theme_AppCompat_Light_Dialog_Alert = global::Adopcat.Mobile.Droid.Resource.Style.Theme_AppCompat_Light_Dialog_Alert;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Style.Theme_AppCompat_Light_Dialog_MinWidth = global::Adopcat.Mobile.Droid.Resource.Style.Theme_AppCompat_Light_Dialog_MinWidth;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Style.Theme_AppCompat_Light_DialogWhenLarge = global::Adopcat.Mobile.Droid.Resource.Style.Theme_AppCompat_Light_DialogWhenLarge;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Style.Theme_AppCompat_Light_NoActionBar = global::Adopcat.Mobile.Droid.Resource.Style.Theme_AppCompat_Light_NoActionBar;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Style.Theme_AppCompat_NoActionBar = global::Adopcat.Mobile.Droid.Resource.Style.Theme_AppCompat_NoActionBar;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Style.Theme_Design = global::Adopcat.Mobile.Droid.Resource.Style.Theme_Design;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Style.Theme_Design_BottomSheetDialog = global::Adopcat.Mobile.Droid.Resource.Style.Theme_Design_BottomSheetDialog;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Style.Theme_Design_Light = global::Adopcat.Mobile.Droid.Resource.Style.Theme_Design_Light;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Style.Theme_Design_Light_BottomSheetDialog = global::Adopcat.Mobile.Droid.Resource.Style.Theme_Design_Light_BottomSheetDialog;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Style.Theme_Design_Light_NoActionBar = global::Adopcat.Mobile.Droid.Resource.Style.Theme_Design_Light_NoActionBar;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Style.Theme_Design_NoActionBar = global::Adopcat.Mobile.Droid.Resource.Style.Theme_Design_NoActionBar;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Style.Theme_MediaRouter = global::Adopcat.Mobile.Droid.Resource.Style.Theme_MediaRouter;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Style.Theme_MediaRouter_Light = global::Adopcat.Mobile.Droid.Resource.Style.Theme_MediaRouter_Light;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Style.Theme_MediaRouter_Light_DarkControlPanel = global::Adopcat.Mobile.Droid.Resource.Style.Theme_MediaRouter_Light_DarkControlPanel;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Style.Theme_MediaRouter_LightControlPanel = global::Adopcat.Mobile.Droid.Resource.Style.Theme_MediaRouter_LightControlPanel;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Style.ThemeOverlay_AppCompat = global::Adopcat.Mobile.Droid.Resource.Style.ThemeOverlay_AppCompat;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Style.ThemeOverlay_AppCompat_ActionBar = global::Adopcat.Mobile.Droid.Resource.Style.ThemeOverlay_AppCompat_ActionBar;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Style.ThemeOverlay_AppCompat_Dark = global::Adopcat.Mobile.Droid.Resource.Style.ThemeOverlay_AppCompat_Dark;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Style.ThemeOverlay_AppCompat_Dark_ActionBar = global::Adopcat.Mobile.Droid.Resource.Style.ThemeOverlay_AppCompat_Dark_ActionBar;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Style.ThemeOverlay_AppCompat_Light = global::Adopcat.Mobile.Droid.Resource.Style.ThemeOverlay_AppCompat_Light;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Style.Widget_AppCompat_ActionBar = global::Adopcat.Mobile.Droid.Resource.Style.Widget_AppCompat_ActionBar;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Style.Widget_AppCompat_ActionBar_Solid = global::Adopcat.Mobile.Droid.Resource.Style.Widget_AppCompat_ActionBar_Solid;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Style.Widget_AppCompat_ActionBar_TabBar = global::Adopcat.Mobile.Droid.Resource.Style.Widget_AppCompat_ActionBar_TabBar;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Style.Widget_AppCompat_ActionBar_TabText = global::Adopcat.Mobile.Droid.Resource.Style.Widget_AppCompat_ActionBar_TabText;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Style.Widget_AppCompat_ActionBar_TabView = global::Adopcat.Mobile.Droid.Resource.Style.Widget_AppCompat_ActionBar_TabView;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Style.Widget_AppCompat_ActionButton = global::Adopcat.Mobile.Droid.Resource.Style.Widget_AppCompat_ActionButton;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Style.Widget_AppCompat_ActionButton_CloseMode = global::Adopcat.Mobile.Droid.Resource.Style.Widget_AppCompat_ActionButton_CloseMode;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Style.Widget_AppCompat_ActionButton_Overflow = global::Adopcat.Mobile.Droid.Resource.Style.Widget_AppCompat_ActionButton_Overflow;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Style.Widget_AppCompat_ActionMode = global::Adopcat.Mobile.Droid.Resource.Style.Widget_AppCompat_ActionMode;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Style.Widget_AppCompat_ActivityChooserView = global::Adopcat.Mobile.Droid.Resource.Style.Widget_AppCompat_ActivityChooserView;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Style.Widget_AppCompat_AutoCompleteTextView = global::Adopcat.Mobile.Droid.Resource.Style.Widget_AppCompat_AutoCompleteTextView;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Style.Widget_AppCompat_Button = global::Adopcat.Mobile.Droid.Resource.Style.Widget_AppCompat_Button;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Style.Widget_AppCompat_Button_Borderless = global::Adopcat.Mobile.Droid.Resource.Style.Widget_AppCompat_Button_Borderless;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Style.Widget_AppCompat_Button_Borderless_Colored = global::Adopcat.Mobile.Droid.Resource.Style.Widget_AppCompat_Button_Borderless_Colored;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Style.Widget_AppCompat_Button_ButtonBar_AlertDialog = global::Adopcat.Mobile.Droid.Resource.Style.Widget_AppCompat_Button_ButtonBar_AlertDialog;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Style.Widget_AppCompat_Button_Colored = global::Adopcat.Mobile.Droid.Resource.Style.Widget_AppCompat_Button_Colored;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Style.Widget_AppCompat_Button_Small = global::Adopcat.Mobile.Droid.Resource.Style.Widget_AppCompat_Button_Small;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Style.Widget_AppCompat_ButtonBar = global::Adopcat.Mobile.Droid.Resource.Style.Widget_AppCompat_ButtonBar;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Style.Widget_AppCompat_ButtonBar_AlertDialog = global::Adopcat.Mobile.Droid.Resource.Style.Widget_AppCompat_ButtonBar_AlertDialog;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Style.Widget_AppCompat_CompoundButton_CheckBox = global::Adopcat.Mobile.Droid.Resource.Style.Widget_AppCompat_CompoundButton_CheckBox;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Style.Widget_AppCompat_CompoundButton_RadioButton = global::Adopcat.Mobile.Droid.Resource.Style.Widget_AppCompat_CompoundButton_RadioButton;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Style.Widget_AppCompat_CompoundButton_Switch = global::Adopcat.Mobile.Droid.Resource.Style.Widget_AppCompat_CompoundButton_Switch;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Style.Widget_AppCompat_DrawerArrowToggle = global::Adopcat.Mobile.Droid.Resource.Style.Widget_AppCompat_DrawerArrowToggle;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Style.Widget_AppCompat_DropDownItem_Spinner = global::Adopcat.Mobile.Droid.Resource.Style.Widget_AppCompat_DropDownItem_Spinner;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Style.Widget_AppCompat_EditText = global::Adopcat.Mobile.Droid.Resource.Style.Widget_AppCompat_EditText;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Style.Widget_AppCompat_ImageButton = global::Adopcat.Mobile.Droid.Resource.Style.Widget_AppCompat_ImageButton;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Style.Widget_AppCompat_Light_ActionBar = global::Adopcat.Mobile.Droid.Resource.Style.Widget_AppCompat_Light_ActionBar;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Style.Widget_AppCompat_Light_ActionBar_Solid = global::Adopcat.Mobile.Droid.Resource.Style.Widget_AppCompat_Light_ActionBar_Solid;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Style.Widget_AppCompat_Light_ActionBar_Solid_Inverse = global::Adopcat.Mobile.Droid.Resource.Style.Widget_AppCompat_Light_ActionBar_Solid_Inverse;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Style.Widget_AppCompat_Light_ActionBar_TabBar = global::Adopcat.Mobile.Droid.Resource.Style.Widget_AppCompat_Light_ActionBar_TabBar;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Style.Widget_AppCompat_Light_ActionBar_TabBar_Inverse = global::Adopcat.Mobile.Droid.Resource.Style.Widget_AppCompat_Light_ActionBar_TabBar_Inverse;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Style.Widget_AppCompat_Light_ActionBar_TabText = global::Adopcat.Mobile.Droid.Resource.Style.Widget_AppCompat_Light_ActionBar_TabText;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Style.Widget_AppCompat_Light_ActionBar_TabText_Inverse = global::Adopcat.Mobile.Droid.Resource.Style.Widget_AppCompat_Light_ActionBar_TabText_Inverse;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Style.Widget_AppCompat_Light_ActionBar_TabView = global::Adopcat.Mobile.Droid.Resource.Style.Widget_AppCompat_Light_ActionBar_TabView;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Style.Widget_AppCompat_Light_ActionBar_TabView_Inverse = global::Adopcat.Mobile.Droid.Resource.Style.Widget_AppCompat_Light_ActionBar_TabView_Inverse;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Style.Widget_AppCompat_Light_ActionButton = global::Adopcat.Mobile.Droid.Resource.Style.Widget_AppCompat_Light_ActionButton;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Style.Widget_AppCompat_Light_ActionButton_CloseMode = global::Adopcat.Mobile.Droid.Resource.Style.Widget_AppCompat_Light_ActionButton_CloseMode;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Style.Widget_AppCompat_Light_ActionButton_Overflow = global::Adopcat.Mobile.Droid.Resource.Style.Widget_AppCompat_Light_ActionButton_Overflow;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Style.Widget_AppCompat_Light_ActionMode_Inverse = global::Adopcat.Mobile.Droid.Resource.Style.Widget_AppCompat_Light_ActionMode_Inverse;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Style.Widget_AppCompat_Light_ActivityChooserView = global::Adopcat.Mobile.Droid.Resource.Style.Widget_AppCompat_Light_ActivityChooserView;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Style.Widget_AppCompat_Light_AutoCompleteTextView = global::Adopcat.Mobile.Droid.Resource.Style.Widget_AppCompat_Light_AutoCompleteTextView;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Style.Widget_AppCompat_Light_DropDownItem_Spinner = global::Adopcat.Mobile.Droid.Resource.Style.Widget_AppCompat_Light_DropDownItem_Spinner;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Style.Widget_AppCompat_Light_ListPopupWindow = global::Adopcat.Mobile.Droid.Resource.Style.Widget_AppCompat_Light_ListPopupWindow;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Style.Widget_AppCompat_Light_ListView_DropDown = global::Adopcat.Mobile.Droid.Resource.Style.Widget_AppCompat_Light_ListView_DropDown;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Style.Widget_AppCompat_Light_PopupMenu = global::Adopcat.Mobile.Droid.Resource.Style.Widget_AppCompat_Light_PopupMenu;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Style.Widget_AppCompat_Light_PopupMenu_Overflow = global::Adopcat.Mobile.Droid.Resource.Style.Widget_AppCompat_Light_PopupMenu_Overflow;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Style.Widget_AppCompat_Light_SearchView = global::Adopcat.Mobile.Droid.Resource.Style.Widget_AppCompat_Light_SearchView;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Style.Widget_AppCompat_Light_Spinner_DropDown_ActionBar = global::Adopcat.Mobile.Droid.Resource.Style.Widget_AppCompat_Light_Spinner_DropDown_ActionBar;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Style.Widget_AppCompat_ListPopupWindow = global::Adopcat.Mobile.Droid.Resource.Style.Widget_AppCompat_ListPopupWindow;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Style.Widget_AppCompat_ListView = global::Adopcat.Mobile.Droid.Resource.Style.Widget_AppCompat_ListView;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Style.Widget_AppCompat_ListView_DropDown = global::Adopcat.Mobile.Droid.Resource.Style.Widget_AppCompat_ListView_DropDown;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Style.Widget_AppCompat_ListView_Menu = global::Adopcat.Mobile.Droid.Resource.Style.Widget_AppCompat_ListView_Menu;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Style.Widget_AppCompat_PopupMenu = global::Adopcat.Mobile.Droid.Resource.Style.Widget_AppCompat_PopupMenu;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Style.Widget_AppCompat_PopupMenu_Overflow = global::Adopcat.Mobile.Droid.Resource.Style.Widget_AppCompat_PopupMenu_Overflow;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Style.Widget_AppCompat_PopupWindow = global::Adopcat.Mobile.Droid.Resource.Style.Widget_AppCompat_PopupWindow;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Style.Widget_AppCompat_ProgressBar = global::Adopcat.Mobile.Droid.Resource.Style.Widget_AppCompat_ProgressBar;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Style.Widget_AppCompat_ProgressBar_Horizontal = global::Adopcat.Mobile.Droid.Resource.Style.Widget_AppCompat_ProgressBar_Horizontal;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Style.Widget_AppCompat_RatingBar = global::Adopcat.Mobile.Droid.Resource.Style.Widget_AppCompat_RatingBar;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Style.Widget_AppCompat_RatingBar_Indicator = global::Adopcat.Mobile.Droid.Resource.Style.Widget_AppCompat_RatingBar_Indicator;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Style.Widget_AppCompat_RatingBar_Small = global::Adopcat.Mobile.Droid.Resource.Style.Widget_AppCompat_RatingBar_Small;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Style.Widget_AppCompat_SearchView = global::Adopcat.Mobile.Droid.Resource.Style.Widget_AppCompat_SearchView;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Style.Widget_AppCompat_SearchView_ActionBar = global::Adopcat.Mobile.Droid.Resource.Style.Widget_AppCompat_SearchView_ActionBar;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Style.Widget_AppCompat_SeekBar = global::Adopcat.Mobile.Droid.Resource.Style.Widget_AppCompat_SeekBar;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Style.Widget_AppCompat_Spinner = global::Adopcat.Mobile.Droid.Resource.Style.Widget_AppCompat_Spinner;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Style.Widget_AppCompat_Spinner_DropDown = global::Adopcat.Mobile.Droid.Resource.Style.Widget_AppCompat_Spinner_DropDown;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Style.Widget_AppCompat_Spinner_DropDown_ActionBar = global::Adopcat.Mobile.Droid.Resource.Style.Widget_AppCompat_Spinner_DropDown_ActionBar;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Style.Widget_AppCompat_Spinner_Underlined = global::Adopcat.Mobile.Droid.Resource.Style.Widget_AppCompat_Spinner_Underlined;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Style.Widget_AppCompat_TextView_SpinnerItem = global::Adopcat.Mobile.Droid.Resource.Style.Widget_AppCompat_TextView_SpinnerItem;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Style.Widget_AppCompat_Toolbar = global::Adopcat.Mobile.Droid.Resource.Style.Widget_AppCompat_Toolbar;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Style.Widget_AppCompat_Toolbar_Button_Navigation = global::Adopcat.Mobile.Droid.Resource.Style.Widget_AppCompat_Toolbar_Button_Navigation;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Style.Widget_Design_AppBarLayout = global::Adopcat.Mobile.Droid.Resource.Style.Widget_Design_AppBarLayout;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Style.Widget_Design_BottomSheet_Modal = global::Adopcat.Mobile.Droid.Resource.Style.Widget_Design_BottomSheet_Modal;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Style.Widget_Design_CollapsingToolbar = global::Adopcat.Mobile.Droid.Resource.Style.Widget_Design_CollapsingToolbar;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Style.Widget_Design_CoordinatorLayout = global::Adopcat.Mobile.Droid.Resource.Style.Widget_Design_CoordinatorLayout;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Style.Widget_Design_FloatingActionButton = global::Adopcat.Mobile.Droid.Resource.Style.Widget_Design_FloatingActionButton;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Style.Widget_Design_NavigationView = global::Adopcat.Mobile.Droid.Resource.Style.Widget_Design_NavigationView;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Style.Widget_Design_ScrimInsetsFrameLayout = global::Adopcat.Mobile.Droid.Resource.Style.Widget_Design_ScrimInsetsFrameLayout;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Style.Widget_Design_Snackbar = global::Adopcat.Mobile.Droid.Resource.Style.Widget_Design_Snackbar;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Style.Widget_Design_TabLayout = global::Adopcat.Mobile.Droid.Resource.Style.Widget_Design_TabLayout;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Style.Widget_Design_TextInputLayout = global::Adopcat.Mobile.Droid.Resource.Style.Widget_Design_TextInputLayout;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Style.Widget_MediaRouter_ChooserText = global::Adopcat.Mobile.Droid.Resource.Style.Widget_MediaRouter_ChooserText;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Style.Widget_MediaRouter_ChooserText_Primary = global::Adopcat.Mobile.Droid.Resource.Style.Widget_MediaRouter_ChooserText_Primary;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Style.Widget_MediaRouter_ChooserText_Primary_Dark = global::Adopcat.Mobile.Droid.Resource.Style.Widget_MediaRouter_ChooserText_Primary_Dark;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Style.Widget_MediaRouter_ChooserText_Primary_Light = global::Adopcat.Mobile.Droid.Resource.Style.Widget_MediaRouter_ChooserText_Primary_Light;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Style.Widget_MediaRouter_ChooserText_Secondary = global::Adopcat.Mobile.Droid.Resource.Style.Widget_MediaRouter_ChooserText_Secondary;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Style.Widget_MediaRouter_ChooserText_Secondary_Dark = global::Adopcat.Mobile.Droid.Resource.Style.Widget_MediaRouter_ChooserText_Secondary_Dark;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Style.Widget_MediaRouter_ChooserText_Secondary_Light = global::Adopcat.Mobile.Droid.Resource.Style.Widget_MediaRouter_ChooserText_Secondary_Light;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Style.Widget_MediaRouter_ControllerText = global::Adopcat.Mobile.Droid.Resource.Style.Widget_MediaRouter_ControllerText;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Style.Widget_MediaRouter_ControllerText_Primary = global::Adopcat.Mobile.Droid.Resource.Style.Widget_MediaRouter_ControllerText_Primary;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Style.Widget_MediaRouter_ControllerText_Primary_Dark = global::Adopcat.Mobile.Droid.Resource.Style.Widget_MediaRouter_ControllerText_Primary_Dark;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Style.Widget_MediaRouter_ControllerText_Primary_Light = global::Adopcat.Mobile.Droid.Resource.Style.Widget_MediaRouter_ControllerText_Primary_Light;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Style.Widget_MediaRouter_ControllerText_Secondary = global::Adopcat.Mobile.Droid.Resource.Style.Widget_MediaRouter_ControllerText_Secondary;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Style.Widget_MediaRouter_ControllerText_Secondary_Dark = global::Adopcat.Mobile.Droid.Resource.Style.Widget_MediaRouter_ControllerText_Secondary_Dark;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Style.Widget_MediaRouter_ControllerText_Secondary_Light = global::Adopcat.Mobile.Droid.Resource.Style.Widget_MediaRouter_ControllerText_Secondary_Light;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Style.Widget_MediaRouter_ControllerText_Title = global::Adopcat.Mobile.Droid.Resource.Style.Widget_MediaRouter_ControllerText_Title;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Style.Widget_MediaRouter_ControllerText_Title_Dark = global::Adopcat.Mobile.Droid.Resource.Style.Widget_MediaRouter_ControllerText_Title_Dark;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Style.Widget_MediaRouter_ControllerText_Title_Light = global::Adopcat.Mobile.Droid.Resource.Style.Widget_MediaRouter_ControllerText_Title_Light;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Style.Widget_MediaRouter_Light_MediaRouteButton = global::Adopcat.Mobile.Droid.Resource.Style.Widget_MediaRouter_Light_MediaRouteButton;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Style.Widget_MediaRouter_MediaRouteButton = global::Adopcat.Mobile.Droid.Resource.Style.Widget_MediaRouter_MediaRouteButton;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Styleable.ActionBar = global::Adopcat.Mobile.Droid.Resource.Styleable.ActionBar;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Styleable.ActionBar_background = global::Adopcat.Mobile.Droid.Resource.Styleable.ActionBar_background;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Styleable.ActionBar_backgroundSplit = global::Adopcat.Mobile.Droid.Resource.Styleable.ActionBar_backgroundSplit;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Styleable.ActionBar_backgroundStacked = global::Adopcat.Mobile.Droid.Resource.Styleable.ActionBar_backgroundStacked;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Styleable.ActionBar_contentInsetEnd = global::Adopcat.Mobile.Droid.Resource.Styleable.ActionBar_contentInsetEnd;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Styleable.ActionBar_contentInsetLeft = global::Adopcat.Mobile.Droid.Resource.Styleable.ActionBar_contentInsetLeft;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Styleable.ActionBar_contentInsetRight = global::Adopcat.Mobile.Droid.Resource.Styleable.ActionBar_contentInsetRight;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Styleable.ActionBar_contentInsetStart = global::Adopcat.Mobile.Droid.Resource.Styleable.ActionBar_contentInsetStart;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Styleable.ActionBar_customNavigationLayout = global::Adopcat.Mobile.Droid.Resource.Styleable.ActionBar_customNavigationLayout;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Styleable.ActionBar_displayOptions = global::Adopcat.Mobile.Droid.Resource.Styleable.ActionBar_displayOptions;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Styleable.ActionBar_divider = global::Adopcat.Mobile.Droid.Resource.Styleable.ActionBar_divider;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Styleable.ActionBar_elevation = global::Adopcat.Mobile.Droid.Resource.Styleable.ActionBar_elevation;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Styleable.ActionBar_height = global::Adopcat.Mobile.Droid.Resource.Styleable.ActionBar_height;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Styleable.ActionBar_hideOnContentScroll = global::Adopcat.Mobile.Droid.Resource.Styleable.ActionBar_hideOnContentScroll;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Styleable.ActionBar_homeAsUpIndicator = global::Adopcat.Mobile.Droid.Resource.Styleable.ActionBar_homeAsUpIndicator;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Styleable.ActionBar_homeLayout = global::Adopcat.Mobile.Droid.Resource.Styleable.ActionBar_homeLayout;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Styleable.ActionBar_icon = global::Adopcat.Mobile.Droid.Resource.Styleable.ActionBar_icon;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Styleable.ActionBar_indeterminateProgressStyle = global::Adopcat.Mobile.Droid.Resource.Styleable.ActionBar_indeterminateProgressStyle;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Styleable.ActionBar_itemPadding = global::Adopcat.Mobile.Droid.Resource.Styleable.ActionBar_itemPadding;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Styleable.ActionBar_logo = global::Adopcat.Mobile.Droid.Resource.Styleable.ActionBar_logo;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Styleable.ActionBar_navigationMode = global::Adopcat.Mobile.Droid.Resource.Styleable.ActionBar_navigationMode;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Styleable.ActionBar_popupTheme = global::Adopcat.Mobile.Droid.Resource.Styleable.ActionBar_popupTheme;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Styleable.ActionBar_progressBarPadding = global::Adopcat.Mobile.Droid.Resource.Styleable.ActionBar_progressBarPadding;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Styleable.ActionBar_progressBarStyle = global::Adopcat.Mobile.Droid.Resource.Styleable.ActionBar_progressBarStyle;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Styleable.ActionBar_subtitle = global::Adopcat.Mobile.Droid.Resource.Styleable.ActionBar_subtitle;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Styleable.ActionBar_subtitleTextStyle = global::Adopcat.Mobile.Droid.Resource.Styleable.ActionBar_subtitleTextStyle;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Styleable.ActionBar_title = global::Adopcat.Mobile.Droid.Resource.Styleable.ActionBar_title;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Styleable.ActionBar_titleTextStyle = global::Adopcat.Mobile.Droid.Resource.Styleable.ActionBar_titleTextStyle;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Styleable.ActionBarLayout = global::Adopcat.Mobile.Droid.Resource.Styleable.ActionBarLayout;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Styleable.ActionBarLayout_android_layout_gravity = global::Adopcat.Mobile.Droid.Resource.Styleable.ActionBarLayout_android_layout_gravity;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Styleable.ActionMenuItemView = global::Adopcat.Mobile.Droid.Resource.Styleable.ActionMenuItemView;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Styleable.ActionMenuItemView_android_minWidth = global::Adopcat.Mobile.Droid.Resource.Styleable.ActionMenuItemView_android_minWidth;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Styleable.ActionMenuView = global::Adopcat.Mobile.Droid.Resource.Styleable.ActionMenuView;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Styleable.ActionMode = global::Adopcat.Mobile.Droid.Resource.Styleable.ActionMode;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Styleable.ActionMode_background = global::Adopcat.Mobile.Droid.Resource.Styleable.ActionMode_background;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Styleable.ActionMode_backgroundSplit = global::Adopcat.Mobile.Droid.Resource.Styleable.ActionMode_backgroundSplit;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Styleable.ActionMode_closeItemLayout = global::Adopcat.Mobile.Droid.Resource.Styleable.ActionMode_closeItemLayout;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Styleable.ActionMode_height = global::Adopcat.Mobile.Droid.Resource.Styleable.ActionMode_height;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Styleable.ActionMode_subtitleTextStyle = global::Adopcat.Mobile.Droid.Resource.Styleable.ActionMode_subtitleTextStyle;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Styleable.ActionMode_titleTextStyle = global::Adopcat.Mobile.Droid.Resource.Styleable.ActionMode_titleTextStyle;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Styleable.ActivityChooserView = global::Adopcat.Mobile.Droid.Resource.Styleable.ActivityChooserView;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Styleable.ActivityChooserView_expandActivityOverflowButtonDrawable = global::Adopcat.Mobile.Droid.Resource.Styleable.ActivityChooserView_expandActivityOverflowButtonDrawable;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Styleable.ActivityChooserView_initialActivityCount = global::Adopcat.Mobile.Droid.Resource.Styleable.ActivityChooserView_initialActivityCount;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Styleable.AlertDialog = global::Adopcat.Mobile.Droid.Resource.Styleable.AlertDialog;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Styleable.AlertDialog_android_layout = global::Adopcat.Mobile.Droid.Resource.Styleable.AlertDialog_android_layout;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Styleable.AlertDialog_buttonPanelSideLayout = global::Adopcat.Mobile.Droid.Resource.Styleable.AlertDialog_buttonPanelSideLayout;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Styleable.AlertDialog_listItemLayout = global::Adopcat.Mobile.Droid.Resource.Styleable.AlertDialog_listItemLayout;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Styleable.AlertDialog_listLayout = global::Adopcat.Mobile.Droid.Resource.Styleable.AlertDialog_listLayout;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Styleable.AlertDialog_multiChoiceItemLayout = global::Adopcat.Mobile.Droid.Resource.Styleable.AlertDialog_multiChoiceItemLayout;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Styleable.AlertDialog_singleChoiceItemLayout = global::Adopcat.Mobile.Droid.Resource.Styleable.AlertDialog_singleChoiceItemLayout;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Styleable.AppBarLayout = global::Adopcat.Mobile.Droid.Resource.Styleable.AppBarLayout;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Styleable.AppBarLayout_android_background = global::Adopcat.Mobile.Droid.Resource.Styleable.AppBarLayout_android_background;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Styleable.AppBarLayout_elevation = global::Adopcat.Mobile.Droid.Resource.Styleable.AppBarLayout_elevation;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Styleable.AppBarLayout_expanded = global::Adopcat.Mobile.Droid.Resource.Styleable.AppBarLayout_expanded;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Styleable.AppBarLayout_LayoutParams = global::Adopcat.Mobile.Droid.Resource.Styleable.AppBarLayout_LayoutParams;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Styleable.AppBarLayout_LayoutParams_layout_scrollFlags = global::Adopcat.Mobile.Droid.Resource.Styleable.AppBarLayout_LayoutParams_layout_scrollFlags;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Styleable.AppBarLayout_LayoutParams_layout_scrollInterpolator = global::Adopcat.Mobile.Droid.Resource.Styleable.AppBarLayout_LayoutParams_layout_scrollInterpolator;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Styleable.AppCompatImageView = global::Adopcat.Mobile.Droid.Resource.Styleable.AppCompatImageView;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Styleable.AppCompatImageView_android_src = global::Adopcat.Mobile.Droid.Resource.Styleable.AppCompatImageView_android_src;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Styleable.AppCompatImageView_srcCompat = global::Adopcat.Mobile.Droid.Resource.Styleable.AppCompatImageView_srcCompat;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Styleable.AppCompatTextView = global::Adopcat.Mobile.Droid.Resource.Styleable.AppCompatTextView;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Styleable.AppCompatTextView_android_textAppearance = global::Adopcat.Mobile.Droid.Resource.Styleable.AppCompatTextView_android_textAppearance;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Styleable.AppCompatTextView_textAllCaps = global::Adopcat.Mobile.Droid.Resource.Styleable.AppCompatTextView_textAllCaps;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Styleable.AppCompatTheme = global::Adopcat.Mobile.Droid.Resource.Styleable.AppCompatTheme;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Styleable.AppCompatTheme_actionBarDivider = global::Adopcat.Mobile.Droid.Resource.Styleable.AppCompatTheme_actionBarDivider;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Styleable.AppCompatTheme_actionBarItemBackground = global::Adopcat.Mobile.Droid.Resource.Styleable.AppCompatTheme_actionBarItemBackground;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Styleable.AppCompatTheme_actionBarPopupTheme = global::Adopcat.Mobile.Droid.Resource.Styleable.AppCompatTheme_actionBarPopupTheme;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Styleable.AppCompatTheme_actionBarSize = global::Adopcat.Mobile.Droid.Resource.Styleable.AppCompatTheme_actionBarSize;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Styleable.AppCompatTheme_actionBarSplitStyle = global::Adopcat.Mobile.Droid.Resource.Styleable.AppCompatTheme_actionBarSplitStyle;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Styleable.AppCompatTheme_actionBarStyle = global::Adopcat.Mobile.Droid.Resource.Styleable.AppCompatTheme_actionBarStyle;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Styleable.AppCompatTheme_actionBarTabBarStyle = global::Adopcat.Mobile.Droid.Resource.Styleable.AppCompatTheme_actionBarTabBarStyle;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Styleable.AppCompatTheme_actionBarTabStyle = global::Adopcat.Mobile.Droid.Resource.Styleable.AppCompatTheme_actionBarTabStyle;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Styleable.AppCompatTheme_actionBarTabTextStyle = global::Adopcat.Mobile.Droid.Resource.Styleable.AppCompatTheme_actionBarTabTextStyle;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Styleable.AppCompatTheme_actionBarTheme = global::Adopcat.Mobile.Droid.Resource.Styleable.AppCompatTheme_actionBarTheme;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Styleable.AppCompatTheme_actionBarWidgetTheme = global::Adopcat.Mobile.Droid.Resource.Styleable.AppCompatTheme_actionBarWidgetTheme;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Styleable.AppCompatTheme_actionButtonStyle = global::Adopcat.Mobile.Droid.Resource.Styleable.AppCompatTheme_actionButtonStyle;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Styleable.AppCompatTheme_actionDropDownStyle = global::Adopcat.Mobile.Droid.Resource.Styleable.AppCompatTheme_actionDropDownStyle;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Styleable.AppCompatTheme_actionMenuTextAppearance = global::Adopcat.Mobile.Droid.Resource.Styleable.AppCompatTheme_actionMenuTextAppearance;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Styleable.AppCompatTheme_actionMenuTextColor = global::Adopcat.Mobile.Droid.Resource.Styleable.AppCompatTheme_actionMenuTextColor;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Styleable.AppCompatTheme_actionModeBackground = global::Adopcat.Mobile.Droid.Resource.Styleable.AppCompatTheme_actionModeBackground;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Styleable.AppCompatTheme_actionModeCloseButtonStyle = global::Adopcat.Mobile.Droid.Resource.Styleable.AppCompatTheme_actionModeCloseButtonStyle;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Styleable.AppCompatTheme_actionModeCloseDrawable = global::Adopcat.Mobile.Droid.Resource.Styleable.AppCompatTheme_actionModeCloseDrawable;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Styleable.AppCompatTheme_actionModeCopyDrawable = global::Adopcat.Mobile.Droid.Resource.Styleable.AppCompatTheme_actionModeCopyDrawable;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Styleable.AppCompatTheme_actionModeCutDrawable = global::Adopcat.Mobile.Droid.Resource.Styleable.AppCompatTheme_actionModeCutDrawable;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Styleable.AppCompatTheme_actionModeFindDrawable = global::Adopcat.Mobile.Droid.Resource.Styleable.AppCompatTheme_actionModeFindDrawable;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Styleable.AppCompatTheme_actionModePasteDrawable = global::Adopcat.Mobile.Droid.Resource.Styleable.AppCompatTheme_actionModePasteDrawable;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Styleable.AppCompatTheme_actionModePopupWindowStyle = global::Adopcat.Mobile.Droid.Resource.Styleable.AppCompatTheme_actionModePopupWindowStyle;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Styleable.AppCompatTheme_actionModeSelectAllDrawable = global::Adopcat.Mobile.Droid.Resource.Styleable.AppCompatTheme_actionModeSelectAllDrawable;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Styleable.AppCompatTheme_actionModeShareDrawable = global::Adopcat.Mobile.Droid.Resource.Styleable.AppCompatTheme_actionModeShareDrawable;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Styleable.AppCompatTheme_actionModeSplitBackground = global::Adopcat.Mobile.Droid.Resource.Styleable.AppCompatTheme_actionModeSplitBackground;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Styleable.AppCompatTheme_actionModeStyle = global::Adopcat.Mobile.Droid.Resource.Styleable.AppCompatTheme_actionModeStyle;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Styleable.AppCompatTheme_actionModeWebSearchDrawable = global::Adopcat.Mobile.Droid.Resource.Styleable.AppCompatTheme_actionModeWebSearchDrawable;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Styleable.AppCompatTheme_actionOverflowButtonStyle = global::Adopcat.Mobile.Droid.Resource.Styleable.AppCompatTheme_actionOverflowButtonStyle;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Styleable.AppCompatTheme_actionOverflowMenuStyle = global::Adopcat.Mobile.Droid.Resource.Styleable.AppCompatTheme_actionOverflowMenuStyle;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Styleable.AppCompatTheme_activityChooserViewStyle = global::Adopcat.Mobile.Droid.Resource.Styleable.AppCompatTheme_activityChooserViewStyle;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Styleable.AppCompatTheme_alertDialogButtonGroupStyle = global::Adopcat.Mobile.Droid.Resource.Styleable.AppCompatTheme_alertDialogButtonGroupStyle;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Styleable.AppCompatTheme_alertDialogCenterButtons = global::Adopcat.Mobile.Droid.Resource.Styleable.AppCompatTheme_alertDialogCenterButtons;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Styleable.AppCompatTheme_alertDialogStyle = global::Adopcat.Mobile.Droid.Resource.Styleable.AppCompatTheme_alertDialogStyle;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Styleable.AppCompatTheme_alertDialogTheme = global::Adopcat.Mobile.Droid.Resource.Styleable.AppCompatTheme_alertDialogTheme;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Styleable.AppCompatTheme_android_windowAnimationStyle = global::Adopcat.Mobile.Droid.Resource.Styleable.AppCompatTheme_android_windowAnimationStyle;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Styleable.AppCompatTheme_android_windowIsFloating = global::Adopcat.Mobile.Droid.Resource.Styleable.AppCompatTheme_android_windowIsFloating;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Styleable.AppCompatTheme_autoCompleteTextViewStyle = global::Adopcat.Mobile.Droid.Resource.Styleable.AppCompatTheme_autoCompleteTextViewStyle;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Styleable.AppCompatTheme_borderlessButtonStyle = global::Adopcat.Mobile.Droid.Resource.Styleable.AppCompatTheme_borderlessButtonStyle;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Styleable.AppCompatTheme_buttonBarButtonStyle = global::Adopcat.Mobile.Droid.Resource.Styleable.AppCompatTheme_buttonBarButtonStyle;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Styleable.AppCompatTheme_buttonBarNegativeButtonStyle = global::Adopcat.Mobile.Droid.Resource.Styleable.AppCompatTheme_buttonBarNegativeButtonStyle;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Styleable.AppCompatTheme_buttonBarNeutralButtonStyle = global::Adopcat.Mobile.Droid.Resource.Styleable.AppCompatTheme_buttonBarNeutralButtonStyle;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Styleable.AppCompatTheme_buttonBarPositiveButtonStyle = global::Adopcat.Mobile.Droid.Resource.Styleable.AppCompatTheme_buttonBarPositiveButtonStyle;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Styleable.AppCompatTheme_buttonBarStyle = global::Adopcat.Mobile.Droid.Resource.Styleable.AppCompatTheme_buttonBarStyle;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Styleable.AppCompatTheme_buttonStyle = global::Adopcat.Mobile.Droid.Resource.Styleable.AppCompatTheme_buttonStyle;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Styleable.AppCompatTheme_buttonStyleSmall = global::Adopcat.Mobile.Droid.Resource.Styleable.AppCompatTheme_buttonStyleSmall;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Styleable.AppCompatTheme_checkboxStyle = global::Adopcat.Mobile.Droid.Resource.Styleable.AppCompatTheme_checkboxStyle;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Styleable.AppCompatTheme_checkedTextViewStyle = global::Adopcat.Mobile.Droid.Resource.Styleable.AppCompatTheme_checkedTextViewStyle;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Styleable.AppCompatTheme_colorAccent = global::Adopcat.Mobile.Droid.Resource.Styleable.AppCompatTheme_colorAccent;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Styleable.AppCompatTheme_colorButtonNormal = global::Adopcat.Mobile.Droid.Resource.Styleable.AppCompatTheme_colorButtonNormal;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Styleable.AppCompatTheme_colorControlActivated = global::Adopcat.Mobile.Droid.Resource.Styleable.AppCompatTheme_colorControlActivated;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Styleable.AppCompatTheme_colorControlHighlight = global::Adopcat.Mobile.Droid.Resource.Styleable.AppCompatTheme_colorControlHighlight;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Styleable.AppCompatTheme_colorControlNormal = global::Adopcat.Mobile.Droid.Resource.Styleable.AppCompatTheme_colorControlNormal;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Styleable.AppCompatTheme_colorPrimary = global::Adopcat.Mobile.Droid.Resource.Styleable.AppCompatTheme_colorPrimary;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Styleable.AppCompatTheme_colorPrimaryDark = global::Adopcat.Mobile.Droid.Resource.Styleable.AppCompatTheme_colorPrimaryDark;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Styleable.AppCompatTheme_colorSwitchThumbNormal = global::Adopcat.Mobile.Droid.Resource.Styleable.AppCompatTheme_colorSwitchThumbNormal;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Styleable.AppCompatTheme_controlBackground = global::Adopcat.Mobile.Droid.Resource.Styleable.AppCompatTheme_controlBackground;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Styleable.AppCompatTheme_dialogPreferredPadding = global::Adopcat.Mobile.Droid.Resource.Styleable.AppCompatTheme_dialogPreferredPadding;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Styleable.AppCompatTheme_dialogTheme = global::Adopcat.Mobile.Droid.Resource.Styleable.AppCompatTheme_dialogTheme;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Styleable.AppCompatTheme_dividerHorizontal = global::Adopcat.Mobile.Droid.Resource.Styleable.AppCompatTheme_dividerHorizontal;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Styleable.AppCompatTheme_dividerVertical = global::Adopcat.Mobile.Droid.Resource.Styleable.AppCompatTheme_dividerVertical;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Styleable.AppCompatTheme_dropDownListViewStyle = global::Adopcat.Mobile.Droid.Resource.Styleable.AppCompatTheme_dropDownListViewStyle;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Styleable.AppCompatTheme_dropdownListPreferredItemHeight = global::Adopcat.Mobile.Droid.Resource.Styleable.AppCompatTheme_dropdownListPreferredItemHeight;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Styleable.AppCompatTheme_editTextBackground = global::Adopcat.Mobile.Droid.Resource.Styleable.AppCompatTheme_editTextBackground;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Styleable.AppCompatTheme_editTextColor = global::Adopcat.Mobile.Droid.Resource.Styleable.AppCompatTheme_editTextColor;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Styleable.AppCompatTheme_editTextStyle = global::Adopcat.Mobile.Droid.Resource.Styleable.AppCompatTheme_editTextStyle;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Styleable.AppCompatTheme_homeAsUpIndicator = global::Adopcat.Mobile.Droid.Resource.Styleable.AppCompatTheme_homeAsUpIndicator;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Styleable.AppCompatTheme_imageButtonStyle = global::Adopcat.Mobile.Droid.Resource.Styleable.AppCompatTheme_imageButtonStyle;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Styleable.AppCompatTheme_listChoiceBackgroundIndicator = global::Adopcat.Mobile.Droid.Resource.Styleable.AppCompatTheme_listChoiceBackgroundIndicator;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Styleable.AppCompatTheme_listDividerAlertDialog = global::Adopcat.Mobile.Droid.Resource.Styleable.AppCompatTheme_listDividerAlertDialog;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Styleable.AppCompatTheme_listPopupWindowStyle = global::Adopcat.Mobile.Droid.Resource.Styleable.AppCompatTheme_listPopupWindowStyle;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Styleable.AppCompatTheme_listPreferredItemHeight = global::Adopcat.Mobile.Droid.Resource.Styleable.AppCompatTheme_listPreferredItemHeight;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Styleable.AppCompatTheme_listPreferredItemHeightLarge = global::Adopcat.Mobile.Droid.Resource.Styleable.AppCompatTheme_listPreferredItemHeightLarge;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Styleable.AppCompatTheme_listPreferredItemHeightSmall = global::Adopcat.Mobile.Droid.Resource.Styleable.AppCompatTheme_listPreferredItemHeightSmall;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Styleable.AppCompatTheme_listPreferredItemPaddingLeft = global::Adopcat.Mobile.Droid.Resource.Styleable.AppCompatTheme_listPreferredItemPaddingLeft;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Styleable.AppCompatTheme_listPreferredItemPaddingRight = global::Adopcat.Mobile.Droid.Resource.Styleable.AppCompatTheme_listPreferredItemPaddingRight;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Styleable.AppCompatTheme_panelBackground = global::Adopcat.Mobile.Droid.Resource.Styleable.AppCompatTheme_panelBackground;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Styleable.AppCompatTheme_panelMenuListTheme = global::Adopcat.Mobile.Droid.Resource.Styleable.AppCompatTheme_panelMenuListTheme;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Styleable.AppCompatTheme_panelMenuListWidth = global::Adopcat.Mobile.Droid.Resource.Styleable.AppCompatTheme_panelMenuListWidth;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Styleable.AppCompatTheme_popupMenuStyle = global::Adopcat.Mobile.Droid.Resource.Styleable.AppCompatTheme_popupMenuStyle;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Styleable.AppCompatTheme_popupWindowStyle = global::Adopcat.Mobile.Droid.Resource.Styleable.AppCompatTheme_popupWindowStyle;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Styleable.AppCompatTheme_radioButtonStyle = global::Adopcat.Mobile.Droid.Resource.Styleable.AppCompatTheme_radioButtonStyle;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Styleable.AppCompatTheme_ratingBarStyle = global::Adopcat.Mobile.Droid.Resource.Styleable.AppCompatTheme_ratingBarStyle;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Styleable.AppCompatTheme_ratingBarStyleIndicator = global::Adopcat.Mobile.Droid.Resource.Styleable.AppCompatTheme_ratingBarStyleIndicator;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Styleable.AppCompatTheme_ratingBarStyleSmall = global::Adopcat.Mobile.Droid.Resource.Styleable.AppCompatTheme_ratingBarStyleSmall;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Styleable.AppCompatTheme_searchViewStyle = global::Adopcat.Mobile.Droid.Resource.Styleable.AppCompatTheme_searchViewStyle;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Styleable.AppCompatTheme_seekBarStyle = global::Adopcat.Mobile.Droid.Resource.Styleable.AppCompatTheme_seekBarStyle;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Styleable.AppCompatTheme_selectableItemBackground = global::Adopcat.Mobile.Droid.Resource.Styleable.AppCompatTheme_selectableItemBackground;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Styleable.AppCompatTheme_selectableItemBackgroundBorderless = global::Adopcat.Mobile.Droid.Resource.Styleable.AppCompatTheme_selectableItemBackgroundBorderless;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Styleable.AppCompatTheme_spinnerDropDownItemStyle = global::Adopcat.Mobile.Droid.Resource.Styleable.AppCompatTheme_spinnerDropDownItemStyle;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Styleable.AppCompatTheme_spinnerStyle = global::Adopcat.Mobile.Droid.Resource.Styleable.AppCompatTheme_spinnerStyle;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Styleable.AppCompatTheme_switchStyle = global::Adopcat.Mobile.Droid.Resource.Styleable.AppCompatTheme_switchStyle;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Styleable.AppCompatTheme_textAppearanceLargePopupMenu = global::Adopcat.Mobile.Droid.Resource.Styleable.AppCompatTheme_textAppearanceLargePopupMenu;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Styleable.AppCompatTheme_textAppearanceListItem = global::Adopcat.Mobile.Droid.Resource.Styleable.AppCompatTheme_textAppearanceListItem;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Styleable.AppCompatTheme_textAppearanceListItemSmall = global::Adopcat.Mobile.Droid.Resource.Styleable.AppCompatTheme_textAppearanceListItemSmall;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Styleable.AppCompatTheme_textAppearanceSearchResultSubtitle = global::Adopcat.Mobile.Droid.Resource.Styleable.AppCompatTheme_textAppearanceSearchResultSubtitle;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Styleable.AppCompatTheme_textAppearanceSearchResultTitle = global::Adopcat.Mobile.Droid.Resource.Styleable.AppCompatTheme_textAppearanceSearchResultTitle;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Styleable.AppCompatTheme_textAppearanceSmallPopupMenu = global::Adopcat.Mobile.Droid.Resource.Styleable.AppCompatTheme_textAppearanceSmallPopupMenu;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Styleable.AppCompatTheme_textColorAlertDialogListItem = global::Adopcat.Mobile.Droid.Resource.Styleable.AppCompatTheme_textColorAlertDialogListItem;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Styleable.AppCompatTheme_textColorSearchUrl = global::Adopcat.Mobile.Droid.Resource.Styleable.AppCompatTheme_textColorSearchUrl;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Styleable.AppCompatTheme_toolbarNavigationButtonStyle = global::Adopcat.Mobile.Droid.Resource.Styleable.AppCompatTheme_toolbarNavigationButtonStyle;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Styleable.AppCompatTheme_toolbarStyle = global::Adopcat.Mobile.Droid.Resource.Styleable.AppCompatTheme_toolbarStyle;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Styleable.AppCompatTheme_windowActionBar = global::Adopcat.Mobile.Droid.Resource.Styleable.AppCompatTheme_windowActionBar;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Styleable.AppCompatTheme_windowActionBarOverlay = global::Adopcat.Mobile.Droid.Resource.Styleable.AppCompatTheme_windowActionBarOverlay;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Styleable.AppCompatTheme_windowActionModeOverlay = global::Adopcat.Mobile.Droid.Resource.Styleable.AppCompatTheme_windowActionModeOverlay;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Styleable.AppCompatTheme_windowFixedHeightMajor = global::Adopcat.Mobile.Droid.Resource.Styleable.AppCompatTheme_windowFixedHeightMajor;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Styleable.AppCompatTheme_windowFixedHeightMinor = global::Adopcat.Mobile.Droid.Resource.Styleable.AppCompatTheme_windowFixedHeightMinor;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Styleable.AppCompatTheme_windowFixedWidthMajor = global::Adopcat.Mobile.Droid.Resource.Styleable.AppCompatTheme_windowFixedWidthMajor;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Styleable.AppCompatTheme_windowFixedWidthMinor = global::Adopcat.Mobile.Droid.Resource.Styleable.AppCompatTheme_windowFixedWidthMinor;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Styleable.AppCompatTheme_windowMinWidthMajor = global::Adopcat.Mobile.Droid.Resource.Styleable.AppCompatTheme_windowMinWidthMajor;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Styleable.AppCompatTheme_windowMinWidthMinor = global::Adopcat.Mobile.Droid.Resource.Styleable.AppCompatTheme_windowMinWidthMinor;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Styleable.AppCompatTheme_windowNoTitle = global::Adopcat.Mobile.Droid.Resource.Styleable.AppCompatTheme_windowNoTitle;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Styleable.BottomSheetBehavior_Params = global::Adopcat.Mobile.Droid.Resource.Styleable.BottomSheetBehavior_Params;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Styleable.BottomSheetBehavior_Params_behavior_hideable = global::Adopcat.Mobile.Droid.Resource.Styleable.BottomSheetBehavior_Params_behavior_hideable;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Styleable.BottomSheetBehavior_Params_behavior_peekHeight = global::Adopcat.Mobile.Droid.Resource.Styleable.BottomSheetBehavior_Params_behavior_peekHeight;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Styleable.ButtonBarLayout = global::Adopcat.Mobile.Droid.Resource.Styleable.ButtonBarLayout;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Styleable.ButtonBarLayout_allowStacking = global::Adopcat.Mobile.Droid.Resource.Styleable.ButtonBarLayout_allowStacking;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Styleable.CardView = global::Adopcat.Mobile.Droid.Resource.Styleable.CardView;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Styleable.CardView_android_minHeight = global::Adopcat.Mobile.Droid.Resource.Styleable.CardView_android_minHeight;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Styleable.CardView_android_minWidth = global::Adopcat.Mobile.Droid.Resource.Styleable.CardView_android_minWidth;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Styleable.CardView_cardBackgroundColor = global::Adopcat.Mobile.Droid.Resource.Styleable.CardView_cardBackgroundColor;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Styleable.CardView_cardCornerRadius = global::Adopcat.Mobile.Droid.Resource.Styleable.CardView_cardCornerRadius;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Styleable.CardView_cardElevation = global::Adopcat.Mobile.Droid.Resource.Styleable.CardView_cardElevation;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Styleable.CardView_cardMaxElevation = global::Adopcat.Mobile.Droid.Resource.Styleable.CardView_cardMaxElevation;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Styleable.CardView_cardPreventCornerOverlap = global::Adopcat.Mobile.Droid.Resource.Styleable.CardView_cardPreventCornerOverlap;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Styleable.CardView_cardUseCompatPadding = global::Adopcat.Mobile.Droid.Resource.Styleable.CardView_cardUseCompatPadding;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Styleable.CardView_contentPadding = global::Adopcat.Mobile.Droid.Resource.Styleable.CardView_contentPadding;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Styleable.CardView_contentPaddingBottom = global::Adopcat.Mobile.Droid.Resource.Styleable.CardView_contentPaddingBottom;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Styleable.CardView_contentPaddingLeft = global::Adopcat.Mobile.Droid.Resource.Styleable.CardView_contentPaddingLeft;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Styleable.CardView_contentPaddingRight = global::Adopcat.Mobile.Droid.Resource.Styleable.CardView_contentPaddingRight;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Styleable.CardView_contentPaddingTop = global::Adopcat.Mobile.Droid.Resource.Styleable.CardView_contentPaddingTop;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Styleable.CollapsingAppBarLayout_LayoutParams = global::Adopcat.Mobile.Droid.Resource.Styleable.CollapsingAppBarLayout_LayoutParams;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Styleable.CollapsingAppBarLayout_LayoutParams_layout_collapseMode = global::Adopcat.Mobile.Droid.Resource.Styleable.CollapsingAppBarLayout_LayoutParams_layout_collapseMode;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Styleable.CollapsingAppBarLayout_LayoutParams_layout_collapseParallaxMultiplier = global::Adopcat.Mobile.Droid.Resource.Styleable.CollapsingAppBarLayout_LayoutParams_layout_collapseParallaxMultiplier;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Styleable.CollapsingToolbarLayout = global::Adopcat.Mobile.Droid.Resource.Styleable.CollapsingToolbarLayout;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Styleable.CollapsingToolbarLayout_collapsedTitleGravity = global::Adopcat.Mobile.Droid.Resource.Styleable.CollapsingToolbarLayout_collapsedTitleGravity;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Styleable.CollapsingToolbarLayout_collapsedTitleTextAppearance = global::Adopcat.Mobile.Droid.Resource.Styleable.CollapsingToolbarLayout_collapsedTitleTextAppearance;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Styleable.CollapsingToolbarLayout_contentScrim = global::Adopcat.Mobile.Droid.Resource.Styleable.CollapsingToolbarLayout_contentScrim;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Styleable.CollapsingToolbarLayout_expandedTitleGravity = global::Adopcat.Mobile.Droid.Resource.Styleable.CollapsingToolbarLayout_expandedTitleGravity;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Styleable.CollapsingToolbarLayout_expandedTitleMargin = global::Adopcat.Mobile.Droid.Resource.Styleable.CollapsingToolbarLayout_expandedTitleMargin;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Styleable.CollapsingToolbarLayout_expandedTitleMarginBottom = global::Adopcat.Mobile.Droid.Resource.Styleable.CollapsingToolbarLayout_expandedTitleMarginBottom;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Styleable.CollapsingToolbarLayout_expandedTitleMarginEnd = global::Adopcat.Mobile.Droid.Resource.Styleable.CollapsingToolbarLayout_expandedTitleMarginEnd;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Styleable.CollapsingToolbarLayout_expandedTitleMarginStart = global::Adopcat.Mobile.Droid.Resource.Styleable.CollapsingToolbarLayout_expandedTitleMarginStart;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Styleable.CollapsingToolbarLayout_expandedTitleMarginTop = global::Adopcat.Mobile.Droid.Resource.Styleable.CollapsingToolbarLayout_expandedTitleMarginTop;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Styleable.CollapsingToolbarLayout_expandedTitleTextAppearance = global::Adopcat.Mobile.Droid.Resource.Styleable.CollapsingToolbarLayout_expandedTitleTextAppearance;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Styleable.CollapsingToolbarLayout_statusBarScrim = global::Adopcat.Mobile.Droid.Resource.Styleable.CollapsingToolbarLayout_statusBarScrim;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Styleable.CollapsingToolbarLayout_title = global::Adopcat.Mobile.Droid.Resource.Styleable.CollapsingToolbarLayout_title;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Styleable.CollapsingToolbarLayout_titleEnabled = global::Adopcat.Mobile.Droid.Resource.Styleable.CollapsingToolbarLayout_titleEnabled;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Styleable.CollapsingToolbarLayout_toolbarId = global::Adopcat.Mobile.Droid.Resource.Styleable.CollapsingToolbarLayout_toolbarId;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Styleable.CompoundButton = global::Adopcat.Mobile.Droid.Resource.Styleable.CompoundButton;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Styleable.CompoundButton_android_button = global::Adopcat.Mobile.Droid.Resource.Styleable.CompoundButton_android_button;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Styleable.CompoundButton_buttonTint = global::Adopcat.Mobile.Droid.Resource.Styleable.CompoundButton_buttonTint;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Styleable.CompoundButton_buttonTintMode = global::Adopcat.Mobile.Droid.Resource.Styleable.CompoundButton_buttonTintMode;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Styleable.CoordinatorLayout = global::Adopcat.Mobile.Droid.Resource.Styleable.CoordinatorLayout;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Styleable.CoordinatorLayout_keylines = global::Adopcat.Mobile.Droid.Resource.Styleable.CoordinatorLayout_keylines;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Styleable.CoordinatorLayout_statusBarBackground = global::Adopcat.Mobile.Droid.Resource.Styleable.CoordinatorLayout_statusBarBackground;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Styleable.CoordinatorLayout_LayoutParams = global::Adopcat.Mobile.Droid.Resource.Styleable.CoordinatorLayout_LayoutParams;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Styleable.CoordinatorLayout_LayoutParams_android_layout_gravity = global::Adopcat.Mobile.Droid.Resource.Styleable.CoordinatorLayout_LayoutParams_android_layout_gravity;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Styleable.CoordinatorLayout_LayoutParams_layout_anchor = global::Adopcat.Mobile.Droid.Resource.Styleable.CoordinatorLayout_LayoutParams_layout_anchor;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Styleable.CoordinatorLayout_LayoutParams_layout_anchorGravity = global::Adopcat.Mobile.Droid.Resource.Styleable.CoordinatorLayout_LayoutParams_layout_anchorGravity;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Styleable.CoordinatorLayout_LayoutParams_layout_behavior = global::Adopcat.Mobile.Droid.Resource.Styleable.CoordinatorLayout_LayoutParams_layout_behavior;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Styleable.CoordinatorLayout_LayoutParams_layout_keyline = global::Adopcat.Mobile.Droid.Resource.Styleable.CoordinatorLayout_LayoutParams_layout_keyline;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Styleable.DesignTheme = global::Adopcat.Mobile.Droid.Resource.Styleable.DesignTheme;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Styleable.DesignTheme_bottomSheetDialogTheme = global::Adopcat.Mobile.Droid.Resource.Styleable.DesignTheme_bottomSheetDialogTheme;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Styleable.DesignTheme_bottomSheetStyle = global::Adopcat.Mobile.Droid.Resource.Styleable.DesignTheme_bottomSheetStyle;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Styleable.DesignTheme_textColorError = global::Adopcat.Mobile.Droid.Resource.Styleable.DesignTheme_textColorError;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Styleable.DrawerArrowToggle = global::Adopcat.Mobile.Droid.Resource.Styleable.DrawerArrowToggle;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Styleable.DrawerArrowToggle_arrowHeadLength = global::Adopcat.Mobile.Droid.Resource.Styleable.DrawerArrowToggle_arrowHeadLength;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Styleable.DrawerArrowToggle_arrowShaftLength = global::Adopcat.Mobile.Droid.Resource.Styleable.DrawerArrowToggle_arrowShaftLength;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Styleable.DrawerArrowToggle_barLength = global::Adopcat.Mobile.Droid.Resource.Styleable.DrawerArrowToggle_barLength;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Styleable.DrawerArrowToggle_color = global::Adopcat.Mobile.Droid.Resource.Styleable.DrawerArrowToggle_color;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Styleable.DrawerArrowToggle_drawableSize = global::Adopcat.Mobile.Droid.Resource.Styleable.DrawerArrowToggle_drawableSize;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Styleable.DrawerArrowToggle_gapBetweenBars = global::Adopcat.Mobile.Droid.Resource.Styleable.DrawerArrowToggle_gapBetweenBars;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Styleable.DrawerArrowToggle_spinBars = global::Adopcat.Mobile.Droid.Resource.Styleable.DrawerArrowToggle_spinBars;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Styleable.DrawerArrowToggle_thickness = global::Adopcat.Mobile.Droid.Resource.Styleable.DrawerArrowToggle_thickness;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Styleable.FloatingActionButton = global::Adopcat.Mobile.Droid.Resource.Styleable.FloatingActionButton;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Styleable.FloatingActionButton_backgroundTint = global::Adopcat.Mobile.Droid.Resource.Styleable.FloatingActionButton_backgroundTint;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Styleable.FloatingActionButton_backgroundTintMode = global::Adopcat.Mobile.Droid.Resource.Styleable.FloatingActionButton_backgroundTintMode;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Styleable.FloatingActionButton_borderWidth = global::Adopcat.Mobile.Droid.Resource.Styleable.FloatingActionButton_borderWidth;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Styleable.FloatingActionButton_elevation = global::Adopcat.Mobile.Droid.Resource.Styleable.FloatingActionButton_elevation;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Styleable.FloatingActionButton_fabSize = global::Adopcat.Mobile.Droid.Resource.Styleable.FloatingActionButton_fabSize;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Styleable.FloatingActionButton_pressedTranslationZ = global::Adopcat.Mobile.Droid.Resource.Styleable.FloatingActionButton_pressedTranslationZ;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Styleable.FloatingActionButton_rippleColor = global::Adopcat.Mobile.Droid.Resource.Styleable.FloatingActionButton_rippleColor;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Styleable.FloatingActionButton_useCompatPadding = global::Adopcat.Mobile.Droid.Resource.Styleable.FloatingActionButton_useCompatPadding;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Styleable.ForegroundLinearLayout = global::Adopcat.Mobile.Droid.Resource.Styleable.ForegroundLinearLayout;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Styleable.ForegroundLinearLayout_android_foreground = global::Adopcat.Mobile.Droid.Resource.Styleable.ForegroundLinearLayout_android_foreground;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Styleable.ForegroundLinearLayout_android_foregroundGravity = global::Adopcat.Mobile.Droid.Resource.Styleable.ForegroundLinearLayout_android_foregroundGravity;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Styleable.ForegroundLinearLayout_foregroundInsidePadding = global::Adopcat.Mobile.Droid.Resource.Styleable.ForegroundLinearLayout_foregroundInsidePadding;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Styleable.LinearLayoutCompat = global::Adopcat.Mobile.Droid.Resource.Styleable.LinearLayoutCompat;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Styleable.LinearLayoutCompat_android_baselineAligned = global::Adopcat.Mobile.Droid.Resource.Styleable.LinearLayoutCompat_android_baselineAligned;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Styleable.LinearLayoutCompat_android_baselineAlignedChildIndex = global::Adopcat.Mobile.Droid.Resource.Styleable.LinearLayoutCompat_android_baselineAlignedChildIndex;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Styleable.LinearLayoutCompat_android_gravity = global::Adopcat.Mobile.Droid.Resource.Styleable.LinearLayoutCompat_android_gravity;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Styleable.LinearLayoutCompat_android_orientation = global::Adopcat.Mobile.Droid.Resource.Styleable.LinearLayoutCompat_android_orientation;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Styleable.LinearLayoutCompat_android_weightSum = global::Adopcat.Mobile.Droid.Resource.Styleable.LinearLayoutCompat_android_weightSum;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Styleable.LinearLayoutCompat_divider = global::Adopcat.Mobile.Droid.Resource.Styleable.LinearLayoutCompat_divider;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Styleable.LinearLayoutCompat_dividerPadding = global::Adopcat.Mobile.Droid.Resource.Styleable.LinearLayoutCompat_dividerPadding;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Styleable.LinearLayoutCompat_measureWithLargestChild = global::Adopcat.Mobile.Droid.Resource.Styleable.LinearLayoutCompat_measureWithLargestChild;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Styleable.LinearLayoutCompat_showDividers = global::Adopcat.Mobile.Droid.Resource.Styleable.LinearLayoutCompat_showDividers;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Styleable.LinearLayoutCompat_Layout = global::Adopcat.Mobile.Droid.Resource.Styleable.LinearLayoutCompat_Layout;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Styleable.LinearLayoutCompat_Layout_android_layout_gravity = global::Adopcat.Mobile.Droid.Resource.Styleable.LinearLayoutCompat_Layout_android_layout_gravity;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Styleable.LinearLayoutCompat_Layout_android_layout_height = global::Adopcat.Mobile.Droid.Resource.Styleable.LinearLayoutCompat_Layout_android_layout_height;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Styleable.LinearLayoutCompat_Layout_android_layout_weight = global::Adopcat.Mobile.Droid.Resource.Styleable.LinearLayoutCompat_Layout_android_layout_weight;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Styleable.LinearLayoutCompat_Layout_android_layout_width = global::Adopcat.Mobile.Droid.Resource.Styleable.LinearLayoutCompat_Layout_android_layout_width;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Styleable.ListPopupWindow = global::Adopcat.Mobile.Droid.Resource.Styleable.ListPopupWindow;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Styleable.ListPopupWindow_android_dropDownHorizontalOffset = global::Adopcat.Mobile.Droid.Resource.Styleable.ListPopupWindow_android_dropDownHorizontalOffset;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Styleable.ListPopupWindow_android_dropDownVerticalOffset = global::Adopcat.Mobile.Droid.Resource.Styleable.ListPopupWindow_android_dropDownVerticalOffset;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Styleable.MediaRouteButton = global::Adopcat.Mobile.Droid.Resource.Styleable.MediaRouteButton;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Styleable.MediaRouteButton_android_minHeight = global::Adopcat.Mobile.Droid.Resource.Styleable.MediaRouteButton_android_minHeight;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Styleable.MediaRouteButton_android_minWidth = global::Adopcat.Mobile.Droid.Resource.Styleable.MediaRouteButton_android_minWidth;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Styleable.MediaRouteButton_externalRouteEnabledDrawable = global::Adopcat.Mobile.Droid.Resource.Styleable.MediaRouteButton_externalRouteEnabledDrawable;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Styleable.MenuGroup = global::Adopcat.Mobile.Droid.Resource.Styleable.MenuGroup;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Styleable.MenuGroup_android_checkableBehavior = global::Adopcat.Mobile.Droid.Resource.Styleable.MenuGroup_android_checkableBehavior;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Styleable.MenuGroup_android_enabled = global::Adopcat.Mobile.Droid.Resource.Styleable.MenuGroup_android_enabled;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Styleable.MenuGroup_android_id = global::Adopcat.Mobile.Droid.Resource.Styleable.MenuGroup_android_id;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Styleable.MenuGroup_android_menuCategory = global::Adopcat.Mobile.Droid.Resource.Styleable.MenuGroup_android_menuCategory;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Styleable.MenuGroup_android_orderInCategory = global::Adopcat.Mobile.Droid.Resource.Styleable.MenuGroup_android_orderInCategory;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Styleable.MenuGroup_android_visible = global::Adopcat.Mobile.Droid.Resource.Styleable.MenuGroup_android_visible;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Styleable.MenuItem = global::Adopcat.Mobile.Droid.Resource.Styleable.MenuItem;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Styleable.MenuItem_actionLayout = global::Adopcat.Mobile.Droid.Resource.Styleable.MenuItem_actionLayout;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Styleable.MenuItem_actionProviderClass = global::Adopcat.Mobile.Droid.Resource.Styleable.MenuItem_actionProviderClass;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Styleable.MenuItem_actionViewClass = global::Adopcat.Mobile.Droid.Resource.Styleable.MenuItem_actionViewClass;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Styleable.MenuItem_android_alphabeticShortcut = global::Adopcat.Mobile.Droid.Resource.Styleable.MenuItem_android_alphabeticShortcut;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Styleable.MenuItem_android_checkable = global::Adopcat.Mobile.Droid.Resource.Styleable.MenuItem_android_checkable;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Styleable.MenuItem_android_checked = global::Adopcat.Mobile.Droid.Resource.Styleable.MenuItem_android_checked;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Styleable.MenuItem_android_enabled = global::Adopcat.Mobile.Droid.Resource.Styleable.MenuItem_android_enabled;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Styleable.MenuItem_android_icon = global::Adopcat.Mobile.Droid.Resource.Styleable.MenuItem_android_icon;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Styleable.MenuItem_android_id = global::Adopcat.Mobile.Droid.Resource.Styleable.MenuItem_android_id;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Styleable.MenuItem_android_menuCategory = global::Adopcat.Mobile.Droid.Resource.Styleable.MenuItem_android_menuCategory;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Styleable.MenuItem_android_numericShortcut = global::Adopcat.Mobile.Droid.Resource.Styleable.MenuItem_android_numericShortcut;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Styleable.MenuItem_android_onClick = global::Adopcat.Mobile.Droid.Resource.Styleable.MenuItem_android_onClick;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Styleable.MenuItem_android_orderInCategory = global::Adopcat.Mobile.Droid.Resource.Styleable.MenuItem_android_orderInCategory;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Styleable.MenuItem_android_title = global::Adopcat.Mobile.Droid.Resource.Styleable.MenuItem_android_title;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Styleable.MenuItem_android_titleCondensed = global::Adopcat.Mobile.Droid.Resource.Styleable.MenuItem_android_titleCondensed;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Styleable.MenuItem_android_visible = global::Adopcat.Mobile.Droid.Resource.Styleable.MenuItem_android_visible;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Styleable.MenuItem_showAsAction = global::Adopcat.Mobile.Droid.Resource.Styleable.MenuItem_showAsAction;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Styleable.MenuView = global::Adopcat.Mobile.Droid.Resource.Styleable.MenuView;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Styleable.MenuView_android_headerBackground = global::Adopcat.Mobile.Droid.Resource.Styleable.MenuView_android_headerBackground;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Styleable.MenuView_android_horizontalDivider = global::Adopcat.Mobile.Droid.Resource.Styleable.MenuView_android_horizontalDivider;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Styleable.MenuView_android_itemBackground = global::Adopcat.Mobile.Droid.Resource.Styleable.MenuView_android_itemBackground;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Styleable.MenuView_android_itemIconDisabledAlpha = global::Adopcat.Mobile.Droid.Resource.Styleable.MenuView_android_itemIconDisabledAlpha;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Styleable.MenuView_android_itemTextAppearance = global::Adopcat.Mobile.Droid.Resource.Styleable.MenuView_android_itemTextAppearance;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Styleable.MenuView_android_verticalDivider = global::Adopcat.Mobile.Droid.Resource.Styleable.MenuView_android_verticalDivider;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Styleable.MenuView_android_windowAnimationStyle = global::Adopcat.Mobile.Droid.Resource.Styleable.MenuView_android_windowAnimationStyle;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Styleable.MenuView_preserveIconSpacing = global::Adopcat.Mobile.Droid.Resource.Styleable.MenuView_preserveIconSpacing;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Styleable.NavigationView = global::Adopcat.Mobile.Droid.Resource.Styleable.NavigationView;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Styleable.NavigationView_android_background = global::Adopcat.Mobile.Droid.Resource.Styleable.NavigationView_android_background;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Styleable.NavigationView_android_fitsSystemWindows = global::Adopcat.Mobile.Droid.Resource.Styleable.NavigationView_android_fitsSystemWindows;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Styleable.NavigationView_android_maxWidth = global::Adopcat.Mobile.Droid.Resource.Styleable.NavigationView_android_maxWidth;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Styleable.NavigationView_elevation = global::Adopcat.Mobile.Droid.Resource.Styleable.NavigationView_elevation;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Styleable.NavigationView_headerLayout = global::Adopcat.Mobile.Droid.Resource.Styleable.NavigationView_headerLayout;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Styleable.NavigationView_itemBackground = global::Adopcat.Mobile.Droid.Resource.Styleable.NavigationView_itemBackground;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Styleable.NavigationView_itemIconTint = global::Adopcat.Mobile.Droid.Resource.Styleable.NavigationView_itemIconTint;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Styleable.NavigationView_itemTextAppearance = global::Adopcat.Mobile.Droid.Resource.Styleable.NavigationView_itemTextAppearance;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Styleable.NavigationView_itemTextColor = global::Adopcat.Mobile.Droid.Resource.Styleable.NavigationView_itemTextColor;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Styleable.NavigationView_menu = global::Adopcat.Mobile.Droid.Resource.Styleable.NavigationView_menu;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Styleable.PopupWindow = global::Adopcat.Mobile.Droid.Resource.Styleable.PopupWindow;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Styleable.PopupWindow_android_popupBackground = global::Adopcat.Mobile.Droid.Resource.Styleable.PopupWindow_android_popupBackground;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Styleable.PopupWindow_overlapAnchor = global::Adopcat.Mobile.Droid.Resource.Styleable.PopupWindow_overlapAnchor;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Styleable.PopupWindowBackgroundState = global::Adopcat.Mobile.Droid.Resource.Styleable.PopupWindowBackgroundState;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Styleable.PopupWindowBackgroundState_state_above_anchor = global::Adopcat.Mobile.Droid.Resource.Styleable.PopupWindowBackgroundState_state_above_anchor;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Styleable.RecyclerView = global::Adopcat.Mobile.Droid.Resource.Styleable.RecyclerView;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Styleable.RecyclerView_android_orientation = global::Adopcat.Mobile.Droid.Resource.Styleable.RecyclerView_android_orientation;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Styleable.RecyclerView_layoutManager = global::Adopcat.Mobile.Droid.Resource.Styleable.RecyclerView_layoutManager;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Styleable.RecyclerView_reverseLayout = global::Adopcat.Mobile.Droid.Resource.Styleable.RecyclerView_reverseLayout;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Styleable.RecyclerView_spanCount = global::Adopcat.Mobile.Droid.Resource.Styleable.RecyclerView_spanCount;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Styleable.RecyclerView_stackFromEnd = global::Adopcat.Mobile.Droid.Resource.Styleable.RecyclerView_stackFromEnd;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Styleable.ScrimInsetsFrameLayout = global::Adopcat.Mobile.Droid.Resource.Styleable.ScrimInsetsFrameLayout;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Styleable.ScrimInsetsFrameLayout_insetForeground = global::Adopcat.Mobile.Droid.Resource.Styleable.ScrimInsetsFrameLayout_insetForeground;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Styleable.ScrollingViewBehavior_Params = global::Adopcat.Mobile.Droid.Resource.Styleable.ScrollingViewBehavior_Params;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Styleable.ScrollingViewBehavior_Params_behavior_overlapTop = global::Adopcat.Mobile.Droid.Resource.Styleable.ScrollingViewBehavior_Params_behavior_overlapTop;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Styleable.SearchView = global::Adopcat.Mobile.Droid.Resource.Styleable.SearchView;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Styleable.SearchView_android_focusable = global::Adopcat.Mobile.Droid.Resource.Styleable.SearchView_android_focusable;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Styleable.SearchView_android_imeOptions = global::Adopcat.Mobile.Droid.Resource.Styleable.SearchView_android_imeOptions;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Styleable.SearchView_android_inputType = global::Adopcat.Mobile.Droid.Resource.Styleable.SearchView_android_inputType;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Styleable.SearchView_android_maxWidth = global::Adopcat.Mobile.Droid.Resource.Styleable.SearchView_android_maxWidth;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Styleable.SearchView_closeIcon = global::Adopcat.Mobile.Droid.Resource.Styleable.SearchView_closeIcon;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Styleable.SearchView_commitIcon = global::Adopcat.Mobile.Droid.Resource.Styleable.SearchView_commitIcon;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Styleable.SearchView_defaultQueryHint = global::Adopcat.Mobile.Droid.Resource.Styleable.SearchView_defaultQueryHint;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Styleable.SearchView_goIcon = global::Adopcat.Mobile.Droid.Resource.Styleable.SearchView_goIcon;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Styleable.SearchView_iconifiedByDefault = global::Adopcat.Mobile.Droid.Resource.Styleable.SearchView_iconifiedByDefault;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Styleable.SearchView_layout = global::Adopcat.Mobile.Droid.Resource.Styleable.SearchView_layout;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Styleable.SearchView_queryBackground = global::Adopcat.Mobile.Droid.Resource.Styleable.SearchView_queryBackground;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Styleable.SearchView_queryHint = global::Adopcat.Mobile.Droid.Resource.Styleable.SearchView_queryHint;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Styleable.SearchView_searchHintIcon = global::Adopcat.Mobile.Droid.Resource.Styleable.SearchView_searchHintIcon;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Styleable.SearchView_searchIcon = global::Adopcat.Mobile.Droid.Resource.Styleable.SearchView_searchIcon;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Styleable.SearchView_submitBackground = global::Adopcat.Mobile.Droid.Resource.Styleable.SearchView_submitBackground;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Styleable.SearchView_suggestionRowLayout = global::Adopcat.Mobile.Droid.Resource.Styleable.SearchView_suggestionRowLayout;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Styleable.SearchView_voiceIcon = global::Adopcat.Mobile.Droid.Resource.Styleable.SearchView_voiceIcon;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Styleable.SnackbarLayout = global::Adopcat.Mobile.Droid.Resource.Styleable.SnackbarLayout;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Styleable.SnackbarLayout_android_maxWidth = global::Adopcat.Mobile.Droid.Resource.Styleable.SnackbarLayout_android_maxWidth;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Styleable.SnackbarLayout_elevation = global::Adopcat.Mobile.Droid.Resource.Styleable.SnackbarLayout_elevation;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Styleable.SnackbarLayout_maxActionInlineWidth = global::Adopcat.Mobile.Droid.Resource.Styleable.SnackbarLayout_maxActionInlineWidth;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Styleable.Spinner = global::Adopcat.Mobile.Droid.Resource.Styleable.Spinner;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Styleable.Spinner_android_dropDownWidth = global::Adopcat.Mobile.Droid.Resource.Styleable.Spinner_android_dropDownWidth;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Styleable.Spinner_android_entries = global::Adopcat.Mobile.Droid.Resource.Styleable.Spinner_android_entries;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Styleable.Spinner_android_popupBackground = global::Adopcat.Mobile.Droid.Resource.Styleable.Spinner_android_popupBackground;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Styleable.Spinner_android_prompt = global::Adopcat.Mobile.Droid.Resource.Styleable.Spinner_android_prompt;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Styleable.Spinner_popupTheme = global::Adopcat.Mobile.Droid.Resource.Styleable.Spinner_popupTheme;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Styleable.SwitchCompat = global::Adopcat.Mobile.Droid.Resource.Styleable.SwitchCompat;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Styleable.SwitchCompat_android_textOff = global::Adopcat.Mobile.Droid.Resource.Styleable.SwitchCompat_android_textOff;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Styleable.SwitchCompat_android_textOn = global::Adopcat.Mobile.Droid.Resource.Styleable.SwitchCompat_android_textOn;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Styleable.SwitchCompat_android_thumb = global::Adopcat.Mobile.Droid.Resource.Styleable.SwitchCompat_android_thumb;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Styleable.SwitchCompat_showText = global::Adopcat.Mobile.Droid.Resource.Styleable.SwitchCompat_showText;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Styleable.SwitchCompat_splitTrack = global::Adopcat.Mobile.Droid.Resource.Styleable.SwitchCompat_splitTrack;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Styleable.SwitchCompat_switchMinWidth = global::Adopcat.Mobile.Droid.Resource.Styleable.SwitchCompat_switchMinWidth;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Styleable.SwitchCompat_switchPadding = global::Adopcat.Mobile.Droid.Resource.Styleable.SwitchCompat_switchPadding;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Styleable.SwitchCompat_switchTextAppearance = global::Adopcat.Mobile.Droid.Resource.Styleable.SwitchCompat_switchTextAppearance;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Styleable.SwitchCompat_thumbTextPadding = global::Adopcat.Mobile.Droid.Resource.Styleable.SwitchCompat_thumbTextPadding;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Styleable.SwitchCompat_track = global::Adopcat.Mobile.Droid.Resource.Styleable.SwitchCompat_track;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Styleable.TabItem = global::Adopcat.Mobile.Droid.Resource.Styleable.TabItem;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Styleable.TabItem_android_icon = global::Adopcat.Mobile.Droid.Resource.Styleable.TabItem_android_icon;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Styleable.TabItem_android_layout = global::Adopcat.Mobile.Droid.Resource.Styleable.TabItem_android_layout;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Styleable.TabItem_android_text = global::Adopcat.Mobile.Droid.Resource.Styleable.TabItem_android_text;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Styleable.TabLayout = global::Adopcat.Mobile.Droid.Resource.Styleable.TabLayout;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Styleable.TabLayout_tabBackground = global::Adopcat.Mobile.Droid.Resource.Styleable.TabLayout_tabBackground;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Styleable.TabLayout_tabContentStart = global::Adopcat.Mobile.Droid.Resource.Styleable.TabLayout_tabContentStart;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Styleable.TabLayout_tabGravity = global::Adopcat.Mobile.Droid.Resource.Styleable.TabLayout_tabGravity;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Styleable.TabLayout_tabIndicatorColor = global::Adopcat.Mobile.Droid.Resource.Styleable.TabLayout_tabIndicatorColor;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Styleable.TabLayout_tabIndicatorHeight = global::Adopcat.Mobile.Droid.Resource.Styleable.TabLayout_tabIndicatorHeight;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Styleable.TabLayout_tabMaxWidth = global::Adopcat.Mobile.Droid.Resource.Styleable.TabLayout_tabMaxWidth;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Styleable.TabLayout_tabMinWidth = global::Adopcat.Mobile.Droid.Resource.Styleable.TabLayout_tabMinWidth;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Styleable.TabLayout_tabMode = global::Adopcat.Mobile.Droid.Resource.Styleable.TabLayout_tabMode;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Styleable.TabLayout_tabPadding = global::Adopcat.Mobile.Droid.Resource.Styleable.TabLayout_tabPadding;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Styleable.TabLayout_tabPaddingBottom = global::Adopcat.Mobile.Droid.Resource.Styleable.TabLayout_tabPaddingBottom;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Styleable.TabLayout_tabPaddingEnd = global::Adopcat.Mobile.Droid.Resource.Styleable.TabLayout_tabPaddingEnd;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Styleable.TabLayout_tabPaddingStart = global::Adopcat.Mobile.Droid.Resource.Styleable.TabLayout_tabPaddingStart;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Styleable.TabLayout_tabPaddingTop = global::Adopcat.Mobile.Droid.Resource.Styleable.TabLayout_tabPaddingTop;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Styleable.TabLayout_tabSelectedTextColor = global::Adopcat.Mobile.Droid.Resource.Styleable.TabLayout_tabSelectedTextColor;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Styleable.TabLayout_tabTextAppearance = global::Adopcat.Mobile.Droid.Resource.Styleable.TabLayout_tabTextAppearance;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Styleable.TabLayout_tabTextColor = global::Adopcat.Mobile.Droid.Resource.Styleable.TabLayout_tabTextColor;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Styleable.TextAppearance = global::Adopcat.Mobile.Droid.Resource.Styleable.TextAppearance;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Styleable.TextAppearance_android_shadowColor = global::Adopcat.Mobile.Droid.Resource.Styleable.TextAppearance_android_shadowColor;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Styleable.TextAppearance_android_shadowDx = global::Adopcat.Mobile.Droid.Resource.Styleable.TextAppearance_android_shadowDx;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Styleable.TextAppearance_android_shadowDy = global::Adopcat.Mobile.Droid.Resource.Styleable.TextAppearance_android_shadowDy;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Styleable.TextAppearance_android_shadowRadius = global::Adopcat.Mobile.Droid.Resource.Styleable.TextAppearance_android_shadowRadius;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Styleable.TextAppearance_android_textColor = global::Adopcat.Mobile.Droid.Resource.Styleable.TextAppearance_android_textColor;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Styleable.TextAppearance_android_textSize = global::Adopcat.Mobile.Droid.Resource.Styleable.TextAppearance_android_textSize;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Styleable.TextAppearance_android_textStyle = global::Adopcat.Mobile.Droid.Resource.Styleable.TextAppearance_android_textStyle;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Styleable.TextAppearance_android_typeface = global::Adopcat.Mobile.Droid.Resource.Styleable.TextAppearance_android_typeface;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Styleable.TextAppearance_textAllCaps = global::Adopcat.Mobile.Droid.Resource.Styleable.TextAppearance_textAllCaps;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Styleable.TextInputLayout = global::Adopcat.Mobile.Droid.Resource.Styleable.TextInputLayout;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Styleable.TextInputLayout_android_hint = global::Adopcat.Mobile.Droid.Resource.Styleable.TextInputLayout_android_hint;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Styleable.TextInputLayout_android_textColorHint = global::Adopcat.Mobile.Droid.Resource.Styleable.TextInputLayout_android_textColorHint;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Styleable.TextInputLayout_counterEnabled = global::Adopcat.Mobile.Droid.Resource.Styleable.TextInputLayout_counterEnabled;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Styleable.TextInputLayout_counterMaxLength = global::Adopcat.Mobile.Droid.Resource.Styleable.TextInputLayout_counterMaxLength;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Styleable.TextInputLayout_counterOverflowTextAppearance = global::Adopcat.Mobile.Droid.Resource.Styleable.TextInputLayout_counterOverflowTextAppearance;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Styleable.TextInputLayout_counterTextAppearance = global::Adopcat.Mobile.Droid.Resource.Styleable.TextInputLayout_counterTextAppearance;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Styleable.TextInputLayout_errorEnabled = global::Adopcat.Mobile.Droid.Resource.Styleable.TextInputLayout_errorEnabled;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Styleable.TextInputLayout_errorTextAppearance = global::Adopcat.Mobile.Droid.Resource.Styleable.TextInputLayout_errorTextAppearance;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Styleable.TextInputLayout_hintAnimationEnabled = global::Adopcat.Mobile.Droid.Resource.Styleable.TextInputLayout_hintAnimationEnabled;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Styleable.TextInputLayout_hintEnabled = global::Adopcat.Mobile.Droid.Resource.Styleable.TextInputLayout_hintEnabled;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Styleable.TextInputLayout_hintTextAppearance = global::Adopcat.Mobile.Droid.Resource.Styleable.TextInputLayout_hintTextAppearance;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Styleable.Toolbar = global::Adopcat.Mobile.Droid.Resource.Styleable.Toolbar;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Styleable.Toolbar_android_gravity = global::Adopcat.Mobile.Droid.Resource.Styleable.Toolbar_android_gravity;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Styleable.Toolbar_android_minHeight = global::Adopcat.Mobile.Droid.Resource.Styleable.Toolbar_android_minHeight;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Styleable.Toolbar_collapseContentDescription = global::Adopcat.Mobile.Droid.Resource.Styleable.Toolbar_collapseContentDescription;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Styleable.Toolbar_collapseIcon = global::Adopcat.Mobile.Droid.Resource.Styleable.Toolbar_collapseIcon;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Styleable.Toolbar_contentInsetEnd = global::Adopcat.Mobile.Droid.Resource.Styleable.Toolbar_contentInsetEnd;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Styleable.Toolbar_contentInsetLeft = global::Adopcat.Mobile.Droid.Resource.Styleable.Toolbar_contentInsetLeft;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Styleable.Toolbar_contentInsetRight = global::Adopcat.Mobile.Droid.Resource.Styleable.Toolbar_contentInsetRight;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Styleable.Toolbar_contentInsetStart = global::Adopcat.Mobile.Droid.Resource.Styleable.Toolbar_contentInsetStart;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Styleable.Toolbar_logo = global::Adopcat.Mobile.Droid.Resource.Styleable.Toolbar_logo;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Styleable.Toolbar_logoDescription = global::Adopcat.Mobile.Droid.Resource.Styleable.Toolbar_logoDescription;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Styleable.Toolbar_maxButtonHeight = global::Adopcat.Mobile.Droid.Resource.Styleable.Toolbar_maxButtonHeight;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Styleable.Toolbar_navigationContentDescription = global::Adopcat.Mobile.Droid.Resource.Styleable.Toolbar_navigationContentDescription;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Styleable.Toolbar_navigationIcon = global::Adopcat.Mobile.Droid.Resource.Styleable.Toolbar_navigationIcon;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Styleable.Toolbar_popupTheme = global::Adopcat.Mobile.Droid.Resource.Styleable.Toolbar_popupTheme;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Styleable.Toolbar_subtitle = global::Adopcat.Mobile.Droid.Resource.Styleable.Toolbar_subtitle;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Styleable.Toolbar_subtitleTextAppearance = global::Adopcat.Mobile.Droid.Resource.Styleable.Toolbar_subtitleTextAppearance;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Styleable.Toolbar_subtitleTextColor = global::Adopcat.Mobile.Droid.Resource.Styleable.Toolbar_subtitleTextColor;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Styleable.Toolbar_title = global::Adopcat.Mobile.Droid.Resource.Styleable.Toolbar_title;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Styleable.Toolbar_titleMarginBottom = global::Adopcat.Mobile.Droid.Resource.Styleable.Toolbar_titleMarginBottom;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Styleable.Toolbar_titleMarginEnd = global::Adopcat.Mobile.Droid.Resource.Styleable.Toolbar_titleMarginEnd;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Styleable.Toolbar_titleMarginStart = global::Adopcat.Mobile.Droid.Resource.Styleable.Toolbar_titleMarginStart;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Styleable.Toolbar_titleMarginTop = global::Adopcat.Mobile.Droid.Resource.Styleable.Toolbar_titleMarginTop;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Styleable.Toolbar_titleMargins = global::Adopcat.Mobile.Droid.Resource.Styleable.Toolbar_titleMargins;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Styleable.Toolbar_titleTextAppearance = global::Adopcat.Mobile.Droid.Resource.Styleable.Toolbar_titleTextAppearance;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Styleable.Toolbar_titleTextColor = global::Adopcat.Mobile.Droid.Resource.Styleable.Toolbar_titleTextColor;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Styleable.View = global::Adopcat.Mobile.Droid.Resource.Styleable.View;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Styleable.View_android_focusable = global::Adopcat.Mobile.Droid.Resource.Styleable.View_android_focusable;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Styleable.View_android_theme = global::Adopcat.Mobile.Droid.Resource.Styleable.View_android_theme;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Styleable.View_paddingEnd = global::Adopcat.Mobile.Droid.Resource.Styleable.View_paddingEnd;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Styleable.View_paddingStart = global::Adopcat.Mobile.Droid.Resource.Styleable.View_paddingStart;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Styleable.View_theme = global::Adopcat.Mobile.Droid.Resource.Styleable.View_theme;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Styleable.ViewBackgroundHelper = global::Adopcat.Mobile.Droid.Resource.Styleable.ViewBackgroundHelper;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Styleable.ViewBackgroundHelper_android_background = global::Adopcat.Mobile.Droid.Resource.Styleable.ViewBackgroundHelper_android_background;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Styleable.ViewBackgroundHelper_backgroundTint = global::Adopcat.Mobile.Droid.Resource.Styleable.ViewBackgroundHelper_backgroundTint;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Styleable.ViewBackgroundHelper_backgroundTintMode = global::Adopcat.Mobile.Droid.Resource.Styleable.ViewBackgroundHelper_backgroundTintMode;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Styleable.ViewStubCompat = global::Adopcat.Mobile.Droid.Resource.Styleable.ViewStubCompat;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Styleable.ViewStubCompat_android_id = global::Adopcat.Mobile.Droid.Resource.Styleable.ViewStubCompat_android_id;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Styleable.ViewStubCompat_android_inflatedId = global::Adopcat.Mobile.Droid.Resource.Styleable.ViewStubCompat_android_inflatedId;
+			global::PCLAppConfig.FileSystemStream.Android.Resource.Styleable.ViewStubCompat_android_layout = global::Adopcat.Mobile.Droid.Resource.Styleable.ViewStubCompat_android_layout;
+			global::PCLStorage.Resource.String.ApplicationName = global::Adopcat.Mobile.Droid.Resource.String.ApplicationName;
+			global::PCLStorage.Resource.String.Hello = global::Adopcat.Mobile.Droid.Resource.String.Hello;
 			global::Xamarin.Forms.Platform.Android.Resource.Attribute.actionBarSize = global::Adopcat.Mobile.Droid.Resource.Attribute.actionBarSize;
 		}
 		
@@ -1054,29 +2843,29 @@ namespace Adopcat.Mobile.Droid
 		public partial class Boolean
 		{
 			
-			// aapt resource value: 0x7f0c0003
-			public const int abc_action_bar_embed_tabs = 2131492867;
+			// aapt resource value: 0x7f0d0003
+			public const int abc_action_bar_embed_tabs = 2131558403;
 			
-			// aapt resource value: 0x7f0c0001
-			public const int abc_action_bar_embed_tabs_pre_jb = 2131492865;
+			// aapt resource value: 0x7f0d0001
+			public const int abc_action_bar_embed_tabs_pre_jb = 2131558401;
 			
-			// aapt resource value: 0x7f0c0004
-			public const int abc_action_bar_expanded_action_views_exclusive = 2131492868;
+			// aapt resource value: 0x7f0d0004
+			public const int abc_action_bar_expanded_action_views_exclusive = 2131558404;
 			
-			// aapt resource value: 0x7f0c0000
-			public const int abc_allow_stacked_button_bar = 2131492864;
+			// aapt resource value: 0x7f0d0000
+			public const int abc_allow_stacked_button_bar = 2131558400;
 			
-			// aapt resource value: 0x7f0c0005
-			public const int abc_config_actionMenuItemAllCaps = 2131492869;
+			// aapt resource value: 0x7f0d0005
+			public const int abc_config_actionMenuItemAllCaps = 2131558405;
 			
-			// aapt resource value: 0x7f0c0002
-			public const int abc_config_allowActionMenuItemTextWithIcon = 2131492866;
+			// aapt resource value: 0x7f0d0002
+			public const int abc_config_allowActionMenuItemTextWithIcon = 2131558402;
 			
-			// aapt resource value: 0x7f0c0006
-			public const int abc_config_closeDialogWhenTouchOutside = 2131492870;
+			// aapt resource value: 0x7f0d0006
+			public const int abc_config_closeDialogWhenTouchOutside = 2131558406;
 			
-			// aapt resource value: 0x7f0c0007
-			public const int abc_config_showMenuShortcutsWhenKeyboardPresent = 2131492871;
+			// aapt resource value: 0x7f0d0007
+			public const int abc_config_showMenuShortcutsWhenKeyboardPresent = 2131558407;
 			
 			static Boolean()
 			{
@@ -1091,269 +2880,269 @@ namespace Adopcat.Mobile.Droid
 		public partial class Color
 		{
 			
-			// aapt resource value: 0x7f0b004c
-			public const int abc_background_cache_hint_selector_material_dark = 2131427404;
+			// aapt resource value: 0x7f0c004c
+			public const int abc_background_cache_hint_selector_material_dark = 2131492940;
 			
-			// aapt resource value: 0x7f0b004d
-			public const int abc_background_cache_hint_selector_material_light = 2131427405;
+			// aapt resource value: 0x7f0c004d
+			public const int abc_background_cache_hint_selector_material_light = 2131492941;
 			
-			// aapt resource value: 0x7f0b004e
-			public const int abc_color_highlight_material = 2131427406;
+			// aapt resource value: 0x7f0c004e
+			public const int abc_color_highlight_material = 2131492942;
 			
-			// aapt resource value: 0x7f0b0004
-			public const int abc_input_method_navigation_guard = 2131427332;
+			// aapt resource value: 0x7f0c0004
+			public const int abc_input_method_navigation_guard = 2131492868;
 			
-			// aapt resource value: 0x7f0b004f
-			public const int abc_primary_text_disable_only_material_dark = 2131427407;
+			// aapt resource value: 0x7f0c004f
+			public const int abc_primary_text_disable_only_material_dark = 2131492943;
 			
-			// aapt resource value: 0x7f0b0050
-			public const int abc_primary_text_disable_only_material_light = 2131427408;
+			// aapt resource value: 0x7f0c0050
+			public const int abc_primary_text_disable_only_material_light = 2131492944;
 			
-			// aapt resource value: 0x7f0b0051
-			public const int abc_primary_text_material_dark = 2131427409;
+			// aapt resource value: 0x7f0c0051
+			public const int abc_primary_text_material_dark = 2131492945;
 			
-			// aapt resource value: 0x7f0b0052
-			public const int abc_primary_text_material_light = 2131427410;
+			// aapt resource value: 0x7f0c0052
+			public const int abc_primary_text_material_light = 2131492946;
 			
-			// aapt resource value: 0x7f0b0053
-			public const int abc_search_url_text = 2131427411;
+			// aapt resource value: 0x7f0c0053
+			public const int abc_search_url_text = 2131492947;
 			
-			// aapt resource value: 0x7f0b0005
-			public const int abc_search_url_text_normal = 2131427333;
+			// aapt resource value: 0x7f0c0005
+			public const int abc_search_url_text_normal = 2131492869;
 			
-			// aapt resource value: 0x7f0b0006
-			public const int abc_search_url_text_pressed = 2131427334;
+			// aapt resource value: 0x7f0c0006
+			public const int abc_search_url_text_pressed = 2131492870;
 			
-			// aapt resource value: 0x7f0b0007
-			public const int abc_search_url_text_selected = 2131427335;
+			// aapt resource value: 0x7f0c0007
+			public const int abc_search_url_text_selected = 2131492871;
 			
-			// aapt resource value: 0x7f0b0054
-			public const int abc_secondary_text_material_dark = 2131427412;
+			// aapt resource value: 0x7f0c0054
+			public const int abc_secondary_text_material_dark = 2131492948;
 			
-			// aapt resource value: 0x7f0b0055
-			public const int abc_secondary_text_material_light = 2131427413;
+			// aapt resource value: 0x7f0c0055
+			public const int abc_secondary_text_material_light = 2131492949;
 			
-			// aapt resource value: 0x7f0b004a
-			public const int accent = 2131427402;
+			// aapt resource value: 0x7f0c004a
+			public const int accent = 2131492938;
 			
-			// aapt resource value: 0x7f0b0008
-			public const int accent_material_dark = 2131427336;
+			// aapt resource value: 0x7f0c0008
+			public const int accent_material_dark = 2131492872;
 			
-			// aapt resource value: 0x7f0b0009
-			public const int accent_material_light = 2131427337;
+			// aapt resource value: 0x7f0c0009
+			public const int accent_material_light = 2131492873;
 			
-			// aapt resource value: 0x7f0b000a
-			public const int background_floating_material_dark = 2131427338;
+			// aapt resource value: 0x7f0c000a
+			public const int background_floating_material_dark = 2131492874;
 			
-			// aapt resource value: 0x7f0b000b
-			public const int background_floating_material_light = 2131427339;
+			// aapt resource value: 0x7f0c000b
+			public const int background_floating_material_light = 2131492875;
 			
-			// aapt resource value: 0x7f0b000c
-			public const int background_material_dark = 2131427340;
+			// aapt resource value: 0x7f0c000c
+			public const int background_material_dark = 2131492876;
 			
-			// aapt resource value: 0x7f0b000d
-			public const int background_material_light = 2131427341;
+			// aapt resource value: 0x7f0c000d
+			public const int background_material_light = 2131492877;
 			
-			// aapt resource value: 0x7f0b000e
-			public const int bright_foreground_disabled_material_dark = 2131427342;
+			// aapt resource value: 0x7f0c000e
+			public const int bright_foreground_disabled_material_dark = 2131492878;
 			
-			// aapt resource value: 0x7f0b000f
-			public const int bright_foreground_disabled_material_light = 2131427343;
+			// aapt resource value: 0x7f0c000f
+			public const int bright_foreground_disabled_material_light = 2131492879;
 			
-			// aapt resource value: 0x7f0b0010
-			public const int bright_foreground_inverse_material_dark = 2131427344;
+			// aapt resource value: 0x7f0c0010
+			public const int bright_foreground_inverse_material_dark = 2131492880;
 			
-			// aapt resource value: 0x7f0b0011
-			public const int bright_foreground_inverse_material_light = 2131427345;
+			// aapt resource value: 0x7f0c0011
+			public const int bright_foreground_inverse_material_light = 2131492881;
 			
-			// aapt resource value: 0x7f0b0012
-			public const int bright_foreground_material_dark = 2131427346;
+			// aapt resource value: 0x7f0c0012
+			public const int bright_foreground_material_dark = 2131492882;
 			
-			// aapt resource value: 0x7f0b0013
-			public const int bright_foreground_material_light = 2131427347;
+			// aapt resource value: 0x7f0c0013
+			public const int bright_foreground_material_light = 2131492883;
 			
-			// aapt resource value: 0x7f0b0014
-			public const int button_material_dark = 2131427348;
+			// aapt resource value: 0x7f0c0014
+			public const int button_material_dark = 2131492884;
 			
-			// aapt resource value: 0x7f0b0015
-			public const int button_material_light = 2131427349;
+			// aapt resource value: 0x7f0c0015
+			public const int button_material_light = 2131492885;
 			
-			// aapt resource value: 0x7f0b0000
-			public const int cardview_dark_background = 2131427328;
+			// aapt resource value: 0x7f0c0000
+			public const int cardview_dark_background = 2131492864;
 			
-			// aapt resource value: 0x7f0b0001
-			public const int cardview_light_background = 2131427329;
+			// aapt resource value: 0x7f0c0001
+			public const int cardview_light_background = 2131492865;
 			
-			// aapt resource value: 0x7f0b0002
-			public const int cardview_shadow_end_color = 2131427330;
+			// aapt resource value: 0x7f0c0002
+			public const int cardview_shadow_end_color = 2131492866;
 			
-			// aapt resource value: 0x7f0b0003
-			public const int cardview_shadow_start_color = 2131427331;
+			// aapt resource value: 0x7f0c0003
+			public const int cardview_shadow_start_color = 2131492867;
 			
-			// aapt resource value: 0x7f0b003e
-			public const int design_fab_shadow_end_color = 2131427390;
+			// aapt resource value: 0x7f0c003e
+			public const int design_fab_shadow_end_color = 2131492926;
 			
-			// aapt resource value: 0x7f0b003f
-			public const int design_fab_shadow_mid_color = 2131427391;
+			// aapt resource value: 0x7f0c003f
+			public const int design_fab_shadow_mid_color = 2131492927;
 			
-			// aapt resource value: 0x7f0b0040
-			public const int design_fab_shadow_start_color = 2131427392;
+			// aapt resource value: 0x7f0c0040
+			public const int design_fab_shadow_start_color = 2131492928;
 			
-			// aapt resource value: 0x7f0b0041
-			public const int design_fab_stroke_end_inner_color = 2131427393;
+			// aapt resource value: 0x7f0c0041
+			public const int design_fab_stroke_end_inner_color = 2131492929;
 			
-			// aapt resource value: 0x7f0b0042
-			public const int design_fab_stroke_end_outer_color = 2131427394;
+			// aapt resource value: 0x7f0c0042
+			public const int design_fab_stroke_end_outer_color = 2131492930;
 			
-			// aapt resource value: 0x7f0b0043
-			public const int design_fab_stroke_top_inner_color = 2131427395;
+			// aapt resource value: 0x7f0c0043
+			public const int design_fab_stroke_top_inner_color = 2131492931;
 			
-			// aapt resource value: 0x7f0b0044
-			public const int design_fab_stroke_top_outer_color = 2131427396;
+			// aapt resource value: 0x7f0c0044
+			public const int design_fab_stroke_top_outer_color = 2131492932;
 			
-			// aapt resource value: 0x7f0b0045
-			public const int design_snackbar_background_color = 2131427397;
+			// aapt resource value: 0x7f0c0045
+			public const int design_snackbar_background_color = 2131492933;
 			
-			// aapt resource value: 0x7f0b0046
-			public const int design_textinput_error_color_dark = 2131427398;
+			// aapt resource value: 0x7f0c0046
+			public const int design_textinput_error_color_dark = 2131492934;
 			
-			// aapt resource value: 0x7f0b0047
-			public const int design_textinput_error_color_light = 2131427399;
+			// aapt resource value: 0x7f0c0047
+			public const int design_textinput_error_color_light = 2131492935;
 			
-			// aapt resource value: 0x7f0b0016
-			public const int dim_foreground_disabled_material_dark = 2131427350;
+			// aapt resource value: 0x7f0c0016
+			public const int dim_foreground_disabled_material_dark = 2131492886;
 			
-			// aapt resource value: 0x7f0b0017
-			public const int dim_foreground_disabled_material_light = 2131427351;
+			// aapt resource value: 0x7f0c0017
+			public const int dim_foreground_disabled_material_light = 2131492887;
 			
-			// aapt resource value: 0x7f0b0018
-			public const int dim_foreground_material_dark = 2131427352;
+			// aapt resource value: 0x7f0c0018
+			public const int dim_foreground_material_dark = 2131492888;
 			
-			// aapt resource value: 0x7f0b0019
-			public const int dim_foreground_material_light = 2131427353;
+			// aapt resource value: 0x7f0c0019
+			public const int dim_foreground_material_light = 2131492889;
 			
-			// aapt resource value: 0x7f0b001a
-			public const int foreground_material_dark = 2131427354;
+			// aapt resource value: 0x7f0c001a
+			public const int foreground_material_dark = 2131492890;
 			
-			// aapt resource value: 0x7f0b001b
-			public const int foreground_material_light = 2131427355;
+			// aapt resource value: 0x7f0c001b
+			public const int foreground_material_light = 2131492891;
 			
-			// aapt resource value: 0x7f0b001c
-			public const int highlighted_text_material_dark = 2131427356;
+			// aapt resource value: 0x7f0c001c
+			public const int highlighted_text_material_dark = 2131492892;
 			
-			// aapt resource value: 0x7f0b001d
-			public const int highlighted_text_material_light = 2131427357;
+			// aapt resource value: 0x7f0c001d
+			public const int highlighted_text_material_light = 2131492893;
 			
-			// aapt resource value: 0x7f0b001e
-			public const int hint_foreground_material_dark = 2131427358;
+			// aapt resource value: 0x7f0c001e
+			public const int hint_foreground_material_dark = 2131492894;
 			
-			// aapt resource value: 0x7f0b001f
-			public const int hint_foreground_material_light = 2131427359;
+			// aapt resource value: 0x7f0c001f
+			public const int hint_foreground_material_light = 2131492895;
 			
-			// aapt resource value: 0x7f0b0020
-			public const int material_blue_grey_800 = 2131427360;
+			// aapt resource value: 0x7f0c0020
+			public const int material_blue_grey_800 = 2131492896;
 			
-			// aapt resource value: 0x7f0b0021
-			public const int material_blue_grey_900 = 2131427361;
+			// aapt resource value: 0x7f0c0021
+			public const int material_blue_grey_900 = 2131492897;
 			
-			// aapt resource value: 0x7f0b0022
-			public const int material_blue_grey_950 = 2131427362;
+			// aapt resource value: 0x7f0c0022
+			public const int material_blue_grey_950 = 2131492898;
 			
-			// aapt resource value: 0x7f0b0023
-			public const int material_deep_teal_200 = 2131427363;
+			// aapt resource value: 0x7f0c0023
+			public const int material_deep_teal_200 = 2131492899;
 			
-			// aapt resource value: 0x7f0b0024
-			public const int material_deep_teal_500 = 2131427364;
+			// aapt resource value: 0x7f0c0024
+			public const int material_deep_teal_500 = 2131492900;
 			
-			// aapt resource value: 0x7f0b0025
-			public const int material_grey_100 = 2131427365;
+			// aapt resource value: 0x7f0c0025
+			public const int material_grey_100 = 2131492901;
 			
-			// aapt resource value: 0x7f0b0026
-			public const int material_grey_300 = 2131427366;
+			// aapt resource value: 0x7f0c0026
+			public const int material_grey_300 = 2131492902;
 			
-			// aapt resource value: 0x7f0b0027
-			public const int material_grey_50 = 2131427367;
+			// aapt resource value: 0x7f0c0027
+			public const int material_grey_50 = 2131492903;
 			
-			// aapt resource value: 0x7f0b0028
-			public const int material_grey_600 = 2131427368;
+			// aapt resource value: 0x7f0c0028
+			public const int material_grey_600 = 2131492904;
 			
-			// aapt resource value: 0x7f0b0029
-			public const int material_grey_800 = 2131427369;
+			// aapt resource value: 0x7f0c0029
+			public const int material_grey_800 = 2131492905;
 			
-			// aapt resource value: 0x7f0b002a
-			public const int material_grey_850 = 2131427370;
+			// aapt resource value: 0x7f0c002a
+			public const int material_grey_850 = 2131492906;
 			
-			// aapt resource value: 0x7f0b002b
-			public const int material_grey_900 = 2131427371;
+			// aapt resource value: 0x7f0c002b
+			public const int material_grey_900 = 2131492907;
 			
-			// aapt resource value: 0x7f0b0048
-			public const int primary = 2131427400;
+			// aapt resource value: 0x7f0c0048
+			public const int primary = 2131492936;
 			
-			// aapt resource value: 0x7f0b0049
-			public const int primaryDark = 2131427401;
+			// aapt resource value: 0x7f0c0049
+			public const int primaryDark = 2131492937;
 			
-			// aapt resource value: 0x7f0b002c
-			public const int primary_dark_material_dark = 2131427372;
+			// aapt resource value: 0x7f0c002c
+			public const int primary_dark_material_dark = 2131492908;
 			
-			// aapt resource value: 0x7f0b002d
-			public const int primary_dark_material_light = 2131427373;
+			// aapt resource value: 0x7f0c002d
+			public const int primary_dark_material_light = 2131492909;
 			
-			// aapt resource value: 0x7f0b002e
-			public const int primary_material_dark = 2131427374;
+			// aapt resource value: 0x7f0c002e
+			public const int primary_material_dark = 2131492910;
 			
-			// aapt resource value: 0x7f0b002f
-			public const int primary_material_light = 2131427375;
+			// aapt resource value: 0x7f0c002f
+			public const int primary_material_light = 2131492911;
 			
-			// aapt resource value: 0x7f0b0030
-			public const int primary_text_default_material_dark = 2131427376;
+			// aapt resource value: 0x7f0c0030
+			public const int primary_text_default_material_dark = 2131492912;
 			
-			// aapt resource value: 0x7f0b0031
-			public const int primary_text_default_material_light = 2131427377;
+			// aapt resource value: 0x7f0c0031
+			public const int primary_text_default_material_light = 2131492913;
 			
-			// aapt resource value: 0x7f0b0032
-			public const int primary_text_disabled_material_dark = 2131427378;
+			// aapt resource value: 0x7f0c0032
+			public const int primary_text_disabled_material_dark = 2131492914;
 			
-			// aapt resource value: 0x7f0b0033
-			public const int primary_text_disabled_material_light = 2131427379;
+			// aapt resource value: 0x7f0c0033
+			public const int primary_text_disabled_material_light = 2131492915;
 			
-			// aapt resource value: 0x7f0b0034
-			public const int ripple_material_dark = 2131427380;
+			// aapt resource value: 0x7f0c0034
+			public const int ripple_material_dark = 2131492916;
 			
-			// aapt resource value: 0x7f0b0035
-			public const int ripple_material_light = 2131427381;
+			// aapt resource value: 0x7f0c0035
+			public const int ripple_material_light = 2131492917;
 			
-			// aapt resource value: 0x7f0b0036
-			public const int secondary_text_default_material_dark = 2131427382;
+			// aapt resource value: 0x7f0c0036
+			public const int secondary_text_default_material_dark = 2131492918;
 			
-			// aapt resource value: 0x7f0b0037
-			public const int secondary_text_default_material_light = 2131427383;
+			// aapt resource value: 0x7f0c0037
+			public const int secondary_text_default_material_light = 2131492919;
 			
-			// aapt resource value: 0x7f0b0038
-			public const int secondary_text_disabled_material_dark = 2131427384;
+			// aapt resource value: 0x7f0c0038
+			public const int secondary_text_disabled_material_dark = 2131492920;
 			
-			// aapt resource value: 0x7f0b0039
-			public const int secondary_text_disabled_material_light = 2131427385;
+			// aapt resource value: 0x7f0c0039
+			public const int secondary_text_disabled_material_light = 2131492921;
 			
-			// aapt resource value: 0x7f0b003a
-			public const int switch_thumb_disabled_material_dark = 2131427386;
+			// aapt resource value: 0x7f0c003a
+			public const int switch_thumb_disabled_material_dark = 2131492922;
 			
-			// aapt resource value: 0x7f0b003b
-			public const int switch_thumb_disabled_material_light = 2131427387;
+			// aapt resource value: 0x7f0c003b
+			public const int switch_thumb_disabled_material_light = 2131492923;
 			
-			// aapt resource value: 0x7f0b0056
-			public const int switch_thumb_material_dark = 2131427414;
+			// aapt resource value: 0x7f0c0056
+			public const int switch_thumb_material_dark = 2131492950;
 			
-			// aapt resource value: 0x7f0b0057
-			public const int switch_thumb_material_light = 2131427415;
+			// aapt resource value: 0x7f0c0057
+			public const int switch_thumb_material_light = 2131492951;
 			
-			// aapt resource value: 0x7f0b003c
-			public const int switch_thumb_normal_material_dark = 2131427388;
+			// aapt resource value: 0x7f0c003c
+			public const int switch_thumb_normal_material_dark = 2131492924;
 			
-			// aapt resource value: 0x7f0b003d
-			public const int switch_thumb_normal_material_light = 2131427389;
+			// aapt resource value: 0x7f0c003d
+			public const int switch_thumb_normal_material_light = 2131492925;
 			
-			// aapt resource value: 0x7f0b004b
-			public const int window_background = 2131427403;
+			// aapt resource value: 0x7f0c004b
+			public const int window_background = 2131492939;
 			
 			static Color()
 			{
@@ -1368,353 +3157,353 @@ namespace Adopcat.Mobile.Droid
 		public partial class Dimension
 		{
 			
-			// aapt resource value: 0x7f060019
-			public const int abc_action_bar_content_inset_material = 2131099673;
+			// aapt resource value: 0x7f070019
+			public const int abc_action_bar_content_inset_material = 2131165209;
 			
-			// aapt resource value: 0x7f06000d
-			public const int abc_action_bar_default_height_material = 2131099661;
+			// aapt resource value: 0x7f07000d
+			public const int abc_action_bar_default_height_material = 2131165197;
 			
-			// aapt resource value: 0x7f06001a
-			public const int abc_action_bar_default_padding_end_material = 2131099674;
+			// aapt resource value: 0x7f07001a
+			public const int abc_action_bar_default_padding_end_material = 2131165210;
 			
-			// aapt resource value: 0x7f06001b
-			public const int abc_action_bar_default_padding_start_material = 2131099675;
+			// aapt resource value: 0x7f07001b
+			public const int abc_action_bar_default_padding_start_material = 2131165211;
 			
-			// aapt resource value: 0x7f06001d
-			public const int abc_action_bar_icon_vertical_padding_material = 2131099677;
+			// aapt resource value: 0x7f07001d
+			public const int abc_action_bar_icon_vertical_padding_material = 2131165213;
 			
-			// aapt resource value: 0x7f06001e
-			public const int abc_action_bar_overflow_padding_end_material = 2131099678;
+			// aapt resource value: 0x7f07001e
+			public const int abc_action_bar_overflow_padding_end_material = 2131165214;
 			
-			// aapt resource value: 0x7f06001f
-			public const int abc_action_bar_overflow_padding_start_material = 2131099679;
+			// aapt resource value: 0x7f07001f
+			public const int abc_action_bar_overflow_padding_start_material = 2131165215;
 			
-			// aapt resource value: 0x7f06000e
-			public const int abc_action_bar_progress_bar_size = 2131099662;
+			// aapt resource value: 0x7f07000e
+			public const int abc_action_bar_progress_bar_size = 2131165198;
 			
-			// aapt resource value: 0x7f060020
-			public const int abc_action_bar_stacked_max_height = 2131099680;
+			// aapt resource value: 0x7f070020
+			public const int abc_action_bar_stacked_max_height = 2131165216;
 			
-			// aapt resource value: 0x7f060021
-			public const int abc_action_bar_stacked_tab_max_width = 2131099681;
+			// aapt resource value: 0x7f070021
+			public const int abc_action_bar_stacked_tab_max_width = 2131165217;
 			
-			// aapt resource value: 0x7f060022
-			public const int abc_action_bar_subtitle_bottom_margin_material = 2131099682;
+			// aapt resource value: 0x7f070022
+			public const int abc_action_bar_subtitle_bottom_margin_material = 2131165218;
 			
-			// aapt resource value: 0x7f060023
-			public const int abc_action_bar_subtitle_top_margin_material = 2131099683;
+			// aapt resource value: 0x7f070023
+			public const int abc_action_bar_subtitle_top_margin_material = 2131165219;
 			
-			// aapt resource value: 0x7f060024
-			public const int abc_action_button_min_height_material = 2131099684;
+			// aapt resource value: 0x7f070024
+			public const int abc_action_button_min_height_material = 2131165220;
 			
-			// aapt resource value: 0x7f060025
-			public const int abc_action_button_min_width_material = 2131099685;
+			// aapt resource value: 0x7f070025
+			public const int abc_action_button_min_width_material = 2131165221;
 			
-			// aapt resource value: 0x7f060026
-			public const int abc_action_button_min_width_overflow_material = 2131099686;
+			// aapt resource value: 0x7f070026
+			public const int abc_action_button_min_width_overflow_material = 2131165222;
 			
-			// aapt resource value: 0x7f06000c
-			public const int abc_alert_dialog_button_bar_height = 2131099660;
+			// aapt resource value: 0x7f07000c
+			public const int abc_alert_dialog_button_bar_height = 2131165196;
 			
-			// aapt resource value: 0x7f060027
-			public const int abc_button_inset_horizontal_material = 2131099687;
+			// aapt resource value: 0x7f070027
+			public const int abc_button_inset_horizontal_material = 2131165223;
 			
-			// aapt resource value: 0x7f060028
-			public const int abc_button_inset_vertical_material = 2131099688;
+			// aapt resource value: 0x7f070028
+			public const int abc_button_inset_vertical_material = 2131165224;
 			
-			// aapt resource value: 0x7f060029
-			public const int abc_button_padding_horizontal_material = 2131099689;
+			// aapt resource value: 0x7f070029
+			public const int abc_button_padding_horizontal_material = 2131165225;
 			
-			// aapt resource value: 0x7f06002a
-			public const int abc_button_padding_vertical_material = 2131099690;
+			// aapt resource value: 0x7f07002a
+			public const int abc_button_padding_vertical_material = 2131165226;
 			
-			// aapt resource value: 0x7f060011
-			public const int abc_config_prefDialogWidth = 2131099665;
+			// aapt resource value: 0x7f070011
+			public const int abc_config_prefDialogWidth = 2131165201;
 			
-			// aapt resource value: 0x7f06002b
-			public const int abc_control_corner_material = 2131099691;
+			// aapt resource value: 0x7f07002b
+			public const int abc_control_corner_material = 2131165227;
 			
-			// aapt resource value: 0x7f06002c
-			public const int abc_control_inset_material = 2131099692;
+			// aapt resource value: 0x7f07002c
+			public const int abc_control_inset_material = 2131165228;
 			
-			// aapt resource value: 0x7f06002d
-			public const int abc_control_padding_material = 2131099693;
+			// aapt resource value: 0x7f07002d
+			public const int abc_control_padding_material = 2131165229;
 			
-			// aapt resource value: 0x7f060012
-			public const int abc_dialog_fixed_height_major = 2131099666;
+			// aapt resource value: 0x7f070012
+			public const int abc_dialog_fixed_height_major = 2131165202;
 			
-			// aapt resource value: 0x7f060013
-			public const int abc_dialog_fixed_height_minor = 2131099667;
+			// aapt resource value: 0x7f070013
+			public const int abc_dialog_fixed_height_minor = 2131165203;
 			
-			// aapt resource value: 0x7f060014
-			public const int abc_dialog_fixed_width_major = 2131099668;
+			// aapt resource value: 0x7f070014
+			public const int abc_dialog_fixed_width_major = 2131165204;
 			
-			// aapt resource value: 0x7f060015
-			public const int abc_dialog_fixed_width_minor = 2131099669;
+			// aapt resource value: 0x7f070015
+			public const int abc_dialog_fixed_width_minor = 2131165205;
 			
-			// aapt resource value: 0x7f06002e
-			public const int abc_dialog_list_padding_vertical_material = 2131099694;
+			// aapt resource value: 0x7f07002e
+			public const int abc_dialog_list_padding_vertical_material = 2131165230;
 			
-			// aapt resource value: 0x7f060016
-			public const int abc_dialog_min_width_major = 2131099670;
+			// aapt resource value: 0x7f070016
+			public const int abc_dialog_min_width_major = 2131165206;
 			
-			// aapt resource value: 0x7f060017
-			public const int abc_dialog_min_width_minor = 2131099671;
+			// aapt resource value: 0x7f070017
+			public const int abc_dialog_min_width_minor = 2131165207;
 			
-			// aapt resource value: 0x7f06002f
-			public const int abc_dialog_padding_material = 2131099695;
+			// aapt resource value: 0x7f07002f
+			public const int abc_dialog_padding_material = 2131165231;
 			
-			// aapt resource value: 0x7f060030
-			public const int abc_dialog_padding_top_material = 2131099696;
+			// aapt resource value: 0x7f070030
+			public const int abc_dialog_padding_top_material = 2131165232;
 			
-			// aapt resource value: 0x7f060031
-			public const int abc_disabled_alpha_material_dark = 2131099697;
+			// aapt resource value: 0x7f070031
+			public const int abc_disabled_alpha_material_dark = 2131165233;
 			
-			// aapt resource value: 0x7f060032
-			public const int abc_disabled_alpha_material_light = 2131099698;
+			// aapt resource value: 0x7f070032
+			public const int abc_disabled_alpha_material_light = 2131165234;
 			
-			// aapt resource value: 0x7f060033
-			public const int abc_dropdownitem_icon_width = 2131099699;
+			// aapt resource value: 0x7f070033
+			public const int abc_dropdownitem_icon_width = 2131165235;
 			
-			// aapt resource value: 0x7f060034
-			public const int abc_dropdownitem_text_padding_left = 2131099700;
+			// aapt resource value: 0x7f070034
+			public const int abc_dropdownitem_text_padding_left = 2131165236;
 			
-			// aapt resource value: 0x7f060035
-			public const int abc_dropdownitem_text_padding_right = 2131099701;
+			// aapt resource value: 0x7f070035
+			public const int abc_dropdownitem_text_padding_right = 2131165237;
 			
-			// aapt resource value: 0x7f060036
-			public const int abc_edit_text_inset_bottom_material = 2131099702;
+			// aapt resource value: 0x7f070036
+			public const int abc_edit_text_inset_bottom_material = 2131165238;
 			
-			// aapt resource value: 0x7f060037
-			public const int abc_edit_text_inset_horizontal_material = 2131099703;
+			// aapt resource value: 0x7f070037
+			public const int abc_edit_text_inset_horizontal_material = 2131165239;
 			
-			// aapt resource value: 0x7f060038
-			public const int abc_edit_text_inset_top_material = 2131099704;
+			// aapt resource value: 0x7f070038
+			public const int abc_edit_text_inset_top_material = 2131165240;
 			
-			// aapt resource value: 0x7f060039
-			public const int abc_floating_window_z = 2131099705;
+			// aapt resource value: 0x7f070039
+			public const int abc_floating_window_z = 2131165241;
 			
-			// aapt resource value: 0x7f06003a
-			public const int abc_list_item_padding_horizontal_material = 2131099706;
+			// aapt resource value: 0x7f07003a
+			public const int abc_list_item_padding_horizontal_material = 2131165242;
 			
-			// aapt resource value: 0x7f06003b
-			public const int abc_panel_menu_list_width = 2131099707;
+			// aapt resource value: 0x7f07003b
+			public const int abc_panel_menu_list_width = 2131165243;
 			
-			// aapt resource value: 0x7f06003c
-			public const int abc_search_view_preferred_width = 2131099708;
+			// aapt resource value: 0x7f07003c
+			public const int abc_search_view_preferred_width = 2131165244;
 			
-			// aapt resource value: 0x7f060018
-			public const int abc_search_view_text_min_width = 2131099672;
+			// aapt resource value: 0x7f070018
+			public const int abc_search_view_text_min_width = 2131165208;
 			
-			// aapt resource value: 0x7f06003d
-			public const int abc_seekbar_track_background_height_material = 2131099709;
+			// aapt resource value: 0x7f07003d
+			public const int abc_seekbar_track_background_height_material = 2131165245;
 			
-			// aapt resource value: 0x7f06003e
-			public const int abc_seekbar_track_progress_height_material = 2131099710;
+			// aapt resource value: 0x7f07003e
+			public const int abc_seekbar_track_progress_height_material = 2131165246;
 			
-			// aapt resource value: 0x7f06003f
-			public const int abc_select_dialog_padding_start_material = 2131099711;
+			// aapt resource value: 0x7f07003f
+			public const int abc_select_dialog_padding_start_material = 2131165247;
 			
-			// aapt resource value: 0x7f06001c
-			public const int abc_switch_padding = 2131099676;
+			// aapt resource value: 0x7f07001c
+			public const int abc_switch_padding = 2131165212;
 			
-			// aapt resource value: 0x7f060040
-			public const int abc_text_size_body_1_material = 2131099712;
+			// aapt resource value: 0x7f070040
+			public const int abc_text_size_body_1_material = 2131165248;
 			
-			// aapt resource value: 0x7f060041
-			public const int abc_text_size_body_2_material = 2131099713;
+			// aapt resource value: 0x7f070041
+			public const int abc_text_size_body_2_material = 2131165249;
 			
-			// aapt resource value: 0x7f060042
-			public const int abc_text_size_button_material = 2131099714;
+			// aapt resource value: 0x7f070042
+			public const int abc_text_size_button_material = 2131165250;
 			
-			// aapt resource value: 0x7f060043
-			public const int abc_text_size_caption_material = 2131099715;
+			// aapt resource value: 0x7f070043
+			public const int abc_text_size_caption_material = 2131165251;
 			
-			// aapt resource value: 0x7f060044
-			public const int abc_text_size_display_1_material = 2131099716;
+			// aapt resource value: 0x7f070044
+			public const int abc_text_size_display_1_material = 2131165252;
 			
-			// aapt resource value: 0x7f060045
-			public const int abc_text_size_display_2_material = 2131099717;
+			// aapt resource value: 0x7f070045
+			public const int abc_text_size_display_2_material = 2131165253;
 			
-			// aapt resource value: 0x7f060046
-			public const int abc_text_size_display_3_material = 2131099718;
+			// aapt resource value: 0x7f070046
+			public const int abc_text_size_display_3_material = 2131165254;
 			
-			// aapt resource value: 0x7f060047
-			public const int abc_text_size_display_4_material = 2131099719;
+			// aapt resource value: 0x7f070047
+			public const int abc_text_size_display_4_material = 2131165255;
 			
-			// aapt resource value: 0x7f060048
-			public const int abc_text_size_headline_material = 2131099720;
+			// aapt resource value: 0x7f070048
+			public const int abc_text_size_headline_material = 2131165256;
 			
-			// aapt resource value: 0x7f060049
-			public const int abc_text_size_large_material = 2131099721;
+			// aapt resource value: 0x7f070049
+			public const int abc_text_size_large_material = 2131165257;
 			
-			// aapt resource value: 0x7f06004a
-			public const int abc_text_size_medium_material = 2131099722;
+			// aapt resource value: 0x7f07004a
+			public const int abc_text_size_medium_material = 2131165258;
 			
-			// aapt resource value: 0x7f06004b
-			public const int abc_text_size_menu_material = 2131099723;
+			// aapt resource value: 0x7f07004b
+			public const int abc_text_size_menu_material = 2131165259;
 			
-			// aapt resource value: 0x7f06004c
-			public const int abc_text_size_small_material = 2131099724;
+			// aapt resource value: 0x7f07004c
+			public const int abc_text_size_small_material = 2131165260;
 			
-			// aapt resource value: 0x7f06004d
-			public const int abc_text_size_subhead_material = 2131099725;
+			// aapt resource value: 0x7f07004d
+			public const int abc_text_size_subhead_material = 2131165261;
 			
-			// aapt resource value: 0x7f06000f
-			public const int abc_text_size_subtitle_material_toolbar = 2131099663;
+			// aapt resource value: 0x7f07000f
+			public const int abc_text_size_subtitle_material_toolbar = 2131165199;
 			
-			// aapt resource value: 0x7f06004e
-			public const int abc_text_size_title_material = 2131099726;
+			// aapt resource value: 0x7f07004e
+			public const int abc_text_size_title_material = 2131165262;
 			
-			// aapt resource value: 0x7f060010
-			public const int abc_text_size_title_material_toolbar = 2131099664;
+			// aapt resource value: 0x7f070010
+			public const int abc_text_size_title_material_toolbar = 2131165200;
 			
-			// aapt resource value: 0x7f060009
-			public const int cardview_compat_inset_shadow = 2131099657;
+			// aapt resource value: 0x7f070009
+			public const int cardview_compat_inset_shadow = 2131165193;
 			
-			// aapt resource value: 0x7f06000a
-			public const int cardview_default_elevation = 2131099658;
+			// aapt resource value: 0x7f07000a
+			public const int cardview_default_elevation = 2131165194;
 			
-			// aapt resource value: 0x7f06000b
-			public const int cardview_default_radius = 2131099659;
+			// aapt resource value: 0x7f07000b
+			public const int cardview_default_radius = 2131165195;
 			
-			// aapt resource value: 0x7f06005f
-			public const int design_appbar_elevation = 2131099743;
+			// aapt resource value: 0x7f07005f
+			public const int design_appbar_elevation = 2131165279;
 			
-			// aapt resource value: 0x7f060060
-			public const int design_bottom_sheet_modal_elevation = 2131099744;
+			// aapt resource value: 0x7f070060
+			public const int design_bottom_sheet_modal_elevation = 2131165280;
 			
-			// aapt resource value: 0x7f060061
-			public const int design_bottom_sheet_modal_peek_height = 2131099745;
+			// aapt resource value: 0x7f070061
+			public const int design_bottom_sheet_modal_peek_height = 2131165281;
 			
-			// aapt resource value: 0x7f060062
-			public const int design_fab_border_width = 2131099746;
+			// aapt resource value: 0x7f070062
+			public const int design_fab_border_width = 2131165282;
 			
-			// aapt resource value: 0x7f060063
-			public const int design_fab_elevation = 2131099747;
+			// aapt resource value: 0x7f070063
+			public const int design_fab_elevation = 2131165283;
 			
-			// aapt resource value: 0x7f060064
-			public const int design_fab_image_size = 2131099748;
+			// aapt resource value: 0x7f070064
+			public const int design_fab_image_size = 2131165284;
 			
-			// aapt resource value: 0x7f060065
-			public const int design_fab_size_mini = 2131099749;
+			// aapt resource value: 0x7f070065
+			public const int design_fab_size_mini = 2131165285;
 			
-			// aapt resource value: 0x7f060066
-			public const int design_fab_size_normal = 2131099750;
+			// aapt resource value: 0x7f070066
+			public const int design_fab_size_normal = 2131165286;
 			
-			// aapt resource value: 0x7f060067
-			public const int design_fab_translation_z_pressed = 2131099751;
+			// aapt resource value: 0x7f070067
+			public const int design_fab_translation_z_pressed = 2131165287;
 			
-			// aapt resource value: 0x7f060068
-			public const int design_navigation_elevation = 2131099752;
+			// aapt resource value: 0x7f070068
+			public const int design_navigation_elevation = 2131165288;
 			
-			// aapt resource value: 0x7f060069
-			public const int design_navigation_icon_padding = 2131099753;
+			// aapt resource value: 0x7f070069
+			public const int design_navigation_icon_padding = 2131165289;
 			
-			// aapt resource value: 0x7f06006a
-			public const int design_navigation_icon_size = 2131099754;
+			// aapt resource value: 0x7f07006a
+			public const int design_navigation_icon_size = 2131165290;
 			
-			// aapt resource value: 0x7f060057
-			public const int design_navigation_max_width = 2131099735;
+			// aapt resource value: 0x7f070057
+			public const int design_navigation_max_width = 2131165271;
 			
-			// aapt resource value: 0x7f06006b
-			public const int design_navigation_padding_bottom = 2131099755;
+			// aapt resource value: 0x7f07006b
+			public const int design_navigation_padding_bottom = 2131165291;
 			
-			// aapt resource value: 0x7f06006c
-			public const int design_navigation_separator_vertical_padding = 2131099756;
+			// aapt resource value: 0x7f07006c
+			public const int design_navigation_separator_vertical_padding = 2131165292;
 			
-			// aapt resource value: 0x7f060058
-			public const int design_snackbar_action_inline_max_width = 2131099736;
+			// aapt resource value: 0x7f070058
+			public const int design_snackbar_action_inline_max_width = 2131165272;
 			
-			// aapt resource value: 0x7f060059
-			public const int design_snackbar_background_corner_radius = 2131099737;
+			// aapt resource value: 0x7f070059
+			public const int design_snackbar_background_corner_radius = 2131165273;
 			
-			// aapt resource value: 0x7f06006d
-			public const int design_snackbar_elevation = 2131099757;
+			// aapt resource value: 0x7f07006d
+			public const int design_snackbar_elevation = 2131165293;
 			
-			// aapt resource value: 0x7f06005a
-			public const int design_snackbar_extra_spacing_horizontal = 2131099738;
+			// aapt resource value: 0x7f07005a
+			public const int design_snackbar_extra_spacing_horizontal = 2131165274;
 			
-			// aapt resource value: 0x7f06005b
-			public const int design_snackbar_max_width = 2131099739;
+			// aapt resource value: 0x7f07005b
+			public const int design_snackbar_max_width = 2131165275;
 			
-			// aapt resource value: 0x7f06005c
-			public const int design_snackbar_min_width = 2131099740;
+			// aapt resource value: 0x7f07005c
+			public const int design_snackbar_min_width = 2131165276;
 			
-			// aapt resource value: 0x7f06006e
-			public const int design_snackbar_padding_horizontal = 2131099758;
+			// aapt resource value: 0x7f07006e
+			public const int design_snackbar_padding_horizontal = 2131165294;
 			
-			// aapt resource value: 0x7f06006f
-			public const int design_snackbar_padding_vertical = 2131099759;
+			// aapt resource value: 0x7f07006f
+			public const int design_snackbar_padding_vertical = 2131165295;
 			
-			// aapt resource value: 0x7f06005d
-			public const int design_snackbar_padding_vertical_2lines = 2131099741;
+			// aapt resource value: 0x7f07005d
+			public const int design_snackbar_padding_vertical_2lines = 2131165277;
 			
-			// aapt resource value: 0x7f060070
-			public const int design_snackbar_text_size = 2131099760;
+			// aapt resource value: 0x7f070070
+			public const int design_snackbar_text_size = 2131165296;
 			
-			// aapt resource value: 0x7f060071
-			public const int design_tab_max_width = 2131099761;
+			// aapt resource value: 0x7f070071
+			public const int design_tab_max_width = 2131165297;
 			
-			// aapt resource value: 0x7f06005e
-			public const int design_tab_scrollable_min_width = 2131099742;
+			// aapt resource value: 0x7f07005e
+			public const int design_tab_scrollable_min_width = 2131165278;
 			
-			// aapt resource value: 0x7f060072
-			public const int design_tab_text_size = 2131099762;
+			// aapt resource value: 0x7f070072
+			public const int design_tab_text_size = 2131165298;
 			
-			// aapt resource value: 0x7f060073
-			public const int design_tab_text_size_2line = 2131099763;
+			// aapt resource value: 0x7f070073
+			public const int design_tab_text_size_2line = 2131165299;
 			
-			// aapt resource value: 0x7f06004f
-			public const int disabled_alpha_material_dark = 2131099727;
+			// aapt resource value: 0x7f07004f
+			public const int disabled_alpha_material_dark = 2131165263;
 			
-			// aapt resource value: 0x7f060050
-			public const int disabled_alpha_material_light = 2131099728;
+			// aapt resource value: 0x7f070050
+			public const int disabled_alpha_material_light = 2131165264;
 			
-			// aapt resource value: 0x7f060051
-			public const int highlight_alpha_material_colored = 2131099729;
+			// aapt resource value: 0x7f070051
+			public const int highlight_alpha_material_colored = 2131165265;
 			
-			// aapt resource value: 0x7f060052
-			public const int highlight_alpha_material_dark = 2131099730;
+			// aapt resource value: 0x7f070052
+			public const int highlight_alpha_material_dark = 2131165266;
 			
-			// aapt resource value: 0x7f060053
-			public const int highlight_alpha_material_light = 2131099731;
+			// aapt resource value: 0x7f070053
+			public const int highlight_alpha_material_light = 2131165267;
 			
-			// aapt resource value: 0x7f060000
-			public const int item_touch_helper_max_drag_scroll_per_frame = 2131099648;
+			// aapt resource value: 0x7f070000
+			public const int item_touch_helper_max_drag_scroll_per_frame = 2131165184;
 			
-			// aapt resource value: 0x7f060001
-			public const int item_touch_helper_swipe_escape_max_velocity = 2131099649;
+			// aapt resource value: 0x7f070001
+			public const int item_touch_helper_swipe_escape_max_velocity = 2131165185;
 			
-			// aapt resource value: 0x7f060002
-			public const int item_touch_helper_swipe_escape_velocity = 2131099650;
+			// aapt resource value: 0x7f070002
+			public const int item_touch_helper_swipe_escape_velocity = 2131165186;
 			
-			// aapt resource value: 0x7f060003
-			public const int mr_controller_volume_group_list_item_height = 2131099651;
+			// aapt resource value: 0x7f070003
+			public const int mr_controller_volume_group_list_item_height = 2131165187;
 			
-			// aapt resource value: 0x7f060004
-			public const int mr_controller_volume_group_list_item_icon_size = 2131099652;
+			// aapt resource value: 0x7f070004
+			public const int mr_controller_volume_group_list_item_icon_size = 2131165188;
 			
-			// aapt resource value: 0x7f060005
-			public const int mr_controller_volume_group_list_max_height = 2131099653;
+			// aapt resource value: 0x7f070005
+			public const int mr_controller_volume_group_list_max_height = 2131165189;
 			
-			// aapt resource value: 0x7f060008
-			public const int mr_controller_volume_group_list_padding_top = 2131099656;
+			// aapt resource value: 0x7f070008
+			public const int mr_controller_volume_group_list_padding_top = 2131165192;
 			
-			// aapt resource value: 0x7f060006
-			public const int mr_dialog_fixed_width_major = 2131099654;
+			// aapt resource value: 0x7f070006
+			public const int mr_dialog_fixed_width_major = 2131165190;
 			
-			// aapt resource value: 0x7f060007
-			public const int mr_dialog_fixed_width_minor = 2131099655;
+			// aapt resource value: 0x7f070007
+			public const int mr_dialog_fixed_width_minor = 2131165191;
 			
-			// aapt resource value: 0x7f060054
-			public const int notification_large_icon_height = 2131099732;
+			// aapt resource value: 0x7f070054
+			public const int notification_large_icon_height = 2131165268;
 			
-			// aapt resource value: 0x7f060055
-			public const int notification_large_icon_width = 2131099733;
+			// aapt resource value: 0x7f070055
+			public const int notification_large_icon_width = 2131165269;
 			
-			// aapt resource value: 0x7f060056
-			public const int notification_subtext_size = 2131099734;
+			// aapt resource value: 0x7f070056
+			public const int notification_subtext_size = 2131165270;
 			
 			static Dimension()
 			{
@@ -2168,52 +3957,97 @@ namespace Adopcat.Mobile.Droid
 			public const int icon = 2130837649;
 			
 			// aapt resource value: 0x7f020092
-			public const int mr_dialog_material_background_dark = 2130837650;
+			public const int icon_checked = 2130837650;
 			
 			// aapt resource value: 0x7f020093
-			public const int mr_dialog_material_background_light = 2130837651;
+			public const int icon_delete = 2130837651;
 			
 			// aapt resource value: 0x7f020094
-			public const int mr_ic_audiotrack_light = 2130837652;
+			public const int icon_filter = 2130837652;
 			
 			// aapt resource value: 0x7f020095
-			public const int mr_ic_cast_dark = 2130837653;
+			public const int icon_left_arrow = 2130837653;
 			
 			// aapt resource value: 0x7f020096
-			public const int mr_ic_cast_light = 2130837654;
+			public const int icon_logout = 2130837654;
 			
 			// aapt resource value: 0x7f020097
-			public const int mr_ic_close_dark = 2130837655;
+			public const int icon_menu_myposters = 2130837655;
 			
 			// aapt resource value: 0x7f020098
-			public const int mr_ic_close_light = 2130837656;
+			public const int icon_menu_newposter = 2130837656;
 			
 			// aapt resource value: 0x7f020099
-			public const int mr_ic_media_route_connecting_mono_dark = 2130837657;
+			public const int icon_menu_posters = 2130837657;
 			
 			// aapt resource value: 0x7f02009a
-			public const int mr_ic_media_route_connecting_mono_light = 2130837658;
+			public const int icon_not_checked = 2130837658;
 			
 			// aapt resource value: 0x7f02009b
-			public const int mr_ic_media_route_mono_dark = 2130837659;
+			public const int icon_right_arrow = 2130837659;
 			
 			// aapt resource value: 0x7f02009c
-			public const int mr_ic_media_route_mono_light = 2130837660;
+			public const int icon_settings = 2130837660;
 			
 			// aapt resource value: 0x7f02009d
-			public const int mr_ic_pause_dark = 2130837661;
+			public const int login_bg = 2130837661;
 			
 			// aapt resource value: 0x7f02009e
-			public const int mr_ic_pause_light = 2130837662;
+			public const int mr_dialog_material_background_dark = 2130837662;
 			
 			// aapt resource value: 0x7f02009f
-			public const int mr_ic_play_dark = 2130837663;
+			public const int mr_dialog_material_background_light = 2130837663;
 			
 			// aapt resource value: 0x7f0200a0
-			public const int mr_ic_play_light = 2130837664;
+			public const int mr_ic_audiotrack_light = 2130837664;
 			
 			// aapt resource value: 0x7f0200a1
-			public const int notification_template_icon_bg = 2130837665;
+			public const int mr_ic_cast_dark = 2130837665;
+			
+			// aapt resource value: 0x7f0200a2
+			public const int mr_ic_cast_light = 2130837666;
+			
+			// aapt resource value: 0x7f0200a3
+			public const int mr_ic_close_dark = 2130837667;
+			
+			// aapt resource value: 0x7f0200a4
+			public const int mr_ic_close_light = 2130837668;
+			
+			// aapt resource value: 0x7f0200a5
+			public const int mr_ic_media_route_connecting_mono_dark = 2130837669;
+			
+			// aapt resource value: 0x7f0200a6
+			public const int mr_ic_media_route_connecting_mono_light = 2130837670;
+			
+			// aapt resource value: 0x7f0200a7
+			public const int mr_ic_media_route_mono_dark = 2130837671;
+			
+			// aapt resource value: 0x7f0200a8
+			public const int mr_ic_media_route_mono_light = 2130837672;
+			
+			// aapt resource value: 0x7f0200a9
+			public const int mr_ic_pause_dark = 2130837673;
+			
+			// aapt resource value: 0x7f0200aa
+			public const int mr_ic_pause_light = 2130837674;
+			
+			// aapt resource value: 0x7f0200ab
+			public const int mr_ic_play_dark = 2130837675;
+			
+			// aapt resource value: 0x7f0200ac
+			public const int mr_ic_play_light = 2130837676;
+			
+			// aapt resource value: 0x7f0200b0
+			public const int notification_template_icon_bg = 2130837680;
+			
+			// aapt resource value: 0x7f0200ad
+			public const int refresh = 2130837677;
+			
+			// aapt resource value: 0x7f0200ae
+			public const int selected_circle = 2130837678;
+			
+			// aapt resource value: 0x7f0200af
+			public const int unselected_circle = 2130837679;
 			
 			static Drawable()
 			{
@@ -2228,467 +4062,467 @@ namespace Adopcat.Mobile.Droid
 		public partial class Id
 		{
 			
-			// aapt resource value: 0x7f07008b
-			public const int action0 = 2131165323;
+			// aapt resource value: 0x7f08008b
+			public const int action0 = 2131230859;
 			
-			// aapt resource value: 0x7f07005a
-			public const int action_bar = 2131165274;
+			// aapt resource value: 0x7f08005a
+			public const int action_bar = 2131230810;
 			
-			// aapt resource value: 0x7f070001
-			public const int action_bar_activity_content = 2131165185;
+			// aapt resource value: 0x7f080001
+			public const int action_bar_activity_content = 2131230721;
 			
-			// aapt resource value: 0x7f070059
-			public const int action_bar_container = 2131165273;
+			// aapt resource value: 0x7f080059
+			public const int action_bar_container = 2131230809;
 			
-			// aapt resource value: 0x7f070055
-			public const int action_bar_root = 2131165269;
+			// aapt resource value: 0x7f080055
+			public const int action_bar_root = 2131230805;
 			
-			// aapt resource value: 0x7f070002
-			public const int action_bar_spinner = 2131165186;
+			// aapt resource value: 0x7f080002
+			public const int action_bar_spinner = 2131230722;
 			
-			// aapt resource value: 0x7f07003b
-			public const int action_bar_subtitle = 2131165243;
+			// aapt resource value: 0x7f08003b
+			public const int action_bar_subtitle = 2131230779;
 			
-			// aapt resource value: 0x7f07003a
-			public const int action_bar_title = 2131165242;
+			// aapt resource value: 0x7f08003a
+			public const int action_bar_title = 2131230778;
 			
-			// aapt resource value: 0x7f07005b
-			public const int action_context_bar = 2131165275;
+			// aapt resource value: 0x7f08005b
+			public const int action_context_bar = 2131230811;
 			
-			// aapt resource value: 0x7f07008f
-			public const int action_divider = 2131165327;
+			// aapt resource value: 0x7f08008f
+			public const int action_divider = 2131230863;
 			
-			// aapt resource value: 0x7f070003
-			public const int action_menu_divider = 2131165187;
+			// aapt resource value: 0x7f080003
+			public const int action_menu_divider = 2131230723;
 			
-			// aapt resource value: 0x7f070004
-			public const int action_menu_presenter = 2131165188;
+			// aapt resource value: 0x7f080004
+			public const int action_menu_presenter = 2131230724;
 			
-			// aapt resource value: 0x7f070057
-			public const int action_mode_bar = 2131165271;
+			// aapt resource value: 0x7f080057
+			public const int action_mode_bar = 2131230807;
 			
-			// aapt resource value: 0x7f070056
-			public const int action_mode_bar_stub = 2131165270;
+			// aapt resource value: 0x7f080056
+			public const int action_mode_bar_stub = 2131230806;
 			
-			// aapt resource value: 0x7f07003c
-			public const int action_mode_close_button = 2131165244;
+			// aapt resource value: 0x7f08003c
+			public const int action_mode_close_button = 2131230780;
 			
-			// aapt resource value: 0x7f07003d
-			public const int activity_chooser_view_content = 2131165245;
+			// aapt resource value: 0x7f08003d
+			public const int activity_chooser_view_content = 2131230781;
 			
-			// aapt resource value: 0x7f070049
-			public const int alertTitle = 2131165257;
+			// aapt resource value: 0x7f080049
+			public const int alertTitle = 2131230793;
 			
-			// aapt resource value: 0x7f07001e
-			public const int always = 2131165214;
+			// aapt resource value: 0x7f08001e
+			public const int always = 2131230750;
 			
-			// aapt resource value: 0x7f07001b
-			public const int beginning = 2131165211;
+			// aapt resource value: 0x7f08001b
+			public const int beginning = 2131230747;
 			
-			// aapt resource value: 0x7f07002a
-			public const int bottom = 2131165226;
+			// aapt resource value: 0x7f08002a
+			public const int bottom = 2131230762;
 			
-			// aapt resource value: 0x7f070044
-			public const int buttonPanel = 2131165252;
+			// aapt resource value: 0x7f080044
+			public const int buttonPanel = 2131230788;
 			
-			// aapt resource value: 0x7f07008c
-			public const int cancel_action = 2131165324;
+			// aapt resource value: 0x7f08008c
+			public const int cancel_action = 2131230860;
 			
-			// aapt resource value: 0x7f07002b
-			public const int center = 2131165227;
+			// aapt resource value: 0x7f08002b
+			public const int center = 2131230763;
 			
-			// aapt resource value: 0x7f07002c
-			public const int center_horizontal = 2131165228;
+			// aapt resource value: 0x7f08002c
+			public const int center_horizontal = 2131230764;
 			
-			// aapt resource value: 0x7f07002d
-			public const int center_vertical = 2131165229;
+			// aapt resource value: 0x7f08002d
+			public const int center_vertical = 2131230765;
 			
-			// aapt resource value: 0x7f070052
-			public const int checkbox = 2131165266;
+			// aapt resource value: 0x7f080052
+			public const int checkbox = 2131230802;
 			
-			// aapt resource value: 0x7f070092
-			public const int chronometer = 2131165330;
+			// aapt resource value: 0x7f080092
+			public const int chronometer = 2131230866;
 			
-			// aapt resource value: 0x7f070033
-			public const int clip_horizontal = 2131165235;
+			// aapt resource value: 0x7f080033
+			public const int clip_horizontal = 2131230771;
 			
-			// aapt resource value: 0x7f070034
-			public const int clip_vertical = 2131165236;
+			// aapt resource value: 0x7f080034
+			public const int clip_vertical = 2131230772;
 			
-			// aapt resource value: 0x7f07001f
-			public const int collapseActionView = 2131165215;
+			// aapt resource value: 0x7f08001f
+			public const int collapseActionView = 2131230751;
 			
-			// aapt resource value: 0x7f07004a
-			public const int contentPanel = 2131165258;
+			// aapt resource value: 0x7f08004a
+			public const int contentPanel = 2131230794;
 			
-			// aapt resource value: 0x7f070050
-			public const int custom = 2131165264;
+			// aapt resource value: 0x7f080050
+			public const int custom = 2131230800;
 			
-			// aapt resource value: 0x7f07004f
-			public const int customPanel = 2131165263;
+			// aapt resource value: 0x7f08004f
+			public const int customPanel = 2131230799;
 			
-			// aapt resource value: 0x7f070058
-			public const int decor_content_parent = 2131165272;
+			// aapt resource value: 0x7f080058
+			public const int decor_content_parent = 2131230808;
 			
-			// aapt resource value: 0x7f070040
-			public const int default_activity_button = 2131165248;
+			// aapt resource value: 0x7f080040
+			public const int default_activity_button = 2131230784;
 			
-			// aapt resource value: 0x7f07006a
-			public const int design_bottom_sheet = 2131165290;
+			// aapt resource value: 0x7f08006a
+			public const int design_bottom_sheet = 2131230826;
 			
-			// aapt resource value: 0x7f070071
-			public const int design_menu_item_action_area = 2131165297;
+			// aapt resource value: 0x7f080071
+			public const int design_menu_item_action_area = 2131230833;
 			
-			// aapt resource value: 0x7f070070
-			public const int design_menu_item_action_area_stub = 2131165296;
+			// aapt resource value: 0x7f080070
+			public const int design_menu_item_action_area_stub = 2131230832;
 			
-			// aapt resource value: 0x7f07006f
-			public const int design_menu_item_text = 2131165295;
+			// aapt resource value: 0x7f08006f
+			public const int design_menu_item_text = 2131230831;
 			
-			// aapt resource value: 0x7f07006e
-			public const int design_navigation_view = 2131165294;
+			// aapt resource value: 0x7f08006e
+			public const int design_navigation_view = 2131230830;
 			
-			// aapt resource value: 0x7f07000e
-			public const int disableHome = 2131165198;
+			// aapt resource value: 0x7f08000e
+			public const int disableHome = 2131230734;
 			
-			// aapt resource value: 0x7f07005c
-			public const int edit_query = 2131165276;
+			// aapt resource value: 0x7f08005c
+			public const int edit_query = 2131230812;
 			
-			// aapt resource value: 0x7f07001c
-			public const int end = 2131165212;
+			// aapt resource value: 0x7f08001c
+			public const int end = 2131230748;
 			
-			// aapt resource value: 0x7f070097
-			public const int end_padder = 2131165335;
+			// aapt resource value: 0x7f080097
+			public const int end_padder = 2131230871;
 			
-			// aapt resource value: 0x7f070023
-			public const int enterAlways = 2131165219;
+			// aapt resource value: 0x7f080023
+			public const int enterAlways = 2131230755;
 			
-			// aapt resource value: 0x7f070024
-			public const int enterAlwaysCollapsed = 2131165220;
+			// aapt resource value: 0x7f080024
+			public const int enterAlwaysCollapsed = 2131230756;
 			
-			// aapt resource value: 0x7f070025
-			public const int exitUntilCollapsed = 2131165221;
+			// aapt resource value: 0x7f080025
+			public const int exitUntilCollapsed = 2131230757;
 			
-			// aapt resource value: 0x7f07003e
-			public const int expand_activities_button = 2131165246;
+			// aapt resource value: 0x7f08003e
+			public const int expand_activities_button = 2131230782;
 			
-			// aapt resource value: 0x7f070051
-			public const int expanded_menu = 2131165265;
+			// aapt resource value: 0x7f080051
+			public const int expanded_menu = 2131230801;
 			
-			// aapt resource value: 0x7f070035
-			public const int fill = 2131165237;
+			// aapt resource value: 0x7f080035
+			public const int fill = 2131230773;
 			
-			// aapt resource value: 0x7f070036
-			public const int fill_horizontal = 2131165238;
+			// aapt resource value: 0x7f080036
+			public const int fill_horizontal = 2131230774;
 			
-			// aapt resource value: 0x7f07002e
-			public const int fill_vertical = 2131165230;
+			// aapt resource value: 0x7f08002e
+			public const int fill_vertical = 2131230766;
 			
-			// aapt resource value: 0x7f070038
-			public const int @fixed = 2131165240;
+			// aapt resource value: 0x7f080038
+			public const int @fixed = 2131230776;
 			
-			// aapt resource value: 0x7f070005
-			public const int home = 2131165189;
+			// aapt resource value: 0x7f080005
+			public const int home = 2131230725;
 			
-			// aapt resource value: 0x7f07000f
-			public const int homeAsUp = 2131165199;
+			// aapt resource value: 0x7f08000f
+			public const int homeAsUp = 2131230735;
 			
-			// aapt resource value: 0x7f070042
-			public const int icon = 2131165250;
+			// aapt resource value: 0x7f080042
+			public const int icon = 2131230786;
 			
-			// aapt resource value: 0x7f070020
-			public const int ifRoom = 2131165216;
+			// aapt resource value: 0x7f080020
+			public const int ifRoom = 2131230752;
 			
-			// aapt resource value: 0x7f07003f
-			public const int image = 2131165247;
+			// aapt resource value: 0x7f08003f
+			public const int image = 2131230783;
 			
-			// aapt resource value: 0x7f070096
-			public const int info = 2131165334;
+			// aapt resource value: 0x7f080096
+			public const int info = 2131230870;
 			
-			// aapt resource value: 0x7f070000
-			public const int item_touch_helper_previous_elevation = 2131165184;
+			// aapt resource value: 0x7f080000
+			public const int item_touch_helper_previous_elevation = 2131230720;
 			
-			// aapt resource value: 0x7f07002f
-			public const int left = 2131165231;
+			// aapt resource value: 0x7f08002f
+			public const int left = 2131230767;
 			
-			// aapt resource value: 0x7f070090
-			public const int line1 = 2131165328;
+			// aapt resource value: 0x7f080090
+			public const int line1 = 2131230864;
 			
-			// aapt resource value: 0x7f070094
-			public const int line3 = 2131165332;
+			// aapt resource value: 0x7f080094
+			public const int line3 = 2131230868;
 			
-			// aapt resource value: 0x7f07000b
-			public const int listMode = 2131165195;
+			// aapt resource value: 0x7f08000b
+			public const int listMode = 2131230731;
 			
-			// aapt resource value: 0x7f070041
-			public const int list_item = 2131165249;
+			// aapt resource value: 0x7f080041
+			public const int list_item = 2131230785;
 			
-			// aapt resource value: 0x7f07008e
-			public const int media_actions = 2131165326;
+			// aapt resource value: 0x7f08008e
+			public const int media_actions = 2131230862;
 			
-			// aapt resource value: 0x7f07001d
-			public const int middle = 2131165213;
+			// aapt resource value: 0x7f08001d
+			public const int middle = 2131230749;
 			
-			// aapt resource value: 0x7f070037
-			public const int mini = 2131165239;
+			// aapt resource value: 0x7f080037
+			public const int mini = 2131230775;
 			
-			// aapt resource value: 0x7f07007d
-			public const int mr_art = 2131165309;
+			// aapt resource value: 0x7f08007d
+			public const int mr_art = 2131230845;
 			
-			// aapt resource value: 0x7f070072
-			public const int mr_chooser_list = 2131165298;
+			// aapt resource value: 0x7f080072
+			public const int mr_chooser_list = 2131230834;
 			
-			// aapt resource value: 0x7f070075
-			public const int mr_chooser_route_desc = 2131165301;
+			// aapt resource value: 0x7f080075
+			public const int mr_chooser_route_desc = 2131230837;
 			
-			// aapt resource value: 0x7f070073
-			public const int mr_chooser_route_icon = 2131165299;
+			// aapt resource value: 0x7f080073
+			public const int mr_chooser_route_icon = 2131230835;
 			
-			// aapt resource value: 0x7f070074
-			public const int mr_chooser_route_name = 2131165300;
+			// aapt resource value: 0x7f080074
+			public const int mr_chooser_route_name = 2131230836;
 			
-			// aapt resource value: 0x7f07007a
-			public const int mr_close = 2131165306;
+			// aapt resource value: 0x7f08007a
+			public const int mr_close = 2131230842;
 			
-			// aapt resource value: 0x7f070080
-			public const int mr_control_divider = 2131165312;
+			// aapt resource value: 0x7f080080
+			public const int mr_control_divider = 2131230848;
 			
-			// aapt resource value: 0x7f070086
-			public const int mr_control_play_pause = 2131165318;
+			// aapt resource value: 0x7f080086
+			public const int mr_control_play_pause = 2131230854;
 			
-			// aapt resource value: 0x7f070089
-			public const int mr_control_subtitle = 2131165321;
+			// aapt resource value: 0x7f080089
+			public const int mr_control_subtitle = 2131230857;
 			
-			// aapt resource value: 0x7f070088
-			public const int mr_control_title = 2131165320;
+			// aapt resource value: 0x7f080088
+			public const int mr_control_title = 2131230856;
 			
-			// aapt resource value: 0x7f070087
-			public const int mr_control_title_container = 2131165319;
+			// aapt resource value: 0x7f080087
+			public const int mr_control_title_container = 2131230855;
 			
-			// aapt resource value: 0x7f07007b
-			public const int mr_custom_control = 2131165307;
+			// aapt resource value: 0x7f08007b
+			public const int mr_custom_control = 2131230843;
 			
-			// aapt resource value: 0x7f07007c
-			public const int mr_default_control = 2131165308;
+			// aapt resource value: 0x7f08007c
+			public const int mr_default_control = 2131230844;
 			
-			// aapt resource value: 0x7f070077
-			public const int mr_dialog_area = 2131165303;
+			// aapt resource value: 0x7f080077
+			public const int mr_dialog_area = 2131230839;
 			
-			// aapt resource value: 0x7f070076
-			public const int mr_expandable_area = 2131165302;
+			// aapt resource value: 0x7f080076
+			public const int mr_expandable_area = 2131230838;
 			
-			// aapt resource value: 0x7f07008a
-			public const int mr_group_expand_collapse = 2131165322;
+			// aapt resource value: 0x7f08008a
+			public const int mr_group_expand_collapse = 2131230858;
 			
-			// aapt resource value: 0x7f07007e
-			public const int mr_media_main_control = 2131165310;
+			// aapt resource value: 0x7f08007e
+			public const int mr_media_main_control = 2131230846;
 			
-			// aapt resource value: 0x7f070079
-			public const int mr_name = 2131165305;
+			// aapt resource value: 0x7f080079
+			public const int mr_name = 2131230841;
 			
-			// aapt resource value: 0x7f07007f
-			public const int mr_playback_control = 2131165311;
+			// aapt resource value: 0x7f08007f
+			public const int mr_playback_control = 2131230847;
 			
-			// aapt resource value: 0x7f070078
-			public const int mr_title_bar = 2131165304;
+			// aapt resource value: 0x7f080078
+			public const int mr_title_bar = 2131230840;
 			
-			// aapt resource value: 0x7f070081
-			public const int mr_volume_control = 2131165313;
+			// aapt resource value: 0x7f080081
+			public const int mr_volume_control = 2131230849;
 			
-			// aapt resource value: 0x7f070082
-			public const int mr_volume_group_list = 2131165314;
+			// aapt resource value: 0x7f080082
+			public const int mr_volume_group_list = 2131230850;
 			
-			// aapt resource value: 0x7f070084
-			public const int mr_volume_item_icon = 2131165316;
+			// aapt resource value: 0x7f080084
+			public const int mr_volume_item_icon = 2131230852;
 			
-			// aapt resource value: 0x7f070085
-			public const int mr_volume_slider = 2131165317;
+			// aapt resource value: 0x7f080085
+			public const int mr_volume_slider = 2131230853;
 			
-			// aapt resource value: 0x7f070016
-			public const int multiply = 2131165206;
+			// aapt resource value: 0x7f080016
+			public const int multiply = 2131230742;
 			
-			// aapt resource value: 0x7f07006d
-			public const int navigation_header_container = 2131165293;
+			// aapt resource value: 0x7f08006d
+			public const int navigation_header_container = 2131230829;
 			
-			// aapt resource value: 0x7f070021
-			public const int never = 2131165217;
+			// aapt resource value: 0x7f080021
+			public const int never = 2131230753;
 			
-			// aapt resource value: 0x7f070010
-			public const int none = 2131165200;
+			// aapt resource value: 0x7f080010
+			public const int none = 2131230736;
 			
-			// aapt resource value: 0x7f07000c
-			public const int normal = 2131165196;
+			// aapt resource value: 0x7f08000c
+			public const int normal = 2131230732;
 			
-			// aapt resource value: 0x7f070028
-			public const int parallax = 2131165224;
+			// aapt resource value: 0x7f080028
+			public const int parallax = 2131230760;
 			
-			// aapt resource value: 0x7f070046
-			public const int parentPanel = 2131165254;
+			// aapt resource value: 0x7f080046
+			public const int parentPanel = 2131230790;
 			
-			// aapt resource value: 0x7f070029
-			public const int pin = 2131165225;
+			// aapt resource value: 0x7f080029
+			public const int pin = 2131230761;
 			
-			// aapt resource value: 0x7f070006
-			public const int progress_circular = 2131165190;
+			// aapt resource value: 0x7f080006
+			public const int progress_circular = 2131230726;
 			
-			// aapt resource value: 0x7f070007
-			public const int progress_horizontal = 2131165191;
+			// aapt resource value: 0x7f080007
+			public const int progress_horizontal = 2131230727;
 			
-			// aapt resource value: 0x7f070054
-			public const int radio = 2131165268;
+			// aapt resource value: 0x7f080054
+			public const int radio = 2131230804;
 			
-			// aapt resource value: 0x7f070030
-			public const int right = 2131165232;
+			// aapt resource value: 0x7f080030
+			public const int right = 2131230768;
 			
-			// aapt resource value: 0x7f070017
-			public const int screen = 2131165207;
+			// aapt resource value: 0x7f080017
+			public const int screen = 2131230743;
 			
-			// aapt resource value: 0x7f070026
-			public const int scroll = 2131165222;
+			// aapt resource value: 0x7f080026
+			public const int scroll = 2131230758;
 			
-			// aapt resource value: 0x7f07004e
-			public const int scrollIndicatorDown = 2131165262;
+			// aapt resource value: 0x7f08004e
+			public const int scrollIndicatorDown = 2131230798;
 			
-			// aapt resource value: 0x7f07004b
-			public const int scrollIndicatorUp = 2131165259;
+			// aapt resource value: 0x7f08004b
+			public const int scrollIndicatorUp = 2131230795;
 			
-			// aapt resource value: 0x7f07004c
-			public const int scrollView = 2131165260;
+			// aapt resource value: 0x7f08004c
+			public const int scrollView = 2131230796;
 			
-			// aapt resource value: 0x7f070039
-			public const int scrollable = 2131165241;
+			// aapt resource value: 0x7f080039
+			public const int scrollable = 2131230777;
 			
-			// aapt resource value: 0x7f07005e
-			public const int search_badge = 2131165278;
+			// aapt resource value: 0x7f08005e
+			public const int search_badge = 2131230814;
 			
-			// aapt resource value: 0x7f07005d
-			public const int search_bar = 2131165277;
+			// aapt resource value: 0x7f08005d
+			public const int search_bar = 2131230813;
 			
-			// aapt resource value: 0x7f07005f
-			public const int search_button = 2131165279;
+			// aapt resource value: 0x7f08005f
+			public const int search_button = 2131230815;
 			
-			// aapt resource value: 0x7f070064
-			public const int search_close_btn = 2131165284;
+			// aapt resource value: 0x7f080064
+			public const int search_close_btn = 2131230820;
 			
-			// aapt resource value: 0x7f070060
-			public const int search_edit_frame = 2131165280;
+			// aapt resource value: 0x7f080060
+			public const int search_edit_frame = 2131230816;
 			
-			// aapt resource value: 0x7f070066
-			public const int search_go_btn = 2131165286;
+			// aapt resource value: 0x7f080066
+			public const int search_go_btn = 2131230822;
 			
-			// aapt resource value: 0x7f070061
-			public const int search_mag_icon = 2131165281;
+			// aapt resource value: 0x7f080061
+			public const int search_mag_icon = 2131230817;
 			
-			// aapt resource value: 0x7f070062
-			public const int search_plate = 2131165282;
+			// aapt resource value: 0x7f080062
+			public const int search_plate = 2131230818;
 			
-			// aapt resource value: 0x7f070063
-			public const int search_src_text = 2131165283;
+			// aapt resource value: 0x7f080063
+			public const int search_src_text = 2131230819;
 			
-			// aapt resource value: 0x7f070067
-			public const int search_voice_btn = 2131165287;
+			// aapt resource value: 0x7f080067
+			public const int search_voice_btn = 2131230823;
 			
-			// aapt resource value: 0x7f070068
-			public const int select_dialog_listview = 2131165288;
+			// aapt resource value: 0x7f080068
+			public const int select_dialog_listview = 2131230824;
 			
-			// aapt resource value: 0x7f070053
-			public const int shortcut = 2131165267;
+			// aapt resource value: 0x7f080053
+			public const int shortcut = 2131230803;
 			
-			// aapt resource value: 0x7f070011
-			public const int showCustom = 2131165201;
+			// aapt resource value: 0x7f080011
+			public const int showCustom = 2131230737;
 			
-			// aapt resource value: 0x7f070012
-			public const int showHome = 2131165202;
+			// aapt resource value: 0x7f080012
+			public const int showHome = 2131230738;
 			
-			// aapt resource value: 0x7f070013
-			public const int showTitle = 2131165203;
+			// aapt resource value: 0x7f080013
+			public const int showTitle = 2131230739;
 			
-			// aapt resource value: 0x7f070098
-			public const int sliding_tabs = 2131165336;
+			// aapt resource value: 0x7f080098
+			public const int sliding_tabs = 2131230872;
 			
-			// aapt resource value: 0x7f07006c
-			public const int snackbar_action = 2131165292;
+			// aapt resource value: 0x7f08006c
+			public const int snackbar_action = 2131230828;
 			
-			// aapt resource value: 0x7f07006b
-			public const int snackbar_text = 2131165291;
+			// aapt resource value: 0x7f08006b
+			public const int snackbar_text = 2131230827;
 			
-			// aapt resource value: 0x7f070027
-			public const int snap = 2131165223;
+			// aapt resource value: 0x7f080027
+			public const int snap = 2131230759;
 			
-			// aapt resource value: 0x7f070045
-			public const int spacer = 2131165253;
+			// aapt resource value: 0x7f080045
+			public const int spacer = 2131230789;
 			
-			// aapt resource value: 0x7f070008
-			public const int split_action_bar = 2131165192;
+			// aapt resource value: 0x7f080008
+			public const int split_action_bar = 2131230728;
 			
-			// aapt resource value: 0x7f070018
-			public const int src_atop = 2131165208;
+			// aapt resource value: 0x7f080018
+			public const int src_atop = 2131230744;
 			
-			// aapt resource value: 0x7f070019
-			public const int src_in = 2131165209;
+			// aapt resource value: 0x7f080019
+			public const int src_in = 2131230745;
 			
-			// aapt resource value: 0x7f07001a
-			public const int src_over = 2131165210;
+			// aapt resource value: 0x7f08001a
+			public const int src_over = 2131230746;
 			
-			// aapt resource value: 0x7f070031
-			public const int start = 2131165233;
+			// aapt resource value: 0x7f080031
+			public const int start = 2131230769;
 			
-			// aapt resource value: 0x7f07008d
-			public const int status_bar_latest_event_content = 2131165325;
+			// aapt resource value: 0x7f08008d
+			public const int status_bar_latest_event_content = 2131230861;
 			
-			// aapt resource value: 0x7f070065
-			public const int submit_area = 2131165285;
+			// aapt resource value: 0x7f080065
+			public const int submit_area = 2131230821;
 			
-			// aapt resource value: 0x7f07000d
-			public const int tabMode = 2131165197;
+			// aapt resource value: 0x7f08000d
+			public const int tabMode = 2131230733;
 			
-			// aapt resource value: 0x7f070095
-			public const int text = 2131165333;
+			// aapt resource value: 0x7f080095
+			public const int text = 2131230869;
 			
-			// aapt resource value: 0x7f070093
-			public const int text2 = 2131165331;
+			// aapt resource value: 0x7f080093
+			public const int text2 = 2131230867;
 			
-			// aapt resource value: 0x7f07004d
-			public const int textSpacerNoButtons = 2131165261;
+			// aapt resource value: 0x7f08004d
+			public const int textSpacerNoButtons = 2131230797;
 			
-			// aapt resource value: 0x7f070091
-			public const int time = 2131165329;
+			// aapt resource value: 0x7f080091
+			public const int time = 2131230865;
 			
-			// aapt resource value: 0x7f070043
-			public const int title = 2131165251;
+			// aapt resource value: 0x7f080043
+			public const int title = 2131230787;
 			
-			// aapt resource value: 0x7f070048
-			public const int title_template = 2131165256;
+			// aapt resource value: 0x7f080048
+			public const int title_template = 2131230792;
 			
-			// aapt resource value: 0x7f070099
-			public const int toolbar = 2131165337;
+			// aapt resource value: 0x7f080099
+			public const int toolbar = 2131230873;
 			
-			// aapt resource value: 0x7f070032
-			public const int top = 2131165234;
+			// aapt resource value: 0x7f080032
+			public const int top = 2131230770;
 			
-			// aapt resource value: 0x7f070047
-			public const int topPanel = 2131165255;
+			// aapt resource value: 0x7f080047
+			public const int topPanel = 2131230791;
 			
-			// aapt resource value: 0x7f070069
-			public const int touch_outside = 2131165289;
+			// aapt resource value: 0x7f080069
+			public const int touch_outside = 2131230825;
 			
-			// aapt resource value: 0x7f070009
-			public const int up = 2131165193;
+			// aapt resource value: 0x7f080009
+			public const int up = 2131230729;
 			
-			// aapt resource value: 0x7f070014
-			public const int useLogo = 2131165204;
+			// aapt resource value: 0x7f080014
+			public const int useLogo = 2131230740;
 			
-			// aapt resource value: 0x7f07000a
-			public const int view_offset_helper = 2131165194;
+			// aapt resource value: 0x7f08000a
+			public const int view_offset_helper = 2131230730;
 			
-			// aapt resource value: 0x7f070083
-			public const int volume_item_container = 2131165315;
+			// aapt resource value: 0x7f080083
+			public const int volume_item_container = 2131230851;
 			
-			// aapt resource value: 0x7f070022
-			public const int withText = 2131165218;
+			// aapt resource value: 0x7f080022
+			public const int withText = 2131230754;
 			
-			// aapt resource value: 0x7f070015
-			public const int wrap_content = 2131165205;
+			// aapt resource value: 0x7f080015
+			public const int wrap_content = 2131230741;
 			
 			static Id()
 			{
@@ -2703,35 +4537,35 @@ namespace Adopcat.Mobile.Droid
 		public partial class Integer
 		{
 			
-			// aapt resource value: 0x7f090004
-			public const int abc_config_activityDefaultDur = 2131296260;
+			// aapt resource value: 0x7f0a0004
+			public const int abc_config_activityDefaultDur = 2131361796;
 			
-			// aapt resource value: 0x7f090005
-			public const int abc_config_activityShortDur = 2131296261;
+			// aapt resource value: 0x7f0a0005
+			public const int abc_config_activityShortDur = 2131361797;
 			
-			// aapt resource value: 0x7f090003
-			public const int abc_max_action_buttons = 2131296259;
+			// aapt resource value: 0x7f0a0003
+			public const int abc_max_action_buttons = 2131361795;
 			
-			// aapt resource value: 0x7f090009
-			public const int bottom_sheet_slide_duration = 2131296265;
+			// aapt resource value: 0x7f0a0009
+			public const int bottom_sheet_slide_duration = 2131361801;
 			
-			// aapt resource value: 0x7f090006
-			public const int cancel_button_image_alpha = 2131296262;
+			// aapt resource value: 0x7f0a0006
+			public const int cancel_button_image_alpha = 2131361798;
 			
-			// aapt resource value: 0x7f090008
-			public const int design_snackbar_text_max_lines = 2131296264;
+			// aapt resource value: 0x7f0a0008
+			public const int design_snackbar_text_max_lines = 2131361800;
 			
-			// aapt resource value: 0x7f090000
-			public const int mr_controller_volume_group_list_animation_duration_ms = 2131296256;
+			// aapt resource value: 0x7f0a0000
+			public const int mr_controller_volume_group_list_animation_duration_ms = 2131361792;
 			
-			// aapt resource value: 0x7f090001
-			public const int mr_controller_volume_group_list_fade_in_duration_ms = 2131296257;
+			// aapt resource value: 0x7f0a0001
+			public const int mr_controller_volume_group_list_fade_in_duration_ms = 2131361793;
 			
-			// aapt resource value: 0x7f090002
-			public const int mr_controller_volume_group_list_fade_out_duration_ms = 2131296258;
+			// aapt resource value: 0x7f0a0002
+			public const int mr_controller_volume_group_list_fade_out_duration_ms = 2131361794;
 			
-			// aapt resource value: 0x7f090007
-			public const int status_bar_notification_info_maxnum = 2131296263;
+			// aapt resource value: 0x7f0a0007
+			public const int status_bar_notification_info_maxnum = 2131361799;
 			
 			static Integer()
 			{
@@ -2949,119 +4783,128 @@ namespace Adopcat.Mobile.Droid
 		public partial class String
 		{
 			
-			// aapt resource value: 0x7f08000f
-			public const int abc_action_bar_home_description = 2131230735;
+			// aapt resource value: 0x7f090027
+			public const int ApplicationName = 2131296295;
 			
-			// aapt resource value: 0x7f080010
-			public const int abc_action_bar_home_description_format = 2131230736;
+			// aapt resource value: 0x7f090026
+			public const int Hello = 2131296294;
 			
-			// aapt resource value: 0x7f080011
-			public const int abc_action_bar_home_subtitle_description_format = 2131230737;
+			// aapt resource value: 0x7f09000f
+			public const int abc_action_bar_home_description = 2131296271;
 			
-			// aapt resource value: 0x7f080012
-			public const int abc_action_bar_up_description = 2131230738;
+			// aapt resource value: 0x7f090010
+			public const int abc_action_bar_home_description_format = 2131296272;
 			
-			// aapt resource value: 0x7f080013
-			public const int abc_action_menu_overflow_description = 2131230739;
+			// aapt resource value: 0x7f090011
+			public const int abc_action_bar_home_subtitle_description_format = 2131296273;
 			
-			// aapt resource value: 0x7f080014
-			public const int abc_action_mode_done = 2131230740;
+			// aapt resource value: 0x7f090012
+			public const int abc_action_bar_up_description = 2131296274;
 			
-			// aapt resource value: 0x7f080015
-			public const int abc_activity_chooser_view_see_all = 2131230741;
+			// aapt resource value: 0x7f090013
+			public const int abc_action_menu_overflow_description = 2131296275;
 			
-			// aapt resource value: 0x7f080016
-			public const int abc_activitychooserview_choose_application = 2131230742;
+			// aapt resource value: 0x7f090014
+			public const int abc_action_mode_done = 2131296276;
 			
-			// aapt resource value: 0x7f080017
-			public const int abc_capital_off = 2131230743;
+			// aapt resource value: 0x7f090015
+			public const int abc_activity_chooser_view_see_all = 2131296277;
 			
-			// aapt resource value: 0x7f080018
-			public const int abc_capital_on = 2131230744;
+			// aapt resource value: 0x7f090016
+			public const int abc_activitychooserview_choose_application = 2131296278;
 			
-			// aapt resource value: 0x7f080019
-			public const int abc_search_hint = 2131230745;
+			// aapt resource value: 0x7f090017
+			public const int abc_capital_off = 2131296279;
 			
-			// aapt resource value: 0x7f08001a
-			public const int abc_searchview_description_clear = 2131230746;
+			// aapt resource value: 0x7f090018
+			public const int abc_capital_on = 2131296280;
 			
-			// aapt resource value: 0x7f08001b
-			public const int abc_searchview_description_query = 2131230747;
+			// aapt resource value: 0x7f090019
+			public const int abc_search_hint = 2131296281;
 			
-			// aapt resource value: 0x7f08001c
-			public const int abc_searchview_description_search = 2131230748;
+			// aapt resource value: 0x7f09001a
+			public const int abc_searchview_description_clear = 2131296282;
 			
-			// aapt resource value: 0x7f08001d
-			public const int abc_searchview_description_submit = 2131230749;
+			// aapt resource value: 0x7f09001b
+			public const int abc_searchview_description_query = 2131296283;
 			
-			// aapt resource value: 0x7f08001e
-			public const int abc_searchview_description_voice = 2131230750;
+			// aapt resource value: 0x7f09001c
+			public const int abc_searchview_description_search = 2131296284;
 			
-			// aapt resource value: 0x7f08001f
-			public const int abc_shareactionprovider_share_with = 2131230751;
+			// aapt resource value: 0x7f09001d
+			public const int abc_searchview_description_submit = 2131296285;
 			
-			// aapt resource value: 0x7f080020
-			public const int abc_shareactionprovider_share_with_application = 2131230752;
+			// aapt resource value: 0x7f09001e
+			public const int abc_searchview_description_voice = 2131296286;
 			
-			// aapt resource value: 0x7f080021
-			public const int abc_toolbar_collapse_description = 2131230753;
+			// aapt resource value: 0x7f09001f
+			public const int abc_shareactionprovider_share_with = 2131296287;
 			
-			// aapt resource value: 0x7f080023
-			public const int appbar_scrolling_view_behavior = 2131230755;
+			// aapt resource value: 0x7f090020
+			public const int abc_shareactionprovider_share_with_application = 2131296288;
 			
-			// aapt resource value: 0x7f080024
-			public const int bottom_sheet_behavior = 2131230756;
+			// aapt resource value: 0x7f090021
+			public const int abc_toolbar_collapse_description = 2131296289;
 			
-			// aapt resource value: 0x7f080025
-			public const int character_counter_pattern = 2131230757;
+			// aapt resource value: 0x7f090023
+			public const int appbar_scrolling_view_behavior = 2131296291;
 			
-			// aapt resource value: 0x7f080000
-			public const int mr_button_content_description = 2131230720;
+			// aapt resource value: 0x7f090024
+			public const int bottom_sheet_behavior = 2131296292;
 			
-			// aapt resource value: 0x7f080001
-			public const int mr_chooser_searching = 2131230721;
+			// aapt resource value: 0x7f090025
+			public const int character_counter_pattern = 2131296293;
 			
-			// aapt resource value: 0x7f080002
-			public const int mr_chooser_title = 2131230722;
+			// aapt resource value: 0x7f090028
+			public const int library_name = 2131296296;
 			
-			// aapt resource value: 0x7f080003
-			public const int mr_controller_casting_screen = 2131230723;
+			// aapt resource value: 0x7f090000
+			public const int mr_button_content_description = 2131296256;
 			
-			// aapt resource value: 0x7f080004
-			public const int mr_controller_close_description = 2131230724;
+			// aapt resource value: 0x7f090001
+			public const int mr_chooser_searching = 2131296257;
 			
-			// aapt resource value: 0x7f080005
-			public const int mr_controller_collapse_group = 2131230725;
+			// aapt resource value: 0x7f090002
+			public const int mr_chooser_title = 2131296258;
 			
-			// aapt resource value: 0x7f080006
-			public const int mr_controller_disconnect = 2131230726;
+			// aapt resource value: 0x7f090003
+			public const int mr_controller_casting_screen = 2131296259;
 			
-			// aapt resource value: 0x7f080007
-			public const int mr_controller_expand_group = 2131230727;
+			// aapt resource value: 0x7f090004
+			public const int mr_controller_close_description = 2131296260;
 			
-			// aapt resource value: 0x7f080008
-			public const int mr_controller_no_info_available = 2131230728;
+			// aapt resource value: 0x7f090005
+			public const int mr_controller_collapse_group = 2131296261;
 			
-			// aapt resource value: 0x7f080009
-			public const int mr_controller_no_media_selected = 2131230729;
+			// aapt resource value: 0x7f090006
+			public const int mr_controller_disconnect = 2131296262;
 			
-			// aapt resource value: 0x7f08000a
-			public const int mr_controller_pause = 2131230730;
+			// aapt resource value: 0x7f090007
+			public const int mr_controller_expand_group = 2131296263;
 			
-			// aapt resource value: 0x7f08000b
-			public const int mr_controller_play = 2131230731;
+			// aapt resource value: 0x7f090008
+			public const int mr_controller_no_info_available = 2131296264;
 			
-			// aapt resource value: 0x7f08000c
-			public const int mr_controller_stop = 2131230732;
+			// aapt resource value: 0x7f090009
+			public const int mr_controller_no_media_selected = 2131296265;
 			
-			// aapt resource value: 0x7f08000d
-			public const int mr_system_route_name = 2131230733;
+			// aapt resource value: 0x7f09000a
+			public const int mr_controller_pause = 2131296266;
 			
-			// aapt resource value: 0x7f08000e
-			public const int mr_user_route_category_name = 2131230734;
+			// aapt resource value: 0x7f09000b
+			public const int mr_controller_play = 2131296267;
 			
-			// aapt resource value: 0x7f080022
-			public const int status_bar_notification_info_overflow = 2131230754;
+			// aapt resource value: 0x7f09000c
+			public const int mr_controller_stop = 2131296268;
+			
+			// aapt resource value: 0x7f09000d
+			public const int mr_system_route_name = 2131296269;
+			
+			// aapt resource value: 0x7f09000e
+			public const int mr_user_route_category_name = 2131296270;
+			
+			// aapt resource value: 0x7f090022
+			public const int status_bar_notification_info_overflow = 2131296290;
 			
 			static String()
 			{
@@ -3076,1121 +4919,1121 @@ namespace Adopcat.Mobile.Droid
 		public partial class Style
 		{
 			
-			// aapt resource value: 0x7f0a00a1
-			public const int AlertDialog_AppCompat = 2131361953;
+			// aapt resource value: 0x7f0b00a1
+			public const int AlertDialog_AppCompat = 2131427489;
 			
-			// aapt resource value: 0x7f0a00a2
-			public const int AlertDialog_AppCompat_Light = 2131361954;
+			// aapt resource value: 0x7f0b00a2
+			public const int AlertDialog_AppCompat_Light = 2131427490;
 			
-			// aapt resource value: 0x7f0a00a3
-			public const int Animation_AppCompat_Dialog = 2131361955;
+			// aapt resource value: 0x7f0b00a3
+			public const int Animation_AppCompat_Dialog = 2131427491;
 			
-			// aapt resource value: 0x7f0a00a4
-			public const int Animation_AppCompat_DropDownUp = 2131361956;
+			// aapt resource value: 0x7f0b00a4
+			public const int Animation_AppCompat_DropDownUp = 2131427492;
 			
-			// aapt resource value: 0x7f0a015a
-			public const int Animation_Design_BottomSheetDialog = 2131362138;
+			// aapt resource value: 0x7f0b015a
+			public const int Animation_Design_BottomSheetDialog = 2131427674;
 			
-			// aapt resource value: 0x7f0a00a5
-			public const int Base_AlertDialog_AppCompat = 2131361957;
+			// aapt resource value: 0x7f0b00a5
+			public const int Base_AlertDialog_AppCompat = 2131427493;
 			
-			// aapt resource value: 0x7f0a00a6
-			public const int Base_AlertDialog_AppCompat_Light = 2131361958;
+			// aapt resource value: 0x7f0b00a6
+			public const int Base_AlertDialog_AppCompat_Light = 2131427494;
 			
-			// aapt resource value: 0x7f0a00a7
-			public const int Base_Animation_AppCompat_Dialog = 2131361959;
+			// aapt resource value: 0x7f0b00a7
+			public const int Base_Animation_AppCompat_Dialog = 2131427495;
 			
-			// aapt resource value: 0x7f0a00a8
-			public const int Base_Animation_AppCompat_DropDownUp = 2131361960;
+			// aapt resource value: 0x7f0b00a8
+			public const int Base_Animation_AppCompat_DropDownUp = 2131427496;
 			
-			// aapt resource value: 0x7f0a0018
-			public const int Base_CardView = 2131361816;
+			// aapt resource value: 0x7f0b0018
+			public const int Base_CardView = 2131427352;
 			
-			// aapt resource value: 0x7f0a00a9
-			public const int Base_DialogWindowTitle_AppCompat = 2131361961;
+			// aapt resource value: 0x7f0b00a9
+			public const int Base_DialogWindowTitle_AppCompat = 2131427497;
 			
-			// aapt resource value: 0x7f0a00aa
-			public const int Base_DialogWindowTitleBackground_AppCompat = 2131361962;
+			// aapt resource value: 0x7f0b00aa
+			public const int Base_DialogWindowTitleBackground_AppCompat = 2131427498;
 			
-			// aapt resource value: 0x7f0a0051
-			public const int Base_TextAppearance_AppCompat = 2131361873;
+			// aapt resource value: 0x7f0b0051
+			public const int Base_TextAppearance_AppCompat = 2131427409;
 			
-			// aapt resource value: 0x7f0a0052
-			public const int Base_TextAppearance_AppCompat_Body1 = 2131361874;
+			// aapt resource value: 0x7f0b0052
+			public const int Base_TextAppearance_AppCompat_Body1 = 2131427410;
 			
-			// aapt resource value: 0x7f0a0053
-			public const int Base_TextAppearance_AppCompat_Body2 = 2131361875;
+			// aapt resource value: 0x7f0b0053
+			public const int Base_TextAppearance_AppCompat_Body2 = 2131427411;
 			
-			// aapt resource value: 0x7f0a003b
-			public const int Base_TextAppearance_AppCompat_Button = 2131361851;
+			// aapt resource value: 0x7f0b003b
+			public const int Base_TextAppearance_AppCompat_Button = 2131427387;
 			
-			// aapt resource value: 0x7f0a0054
-			public const int Base_TextAppearance_AppCompat_Caption = 2131361876;
+			// aapt resource value: 0x7f0b0054
+			public const int Base_TextAppearance_AppCompat_Caption = 2131427412;
 			
-			// aapt resource value: 0x7f0a0055
-			public const int Base_TextAppearance_AppCompat_Display1 = 2131361877;
+			// aapt resource value: 0x7f0b0055
+			public const int Base_TextAppearance_AppCompat_Display1 = 2131427413;
 			
-			// aapt resource value: 0x7f0a0056
-			public const int Base_TextAppearance_AppCompat_Display2 = 2131361878;
+			// aapt resource value: 0x7f0b0056
+			public const int Base_TextAppearance_AppCompat_Display2 = 2131427414;
 			
-			// aapt resource value: 0x7f0a0057
-			public const int Base_TextAppearance_AppCompat_Display3 = 2131361879;
+			// aapt resource value: 0x7f0b0057
+			public const int Base_TextAppearance_AppCompat_Display3 = 2131427415;
 			
-			// aapt resource value: 0x7f0a0058
-			public const int Base_TextAppearance_AppCompat_Display4 = 2131361880;
+			// aapt resource value: 0x7f0b0058
+			public const int Base_TextAppearance_AppCompat_Display4 = 2131427416;
 			
-			// aapt resource value: 0x7f0a0059
-			public const int Base_TextAppearance_AppCompat_Headline = 2131361881;
+			// aapt resource value: 0x7f0b0059
+			public const int Base_TextAppearance_AppCompat_Headline = 2131427417;
 			
-			// aapt resource value: 0x7f0a0026
-			public const int Base_TextAppearance_AppCompat_Inverse = 2131361830;
+			// aapt resource value: 0x7f0b0026
+			public const int Base_TextAppearance_AppCompat_Inverse = 2131427366;
 			
-			// aapt resource value: 0x7f0a005a
-			public const int Base_TextAppearance_AppCompat_Large = 2131361882;
+			// aapt resource value: 0x7f0b005a
+			public const int Base_TextAppearance_AppCompat_Large = 2131427418;
 			
-			// aapt resource value: 0x7f0a0027
-			public const int Base_TextAppearance_AppCompat_Large_Inverse = 2131361831;
+			// aapt resource value: 0x7f0b0027
+			public const int Base_TextAppearance_AppCompat_Large_Inverse = 2131427367;
 			
-			// aapt resource value: 0x7f0a005b
-			public const int Base_TextAppearance_AppCompat_Light_Widget_PopupMenu_Large = 2131361883;
+			// aapt resource value: 0x7f0b005b
+			public const int Base_TextAppearance_AppCompat_Light_Widget_PopupMenu_Large = 2131427419;
 			
-			// aapt resource value: 0x7f0a005c
-			public const int Base_TextAppearance_AppCompat_Light_Widget_PopupMenu_Small = 2131361884;
+			// aapt resource value: 0x7f0b005c
+			public const int Base_TextAppearance_AppCompat_Light_Widget_PopupMenu_Small = 2131427420;
 			
-			// aapt resource value: 0x7f0a005d
-			public const int Base_TextAppearance_AppCompat_Medium = 2131361885;
+			// aapt resource value: 0x7f0b005d
+			public const int Base_TextAppearance_AppCompat_Medium = 2131427421;
 			
-			// aapt resource value: 0x7f0a0028
-			public const int Base_TextAppearance_AppCompat_Medium_Inverse = 2131361832;
+			// aapt resource value: 0x7f0b0028
+			public const int Base_TextAppearance_AppCompat_Medium_Inverse = 2131427368;
 			
-			// aapt resource value: 0x7f0a005e
-			public const int Base_TextAppearance_AppCompat_Menu = 2131361886;
+			// aapt resource value: 0x7f0b005e
+			public const int Base_TextAppearance_AppCompat_Menu = 2131427422;
 			
-			// aapt resource value: 0x7f0a00ab
-			public const int Base_TextAppearance_AppCompat_SearchResult = 2131361963;
+			// aapt resource value: 0x7f0b00ab
+			public const int Base_TextAppearance_AppCompat_SearchResult = 2131427499;
 			
-			// aapt resource value: 0x7f0a005f
-			public const int Base_TextAppearance_AppCompat_SearchResult_Subtitle = 2131361887;
+			// aapt resource value: 0x7f0b005f
+			public const int Base_TextAppearance_AppCompat_SearchResult_Subtitle = 2131427423;
 			
-			// aapt resource value: 0x7f0a0060
-			public const int Base_TextAppearance_AppCompat_SearchResult_Title = 2131361888;
+			// aapt resource value: 0x7f0b0060
+			public const int Base_TextAppearance_AppCompat_SearchResult_Title = 2131427424;
 			
-			// aapt resource value: 0x7f0a0061
-			public const int Base_TextAppearance_AppCompat_Small = 2131361889;
+			// aapt resource value: 0x7f0b0061
+			public const int Base_TextAppearance_AppCompat_Small = 2131427425;
 			
-			// aapt resource value: 0x7f0a0029
-			public const int Base_TextAppearance_AppCompat_Small_Inverse = 2131361833;
+			// aapt resource value: 0x7f0b0029
+			public const int Base_TextAppearance_AppCompat_Small_Inverse = 2131427369;
 			
-			// aapt resource value: 0x7f0a0062
-			public const int Base_TextAppearance_AppCompat_Subhead = 2131361890;
+			// aapt resource value: 0x7f0b0062
+			public const int Base_TextAppearance_AppCompat_Subhead = 2131427426;
 			
-			// aapt resource value: 0x7f0a002a
-			public const int Base_TextAppearance_AppCompat_Subhead_Inverse = 2131361834;
+			// aapt resource value: 0x7f0b002a
+			public const int Base_TextAppearance_AppCompat_Subhead_Inverse = 2131427370;
 			
-			// aapt resource value: 0x7f0a0063
-			public const int Base_TextAppearance_AppCompat_Title = 2131361891;
+			// aapt resource value: 0x7f0b0063
+			public const int Base_TextAppearance_AppCompat_Title = 2131427427;
 			
-			// aapt resource value: 0x7f0a002b
-			public const int Base_TextAppearance_AppCompat_Title_Inverse = 2131361835;
+			// aapt resource value: 0x7f0b002b
+			public const int Base_TextAppearance_AppCompat_Title_Inverse = 2131427371;
 			
-			// aapt resource value: 0x7f0a009a
-			public const int Base_TextAppearance_AppCompat_Widget_ActionBar_Menu = 2131361946;
+			// aapt resource value: 0x7f0b009a
+			public const int Base_TextAppearance_AppCompat_Widget_ActionBar_Menu = 2131427482;
 			
-			// aapt resource value: 0x7f0a0064
-			public const int Base_TextAppearance_AppCompat_Widget_ActionBar_Subtitle = 2131361892;
+			// aapt resource value: 0x7f0b0064
+			public const int Base_TextAppearance_AppCompat_Widget_ActionBar_Subtitle = 2131427428;
 			
-			// aapt resource value: 0x7f0a0065
-			public const int Base_TextAppearance_AppCompat_Widget_ActionBar_Subtitle_Inverse = 2131361893;
+			// aapt resource value: 0x7f0b0065
+			public const int Base_TextAppearance_AppCompat_Widget_ActionBar_Subtitle_Inverse = 2131427429;
 			
-			// aapt resource value: 0x7f0a0066
-			public const int Base_TextAppearance_AppCompat_Widget_ActionBar_Title = 2131361894;
+			// aapt resource value: 0x7f0b0066
+			public const int Base_TextAppearance_AppCompat_Widget_ActionBar_Title = 2131427430;
 			
-			// aapt resource value: 0x7f0a0067
-			public const int Base_TextAppearance_AppCompat_Widget_ActionBar_Title_Inverse = 2131361895;
+			// aapt resource value: 0x7f0b0067
+			public const int Base_TextAppearance_AppCompat_Widget_ActionBar_Title_Inverse = 2131427431;
 			
-			// aapt resource value: 0x7f0a0068
-			public const int Base_TextAppearance_AppCompat_Widget_ActionMode_Subtitle = 2131361896;
+			// aapt resource value: 0x7f0b0068
+			public const int Base_TextAppearance_AppCompat_Widget_ActionMode_Subtitle = 2131427432;
 			
-			// aapt resource value: 0x7f0a0069
-			public const int Base_TextAppearance_AppCompat_Widget_ActionMode_Title = 2131361897;
+			// aapt resource value: 0x7f0b0069
+			public const int Base_TextAppearance_AppCompat_Widget_ActionMode_Title = 2131427433;
 			
-			// aapt resource value: 0x7f0a006a
-			public const int Base_TextAppearance_AppCompat_Widget_Button = 2131361898;
+			// aapt resource value: 0x7f0b006a
+			public const int Base_TextAppearance_AppCompat_Widget_Button = 2131427434;
 			
-			// aapt resource value: 0x7f0a009b
-			public const int Base_TextAppearance_AppCompat_Widget_Button_Inverse = 2131361947;
+			// aapt resource value: 0x7f0b009b
+			public const int Base_TextAppearance_AppCompat_Widget_Button_Inverse = 2131427483;
 			
-			// aapt resource value: 0x7f0a00ac
-			public const int Base_TextAppearance_AppCompat_Widget_DropDownItem = 2131361964;
+			// aapt resource value: 0x7f0b00ac
+			public const int Base_TextAppearance_AppCompat_Widget_DropDownItem = 2131427500;
 			
-			// aapt resource value: 0x7f0a006b
-			public const int Base_TextAppearance_AppCompat_Widget_PopupMenu_Large = 2131361899;
+			// aapt resource value: 0x7f0b006b
+			public const int Base_TextAppearance_AppCompat_Widget_PopupMenu_Large = 2131427435;
 			
-			// aapt resource value: 0x7f0a006c
-			public const int Base_TextAppearance_AppCompat_Widget_PopupMenu_Small = 2131361900;
+			// aapt resource value: 0x7f0b006c
+			public const int Base_TextAppearance_AppCompat_Widget_PopupMenu_Small = 2131427436;
 			
-			// aapt resource value: 0x7f0a006d
-			public const int Base_TextAppearance_AppCompat_Widget_Switch = 2131361901;
+			// aapt resource value: 0x7f0b006d
+			public const int Base_TextAppearance_AppCompat_Widget_Switch = 2131427437;
 			
-			// aapt resource value: 0x7f0a006e
-			public const int Base_TextAppearance_AppCompat_Widget_TextView_SpinnerItem = 2131361902;
+			// aapt resource value: 0x7f0b006e
+			public const int Base_TextAppearance_AppCompat_Widget_TextView_SpinnerItem = 2131427438;
 			
-			// aapt resource value: 0x7f0a00ad
-			public const int Base_TextAppearance_Widget_AppCompat_ExpandedMenu_Item = 2131361965;
+			// aapt resource value: 0x7f0b00ad
+			public const int Base_TextAppearance_Widget_AppCompat_ExpandedMenu_Item = 2131427501;
 			
-			// aapt resource value: 0x7f0a006f
-			public const int Base_TextAppearance_Widget_AppCompat_Toolbar_Subtitle = 2131361903;
+			// aapt resource value: 0x7f0b006f
+			public const int Base_TextAppearance_Widget_AppCompat_Toolbar_Subtitle = 2131427439;
 			
-			// aapt resource value: 0x7f0a0070
-			public const int Base_TextAppearance_Widget_AppCompat_Toolbar_Title = 2131361904;
+			// aapt resource value: 0x7f0b0070
+			public const int Base_TextAppearance_Widget_AppCompat_Toolbar_Title = 2131427440;
 			
-			// aapt resource value: 0x7f0a0071
-			public const int Base_Theme_AppCompat = 2131361905;
+			// aapt resource value: 0x7f0b0071
+			public const int Base_Theme_AppCompat = 2131427441;
 			
-			// aapt resource value: 0x7f0a00ae
-			public const int Base_Theme_AppCompat_CompactMenu = 2131361966;
+			// aapt resource value: 0x7f0b00ae
+			public const int Base_Theme_AppCompat_CompactMenu = 2131427502;
 			
-			// aapt resource value: 0x7f0a002c
-			public const int Base_Theme_AppCompat_Dialog = 2131361836;
+			// aapt resource value: 0x7f0b002c
+			public const int Base_Theme_AppCompat_Dialog = 2131427372;
 			
-			// aapt resource value: 0x7f0a00af
-			public const int Base_Theme_AppCompat_Dialog_Alert = 2131361967;
+			// aapt resource value: 0x7f0b00af
+			public const int Base_Theme_AppCompat_Dialog_Alert = 2131427503;
 			
-			// aapt resource value: 0x7f0a00b0
-			public const int Base_Theme_AppCompat_Dialog_FixedSize = 2131361968;
+			// aapt resource value: 0x7f0b00b0
+			public const int Base_Theme_AppCompat_Dialog_FixedSize = 2131427504;
 			
-			// aapt resource value: 0x7f0a00b1
-			public const int Base_Theme_AppCompat_Dialog_MinWidth = 2131361969;
+			// aapt resource value: 0x7f0b00b1
+			public const int Base_Theme_AppCompat_Dialog_MinWidth = 2131427505;
 			
-			// aapt resource value: 0x7f0a001c
-			public const int Base_Theme_AppCompat_DialogWhenLarge = 2131361820;
+			// aapt resource value: 0x7f0b001c
+			public const int Base_Theme_AppCompat_DialogWhenLarge = 2131427356;
 			
-			// aapt resource value: 0x7f0a0072
-			public const int Base_Theme_AppCompat_Light = 2131361906;
+			// aapt resource value: 0x7f0b0072
+			public const int Base_Theme_AppCompat_Light = 2131427442;
 			
-			// aapt resource value: 0x7f0a00b2
-			public const int Base_Theme_AppCompat_Light_DarkActionBar = 2131361970;
+			// aapt resource value: 0x7f0b00b2
+			public const int Base_Theme_AppCompat_Light_DarkActionBar = 2131427506;
 			
-			// aapt resource value: 0x7f0a002d
-			public const int Base_Theme_AppCompat_Light_Dialog = 2131361837;
+			// aapt resource value: 0x7f0b002d
+			public const int Base_Theme_AppCompat_Light_Dialog = 2131427373;
 			
-			// aapt resource value: 0x7f0a00b3
-			public const int Base_Theme_AppCompat_Light_Dialog_Alert = 2131361971;
+			// aapt resource value: 0x7f0b00b3
+			public const int Base_Theme_AppCompat_Light_Dialog_Alert = 2131427507;
 			
-			// aapt resource value: 0x7f0a00b4
-			public const int Base_Theme_AppCompat_Light_Dialog_FixedSize = 2131361972;
+			// aapt resource value: 0x7f0b00b4
+			public const int Base_Theme_AppCompat_Light_Dialog_FixedSize = 2131427508;
 			
-			// aapt resource value: 0x7f0a00b5
-			public const int Base_Theme_AppCompat_Light_Dialog_MinWidth = 2131361973;
+			// aapt resource value: 0x7f0b00b5
+			public const int Base_Theme_AppCompat_Light_Dialog_MinWidth = 2131427509;
 			
-			// aapt resource value: 0x7f0a001d
-			public const int Base_Theme_AppCompat_Light_DialogWhenLarge = 2131361821;
+			// aapt resource value: 0x7f0b001d
+			public const int Base_Theme_AppCompat_Light_DialogWhenLarge = 2131427357;
 			
-			// aapt resource value: 0x7f0a00b6
-			public const int Base_ThemeOverlay_AppCompat = 2131361974;
+			// aapt resource value: 0x7f0b00b6
+			public const int Base_ThemeOverlay_AppCompat = 2131427510;
 			
-			// aapt resource value: 0x7f0a00b7
-			public const int Base_ThemeOverlay_AppCompat_ActionBar = 2131361975;
+			// aapt resource value: 0x7f0b00b7
+			public const int Base_ThemeOverlay_AppCompat_ActionBar = 2131427511;
 			
-			// aapt resource value: 0x7f0a00b8
-			public const int Base_ThemeOverlay_AppCompat_Dark = 2131361976;
+			// aapt resource value: 0x7f0b00b8
+			public const int Base_ThemeOverlay_AppCompat_Dark = 2131427512;
 			
-			// aapt resource value: 0x7f0a00b9
-			public const int Base_ThemeOverlay_AppCompat_Dark_ActionBar = 2131361977;
+			// aapt resource value: 0x7f0b00b9
+			public const int Base_ThemeOverlay_AppCompat_Dark_ActionBar = 2131427513;
 			
-			// aapt resource value: 0x7f0a00ba
-			public const int Base_ThemeOverlay_AppCompat_Light = 2131361978;
+			// aapt resource value: 0x7f0b00ba
+			public const int Base_ThemeOverlay_AppCompat_Light = 2131427514;
 			
-			// aapt resource value: 0x7f0a002e
-			public const int Base_V11_Theme_AppCompat_Dialog = 2131361838;
+			// aapt resource value: 0x7f0b002e
+			public const int Base_V11_Theme_AppCompat_Dialog = 2131427374;
 			
-			// aapt resource value: 0x7f0a002f
-			public const int Base_V11_Theme_AppCompat_Light_Dialog = 2131361839;
+			// aapt resource value: 0x7f0b002f
+			public const int Base_V11_Theme_AppCompat_Light_Dialog = 2131427375;
 			
-			// aapt resource value: 0x7f0a0037
-			public const int Base_V12_Widget_AppCompat_AutoCompleteTextView = 2131361847;
+			// aapt resource value: 0x7f0b0037
+			public const int Base_V12_Widget_AppCompat_AutoCompleteTextView = 2131427383;
 			
-			// aapt resource value: 0x7f0a0038
-			public const int Base_V12_Widget_AppCompat_EditText = 2131361848;
+			// aapt resource value: 0x7f0b0038
+			public const int Base_V12_Widget_AppCompat_EditText = 2131427384;
 			
-			// aapt resource value: 0x7f0a0073
-			public const int Base_V21_Theme_AppCompat = 2131361907;
+			// aapt resource value: 0x7f0b0073
+			public const int Base_V21_Theme_AppCompat = 2131427443;
 			
-			// aapt resource value: 0x7f0a0074
-			public const int Base_V21_Theme_AppCompat_Dialog = 2131361908;
+			// aapt resource value: 0x7f0b0074
+			public const int Base_V21_Theme_AppCompat_Dialog = 2131427444;
 			
-			// aapt resource value: 0x7f0a0075
-			public const int Base_V21_Theme_AppCompat_Light = 2131361909;
+			// aapt resource value: 0x7f0b0075
+			public const int Base_V21_Theme_AppCompat_Light = 2131427445;
 			
-			// aapt resource value: 0x7f0a0076
-			public const int Base_V21_Theme_AppCompat_Light_Dialog = 2131361910;
+			// aapt resource value: 0x7f0b0076
+			public const int Base_V21_Theme_AppCompat_Light_Dialog = 2131427446;
 			
-			// aapt resource value: 0x7f0a0098
-			public const int Base_V22_Theme_AppCompat = 2131361944;
+			// aapt resource value: 0x7f0b0098
+			public const int Base_V22_Theme_AppCompat = 2131427480;
 			
-			// aapt resource value: 0x7f0a0099
-			public const int Base_V22_Theme_AppCompat_Light = 2131361945;
+			// aapt resource value: 0x7f0b0099
+			public const int Base_V22_Theme_AppCompat_Light = 2131427481;
 			
-			// aapt resource value: 0x7f0a009c
-			public const int Base_V23_Theme_AppCompat = 2131361948;
+			// aapt resource value: 0x7f0b009c
+			public const int Base_V23_Theme_AppCompat = 2131427484;
 			
-			// aapt resource value: 0x7f0a009d
-			public const int Base_V23_Theme_AppCompat_Light = 2131361949;
+			// aapt resource value: 0x7f0b009d
+			public const int Base_V23_Theme_AppCompat_Light = 2131427485;
 			
-			// aapt resource value: 0x7f0a00bb
-			public const int Base_V7_Theme_AppCompat = 2131361979;
+			// aapt resource value: 0x7f0b00bb
+			public const int Base_V7_Theme_AppCompat = 2131427515;
 			
-			// aapt resource value: 0x7f0a00bc
-			public const int Base_V7_Theme_AppCompat_Dialog = 2131361980;
+			// aapt resource value: 0x7f0b00bc
+			public const int Base_V7_Theme_AppCompat_Dialog = 2131427516;
 			
-			// aapt resource value: 0x7f0a00bd
-			public const int Base_V7_Theme_AppCompat_Light = 2131361981;
+			// aapt resource value: 0x7f0b00bd
+			public const int Base_V7_Theme_AppCompat_Light = 2131427517;
 			
-			// aapt resource value: 0x7f0a00be
-			public const int Base_V7_Theme_AppCompat_Light_Dialog = 2131361982;
+			// aapt resource value: 0x7f0b00be
+			public const int Base_V7_Theme_AppCompat_Light_Dialog = 2131427518;
 			
-			// aapt resource value: 0x7f0a00bf
-			public const int Base_V7_Widget_AppCompat_AutoCompleteTextView = 2131361983;
+			// aapt resource value: 0x7f0b00bf
+			public const int Base_V7_Widget_AppCompat_AutoCompleteTextView = 2131427519;
 			
-			// aapt resource value: 0x7f0a00c0
-			public const int Base_V7_Widget_AppCompat_EditText = 2131361984;
+			// aapt resource value: 0x7f0b00c0
+			public const int Base_V7_Widget_AppCompat_EditText = 2131427520;
 			
-			// aapt resource value: 0x7f0a00c1
-			public const int Base_Widget_AppCompat_ActionBar = 2131361985;
+			// aapt resource value: 0x7f0b00c1
+			public const int Base_Widget_AppCompat_ActionBar = 2131427521;
 			
-			// aapt resource value: 0x7f0a00c2
-			public const int Base_Widget_AppCompat_ActionBar_Solid = 2131361986;
+			// aapt resource value: 0x7f0b00c2
+			public const int Base_Widget_AppCompat_ActionBar_Solid = 2131427522;
 			
-			// aapt resource value: 0x7f0a00c3
-			public const int Base_Widget_AppCompat_ActionBar_TabBar = 2131361987;
+			// aapt resource value: 0x7f0b00c3
+			public const int Base_Widget_AppCompat_ActionBar_TabBar = 2131427523;
 			
-			// aapt resource value: 0x7f0a0077
-			public const int Base_Widget_AppCompat_ActionBar_TabText = 2131361911;
+			// aapt resource value: 0x7f0b0077
+			public const int Base_Widget_AppCompat_ActionBar_TabText = 2131427447;
 			
-			// aapt resource value: 0x7f0a0078
-			public const int Base_Widget_AppCompat_ActionBar_TabView = 2131361912;
+			// aapt resource value: 0x7f0b0078
+			public const int Base_Widget_AppCompat_ActionBar_TabView = 2131427448;
 			
-			// aapt resource value: 0x7f0a0079
-			public const int Base_Widget_AppCompat_ActionButton = 2131361913;
+			// aapt resource value: 0x7f0b0079
+			public const int Base_Widget_AppCompat_ActionButton = 2131427449;
 			
-			// aapt resource value: 0x7f0a007a
-			public const int Base_Widget_AppCompat_ActionButton_CloseMode = 2131361914;
+			// aapt resource value: 0x7f0b007a
+			public const int Base_Widget_AppCompat_ActionButton_CloseMode = 2131427450;
 			
-			// aapt resource value: 0x7f0a007b
-			public const int Base_Widget_AppCompat_ActionButton_Overflow = 2131361915;
+			// aapt resource value: 0x7f0b007b
+			public const int Base_Widget_AppCompat_ActionButton_Overflow = 2131427451;
 			
-			// aapt resource value: 0x7f0a00c4
-			public const int Base_Widget_AppCompat_ActionMode = 2131361988;
+			// aapt resource value: 0x7f0b00c4
+			public const int Base_Widget_AppCompat_ActionMode = 2131427524;
 			
-			// aapt resource value: 0x7f0a00c5
-			public const int Base_Widget_AppCompat_ActivityChooserView = 2131361989;
+			// aapt resource value: 0x7f0b00c5
+			public const int Base_Widget_AppCompat_ActivityChooserView = 2131427525;
 			
-			// aapt resource value: 0x7f0a0039
-			public const int Base_Widget_AppCompat_AutoCompleteTextView = 2131361849;
+			// aapt resource value: 0x7f0b0039
+			public const int Base_Widget_AppCompat_AutoCompleteTextView = 2131427385;
 			
-			// aapt resource value: 0x7f0a007c
-			public const int Base_Widget_AppCompat_Button = 2131361916;
+			// aapt resource value: 0x7f0b007c
+			public const int Base_Widget_AppCompat_Button = 2131427452;
 			
-			// aapt resource value: 0x7f0a007d
-			public const int Base_Widget_AppCompat_Button_Borderless = 2131361917;
+			// aapt resource value: 0x7f0b007d
+			public const int Base_Widget_AppCompat_Button_Borderless = 2131427453;
 			
-			// aapt resource value: 0x7f0a007e
-			public const int Base_Widget_AppCompat_Button_Borderless_Colored = 2131361918;
+			// aapt resource value: 0x7f0b007e
+			public const int Base_Widget_AppCompat_Button_Borderless_Colored = 2131427454;
 			
-			// aapt resource value: 0x7f0a00c6
-			public const int Base_Widget_AppCompat_Button_ButtonBar_AlertDialog = 2131361990;
+			// aapt resource value: 0x7f0b00c6
+			public const int Base_Widget_AppCompat_Button_ButtonBar_AlertDialog = 2131427526;
 			
-			// aapt resource value: 0x7f0a009e
-			public const int Base_Widget_AppCompat_Button_Colored = 2131361950;
+			// aapt resource value: 0x7f0b009e
+			public const int Base_Widget_AppCompat_Button_Colored = 2131427486;
 			
-			// aapt resource value: 0x7f0a007f
-			public const int Base_Widget_AppCompat_Button_Small = 2131361919;
+			// aapt resource value: 0x7f0b007f
+			public const int Base_Widget_AppCompat_Button_Small = 2131427455;
 			
-			// aapt resource value: 0x7f0a0080
-			public const int Base_Widget_AppCompat_ButtonBar = 2131361920;
+			// aapt resource value: 0x7f0b0080
+			public const int Base_Widget_AppCompat_ButtonBar = 2131427456;
 			
-			// aapt resource value: 0x7f0a00c7
-			public const int Base_Widget_AppCompat_ButtonBar_AlertDialog = 2131361991;
+			// aapt resource value: 0x7f0b00c7
+			public const int Base_Widget_AppCompat_ButtonBar_AlertDialog = 2131427527;
 			
-			// aapt resource value: 0x7f0a0081
-			public const int Base_Widget_AppCompat_CompoundButton_CheckBox = 2131361921;
+			// aapt resource value: 0x7f0b0081
+			public const int Base_Widget_AppCompat_CompoundButton_CheckBox = 2131427457;
 			
-			// aapt resource value: 0x7f0a0082
-			public const int Base_Widget_AppCompat_CompoundButton_RadioButton = 2131361922;
+			// aapt resource value: 0x7f0b0082
+			public const int Base_Widget_AppCompat_CompoundButton_RadioButton = 2131427458;
 			
-			// aapt resource value: 0x7f0a00c8
-			public const int Base_Widget_AppCompat_CompoundButton_Switch = 2131361992;
+			// aapt resource value: 0x7f0b00c8
+			public const int Base_Widget_AppCompat_CompoundButton_Switch = 2131427528;
 			
-			// aapt resource value: 0x7f0a001b
-			public const int Base_Widget_AppCompat_DrawerArrowToggle = 2131361819;
+			// aapt resource value: 0x7f0b001b
+			public const int Base_Widget_AppCompat_DrawerArrowToggle = 2131427355;
 			
-			// aapt resource value: 0x7f0a00c9
-			public const int Base_Widget_AppCompat_DrawerArrowToggle_Common = 2131361993;
+			// aapt resource value: 0x7f0b00c9
+			public const int Base_Widget_AppCompat_DrawerArrowToggle_Common = 2131427529;
 			
-			// aapt resource value: 0x7f0a0083
-			public const int Base_Widget_AppCompat_DropDownItem_Spinner = 2131361923;
+			// aapt resource value: 0x7f0b0083
+			public const int Base_Widget_AppCompat_DropDownItem_Spinner = 2131427459;
 			
-			// aapt resource value: 0x7f0a003a
-			public const int Base_Widget_AppCompat_EditText = 2131361850;
+			// aapt resource value: 0x7f0b003a
+			public const int Base_Widget_AppCompat_EditText = 2131427386;
 			
-			// aapt resource value: 0x7f0a0084
-			public const int Base_Widget_AppCompat_ImageButton = 2131361924;
+			// aapt resource value: 0x7f0b0084
+			public const int Base_Widget_AppCompat_ImageButton = 2131427460;
 			
-			// aapt resource value: 0x7f0a00ca
-			public const int Base_Widget_AppCompat_Light_ActionBar = 2131361994;
+			// aapt resource value: 0x7f0b00ca
+			public const int Base_Widget_AppCompat_Light_ActionBar = 2131427530;
 			
-			// aapt resource value: 0x7f0a00cb
-			public const int Base_Widget_AppCompat_Light_ActionBar_Solid = 2131361995;
+			// aapt resource value: 0x7f0b00cb
+			public const int Base_Widget_AppCompat_Light_ActionBar_Solid = 2131427531;
 			
-			// aapt resource value: 0x7f0a00cc
-			public const int Base_Widget_AppCompat_Light_ActionBar_TabBar = 2131361996;
+			// aapt resource value: 0x7f0b00cc
+			public const int Base_Widget_AppCompat_Light_ActionBar_TabBar = 2131427532;
 			
-			// aapt resource value: 0x7f0a0085
-			public const int Base_Widget_AppCompat_Light_ActionBar_TabText = 2131361925;
+			// aapt resource value: 0x7f0b0085
+			public const int Base_Widget_AppCompat_Light_ActionBar_TabText = 2131427461;
 			
-			// aapt resource value: 0x7f0a0086
-			public const int Base_Widget_AppCompat_Light_ActionBar_TabText_Inverse = 2131361926;
+			// aapt resource value: 0x7f0b0086
+			public const int Base_Widget_AppCompat_Light_ActionBar_TabText_Inverse = 2131427462;
 			
-			// aapt resource value: 0x7f0a0087
-			public const int Base_Widget_AppCompat_Light_ActionBar_TabView = 2131361927;
+			// aapt resource value: 0x7f0b0087
+			public const int Base_Widget_AppCompat_Light_ActionBar_TabView = 2131427463;
 			
-			// aapt resource value: 0x7f0a0088
-			public const int Base_Widget_AppCompat_Light_PopupMenu = 2131361928;
+			// aapt resource value: 0x7f0b0088
+			public const int Base_Widget_AppCompat_Light_PopupMenu = 2131427464;
 			
-			// aapt resource value: 0x7f0a0089
-			public const int Base_Widget_AppCompat_Light_PopupMenu_Overflow = 2131361929;
+			// aapt resource value: 0x7f0b0089
+			public const int Base_Widget_AppCompat_Light_PopupMenu_Overflow = 2131427465;
 			
-			// aapt resource value: 0x7f0a008a
-			public const int Base_Widget_AppCompat_ListPopupWindow = 2131361930;
+			// aapt resource value: 0x7f0b008a
+			public const int Base_Widget_AppCompat_ListPopupWindow = 2131427466;
 			
-			// aapt resource value: 0x7f0a008b
-			public const int Base_Widget_AppCompat_ListView = 2131361931;
+			// aapt resource value: 0x7f0b008b
+			public const int Base_Widget_AppCompat_ListView = 2131427467;
 			
-			// aapt resource value: 0x7f0a008c
-			public const int Base_Widget_AppCompat_ListView_DropDown = 2131361932;
+			// aapt resource value: 0x7f0b008c
+			public const int Base_Widget_AppCompat_ListView_DropDown = 2131427468;
 			
-			// aapt resource value: 0x7f0a008d
-			public const int Base_Widget_AppCompat_ListView_Menu = 2131361933;
+			// aapt resource value: 0x7f0b008d
+			public const int Base_Widget_AppCompat_ListView_Menu = 2131427469;
 			
-			// aapt resource value: 0x7f0a008e
-			public const int Base_Widget_AppCompat_PopupMenu = 2131361934;
+			// aapt resource value: 0x7f0b008e
+			public const int Base_Widget_AppCompat_PopupMenu = 2131427470;
 			
-			// aapt resource value: 0x7f0a008f
-			public const int Base_Widget_AppCompat_PopupMenu_Overflow = 2131361935;
+			// aapt resource value: 0x7f0b008f
+			public const int Base_Widget_AppCompat_PopupMenu_Overflow = 2131427471;
 			
-			// aapt resource value: 0x7f0a00cd
-			public const int Base_Widget_AppCompat_PopupWindow = 2131361997;
+			// aapt resource value: 0x7f0b00cd
+			public const int Base_Widget_AppCompat_PopupWindow = 2131427533;
 			
-			// aapt resource value: 0x7f0a0030
-			public const int Base_Widget_AppCompat_ProgressBar = 2131361840;
+			// aapt resource value: 0x7f0b0030
+			public const int Base_Widget_AppCompat_ProgressBar = 2131427376;
 			
-			// aapt resource value: 0x7f0a0031
-			public const int Base_Widget_AppCompat_ProgressBar_Horizontal = 2131361841;
+			// aapt resource value: 0x7f0b0031
+			public const int Base_Widget_AppCompat_ProgressBar_Horizontal = 2131427377;
 			
-			// aapt resource value: 0x7f0a0090
-			public const int Base_Widget_AppCompat_RatingBar = 2131361936;
+			// aapt resource value: 0x7f0b0090
+			public const int Base_Widget_AppCompat_RatingBar = 2131427472;
 			
-			// aapt resource value: 0x7f0a009f
-			public const int Base_Widget_AppCompat_RatingBar_Indicator = 2131361951;
+			// aapt resource value: 0x7f0b009f
+			public const int Base_Widget_AppCompat_RatingBar_Indicator = 2131427487;
 			
-			// aapt resource value: 0x7f0a00a0
-			public const int Base_Widget_AppCompat_RatingBar_Small = 2131361952;
+			// aapt resource value: 0x7f0b00a0
+			public const int Base_Widget_AppCompat_RatingBar_Small = 2131427488;
 			
-			// aapt resource value: 0x7f0a00ce
-			public const int Base_Widget_AppCompat_SearchView = 2131361998;
+			// aapt resource value: 0x7f0b00ce
+			public const int Base_Widget_AppCompat_SearchView = 2131427534;
 			
-			// aapt resource value: 0x7f0a00cf
-			public const int Base_Widget_AppCompat_SearchView_ActionBar = 2131361999;
+			// aapt resource value: 0x7f0b00cf
+			public const int Base_Widget_AppCompat_SearchView_ActionBar = 2131427535;
 			
-			// aapt resource value: 0x7f0a0091
-			public const int Base_Widget_AppCompat_SeekBar = 2131361937;
+			// aapt resource value: 0x7f0b0091
+			public const int Base_Widget_AppCompat_SeekBar = 2131427473;
 			
-			// aapt resource value: 0x7f0a0092
-			public const int Base_Widget_AppCompat_Spinner = 2131361938;
+			// aapt resource value: 0x7f0b0092
+			public const int Base_Widget_AppCompat_Spinner = 2131427474;
 			
-			// aapt resource value: 0x7f0a001e
-			public const int Base_Widget_AppCompat_Spinner_Underlined = 2131361822;
+			// aapt resource value: 0x7f0b001e
+			public const int Base_Widget_AppCompat_Spinner_Underlined = 2131427358;
 			
-			// aapt resource value: 0x7f0a0093
-			public const int Base_Widget_AppCompat_TextView_SpinnerItem = 2131361939;
+			// aapt resource value: 0x7f0b0093
+			public const int Base_Widget_AppCompat_TextView_SpinnerItem = 2131427475;
 			
-			// aapt resource value: 0x7f0a00d0
-			public const int Base_Widget_AppCompat_Toolbar = 2131362000;
+			// aapt resource value: 0x7f0b00d0
+			public const int Base_Widget_AppCompat_Toolbar = 2131427536;
 			
-			// aapt resource value: 0x7f0a0094
-			public const int Base_Widget_AppCompat_Toolbar_Button_Navigation = 2131361940;
+			// aapt resource value: 0x7f0b0094
+			public const int Base_Widget_AppCompat_Toolbar_Button_Navigation = 2131427476;
 			
-			// aapt resource value: 0x7f0a015b
-			public const int Base_Widget_Design_TabLayout = 2131362139;
+			// aapt resource value: 0x7f0b015b
+			public const int Base_Widget_Design_TabLayout = 2131427675;
 			
-			// aapt resource value: 0x7f0a0017
-			public const int CardView = 2131361815;
+			// aapt resource value: 0x7f0b0017
+			public const int CardView = 2131427351;
 			
-			// aapt resource value: 0x7f0a0019
-			public const int CardView_Dark = 2131361817;
+			// aapt resource value: 0x7f0b0019
+			public const int CardView_Dark = 2131427353;
 			
-			// aapt resource value: 0x7f0a001a
-			public const int CardView_Light = 2131361818;
+			// aapt resource value: 0x7f0b001a
+			public const int CardView_Light = 2131427354;
 			
-			// aapt resource value: 0x7f0a0172
-			public const int MyTheme = 2131362162;
+			// aapt resource value: 0x7f0b0172
+			public const int MyTheme = 2131427698;
 			
-			// aapt resource value: 0x7f0a0173
-			public const int MyTheme_Base = 2131362163;
+			// aapt resource value: 0x7f0b0173
+			public const int MyTheme_Base = 2131427699;
 			
-			// aapt resource value: 0x7f0a0032
-			public const int Platform_AppCompat = 2131361842;
+			// aapt resource value: 0x7f0b0032
+			public const int Platform_AppCompat = 2131427378;
 			
-			// aapt resource value: 0x7f0a0033
-			public const int Platform_AppCompat_Light = 2131361843;
+			// aapt resource value: 0x7f0b0033
+			public const int Platform_AppCompat_Light = 2131427379;
 			
-			// aapt resource value: 0x7f0a0095
-			public const int Platform_ThemeOverlay_AppCompat = 2131361941;
+			// aapt resource value: 0x7f0b0095
+			public const int Platform_ThemeOverlay_AppCompat = 2131427477;
 			
-			// aapt resource value: 0x7f0a0096
-			public const int Platform_ThemeOverlay_AppCompat_Dark = 2131361942;
+			// aapt resource value: 0x7f0b0096
+			public const int Platform_ThemeOverlay_AppCompat_Dark = 2131427478;
 			
-			// aapt resource value: 0x7f0a0097
-			public const int Platform_ThemeOverlay_AppCompat_Light = 2131361943;
+			// aapt resource value: 0x7f0b0097
+			public const int Platform_ThemeOverlay_AppCompat_Light = 2131427479;
 			
-			// aapt resource value: 0x7f0a0034
-			public const int Platform_V11_AppCompat = 2131361844;
+			// aapt resource value: 0x7f0b0034
+			public const int Platform_V11_AppCompat = 2131427380;
 			
-			// aapt resource value: 0x7f0a0035
-			public const int Platform_V11_AppCompat_Light = 2131361845;
+			// aapt resource value: 0x7f0b0035
+			public const int Platform_V11_AppCompat_Light = 2131427381;
 			
-			// aapt resource value: 0x7f0a003c
-			public const int Platform_V14_AppCompat = 2131361852;
+			// aapt resource value: 0x7f0b003c
+			public const int Platform_V14_AppCompat = 2131427388;
 			
-			// aapt resource value: 0x7f0a003d
-			public const int Platform_V14_AppCompat_Light = 2131361853;
+			// aapt resource value: 0x7f0b003d
+			public const int Platform_V14_AppCompat_Light = 2131427389;
 			
-			// aapt resource value: 0x7f0a0036
-			public const int Platform_Widget_AppCompat_Spinner = 2131361846;
+			// aapt resource value: 0x7f0b0036
+			public const int Platform_Widget_AppCompat_Spinner = 2131427382;
 			
-			// aapt resource value: 0x7f0a0043
-			public const int RtlOverlay_DialogWindowTitle_AppCompat = 2131361859;
+			// aapt resource value: 0x7f0b0043
+			public const int RtlOverlay_DialogWindowTitle_AppCompat = 2131427395;
 			
-			// aapt resource value: 0x7f0a0044
-			public const int RtlOverlay_Widget_AppCompat_ActionBar_TitleItem = 2131361860;
+			// aapt resource value: 0x7f0b0044
+			public const int RtlOverlay_Widget_AppCompat_ActionBar_TitleItem = 2131427396;
 			
-			// aapt resource value: 0x7f0a0045
-			public const int RtlOverlay_Widget_AppCompat_DialogTitle_Icon = 2131361861;
+			// aapt resource value: 0x7f0b0045
+			public const int RtlOverlay_Widget_AppCompat_DialogTitle_Icon = 2131427397;
 			
-			// aapt resource value: 0x7f0a0046
-			public const int RtlOverlay_Widget_AppCompat_PopupMenuItem = 2131361862;
+			// aapt resource value: 0x7f0b0046
+			public const int RtlOverlay_Widget_AppCompat_PopupMenuItem = 2131427398;
 			
-			// aapt resource value: 0x7f0a0047
-			public const int RtlOverlay_Widget_AppCompat_PopupMenuItem_InternalGroup = 2131361863;
+			// aapt resource value: 0x7f0b0047
+			public const int RtlOverlay_Widget_AppCompat_PopupMenuItem_InternalGroup = 2131427399;
 			
-			// aapt resource value: 0x7f0a0048
-			public const int RtlOverlay_Widget_AppCompat_PopupMenuItem_Text = 2131361864;
+			// aapt resource value: 0x7f0b0048
+			public const int RtlOverlay_Widget_AppCompat_PopupMenuItem_Text = 2131427400;
 			
-			// aapt resource value: 0x7f0a0049
-			public const int RtlOverlay_Widget_AppCompat_Search_DropDown = 2131361865;
+			// aapt resource value: 0x7f0b0049
+			public const int RtlOverlay_Widget_AppCompat_Search_DropDown = 2131427401;
 			
-			// aapt resource value: 0x7f0a004a
-			public const int RtlOverlay_Widget_AppCompat_Search_DropDown_Icon1 = 2131361866;
+			// aapt resource value: 0x7f0b004a
+			public const int RtlOverlay_Widget_AppCompat_Search_DropDown_Icon1 = 2131427402;
 			
-			// aapt resource value: 0x7f0a004b
-			public const int RtlOverlay_Widget_AppCompat_Search_DropDown_Icon2 = 2131361867;
+			// aapt resource value: 0x7f0b004b
+			public const int RtlOverlay_Widget_AppCompat_Search_DropDown_Icon2 = 2131427403;
 			
-			// aapt resource value: 0x7f0a004c
-			public const int RtlOverlay_Widget_AppCompat_Search_DropDown_Query = 2131361868;
+			// aapt resource value: 0x7f0b004c
+			public const int RtlOverlay_Widget_AppCompat_Search_DropDown_Query = 2131427404;
 			
-			// aapt resource value: 0x7f0a004d
-			public const int RtlOverlay_Widget_AppCompat_Search_DropDown_Text = 2131361869;
+			// aapt resource value: 0x7f0b004d
+			public const int RtlOverlay_Widget_AppCompat_Search_DropDown_Text = 2131427405;
 			
-			// aapt resource value: 0x7f0a004e
-			public const int RtlOverlay_Widget_AppCompat_SearchView_MagIcon = 2131361870;
+			// aapt resource value: 0x7f0b004e
+			public const int RtlOverlay_Widget_AppCompat_SearchView_MagIcon = 2131427406;
 			
-			// aapt resource value: 0x7f0a004f
-			public const int RtlUnderlay_Widget_AppCompat_ActionButton = 2131361871;
+			// aapt resource value: 0x7f0b004f
+			public const int RtlUnderlay_Widget_AppCompat_ActionButton = 2131427407;
 			
-			// aapt resource value: 0x7f0a0050
-			public const int RtlUnderlay_Widget_AppCompat_ActionButton_Overflow = 2131361872;
+			// aapt resource value: 0x7f0b0050
+			public const int RtlUnderlay_Widget_AppCompat_ActionButton_Overflow = 2131427408;
 			
-			// aapt resource value: 0x7f0a00d1
-			public const int TextAppearance_AppCompat = 2131362001;
+			// aapt resource value: 0x7f0b00d1
+			public const int TextAppearance_AppCompat = 2131427537;
 			
-			// aapt resource value: 0x7f0a00d2
-			public const int TextAppearance_AppCompat_Body1 = 2131362002;
+			// aapt resource value: 0x7f0b00d2
+			public const int TextAppearance_AppCompat_Body1 = 2131427538;
 			
-			// aapt resource value: 0x7f0a00d3
-			public const int TextAppearance_AppCompat_Body2 = 2131362003;
+			// aapt resource value: 0x7f0b00d3
+			public const int TextAppearance_AppCompat_Body2 = 2131427539;
 			
-			// aapt resource value: 0x7f0a00d4
-			public const int TextAppearance_AppCompat_Button = 2131362004;
+			// aapt resource value: 0x7f0b00d4
+			public const int TextAppearance_AppCompat_Button = 2131427540;
 			
-			// aapt resource value: 0x7f0a00d5
-			public const int TextAppearance_AppCompat_Caption = 2131362005;
+			// aapt resource value: 0x7f0b00d5
+			public const int TextAppearance_AppCompat_Caption = 2131427541;
 			
-			// aapt resource value: 0x7f0a00d6
-			public const int TextAppearance_AppCompat_Display1 = 2131362006;
+			// aapt resource value: 0x7f0b00d6
+			public const int TextAppearance_AppCompat_Display1 = 2131427542;
 			
-			// aapt resource value: 0x7f0a00d7
-			public const int TextAppearance_AppCompat_Display2 = 2131362007;
+			// aapt resource value: 0x7f0b00d7
+			public const int TextAppearance_AppCompat_Display2 = 2131427543;
 			
-			// aapt resource value: 0x7f0a00d8
-			public const int TextAppearance_AppCompat_Display3 = 2131362008;
+			// aapt resource value: 0x7f0b00d8
+			public const int TextAppearance_AppCompat_Display3 = 2131427544;
 			
-			// aapt resource value: 0x7f0a00d9
-			public const int TextAppearance_AppCompat_Display4 = 2131362009;
+			// aapt resource value: 0x7f0b00d9
+			public const int TextAppearance_AppCompat_Display4 = 2131427545;
 			
-			// aapt resource value: 0x7f0a00da
-			public const int TextAppearance_AppCompat_Headline = 2131362010;
+			// aapt resource value: 0x7f0b00da
+			public const int TextAppearance_AppCompat_Headline = 2131427546;
 			
-			// aapt resource value: 0x7f0a00db
-			public const int TextAppearance_AppCompat_Inverse = 2131362011;
+			// aapt resource value: 0x7f0b00db
+			public const int TextAppearance_AppCompat_Inverse = 2131427547;
 			
-			// aapt resource value: 0x7f0a00dc
-			public const int TextAppearance_AppCompat_Large = 2131362012;
+			// aapt resource value: 0x7f0b00dc
+			public const int TextAppearance_AppCompat_Large = 2131427548;
 			
-			// aapt resource value: 0x7f0a00dd
-			public const int TextAppearance_AppCompat_Large_Inverse = 2131362013;
+			// aapt resource value: 0x7f0b00dd
+			public const int TextAppearance_AppCompat_Large_Inverse = 2131427549;
 			
-			// aapt resource value: 0x7f0a00de
-			public const int TextAppearance_AppCompat_Light_SearchResult_Subtitle = 2131362014;
+			// aapt resource value: 0x7f0b00de
+			public const int TextAppearance_AppCompat_Light_SearchResult_Subtitle = 2131427550;
 			
-			// aapt resource value: 0x7f0a00df
-			public const int TextAppearance_AppCompat_Light_SearchResult_Title = 2131362015;
+			// aapt resource value: 0x7f0b00df
+			public const int TextAppearance_AppCompat_Light_SearchResult_Title = 2131427551;
 			
-			// aapt resource value: 0x7f0a00e0
-			public const int TextAppearance_AppCompat_Light_Widget_PopupMenu_Large = 2131362016;
+			// aapt resource value: 0x7f0b00e0
+			public const int TextAppearance_AppCompat_Light_Widget_PopupMenu_Large = 2131427552;
 			
-			// aapt resource value: 0x7f0a00e1
-			public const int TextAppearance_AppCompat_Light_Widget_PopupMenu_Small = 2131362017;
+			// aapt resource value: 0x7f0b00e1
+			public const int TextAppearance_AppCompat_Light_Widget_PopupMenu_Small = 2131427553;
 			
-			// aapt resource value: 0x7f0a00e2
-			public const int TextAppearance_AppCompat_Medium = 2131362018;
+			// aapt resource value: 0x7f0b00e2
+			public const int TextAppearance_AppCompat_Medium = 2131427554;
 			
-			// aapt resource value: 0x7f0a00e3
-			public const int TextAppearance_AppCompat_Medium_Inverse = 2131362019;
+			// aapt resource value: 0x7f0b00e3
+			public const int TextAppearance_AppCompat_Medium_Inverse = 2131427555;
 			
-			// aapt resource value: 0x7f0a00e4
-			public const int TextAppearance_AppCompat_Menu = 2131362020;
+			// aapt resource value: 0x7f0b00e4
+			public const int TextAppearance_AppCompat_Menu = 2131427556;
 			
-			// aapt resource value: 0x7f0a00e5
-			public const int TextAppearance_AppCompat_SearchResult_Subtitle = 2131362021;
+			// aapt resource value: 0x7f0b00e5
+			public const int TextAppearance_AppCompat_SearchResult_Subtitle = 2131427557;
 			
-			// aapt resource value: 0x7f0a00e6
-			public const int TextAppearance_AppCompat_SearchResult_Title = 2131362022;
+			// aapt resource value: 0x7f0b00e6
+			public const int TextAppearance_AppCompat_SearchResult_Title = 2131427558;
 			
-			// aapt resource value: 0x7f0a00e7
-			public const int TextAppearance_AppCompat_Small = 2131362023;
+			// aapt resource value: 0x7f0b00e7
+			public const int TextAppearance_AppCompat_Small = 2131427559;
 			
-			// aapt resource value: 0x7f0a00e8
-			public const int TextAppearance_AppCompat_Small_Inverse = 2131362024;
+			// aapt resource value: 0x7f0b00e8
+			public const int TextAppearance_AppCompat_Small_Inverse = 2131427560;
 			
-			// aapt resource value: 0x7f0a00e9
-			public const int TextAppearance_AppCompat_Subhead = 2131362025;
+			// aapt resource value: 0x7f0b00e9
+			public const int TextAppearance_AppCompat_Subhead = 2131427561;
 			
-			// aapt resource value: 0x7f0a00ea
-			public const int TextAppearance_AppCompat_Subhead_Inverse = 2131362026;
+			// aapt resource value: 0x7f0b00ea
+			public const int TextAppearance_AppCompat_Subhead_Inverse = 2131427562;
 			
-			// aapt resource value: 0x7f0a00eb
-			public const int TextAppearance_AppCompat_Title = 2131362027;
+			// aapt resource value: 0x7f0b00eb
+			public const int TextAppearance_AppCompat_Title = 2131427563;
 			
-			// aapt resource value: 0x7f0a00ec
-			public const int TextAppearance_AppCompat_Title_Inverse = 2131362028;
+			// aapt resource value: 0x7f0b00ec
+			public const int TextAppearance_AppCompat_Title_Inverse = 2131427564;
 			
-			// aapt resource value: 0x7f0a00ed
-			public const int TextAppearance_AppCompat_Widget_ActionBar_Menu = 2131362029;
+			// aapt resource value: 0x7f0b00ed
+			public const int TextAppearance_AppCompat_Widget_ActionBar_Menu = 2131427565;
 			
-			// aapt resource value: 0x7f0a00ee
-			public const int TextAppearance_AppCompat_Widget_ActionBar_Subtitle = 2131362030;
+			// aapt resource value: 0x7f0b00ee
+			public const int TextAppearance_AppCompat_Widget_ActionBar_Subtitle = 2131427566;
 			
-			// aapt resource value: 0x7f0a00ef
-			public const int TextAppearance_AppCompat_Widget_ActionBar_Subtitle_Inverse = 2131362031;
+			// aapt resource value: 0x7f0b00ef
+			public const int TextAppearance_AppCompat_Widget_ActionBar_Subtitle_Inverse = 2131427567;
 			
-			// aapt resource value: 0x7f0a00f0
-			public const int TextAppearance_AppCompat_Widget_ActionBar_Title = 2131362032;
+			// aapt resource value: 0x7f0b00f0
+			public const int TextAppearance_AppCompat_Widget_ActionBar_Title = 2131427568;
 			
-			// aapt resource value: 0x7f0a00f1
-			public const int TextAppearance_AppCompat_Widget_ActionBar_Title_Inverse = 2131362033;
+			// aapt resource value: 0x7f0b00f1
+			public const int TextAppearance_AppCompat_Widget_ActionBar_Title_Inverse = 2131427569;
 			
-			// aapt resource value: 0x7f0a00f2
-			public const int TextAppearance_AppCompat_Widget_ActionMode_Subtitle = 2131362034;
+			// aapt resource value: 0x7f0b00f2
+			public const int TextAppearance_AppCompat_Widget_ActionMode_Subtitle = 2131427570;
 			
-			// aapt resource value: 0x7f0a00f3
-			public const int TextAppearance_AppCompat_Widget_ActionMode_Subtitle_Inverse = 2131362035;
+			// aapt resource value: 0x7f0b00f3
+			public const int TextAppearance_AppCompat_Widget_ActionMode_Subtitle_Inverse = 2131427571;
 			
-			// aapt resource value: 0x7f0a00f4
-			public const int TextAppearance_AppCompat_Widget_ActionMode_Title = 2131362036;
+			// aapt resource value: 0x7f0b00f4
+			public const int TextAppearance_AppCompat_Widget_ActionMode_Title = 2131427572;
 			
-			// aapt resource value: 0x7f0a00f5
-			public const int TextAppearance_AppCompat_Widget_ActionMode_Title_Inverse = 2131362037;
+			// aapt resource value: 0x7f0b00f5
+			public const int TextAppearance_AppCompat_Widget_ActionMode_Title_Inverse = 2131427573;
 			
-			// aapt resource value: 0x7f0a00f6
-			public const int TextAppearance_AppCompat_Widget_Button = 2131362038;
+			// aapt resource value: 0x7f0b00f6
+			public const int TextAppearance_AppCompat_Widget_Button = 2131427574;
 			
-			// aapt resource value: 0x7f0a00f7
-			public const int TextAppearance_AppCompat_Widget_Button_Inverse = 2131362039;
+			// aapt resource value: 0x7f0b00f7
+			public const int TextAppearance_AppCompat_Widget_Button_Inverse = 2131427575;
 			
-			// aapt resource value: 0x7f0a00f8
-			public const int TextAppearance_AppCompat_Widget_DropDownItem = 2131362040;
+			// aapt resource value: 0x7f0b00f8
+			public const int TextAppearance_AppCompat_Widget_DropDownItem = 2131427576;
 			
-			// aapt resource value: 0x7f0a00f9
-			public const int TextAppearance_AppCompat_Widget_PopupMenu_Large = 2131362041;
+			// aapt resource value: 0x7f0b00f9
+			public const int TextAppearance_AppCompat_Widget_PopupMenu_Large = 2131427577;
 			
-			// aapt resource value: 0x7f0a00fa
-			public const int TextAppearance_AppCompat_Widget_PopupMenu_Small = 2131362042;
+			// aapt resource value: 0x7f0b00fa
+			public const int TextAppearance_AppCompat_Widget_PopupMenu_Small = 2131427578;
 			
-			// aapt resource value: 0x7f0a00fb
-			public const int TextAppearance_AppCompat_Widget_Switch = 2131362043;
+			// aapt resource value: 0x7f0b00fb
+			public const int TextAppearance_AppCompat_Widget_Switch = 2131427579;
 			
-			// aapt resource value: 0x7f0a00fc
-			public const int TextAppearance_AppCompat_Widget_TextView_SpinnerItem = 2131362044;
+			// aapt resource value: 0x7f0b00fc
+			public const int TextAppearance_AppCompat_Widget_TextView_SpinnerItem = 2131427580;
 			
-			// aapt resource value: 0x7f0a015c
-			public const int TextAppearance_Design_CollapsingToolbar_Expanded = 2131362140;
+			// aapt resource value: 0x7f0b015c
+			public const int TextAppearance_Design_CollapsingToolbar_Expanded = 2131427676;
 			
-			// aapt resource value: 0x7f0a015d
-			public const int TextAppearance_Design_Counter = 2131362141;
+			// aapt resource value: 0x7f0b015d
+			public const int TextAppearance_Design_Counter = 2131427677;
 			
-			// aapt resource value: 0x7f0a015e
-			public const int TextAppearance_Design_Counter_Overflow = 2131362142;
+			// aapt resource value: 0x7f0b015e
+			public const int TextAppearance_Design_Counter_Overflow = 2131427678;
 			
-			// aapt resource value: 0x7f0a015f
-			public const int TextAppearance_Design_Error = 2131362143;
+			// aapt resource value: 0x7f0b015f
+			public const int TextAppearance_Design_Error = 2131427679;
 			
-			// aapt resource value: 0x7f0a0160
-			public const int TextAppearance_Design_Hint = 2131362144;
+			// aapt resource value: 0x7f0b0160
+			public const int TextAppearance_Design_Hint = 2131427680;
 			
-			// aapt resource value: 0x7f0a0161
-			public const int TextAppearance_Design_Snackbar_Message = 2131362145;
+			// aapt resource value: 0x7f0b0161
+			public const int TextAppearance_Design_Snackbar_Message = 2131427681;
 			
-			// aapt resource value: 0x7f0a0162
-			public const int TextAppearance_Design_Tab = 2131362146;
+			// aapt resource value: 0x7f0b0162
+			public const int TextAppearance_Design_Tab = 2131427682;
 			
-			// aapt resource value: 0x7f0a003e
-			public const int TextAppearance_StatusBar_EventContent = 2131361854;
+			// aapt resource value: 0x7f0b003e
+			public const int TextAppearance_StatusBar_EventContent = 2131427390;
 			
-			// aapt resource value: 0x7f0a003f
-			public const int TextAppearance_StatusBar_EventContent_Info = 2131361855;
+			// aapt resource value: 0x7f0b003f
+			public const int TextAppearance_StatusBar_EventContent_Info = 2131427391;
 			
-			// aapt resource value: 0x7f0a0040
-			public const int TextAppearance_StatusBar_EventContent_Line2 = 2131361856;
+			// aapt resource value: 0x7f0b0040
+			public const int TextAppearance_StatusBar_EventContent_Line2 = 2131427392;
 			
-			// aapt resource value: 0x7f0a0041
-			public const int TextAppearance_StatusBar_EventContent_Time = 2131361857;
+			// aapt resource value: 0x7f0b0041
+			public const int TextAppearance_StatusBar_EventContent_Time = 2131427393;
 			
-			// aapt resource value: 0x7f0a0042
-			public const int TextAppearance_StatusBar_EventContent_Title = 2131361858;
+			// aapt resource value: 0x7f0b0042
+			public const int TextAppearance_StatusBar_EventContent_Title = 2131427394;
 			
-			// aapt resource value: 0x7f0a00fd
-			public const int TextAppearance_Widget_AppCompat_ExpandedMenu_Item = 2131362045;
+			// aapt resource value: 0x7f0b00fd
+			public const int TextAppearance_Widget_AppCompat_ExpandedMenu_Item = 2131427581;
 			
-			// aapt resource value: 0x7f0a00fe
-			public const int TextAppearance_Widget_AppCompat_Toolbar_Subtitle = 2131362046;
+			// aapt resource value: 0x7f0b00fe
+			public const int TextAppearance_Widget_AppCompat_Toolbar_Subtitle = 2131427582;
 			
-			// aapt resource value: 0x7f0a00ff
-			public const int TextAppearance_Widget_AppCompat_Toolbar_Title = 2131362047;
+			// aapt resource value: 0x7f0b00ff
+			public const int TextAppearance_Widget_AppCompat_Toolbar_Title = 2131427583;
 			
-			// aapt resource value: 0x7f0a0100
-			public const int Theme_AppCompat = 2131362048;
+			// aapt resource value: 0x7f0b0100
+			public const int Theme_AppCompat = 2131427584;
 			
-			// aapt resource value: 0x7f0a0101
-			public const int Theme_AppCompat_CompactMenu = 2131362049;
+			// aapt resource value: 0x7f0b0101
+			public const int Theme_AppCompat_CompactMenu = 2131427585;
 			
-			// aapt resource value: 0x7f0a001f
-			public const int Theme_AppCompat_DayNight = 2131361823;
+			// aapt resource value: 0x7f0b001f
+			public const int Theme_AppCompat_DayNight = 2131427359;
 			
-			// aapt resource value: 0x7f0a0020
-			public const int Theme_AppCompat_DayNight_DarkActionBar = 2131361824;
+			// aapt resource value: 0x7f0b0020
+			public const int Theme_AppCompat_DayNight_DarkActionBar = 2131427360;
 			
-			// aapt resource value: 0x7f0a0021
-			public const int Theme_AppCompat_DayNight_Dialog = 2131361825;
+			// aapt resource value: 0x7f0b0021
+			public const int Theme_AppCompat_DayNight_Dialog = 2131427361;
 			
-			// aapt resource value: 0x7f0a0022
-			public const int Theme_AppCompat_DayNight_Dialog_Alert = 2131361826;
+			// aapt resource value: 0x7f0b0022
+			public const int Theme_AppCompat_DayNight_Dialog_Alert = 2131427362;
 			
-			// aapt resource value: 0x7f0a0023
-			public const int Theme_AppCompat_DayNight_Dialog_MinWidth = 2131361827;
+			// aapt resource value: 0x7f0b0023
+			public const int Theme_AppCompat_DayNight_Dialog_MinWidth = 2131427363;
 			
-			// aapt resource value: 0x7f0a0024
-			public const int Theme_AppCompat_DayNight_DialogWhenLarge = 2131361828;
+			// aapt resource value: 0x7f0b0024
+			public const int Theme_AppCompat_DayNight_DialogWhenLarge = 2131427364;
 			
-			// aapt resource value: 0x7f0a0025
-			public const int Theme_AppCompat_DayNight_NoActionBar = 2131361829;
+			// aapt resource value: 0x7f0b0025
+			public const int Theme_AppCompat_DayNight_NoActionBar = 2131427365;
 			
-			// aapt resource value: 0x7f0a0102
-			public const int Theme_AppCompat_Dialog = 2131362050;
+			// aapt resource value: 0x7f0b0102
+			public const int Theme_AppCompat_Dialog = 2131427586;
 			
-			// aapt resource value: 0x7f0a0103
-			public const int Theme_AppCompat_Dialog_Alert = 2131362051;
+			// aapt resource value: 0x7f0b0103
+			public const int Theme_AppCompat_Dialog_Alert = 2131427587;
 			
-			// aapt resource value: 0x7f0a0104
-			public const int Theme_AppCompat_Dialog_MinWidth = 2131362052;
+			// aapt resource value: 0x7f0b0104
+			public const int Theme_AppCompat_Dialog_MinWidth = 2131427588;
 			
-			// aapt resource value: 0x7f0a0105
-			public const int Theme_AppCompat_DialogWhenLarge = 2131362053;
+			// aapt resource value: 0x7f0b0105
+			public const int Theme_AppCompat_DialogWhenLarge = 2131427589;
 			
-			// aapt resource value: 0x7f0a0106
-			public const int Theme_AppCompat_Light = 2131362054;
+			// aapt resource value: 0x7f0b0106
+			public const int Theme_AppCompat_Light = 2131427590;
 			
-			// aapt resource value: 0x7f0a0107
-			public const int Theme_AppCompat_Light_DarkActionBar = 2131362055;
+			// aapt resource value: 0x7f0b0107
+			public const int Theme_AppCompat_Light_DarkActionBar = 2131427591;
 			
-			// aapt resource value: 0x7f0a0108
-			public const int Theme_AppCompat_Light_Dialog = 2131362056;
+			// aapt resource value: 0x7f0b0108
+			public const int Theme_AppCompat_Light_Dialog = 2131427592;
 			
-			// aapt resource value: 0x7f0a0109
-			public const int Theme_AppCompat_Light_Dialog_Alert = 2131362057;
+			// aapt resource value: 0x7f0b0109
+			public const int Theme_AppCompat_Light_Dialog_Alert = 2131427593;
 			
-			// aapt resource value: 0x7f0a010a
-			public const int Theme_AppCompat_Light_Dialog_MinWidth = 2131362058;
+			// aapt resource value: 0x7f0b010a
+			public const int Theme_AppCompat_Light_Dialog_MinWidth = 2131427594;
 			
-			// aapt resource value: 0x7f0a010b
-			public const int Theme_AppCompat_Light_DialogWhenLarge = 2131362059;
+			// aapt resource value: 0x7f0b010b
+			public const int Theme_AppCompat_Light_DialogWhenLarge = 2131427595;
 			
-			// aapt resource value: 0x7f0a010c
-			public const int Theme_AppCompat_Light_NoActionBar = 2131362060;
+			// aapt resource value: 0x7f0b010c
+			public const int Theme_AppCompat_Light_NoActionBar = 2131427596;
 			
-			// aapt resource value: 0x7f0a010d
-			public const int Theme_AppCompat_NoActionBar = 2131362061;
+			// aapt resource value: 0x7f0b010d
+			public const int Theme_AppCompat_NoActionBar = 2131427597;
 			
-			// aapt resource value: 0x7f0a0163
-			public const int Theme_Design = 2131362147;
+			// aapt resource value: 0x7f0b0163
+			public const int Theme_Design = 2131427683;
 			
-			// aapt resource value: 0x7f0a0164
-			public const int Theme_Design_BottomSheetDialog = 2131362148;
+			// aapt resource value: 0x7f0b0164
+			public const int Theme_Design_BottomSheetDialog = 2131427684;
 			
-			// aapt resource value: 0x7f0a0165
-			public const int Theme_Design_Light = 2131362149;
+			// aapt resource value: 0x7f0b0165
+			public const int Theme_Design_Light = 2131427685;
 			
-			// aapt resource value: 0x7f0a0166
-			public const int Theme_Design_Light_BottomSheetDialog = 2131362150;
+			// aapt resource value: 0x7f0b0166
+			public const int Theme_Design_Light_BottomSheetDialog = 2131427686;
 			
-			// aapt resource value: 0x7f0a0167
-			public const int Theme_Design_Light_NoActionBar = 2131362151;
+			// aapt resource value: 0x7f0b0167
+			public const int Theme_Design_Light_NoActionBar = 2131427687;
 			
-			// aapt resource value: 0x7f0a0168
-			public const int Theme_Design_NoActionBar = 2131362152;
+			// aapt resource value: 0x7f0b0168
+			public const int Theme_Design_NoActionBar = 2131427688;
 			
-			// aapt resource value: 0x7f0a0000
-			public const int Theme_MediaRouter = 2131361792;
+			// aapt resource value: 0x7f0b0000
+			public const int Theme_MediaRouter = 2131427328;
 			
-			// aapt resource value: 0x7f0a0001
-			public const int Theme_MediaRouter_Light = 2131361793;
+			// aapt resource value: 0x7f0b0001
+			public const int Theme_MediaRouter_Light = 2131427329;
 			
-			// aapt resource value: 0x7f0a0002
-			public const int Theme_MediaRouter_Light_DarkControlPanel = 2131361794;
+			// aapt resource value: 0x7f0b0002
+			public const int Theme_MediaRouter_Light_DarkControlPanel = 2131427330;
 			
-			// aapt resource value: 0x7f0a0003
-			public const int Theme_MediaRouter_LightControlPanel = 2131361795;
+			// aapt resource value: 0x7f0b0003
+			public const int Theme_MediaRouter_LightControlPanel = 2131427331;
 			
-			// aapt resource value: 0x7f0a010e
-			public const int ThemeOverlay_AppCompat = 2131362062;
+			// aapt resource value: 0x7f0b010e
+			public const int ThemeOverlay_AppCompat = 2131427598;
 			
-			// aapt resource value: 0x7f0a010f
-			public const int ThemeOverlay_AppCompat_ActionBar = 2131362063;
+			// aapt resource value: 0x7f0b010f
+			public const int ThemeOverlay_AppCompat_ActionBar = 2131427599;
 			
-			// aapt resource value: 0x7f0a0110
-			public const int ThemeOverlay_AppCompat_Dark = 2131362064;
+			// aapt resource value: 0x7f0b0110
+			public const int ThemeOverlay_AppCompat_Dark = 2131427600;
 			
-			// aapt resource value: 0x7f0a0111
-			public const int ThemeOverlay_AppCompat_Dark_ActionBar = 2131362065;
+			// aapt resource value: 0x7f0b0111
+			public const int ThemeOverlay_AppCompat_Dark_ActionBar = 2131427601;
 			
-			// aapt resource value: 0x7f0a0112
-			public const int ThemeOverlay_AppCompat_Light = 2131362066;
+			// aapt resource value: 0x7f0b0112
+			public const int ThemeOverlay_AppCompat_Light = 2131427602;
 			
-			// aapt resource value: 0x7f0a0113
-			public const int Widget_AppCompat_ActionBar = 2131362067;
+			// aapt resource value: 0x7f0b0113
+			public const int Widget_AppCompat_ActionBar = 2131427603;
 			
-			// aapt resource value: 0x7f0a0114
-			public const int Widget_AppCompat_ActionBar_Solid = 2131362068;
+			// aapt resource value: 0x7f0b0114
+			public const int Widget_AppCompat_ActionBar_Solid = 2131427604;
 			
-			// aapt resource value: 0x7f0a0115
-			public const int Widget_AppCompat_ActionBar_TabBar = 2131362069;
+			// aapt resource value: 0x7f0b0115
+			public const int Widget_AppCompat_ActionBar_TabBar = 2131427605;
 			
-			// aapt resource value: 0x7f0a0116
-			public const int Widget_AppCompat_ActionBar_TabText = 2131362070;
+			// aapt resource value: 0x7f0b0116
+			public const int Widget_AppCompat_ActionBar_TabText = 2131427606;
 			
-			// aapt resource value: 0x7f0a0117
-			public const int Widget_AppCompat_ActionBar_TabView = 2131362071;
+			// aapt resource value: 0x7f0b0117
+			public const int Widget_AppCompat_ActionBar_TabView = 2131427607;
 			
-			// aapt resource value: 0x7f0a0118
-			public const int Widget_AppCompat_ActionButton = 2131362072;
+			// aapt resource value: 0x7f0b0118
+			public const int Widget_AppCompat_ActionButton = 2131427608;
 			
-			// aapt resource value: 0x7f0a0119
-			public const int Widget_AppCompat_ActionButton_CloseMode = 2131362073;
+			// aapt resource value: 0x7f0b0119
+			public const int Widget_AppCompat_ActionButton_CloseMode = 2131427609;
 			
-			// aapt resource value: 0x7f0a011a
-			public const int Widget_AppCompat_ActionButton_Overflow = 2131362074;
+			// aapt resource value: 0x7f0b011a
+			public const int Widget_AppCompat_ActionButton_Overflow = 2131427610;
 			
-			// aapt resource value: 0x7f0a011b
-			public const int Widget_AppCompat_ActionMode = 2131362075;
+			// aapt resource value: 0x7f0b011b
+			public const int Widget_AppCompat_ActionMode = 2131427611;
 			
-			// aapt resource value: 0x7f0a011c
-			public const int Widget_AppCompat_ActivityChooserView = 2131362076;
+			// aapt resource value: 0x7f0b011c
+			public const int Widget_AppCompat_ActivityChooserView = 2131427612;
 			
-			// aapt resource value: 0x7f0a011d
-			public const int Widget_AppCompat_AutoCompleteTextView = 2131362077;
+			// aapt resource value: 0x7f0b011d
+			public const int Widget_AppCompat_AutoCompleteTextView = 2131427613;
 			
-			// aapt resource value: 0x7f0a011e
-			public const int Widget_AppCompat_Button = 2131362078;
+			// aapt resource value: 0x7f0b011e
+			public const int Widget_AppCompat_Button = 2131427614;
 			
-			// aapt resource value: 0x7f0a011f
-			public const int Widget_AppCompat_Button_Borderless = 2131362079;
+			// aapt resource value: 0x7f0b011f
+			public const int Widget_AppCompat_Button_Borderless = 2131427615;
 			
-			// aapt resource value: 0x7f0a0120
-			public const int Widget_AppCompat_Button_Borderless_Colored = 2131362080;
+			// aapt resource value: 0x7f0b0120
+			public const int Widget_AppCompat_Button_Borderless_Colored = 2131427616;
 			
-			// aapt resource value: 0x7f0a0121
-			public const int Widget_AppCompat_Button_ButtonBar_AlertDialog = 2131362081;
+			// aapt resource value: 0x7f0b0121
+			public const int Widget_AppCompat_Button_ButtonBar_AlertDialog = 2131427617;
 			
-			// aapt resource value: 0x7f0a0122
-			public const int Widget_AppCompat_Button_Colored = 2131362082;
+			// aapt resource value: 0x7f0b0122
+			public const int Widget_AppCompat_Button_Colored = 2131427618;
 			
-			// aapt resource value: 0x7f0a0123
-			public const int Widget_AppCompat_Button_Small = 2131362083;
+			// aapt resource value: 0x7f0b0123
+			public const int Widget_AppCompat_Button_Small = 2131427619;
 			
-			// aapt resource value: 0x7f0a0124
-			public const int Widget_AppCompat_ButtonBar = 2131362084;
+			// aapt resource value: 0x7f0b0124
+			public const int Widget_AppCompat_ButtonBar = 2131427620;
 			
-			// aapt resource value: 0x7f0a0125
-			public const int Widget_AppCompat_ButtonBar_AlertDialog = 2131362085;
+			// aapt resource value: 0x7f0b0125
+			public const int Widget_AppCompat_ButtonBar_AlertDialog = 2131427621;
 			
-			// aapt resource value: 0x7f0a0126
-			public const int Widget_AppCompat_CompoundButton_CheckBox = 2131362086;
+			// aapt resource value: 0x7f0b0126
+			public const int Widget_AppCompat_CompoundButton_CheckBox = 2131427622;
 			
-			// aapt resource value: 0x7f0a0127
-			public const int Widget_AppCompat_CompoundButton_RadioButton = 2131362087;
+			// aapt resource value: 0x7f0b0127
+			public const int Widget_AppCompat_CompoundButton_RadioButton = 2131427623;
 			
-			// aapt resource value: 0x7f0a0128
-			public const int Widget_AppCompat_CompoundButton_Switch = 2131362088;
+			// aapt resource value: 0x7f0b0128
+			public const int Widget_AppCompat_CompoundButton_Switch = 2131427624;
 			
-			// aapt resource value: 0x7f0a0129
-			public const int Widget_AppCompat_DrawerArrowToggle = 2131362089;
+			// aapt resource value: 0x7f0b0129
+			public const int Widget_AppCompat_DrawerArrowToggle = 2131427625;
 			
-			// aapt resource value: 0x7f0a012a
-			public const int Widget_AppCompat_DropDownItem_Spinner = 2131362090;
+			// aapt resource value: 0x7f0b012a
+			public const int Widget_AppCompat_DropDownItem_Spinner = 2131427626;
 			
-			// aapt resource value: 0x7f0a012b
-			public const int Widget_AppCompat_EditText = 2131362091;
+			// aapt resource value: 0x7f0b012b
+			public const int Widget_AppCompat_EditText = 2131427627;
 			
-			// aapt resource value: 0x7f0a012c
-			public const int Widget_AppCompat_ImageButton = 2131362092;
+			// aapt resource value: 0x7f0b012c
+			public const int Widget_AppCompat_ImageButton = 2131427628;
 			
-			// aapt resource value: 0x7f0a012d
-			public const int Widget_AppCompat_Light_ActionBar = 2131362093;
+			// aapt resource value: 0x7f0b012d
+			public const int Widget_AppCompat_Light_ActionBar = 2131427629;
 			
-			// aapt resource value: 0x7f0a012e
-			public const int Widget_AppCompat_Light_ActionBar_Solid = 2131362094;
+			// aapt resource value: 0x7f0b012e
+			public const int Widget_AppCompat_Light_ActionBar_Solid = 2131427630;
 			
-			// aapt resource value: 0x7f0a012f
-			public const int Widget_AppCompat_Light_ActionBar_Solid_Inverse = 2131362095;
+			// aapt resource value: 0x7f0b012f
+			public const int Widget_AppCompat_Light_ActionBar_Solid_Inverse = 2131427631;
 			
-			// aapt resource value: 0x7f0a0130
-			public const int Widget_AppCompat_Light_ActionBar_TabBar = 2131362096;
+			// aapt resource value: 0x7f0b0130
+			public const int Widget_AppCompat_Light_ActionBar_TabBar = 2131427632;
 			
-			// aapt resource value: 0x7f0a0131
-			public const int Widget_AppCompat_Light_ActionBar_TabBar_Inverse = 2131362097;
+			// aapt resource value: 0x7f0b0131
+			public const int Widget_AppCompat_Light_ActionBar_TabBar_Inverse = 2131427633;
 			
-			// aapt resource value: 0x7f0a0132
-			public const int Widget_AppCompat_Light_ActionBar_TabText = 2131362098;
+			// aapt resource value: 0x7f0b0132
+			public const int Widget_AppCompat_Light_ActionBar_TabText = 2131427634;
 			
-			// aapt resource value: 0x7f0a0133
-			public const int Widget_AppCompat_Light_ActionBar_TabText_Inverse = 2131362099;
+			// aapt resource value: 0x7f0b0133
+			public const int Widget_AppCompat_Light_ActionBar_TabText_Inverse = 2131427635;
 			
-			// aapt resource value: 0x7f0a0134
-			public const int Widget_AppCompat_Light_ActionBar_TabView = 2131362100;
+			// aapt resource value: 0x7f0b0134
+			public const int Widget_AppCompat_Light_ActionBar_TabView = 2131427636;
 			
-			// aapt resource value: 0x7f0a0135
-			public const int Widget_AppCompat_Light_ActionBar_TabView_Inverse = 2131362101;
+			// aapt resource value: 0x7f0b0135
+			public const int Widget_AppCompat_Light_ActionBar_TabView_Inverse = 2131427637;
 			
-			// aapt resource value: 0x7f0a0136
-			public const int Widget_AppCompat_Light_ActionButton = 2131362102;
+			// aapt resource value: 0x7f0b0136
+			public const int Widget_AppCompat_Light_ActionButton = 2131427638;
 			
-			// aapt resource value: 0x7f0a0137
-			public const int Widget_AppCompat_Light_ActionButton_CloseMode = 2131362103;
+			// aapt resource value: 0x7f0b0137
+			public const int Widget_AppCompat_Light_ActionButton_CloseMode = 2131427639;
 			
-			// aapt resource value: 0x7f0a0138
-			public const int Widget_AppCompat_Light_ActionButton_Overflow = 2131362104;
+			// aapt resource value: 0x7f0b0138
+			public const int Widget_AppCompat_Light_ActionButton_Overflow = 2131427640;
 			
-			// aapt resource value: 0x7f0a0139
-			public const int Widget_AppCompat_Light_ActionMode_Inverse = 2131362105;
+			// aapt resource value: 0x7f0b0139
+			public const int Widget_AppCompat_Light_ActionMode_Inverse = 2131427641;
 			
-			// aapt resource value: 0x7f0a013a
-			public const int Widget_AppCompat_Light_ActivityChooserView = 2131362106;
+			// aapt resource value: 0x7f0b013a
+			public const int Widget_AppCompat_Light_ActivityChooserView = 2131427642;
 			
-			// aapt resource value: 0x7f0a013b
-			public const int Widget_AppCompat_Light_AutoCompleteTextView = 2131362107;
+			// aapt resource value: 0x7f0b013b
+			public const int Widget_AppCompat_Light_AutoCompleteTextView = 2131427643;
 			
-			// aapt resource value: 0x7f0a013c
-			public const int Widget_AppCompat_Light_DropDownItem_Spinner = 2131362108;
+			// aapt resource value: 0x7f0b013c
+			public const int Widget_AppCompat_Light_DropDownItem_Spinner = 2131427644;
 			
-			// aapt resource value: 0x7f0a013d
-			public const int Widget_AppCompat_Light_ListPopupWindow = 2131362109;
+			// aapt resource value: 0x7f0b013d
+			public const int Widget_AppCompat_Light_ListPopupWindow = 2131427645;
 			
-			// aapt resource value: 0x7f0a013e
-			public const int Widget_AppCompat_Light_ListView_DropDown = 2131362110;
+			// aapt resource value: 0x7f0b013e
+			public const int Widget_AppCompat_Light_ListView_DropDown = 2131427646;
 			
-			// aapt resource value: 0x7f0a013f
-			public const int Widget_AppCompat_Light_PopupMenu = 2131362111;
+			// aapt resource value: 0x7f0b013f
+			public const int Widget_AppCompat_Light_PopupMenu = 2131427647;
 			
-			// aapt resource value: 0x7f0a0140
-			public const int Widget_AppCompat_Light_PopupMenu_Overflow = 2131362112;
+			// aapt resource value: 0x7f0b0140
+			public const int Widget_AppCompat_Light_PopupMenu_Overflow = 2131427648;
 			
-			// aapt resource value: 0x7f0a0141
-			public const int Widget_AppCompat_Light_SearchView = 2131362113;
+			// aapt resource value: 0x7f0b0141
+			public const int Widget_AppCompat_Light_SearchView = 2131427649;
 			
-			// aapt resource value: 0x7f0a0142
-			public const int Widget_AppCompat_Light_Spinner_DropDown_ActionBar = 2131362114;
+			// aapt resource value: 0x7f0b0142
+			public const int Widget_AppCompat_Light_Spinner_DropDown_ActionBar = 2131427650;
 			
-			// aapt resource value: 0x7f0a0143
-			public const int Widget_AppCompat_ListPopupWindow = 2131362115;
+			// aapt resource value: 0x7f0b0143
+			public const int Widget_AppCompat_ListPopupWindow = 2131427651;
 			
-			// aapt resource value: 0x7f0a0144
-			public const int Widget_AppCompat_ListView = 2131362116;
+			// aapt resource value: 0x7f0b0144
+			public const int Widget_AppCompat_ListView = 2131427652;
 			
-			// aapt resource value: 0x7f0a0145
-			public const int Widget_AppCompat_ListView_DropDown = 2131362117;
+			// aapt resource value: 0x7f0b0145
+			public const int Widget_AppCompat_ListView_DropDown = 2131427653;
 			
-			// aapt resource value: 0x7f0a0146
-			public const int Widget_AppCompat_ListView_Menu = 2131362118;
+			// aapt resource value: 0x7f0b0146
+			public const int Widget_AppCompat_ListView_Menu = 2131427654;
 			
-			// aapt resource value: 0x7f0a0147
-			public const int Widget_AppCompat_PopupMenu = 2131362119;
+			// aapt resource value: 0x7f0b0147
+			public const int Widget_AppCompat_PopupMenu = 2131427655;
 			
-			// aapt resource value: 0x7f0a0148
-			public const int Widget_AppCompat_PopupMenu_Overflow = 2131362120;
+			// aapt resource value: 0x7f0b0148
+			public const int Widget_AppCompat_PopupMenu_Overflow = 2131427656;
 			
-			// aapt resource value: 0x7f0a0149
-			public const int Widget_AppCompat_PopupWindow = 2131362121;
+			// aapt resource value: 0x7f0b0149
+			public const int Widget_AppCompat_PopupWindow = 2131427657;
 			
-			// aapt resource value: 0x7f0a014a
-			public const int Widget_AppCompat_ProgressBar = 2131362122;
+			// aapt resource value: 0x7f0b014a
+			public const int Widget_AppCompat_ProgressBar = 2131427658;
 			
-			// aapt resource value: 0x7f0a014b
-			public const int Widget_AppCompat_ProgressBar_Horizontal = 2131362123;
+			// aapt resource value: 0x7f0b014b
+			public const int Widget_AppCompat_ProgressBar_Horizontal = 2131427659;
 			
-			// aapt resource value: 0x7f0a014c
-			public const int Widget_AppCompat_RatingBar = 2131362124;
+			// aapt resource value: 0x7f0b014c
+			public const int Widget_AppCompat_RatingBar = 2131427660;
 			
-			// aapt resource value: 0x7f0a014d
-			public const int Widget_AppCompat_RatingBar_Indicator = 2131362125;
+			// aapt resource value: 0x7f0b014d
+			public const int Widget_AppCompat_RatingBar_Indicator = 2131427661;
 			
-			// aapt resource value: 0x7f0a014e
-			public const int Widget_AppCompat_RatingBar_Small = 2131362126;
+			// aapt resource value: 0x7f0b014e
+			public const int Widget_AppCompat_RatingBar_Small = 2131427662;
 			
-			// aapt resource value: 0x7f0a014f
-			public const int Widget_AppCompat_SearchView = 2131362127;
+			// aapt resource value: 0x7f0b014f
+			public const int Widget_AppCompat_SearchView = 2131427663;
 			
-			// aapt resource value: 0x7f0a0150
-			public const int Widget_AppCompat_SearchView_ActionBar = 2131362128;
+			// aapt resource value: 0x7f0b0150
+			public const int Widget_AppCompat_SearchView_ActionBar = 2131427664;
 			
-			// aapt resource value: 0x7f0a0151
-			public const int Widget_AppCompat_SeekBar = 2131362129;
+			// aapt resource value: 0x7f0b0151
+			public const int Widget_AppCompat_SeekBar = 2131427665;
 			
-			// aapt resource value: 0x7f0a0152
-			public const int Widget_AppCompat_Spinner = 2131362130;
+			// aapt resource value: 0x7f0b0152
+			public const int Widget_AppCompat_Spinner = 2131427666;
 			
-			// aapt resource value: 0x7f0a0153
-			public const int Widget_AppCompat_Spinner_DropDown = 2131362131;
+			// aapt resource value: 0x7f0b0153
+			public const int Widget_AppCompat_Spinner_DropDown = 2131427667;
 			
-			// aapt resource value: 0x7f0a0154
-			public const int Widget_AppCompat_Spinner_DropDown_ActionBar = 2131362132;
+			// aapt resource value: 0x7f0b0154
+			public const int Widget_AppCompat_Spinner_DropDown_ActionBar = 2131427668;
 			
-			// aapt resource value: 0x7f0a0155
-			public const int Widget_AppCompat_Spinner_Underlined = 2131362133;
+			// aapt resource value: 0x7f0b0155
+			public const int Widget_AppCompat_Spinner_Underlined = 2131427669;
 			
-			// aapt resource value: 0x7f0a0156
-			public const int Widget_AppCompat_TextView_SpinnerItem = 2131362134;
+			// aapt resource value: 0x7f0b0156
+			public const int Widget_AppCompat_TextView_SpinnerItem = 2131427670;
 			
-			// aapt resource value: 0x7f0a0157
-			public const int Widget_AppCompat_Toolbar = 2131362135;
+			// aapt resource value: 0x7f0b0157
+			public const int Widget_AppCompat_Toolbar = 2131427671;
 			
-			// aapt resource value: 0x7f0a0158
-			public const int Widget_AppCompat_Toolbar_Button_Navigation = 2131362136;
+			// aapt resource value: 0x7f0b0158
+			public const int Widget_AppCompat_Toolbar_Button_Navigation = 2131427672;
 			
-			// aapt resource value: 0x7f0a0169
-			public const int Widget_Design_AppBarLayout = 2131362153;
+			// aapt resource value: 0x7f0b0169
+			public const int Widget_Design_AppBarLayout = 2131427689;
 			
-			// aapt resource value: 0x7f0a016a
-			public const int Widget_Design_BottomSheet_Modal = 2131362154;
+			// aapt resource value: 0x7f0b016a
+			public const int Widget_Design_BottomSheet_Modal = 2131427690;
 			
-			// aapt resource value: 0x7f0a016b
-			public const int Widget_Design_CollapsingToolbar = 2131362155;
+			// aapt resource value: 0x7f0b016b
+			public const int Widget_Design_CollapsingToolbar = 2131427691;
 			
-			// aapt resource value: 0x7f0a016c
-			public const int Widget_Design_CoordinatorLayout = 2131362156;
+			// aapt resource value: 0x7f0b016c
+			public const int Widget_Design_CoordinatorLayout = 2131427692;
 			
-			// aapt resource value: 0x7f0a016d
-			public const int Widget_Design_FloatingActionButton = 2131362157;
+			// aapt resource value: 0x7f0b016d
+			public const int Widget_Design_FloatingActionButton = 2131427693;
 			
-			// aapt resource value: 0x7f0a016e
-			public const int Widget_Design_NavigationView = 2131362158;
+			// aapt resource value: 0x7f0b016e
+			public const int Widget_Design_NavigationView = 2131427694;
 			
-			// aapt resource value: 0x7f0a016f
-			public const int Widget_Design_ScrimInsetsFrameLayout = 2131362159;
+			// aapt resource value: 0x7f0b016f
+			public const int Widget_Design_ScrimInsetsFrameLayout = 2131427695;
 			
-			// aapt resource value: 0x7f0a0170
-			public const int Widget_Design_Snackbar = 2131362160;
+			// aapt resource value: 0x7f0b0170
+			public const int Widget_Design_Snackbar = 2131427696;
 			
-			// aapt resource value: 0x7f0a0159
-			public const int Widget_Design_TabLayout = 2131362137;
+			// aapt resource value: 0x7f0b0159
+			public const int Widget_Design_TabLayout = 2131427673;
 			
-			// aapt resource value: 0x7f0a0171
-			public const int Widget_Design_TextInputLayout = 2131362161;
+			// aapt resource value: 0x7f0b0171
+			public const int Widget_Design_TextInputLayout = 2131427697;
 			
-			// aapt resource value: 0x7f0a0004
-			public const int Widget_MediaRouter_ChooserText = 2131361796;
+			// aapt resource value: 0x7f0b0004
+			public const int Widget_MediaRouter_ChooserText = 2131427332;
 			
-			// aapt resource value: 0x7f0a0005
-			public const int Widget_MediaRouter_ChooserText_Primary = 2131361797;
+			// aapt resource value: 0x7f0b0005
+			public const int Widget_MediaRouter_ChooserText_Primary = 2131427333;
 			
-			// aapt resource value: 0x7f0a0006
-			public const int Widget_MediaRouter_ChooserText_Primary_Dark = 2131361798;
+			// aapt resource value: 0x7f0b0006
+			public const int Widget_MediaRouter_ChooserText_Primary_Dark = 2131427334;
 			
-			// aapt resource value: 0x7f0a0007
-			public const int Widget_MediaRouter_ChooserText_Primary_Light = 2131361799;
+			// aapt resource value: 0x7f0b0007
+			public const int Widget_MediaRouter_ChooserText_Primary_Light = 2131427335;
 			
-			// aapt resource value: 0x7f0a0008
-			public const int Widget_MediaRouter_ChooserText_Secondary = 2131361800;
+			// aapt resource value: 0x7f0b0008
+			public const int Widget_MediaRouter_ChooserText_Secondary = 2131427336;
 			
-			// aapt resource value: 0x7f0a0009
-			public const int Widget_MediaRouter_ChooserText_Secondary_Dark = 2131361801;
+			// aapt resource value: 0x7f0b0009
+			public const int Widget_MediaRouter_ChooserText_Secondary_Dark = 2131427337;
 			
-			// aapt resource value: 0x7f0a000a
-			public const int Widget_MediaRouter_ChooserText_Secondary_Light = 2131361802;
+			// aapt resource value: 0x7f0b000a
+			public const int Widget_MediaRouter_ChooserText_Secondary_Light = 2131427338;
 			
-			// aapt resource value: 0x7f0a000b
-			public const int Widget_MediaRouter_ControllerText = 2131361803;
+			// aapt resource value: 0x7f0b000b
+			public const int Widget_MediaRouter_ControllerText = 2131427339;
 			
-			// aapt resource value: 0x7f0a000c
-			public const int Widget_MediaRouter_ControllerText_Primary = 2131361804;
+			// aapt resource value: 0x7f0b000c
+			public const int Widget_MediaRouter_ControllerText_Primary = 2131427340;
 			
-			// aapt resource value: 0x7f0a000d
-			public const int Widget_MediaRouter_ControllerText_Primary_Dark = 2131361805;
+			// aapt resource value: 0x7f0b000d
+			public const int Widget_MediaRouter_ControllerText_Primary_Dark = 2131427341;
 			
-			// aapt resource value: 0x7f0a000e
-			public const int Widget_MediaRouter_ControllerText_Primary_Light = 2131361806;
+			// aapt resource value: 0x7f0b000e
+			public const int Widget_MediaRouter_ControllerText_Primary_Light = 2131427342;
 			
-			// aapt resource value: 0x7f0a000f
-			public const int Widget_MediaRouter_ControllerText_Secondary = 2131361807;
+			// aapt resource value: 0x7f0b000f
+			public const int Widget_MediaRouter_ControllerText_Secondary = 2131427343;
 			
-			// aapt resource value: 0x7f0a0010
-			public const int Widget_MediaRouter_ControllerText_Secondary_Dark = 2131361808;
+			// aapt resource value: 0x7f0b0010
+			public const int Widget_MediaRouter_ControllerText_Secondary_Dark = 2131427344;
 			
-			// aapt resource value: 0x7f0a0011
-			public const int Widget_MediaRouter_ControllerText_Secondary_Light = 2131361809;
+			// aapt resource value: 0x7f0b0011
+			public const int Widget_MediaRouter_ControllerText_Secondary_Light = 2131427345;
 			
-			// aapt resource value: 0x7f0a0012
-			public const int Widget_MediaRouter_ControllerText_Title = 2131361810;
+			// aapt resource value: 0x7f0b0012
+			public const int Widget_MediaRouter_ControllerText_Title = 2131427346;
 			
-			// aapt resource value: 0x7f0a0013
-			public const int Widget_MediaRouter_ControllerText_Title_Dark = 2131361811;
+			// aapt resource value: 0x7f0b0013
+			public const int Widget_MediaRouter_ControllerText_Title_Dark = 2131427347;
 			
-			// aapt resource value: 0x7f0a0014
-			public const int Widget_MediaRouter_ControllerText_Title_Light = 2131361812;
+			// aapt resource value: 0x7f0b0014
+			public const int Widget_MediaRouter_ControllerText_Title_Light = 2131427348;
 			
-			// aapt resource value: 0x7f0a0015
-			public const int Widget_MediaRouter_Light_MediaRouteButton = 2131361813;
+			// aapt resource value: 0x7f0b0015
+			public const int Widget_MediaRouter_Light_MediaRouteButton = 2131427349;
 			
-			// aapt resource value: 0x7f0a0016
-			public const int Widget_MediaRouter_MediaRouteButton = 2131361814;
+			// aapt resource value: 0x7f0b0016
+			public const int Widget_MediaRouter_MediaRouteButton = 2131427350;
 			
 			static Style()
 			{
@@ -4198,6 +6041,22 @@ namespace Adopcat.Mobile.Droid
 			}
 			
 			private Style()
+			{
+			}
+		}
+		
+		public partial class Xml
+		{
+			
+			// aapt resource value: 0x7f060000
+			public const int file_paths = 2131099648;
+			
+			static Xml()
+			{
+				global::Android.Runtime.ResourceIdManager.UpdateIdValues();
+			}
+			
+			private Xml()
 			{
 			}
 		}

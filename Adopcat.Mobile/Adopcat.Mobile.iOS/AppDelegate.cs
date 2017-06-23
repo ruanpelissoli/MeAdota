@@ -6,6 +6,7 @@ using Foundation;
 using UIKit;
 using Prism.Unity;
 using Microsoft.Practices.Unity;
+using PCLAppConfig;
 
 namespace Adopcat.Mobile.iOS
 {
@@ -25,6 +26,9 @@ namespace Adopcat.Mobile.iOS
         public override bool FinishedLaunching(UIApplication app, NSDictionary options)
         {
             global::Xamarin.Forms.Forms.Init();
+            ConfigurationManager.Initialise(PCLAppConfig.FileSystemStream.PortableStream.Current);
+            Microsoft.WindowsAzure.MobileServices.CurrentPlatform.Init();
+            
             LoadApplication(new App(new iOSInitializer()));
 
             return base.FinishedLaunching(app, options);

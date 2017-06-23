@@ -7,14 +7,17 @@ namespace Adopcat.Data
     public class DatabaseContext : DbContext
     {
         public DatabaseContext()
-            : base("name=AdopcatDb")
+            : base("name=MeAdota")
         {
         }
 
         public virtual DbSet<ApplicationParameter> ApplicationParameter { get; set; }
         public virtual DbSet<SystemLog> SystemLog { get; set; }
         public virtual DbSet<User> User { get; set; }
-        public virtual DbSet<Token> Token { get; set; }        
+        public virtual DbSet<Token> Token { get; set; }
+        public virtual DbSet<Poster> Poster { get; set; }
+        public virtual DbSet<PetPicture> PetPicture { get; set; }
+        public virtual DbSet<Reports> Reports { get; set; }
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
@@ -41,5 +44,4 @@ namespace Adopcat.Data
             return _context;
         }
     }
-
 }

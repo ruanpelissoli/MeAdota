@@ -1,7 +1,9 @@
-﻿using System;
+﻿using PCLAppConfig;
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
+using System.Reflection;
 using System.Runtime.InteropServices.WindowsRuntime;
 using Windows.ApplicationModel;
 using Windows.ApplicationModel.Activation;
@@ -57,8 +59,10 @@ namespace Adopcat.Mobile.UWP
                 rootFrame = new Frame();
 
                 rootFrame.NavigationFailed += OnNavigationFailed;
-
+                
                 Xamarin.Forms.Forms.Init(e);
+
+                ConfigurationManager.Initialise(PCLAppConfig.FileSystemStream.PortableStream.Current);
 
                 if (e.PreviousExecutionState == ApplicationExecutionState.Terminated)
                 {

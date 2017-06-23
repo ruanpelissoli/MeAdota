@@ -5,7 +5,8 @@ namespace Adopcat.Services.Interfaces
 {
     public interface IBlobStorageService
     {
-        //PetPicture UploadedImageStorage(ProposalViewModel proposalViewModel);
-        Task AddImageToBlobStorageAsync(PetPicture uploadedImage);
+        Task<string> AddPetImageToStorageAsync(byte[] file);
+        Task<string> AddUserImageToStorageAsync(byte[] file);
+        Task DeleteBlobStorageAsync(string url);
     }
 }

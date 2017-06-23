@@ -1,6 +1,7 @@
 ﻿using Adopcat.API.Filters;
 using Adopcat.API.Models;
 using Adopcat.Services.Interfaces;
+using System.Threading.Tasks;
 using System.Web.Http;
 
 namespace Adopcat.API.Controllers
@@ -9,28 +10,56 @@ namespace Adopcat.API.Controllers
     public class AuthController : BaseApiController
     {
         private IAuthenticationService _authenticationService;
+        private IUserService _userService;
 
-        public AuthController(IAuthenticationService authenticationService)
+        public AuthController(IAuthenticationService authenticationService, IUserService userService)
         {
             _authenticationService = authenticationService;
+            _userService = userService;
         }
 
         [Route("login")]
         [HttpPost]
         [AllowAnonymous]
-        public IHttpActionResult Login(LoginViewModel loginModel)
+        public async Task<IHttpActionResult> Login(LoginViewModel loginModel)
         {
-            return Ok(_authenticationService.GenerateToken(loginModel.Email, loginModel.Password));
+            var token = await _authenticationService.GenerateToken(loginModel.Email, loginModel.Password);
+            var userId = _authenticationService.GetByAccessToken(token).UserId;
+
+            var loginResponse = new LoginResponseViewModel
+            {
+                AuthToken = token,
+                UserId = userId
+            };
+
+            return Ok(loginResponse);
         }
 
-        [Route("Logout")]
+        [Route("login/fb")]
+        [HttpPost]
+        [AllowAnonymous]
+        public async Task<IHttpActionResult> LoginFacebook(LoginViewModel loginModel)
+        {
+            var token = await _authenticationService.GenerateTokenByFacebook(loginModel.Email, loginModel.Password);
+            var userId = _authenticationService.GetByAccessToken(token).UserId;
+
+            var loginResponse = new LoginResponseViewModel
+            {
+                AuthToken = token,
+                UserId = userId
+            };
+
+            return Ok(loginResponse);
+        }
+
+        [Route("logout")]
         [HttpGet]
         [CustomAuthorize]
-        public IHttpActionResult Logout()
+        public async Task<IHttpActionResult> Logout()
         {
-            _authenticationService.KillToken(this.Token.Id);
+            var authToken = _authenticationService.GetByAccessToken(Token);
+            await _authenticationService.KillToken(authToken.Id);
             return Ok();
         }
-
     }
 }

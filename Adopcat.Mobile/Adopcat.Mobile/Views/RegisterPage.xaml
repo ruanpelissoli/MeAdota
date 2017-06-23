@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:prism="clr-namespace:Prism.Mvvm;assembly=Prism.Forms"
+             prism:ViewModelLocator.AutowireViewModel="True"
+             x:Class="Adopcat.Mobile.Views.RegisterPage"
+             xmlns:roundimage="clr-namespace:ImageCircle.Forms.Plugin.Abstractions;assembly=ImageCircle.Forms.Plugin.Abstractions"
+             Title="{Binding Title}">
+    <ScrollView>
+        <StackLayout Padding="10"
+                 VerticalOptions="FillAndExpand"
+                 HorizontalOptions="FillAndExpand">
+            <StackLayout VerticalOptions="Start"
+                     HorizontalOptions="FillAndExpand">
+                <roundimage:CircleImage Source="{Binding Image, Converter={StaticResource Key=ByteArrayToImage}}"
+                   HorizontalOptions="Center"
+                   HeightRequest="150"
+                   WidthRequest="150"
+                   BorderColor="#00ad97"
+                   BorderThickness="1"
+                   Aspect="AspectFill" />
+                <Button Text="Escolher foto" Command="{Binding PickPhotoCommand}" Style="{StaticResource SecondaryButton}" />
+            </StackLayout>
+            <Label Text="Nome:" Style="{StaticResource TitleLabel}" FontSize="Medium" />
+            <Entry Text="{Binding Name}" />
+            <Label Text="E-mail:" Style="{StaticResource TitleLabel}" FontSize="Medium" />
+            <Entry Text="{Binding Email}" />
+            <Label Text="Senha:" Style="{StaticResource TitleLabel}" FontSize="Medium" />
+            <Entry IsPassword="True" Text="{Binding Password}" />
+            <Label Text="Confirmação de senha:" Style="{StaticResource TitleLabel}" FontSize="Medium" />
+            <Entry IsPassword="True" Text="{Binding PasswordConfirm}" />
+            <Label Text="Telefone:" Style="{StaticResource TitleLabel}" FontSize="Medium" />
+            <Entry Text="{Binding Phone}" />
+            <Button Text="Registrar" 
+                    Command="{Binding RegisterCommand}" 
+                    Style="{StaticResource DefaultButton}"  
+                    HorizontalOptions="FillAndExpand"
+                    IsVisible="{Binding ShowLoading, Converter={StaticResource NegateBooleanConverter}"/>
+            <ActivityIndicator IsVisible="{Binding ShowLoading}" 
+                               IsRunning="{Binding ShowLoading}" 
+                               Color="#00ad97" />
+        </StackLayout>
+    </ScrollView>
+</ContentPage>

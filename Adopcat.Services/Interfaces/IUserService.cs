@@ -1,19 +1,18 @@
 ﻿using Adopcat.Model;
 using System.Collections.Generic;
+using System.Threading.Tasks;
 
 namespace Adopcat.Services.Interfaces
 {
     public interface IUserService
     {
-        User GetByEmail(string email);
-
-        User GetById(int id);
-
-        List<User> GetAllActive();
-        bool Deactivate(int idUser);
-
-        User UpdateOrCreate(User model);
-
-        bool EmailExists(int idUser, string email);
+        Task<User> GetByEmail(string email);
+        Task<User> GetById(int id);
+        Task<User> GetByToken(string authToken);
+        Task<List<User>> GetAllActive();
+        Task<bool> Deactivate(int idUser);
+        Task<User> UpdateOrCreateAsync(User model);
+        Task<bool> EmailExists(int idUser, string email);
+        Task Update(User model);
     }
 }

@@ -1,63 +1,71 @@
 ﻿using Adopcat.Data.Interfaces;
 using Adopcat.Model;
+using Adopcat.Services.Exceptions;
 using Adopcat.Services.Interfaces;
 using Adopcat.Services.Util;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Threading.Tasks;
 
 namespace Adopcat.Services
 {
     public class UserService : BaseService, IUserService
     {
         private IUserRepository _userRepository;
-        
-        private readonly IApplicationParameterRepository _applicationParameterRepository;
 
-        public UserService(ILoggingService log, IUserRepository userRepository, IApplicationParameterRepository applicationParameterRepository) : base(log)
+        private readonly IApplicationParameterRepository _applicationParameterRepository;
+        private IAuthenticationService _authService;
+
+        public UserService(ILoggingService log,
+                           IUserRepository userRepository,
+                           IApplicationParameterRepository applicationParameterRepository,
+                           IAuthenticationService authService) : base(log)
         {
             _userRepository = userRepository;
             _applicationParameterRepository = applicationParameterRepository;
+            _authService = authService;
         }
 
-        public User GetByEmail(string email)
+        public async Task<User> GetByEmail(string email)
         {
-            return TryCatch(() =>
+            return await TryCatch(async () =>
             {
-                return _userRepository.GetAll(r => r.Email == email && r.IsActive).FirstOrDefault();
+                var query = await _userRepository.GetAllAsync(r => r.Email == email && r.IsActive);
+                return query.FirstOrDefault();
             });
         }
 
-        public List<User> GetAllActive()
+        public async Task<List<User>> GetAllActive()
         {
-            return TryCatch(() =>
+            return await TryCatch(async () =>
             {
-                return _userRepository.GetAll(u => u.IsActive).ToList();
+                return await _userRepository.GetAllAsync(u => u.IsActive);
             });
         }
 
-        public User GetById(int id)
+        public async Task<User> GetById(int id)
         {
-            return TryCatch(() =>
+            return await TryCatch(async () =>
             {
-                return _userRepository.GetAll(r => r.Id == id).FirstOrDefault();
+                return await _userRepository.FindAsync(id);
             });
         }
 
-        public bool Deactivate(int idUser)
+        public async Task<bool> Deactivate(int idUser)
         {
-            return TryCatch(() =>
+            return await TryCatch(async () =>
             {
                 var model = _userRepository.GetAll(u => u.Id == idUser).FirstOrDefault();
                 model.IsActive = false;
-                _userRepository.Update(model);
+                await _userRepository.UpdateAsync(model);
                 return true;
             });
         }
 
-        public User UpdateOrCreate(User model)
+        public async Task<User> UpdateOrCreateAsync(User model)
         {
-            return TryCatch(() =>
+            return await TryCatch(async () =>
             {
                 var user = new User();
                 if (model.Id > 0)
@@ -70,25 +78,50 @@ namespace Adopcat.Services
                     user.CreatedAt = DateTime.Now;
                 }
 
+                if (_userRepository.GetAll(u => u.Email == model.Email).Any())
+                    throw new BadRequestException("Já existe um usuário cadastrado com esse e-mail.");
+
                 if (!string.IsNullOrEmpty(model.Password))
                     user.Password = Cryptography.GetMD5Hash(model.Password);
 
                 user.Name = model.Name;
                 user.Email = model.Email;
+                user.PictureUrl = model.PictureUrl;
+                user.FacebookId = model.FacebookId;
+                user.Phone = model.Phone;
+                user.ReceiveNotifications = true;
 
-                if (user.Id == 0)
-                    return _userRepository.Create(user);                
+                if (model.Id == 0)
+                    return await _userRepository.CreateAsync(user);
 
-                _userRepository.Update(user);
+                await _userRepository.UpdateAsync(user);
                 return user;
             });
         }
 
-        public bool EmailExists(int idUser, string email)
+        public async Task Update(User model)
         {
-            return TryCatch(() =>
+            await TryCatch(async () =>
             {
-                return _userRepository.GetAll(u => u.Email == email && u.Id != idUser && u.IsActive).Any();
+                await _userRepository.UpdateAsync(model);
+            });
+        }
+
+        public async Task<bool> EmailExists(int idUser, string email)
+        {
+            return await TryCatch(async () =>
+            {
+                var list = await _userRepository.GetAllAsync(u => u.Email == email && u.Id != idUser && u.IsActive);
+                return list.Any();
+            });
+        }
+
+        public async Task<User> GetByToken(string authToken)
+        {
+            return await TryCatch(async () =>
+            {
+                var token = _authService.GetByAccessToken(authToken);
+                return await _userRepository.FindAsync(token.UserId);
             });
         }
     }

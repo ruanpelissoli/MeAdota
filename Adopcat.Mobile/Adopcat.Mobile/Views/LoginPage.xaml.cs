@@ -2,9 +2,9 @@
 
 namespace Adopcat.Mobile.Views
 {
-    public partial class MainPage : ContentPage
+    public partial class LoginPage : ContentPage
     {
-        public MainPage()
+        public LoginPage()
         {
             InitializeComponent();
         }
