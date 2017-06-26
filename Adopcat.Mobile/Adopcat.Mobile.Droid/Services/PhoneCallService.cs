@@ -14,7 +14,7 @@ namespace Adopcat.Mobile.Droid.Services
             try
             {
                 var uri = Android.Net.Uri.Parse($"tel:{number}");
-                var intent = new Intent(Intent.ActionCall, uri);
+                var intent = new Intent(Intent.ActionDial, uri);
                 Forms.Context.StartActivity(intent);
             }
             catch (Exception)

@@ -61,6 +61,11 @@ namespace Adopcat.Mobile.Interfaces
         Task<byte[]> Download(string url);
         #endregion
 
+        #region Reports
+        [Post("/reports")]
+        Task<Reports> CreateReport(Reports model, [Header("Authorization")] string token);
+        #endregion
+
         #region Log
         [Get("/log")]
         Task<List<SystemLog>> CreateLog(SystemLog log, [Header("Authorization")] string token);

@@ -24,11 +24,18 @@
                     <Entry Text="{Binding Email}" BackgroundColor="White" Opacity="0.5" />
                     <Label Text="Senha" Style="{StaticResource TitleLabel}" FontSize="Medium" />
                     <Entry IsPassword="True" Text="{Binding Password}" BackgroundColor="White" Opacity="0.5" />
-                    <Button Text="Login" Command="{Binding LoginCommand}" Style="{StaticResource DefaultButton}" HorizontalOptions="FillAndExpand" 
-                            IsVisible="{Binding ShowLoading, Converter={StaticResource NegateBooleanConverter}"/>
-                    <ActivityIndicator IsVisible="{Binding ShowLoading}" IsRunning="{Binding ShowLoading}" Color="#00ad97" />
+                    <Button Text="Login" 
+                            Command="{Binding LoginCommand}" 
+                            Style="{StaticResource DefaultButton}" 
+                            HorizontalOptions="FillAndExpand" 
+                            IsEnabled="{Binding ShowLoading, Converter={StaticResource NegateBooleanConverter}"/>
                     <Label Text="ou" Style="{StaticResource TitleLabel}" HorizontalTextAlignment="Center" />
-                    <Button Text="Login com Facebook" Command="{Binding FacebookLoginCommand}" Style="{StaticResource DefaultButton}" HorizontalOptions="FillAndExpand" />                    
+                    <Button Text="Login com Facebook" 
+                            Command="{Binding FacebookLoginCommand}" 
+                            Style="{StaticResource DefaultButton}" 
+                            HorizontalOptions="FillAndExpand"
+                            IsEnabled="{Binding ShowLoading, Converter={StaticResource NegateBooleanConverter}"/>
+                    <ActivityIndicator IsVisible="{Binding ShowLoading}" IsRunning="{Binding ShowLoading}" Color="#00ad97" />
                 </StackLayout>               
                 <StackLayout VerticalOptions="End" 
                              HorizontalOptions="FillAndExpand" 

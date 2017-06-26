@@ -56,8 +56,10 @@
                 Command="{Binding SaveInfoCommand}"
                 IsVisible="{Binding ShowLoading, Converter={StaticResource NegateBooleanConverter}"/>
             <ActivityIndicator IsVisible="{Binding ShowLoading}" 
-                           IsRunning="{Binding ShowLoading}" 
-                           Color="#00ad97" />
+                               IsRunning="{Binding ShowLoading}" 
+                               Color="#00ad97" 
+                               VerticalOptions="EndAndExpand"
+                               HorizontalOptions="FillAndExpand"/>
         </StackLayout>
     </ScrollView>
 </ContentPage>

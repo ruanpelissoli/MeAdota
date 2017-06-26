@@ -88,7 +88,7 @@ namespace Adopcat.Mobile.ViewModels
 
         private async void ClearFilterCommandExecute()
         {
-            await _navigationService.GoBackAsync(null, true);
+            await _navigationService.NavigateAsync($"app:///{nameof(MenuPage)}/NavigationPage/{nameof(LoadingPostersPage)}", null);
         }
 
         private async void FilterCommandExecute()
@@ -106,7 +106,7 @@ namespace Adopcat.Mobile.ViewModels
                 { "filter", filter }
             };
 
-            await _navigationService.GoBackAsync(parameters, true);
+            await _navigationService.NavigateAsync($"app:///{nameof(MenuPage)}/NavigationPage/{nameof(LoadingPostersPage)}", parameters);
         }
 
         private void PetTypeSelectCommandExecute(string petType)

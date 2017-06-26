@@ -202,6 +202,7 @@
     <Compile Include="Controllers\DownloadController.cs" />
     <Compile Include="Controllers\LogController.cs" />
     <Compile Include="Controllers\PosterController.cs" />
+    <Compile Include="Controllers\ReportsController.cs" />
     <Compile Include="Controllers\UserController.cs" />
     <Compile Include="Extensions\RequestExtension.cs" />
     <Compile Include="Filters\CustomAuthorizeAttribute.cs" />
@@ -225,6 +226,8 @@
     </Content>
     <None Include="Properties\PublishProfiles\adopcat - FTP.pubxml" />
     <None Include="Properties\PublishProfiles\adopcat - Web Deploy.pubxml" />
+    <None Include="Properties\PublishProfiles\meadota - FTP.pubxml" />
+    <None Include="Properties\PublishProfiles\meadota - Web Deploy.pubxml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

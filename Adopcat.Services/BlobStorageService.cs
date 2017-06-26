@@ -17,6 +17,7 @@ namespace Adopcat.Services
         private string _azureStoragePublicContainer;
         private string _azureStorageConnectionString;
         private string _petPicturesBlobName;
+        private string _userPicturesBlobName;
 
         public BlobStorageService(ILoggingService log, IApplicationParameterRepository applicationParameterRepository) : base(log)
         {
@@ -25,10 +26,11 @@ namespace Adopcat.Services
             parameters.TryGetValue("AzureStorageURL", out _azureStorageUrl);
             parameters.TryGetValue("AzureStoragePublicContainer", out _azureStoragePublicContainer);
             parameters.TryGetValue("PetPicturesBlobName", out _petPicturesBlobName);
+            parameters.TryGetValue("UserPicturesBlobName", out _userPicturesBlobName);
             parameters.TryGetValue("AzureStorageConnectionString", out _azureStorageConnectionString);
         }
 
-        public async Task<string> AddImageToBlobStorageAsync(byte[] file)
+        public async Task<string> AddPetImageToStorageAsync(byte[] file)
         {
             //  get the container reference
             var container = GetImagesBlobContainer();
@@ -42,6 +44,22 @@ namespace Adopcat.Services
             await blockBlob.UploadFromByteArrayAsync(file, 0, file.Length);
 
             return $"{_azureStorageUrl}/{_azureStoragePublicContainer}/{_petPicturesBlobName}/{guidName}";
+        }
+
+        public async Task<string> AddUserImageToStorageAsync(byte[] file)
+        {
+            //  get the container reference
+            var container = GetImagesBlobContainer();
+
+            // using the container reference, get a block blob reference and set its type
+            var guidName = Guid.NewGuid().ToString();
+            CloudBlockBlob blockBlob = container.GetBlockBlobReference($"{_userPicturesBlobName}/{guidName}");
+            blockBlob.Properties.ContentType = "image/jpg";
+
+            // finally, upload the image into blob storage using the block blob reference
+            await blockBlob.UploadFromByteArrayAsync(file, 0, file.Length);
+
+            return $"{_azureStorageUrl}/{_azureStoragePublicContainer}/{_userPicturesBlobName}/{guidName}";
         }
 
         public async Task DeleteBlobStorageAsync(string url)

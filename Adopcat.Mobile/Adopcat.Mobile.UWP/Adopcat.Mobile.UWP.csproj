@@ -113,6 +113,7 @@
     <None Include="Adopcat.Mobile.UWP_TemporaryKey.pfx" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Assets\icon.png" />
     <Content Include="Assets\icon_backbutton.png" />
     <Content Include="Assets\icon_checked.png" />
     <Content Include="Assets\icon_delete.png" />

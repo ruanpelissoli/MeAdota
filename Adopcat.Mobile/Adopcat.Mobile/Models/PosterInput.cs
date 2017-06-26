@@ -15,6 +15,7 @@ namespace Adopcat.Mobile.Models
         public string Country { get; set; }
         public string State { get; set; }
         public string City { get; set; }
+        public bool IsReported { get; set; }
         public bool IsAdopted { get; set; }
         public int? AdopterId { get; set; }
     }

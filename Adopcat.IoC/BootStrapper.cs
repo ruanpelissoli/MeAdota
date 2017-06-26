@@ -24,6 +24,7 @@ namespace Adopcat.IoC
             container.Register<ITokenRepository, TokenRepository>(lifestyle);
             container.Register<IPosterRepository, PosterRepository>(lifestyle);
             container.Register<IPetPictureRepository, PetPictureRepository>(lifestyle);
+            container.Register<IReportsRepository, ReportsRepository>(lifestyle);
 
             ////Services
             container.Register<IAuthenticationService, AuthenticationService>(lifestyle);
@@ -32,6 +33,7 @@ namespace Adopcat.IoC
             container.Register<IUserService, UserService>(lifestyle);
             container.Register<IPosterService, PosterService>(lifestyle);
             container.Register<IPetPictureService, PetPictureService>(lifestyle);
+            container.Register<IReportsService, ReportsService>(lifestyle);
         }
     }
 }

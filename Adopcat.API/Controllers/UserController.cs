@@ -2,6 +2,7 @@
 using Adopcat.API.Models;
 using Adopcat.Model;
 using Adopcat.Services.Interfaces;
+using Adopcat.Services.Util;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Web.Http;
@@ -47,7 +48,7 @@ namespace Adopcat.API.Controllers
                 Phone = model.Phone
             };
 
-            user.PictureUrl = await _blobService.AddImageToBlobStorageAsync(model.Picture);
+            user.PictureUrl = await _blobService.AddUserImageToStorageAsync(model.Picture);
 
             user = await _userService.UpdateOrCreateAsync(user);
 
@@ -89,8 +90,17 @@ namespace Adopcat.API.Controllers
 
             if (user == null || !user.Email.Equals(email)) return Unauthorized();
 
-            user.Password = model.Password;
-            user.PictureUrl = model.PictureUrl;
+            if (!string.IsNullOrEmpty(user.Password) && !user.Password.Equals(model.Password))
+            {
+                user.Password = Cryptography.GetMD5Hash(model.Password);
+            }
+
+            if(model.Picture != null)
+            {
+                await _blobService.DeleteBlobStorageAsync(model.PictureUrl);
+                user.PictureUrl = await _blobService.AddUserImageToStorageAsync(model.Picture);
+            }
+            
             user.Phone = model.Phone;
             user.ReceiveNotifications = model.ReceiveNotifications;
             user.RegistrationId = model.RegistrationId;

@@ -26,7 +26,7 @@
                                     WidthRequest="100" />
                                 <Image 
                                     Source="icon_delete.png" 
-                                    Aspect="AspectFill" 
+                                    Aspect="AspectFit" 
                                     HorizontalOptions="EndAndExpand" 
                                     HeightRequest="35" 
                                     WidthRequest="35">

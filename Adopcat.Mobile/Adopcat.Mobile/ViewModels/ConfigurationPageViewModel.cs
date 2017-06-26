@@ -97,6 +97,11 @@ namespace Adopcat.Mobile.ViewModels
             ShowLoading = true;
             try
             {
+                if(!IsNotFacebookUser && !string.IsNullOrEmpty(Password))
+                {
+                    User.Picture = Image;
+                    User.Password = Password;
+                }
                 await App.ApiService.UpdateUser(User.Email, User, "bearer " + Settings.AuthToken);
                 await _dialogService.DisplayAlertAsync("Sucesso!", "Informações alteradas com sucesso.", "Ok");
 
@@ -107,6 +112,7 @@ namespace Adopcat.Mobile.ViewModels
             }
             catch (Exception ex)
             {
+                await _dialogService.DisplayAlertAsync("Erro!", "Não foi possível salvar suas alterações, tenta novamente mais tarde.", "Ok");
                 Debug.WriteLine(ex.StackTrace);
             }
             finally
@@ -117,7 +123,7 @@ namespace Adopcat.Mobile.ViewModels
 
         private bool SaveInfoCommandCanExecute()
         {
-            if (IsNotFacebookUser) return true;
+            if (!IsNotFacebookUser) return true;
 
             if (!string.IsNullOrEmpty(Password) || !string.IsNullOrEmpty(NewPassword))
             {

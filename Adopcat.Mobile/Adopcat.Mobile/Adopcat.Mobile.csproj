@@ -50,6 +50,7 @@
     <Compile Include="Models\PetPicture.cs" />
     <Compile Include="Models\PosterOutput.cs" />
     <Compile Include="Models\PosterInput.cs" />
+    <Compile Include="Models\Reports.cs" />
     <Compile Include="Models\User.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Interfaces\IApiService.cs" />
@@ -64,8 +65,12 @@
     <Compile Include="ViewModels\BaseViewModel.cs" />
     <Compile Include="ViewModels\ConfigurationPageViewModel.cs" />
     <Compile Include="ViewModels\EditMyPosterPageViewModel.cs" />
-    <Compile Include="ViewModels\EmptyPostersPageViewModel.cs" />
     <Compile Include="ViewModels\FilterPageViewModel.cs" />
+    <Compile Include="ViewModels\ReportPosterPageViewModel.cs" />
+    <Compile Include="Views\LoadingPostersPage.xaml.cs">
+      <DependentUpon>LoadingPostersPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ViewModels\LoadingPostersPageViewModel.cs" />
     <Compile Include="ViewModels\LoginPageViewModel.cs" />
     <Compile Include="ViewModels\MenuPageViewModel.cs" />
     <Compile Include="ViewModels\MyPostersPageViewModel.cs" />
@@ -78,9 +83,6 @@
     </Compile>
     <Compile Include="Views\EditMyPosterPage.xaml.cs">
       <DependentUpon>EditMyPosterPage.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="Views\EmptyPostersPage.xaml.cs">
-      <DependentUpon>EmptyPostersPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="Views\FilterPage.xaml.cs">
       <DependentUpon>FilterPage.xaml</DependentUpon>
@@ -105,6 +107,9 @@
     </Compile>
     <Compile Include="Views\RegisterPage.xaml.cs">
       <DependentUpon>RegisterPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\ReportPosterPage.xaml.cs">
+      <DependentUpon>ReportPosterPage.xaml</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
@@ -278,7 +283,13 @@
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Views\EmptyPostersPage.xaml">
+    <EmbeddedResource Include="Views\LoadingPostersPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Views\ReportPosterPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
       <SubType>Designer</SubType>
     </EmbeddedResource>

@@ -52,6 +52,7 @@ namespace Adopcat.Mobile.Services
                 if (user == null)
                 {
                     Settings.FacebookAuthToken = string.Empty;
+                    Settings.FacebookUserId = string.Empty;
 
                     Device.BeginInvokeOnMainThread(async () =>
                     {
@@ -62,6 +63,8 @@ namespace Adopcat.Mobile.Services
                 }
                 else
                 {
+                    var newUser = false;
+
                     identities = await Client.InvokeApiAsync<List<AppServiceIdentity>>("/.auth/me");
                     var name = identities[0].UserClaims.Find(c => c.Type.Equals("http://schemas.xmlsoap.org/ws/2005/05/identity/claims/name")).Value;
                     var email = identities[0].UserClaims.Find(c => c.Type.Equals("http://schemas.xmlsoap.org/ws/2005/05/identity/claims/emailaddress")).Value;
@@ -85,6 +88,7 @@ namespace Adopcat.Mobile.Services
                             PictureUrl = facebookProfile.Picture.Data.Url
                         };
                         appUser = await App.ApiService.CreateFacebookUser(appUser);
+                        newUser = true;
                     }
 
                     var loginResponse = await App.ApiService.LoginFacebook(new Login
@@ -97,9 +101,6 @@ namespace Adopcat.Mobile.Services
                     {
                         Settings.AuthToken = loginResponse.AuthToken;
                         Settings.UserId = loginResponse.UserId.ToString();
-
-                        Settings.FacebookUserId = user.UserId;
-                        Settings.FacebookAuthToken = user.MobileServiceAuthenticationToken;
                     }
 
                     if (!appUser.PictureUrl.Equals(facebookProfile.Picture.Data.Url))
@@ -112,7 +113,8 @@ namespace Adopcat.Mobile.Services
                         catch { }
                     }
 
-                    _pushNotification.RegisterPush();
+                    if (newUser)
+                        _pushNotification.RegisterPush();
 
                     return true;
                 }
@@ -131,12 +133,13 @@ namespace Adopcat.Mobile.Services
                 if (!string.IsNullOrEmpty(Settings.FacebookUserId))
                     await _auth.Logout(Client);
 
-                await App.ApiService.Logout("bearer " + Settings.AuthToken);                
+                await App.ApiService.Logout("bearer " + Settings.AuthToken);
             }
             catch (Exception ex)
             {
                 Debug.WriteLine(ex.StackTrace);
-            } finally
+            }
+            finally
             {
                 Settings.Clear();
             }

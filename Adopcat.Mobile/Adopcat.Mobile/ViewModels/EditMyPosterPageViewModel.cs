@@ -114,6 +114,7 @@ namespace Adopcat.Mobile.ViewModels
 
         private async void EditPosterCommandExecute()
         {
+            ShowLoading = true;
             try
             {
                 var posterInput = new PosterInput
@@ -137,6 +138,9 @@ namespace Adopcat.Mobile.ViewModels
             catch (Exception ex)
             {
                 Debug.WriteLine(ex.StackTrace);
+            }finally
+            {
+                ShowLoading = false;
             }
         }
 
@@ -180,6 +184,7 @@ namespace Adopcat.Mobile.ViewModels
                 {
                     Poster = await App.ApiService.GetPoster(parameters.GetValue<int>("posterId"), "bearer " + Settings.AuthToken);
                     PetType = Poster.PetType == 1 ? "Cachorro" : "Gato";
+                    State = Poster.State;
 
                     foreach (var item in Poster.PetPictures)
                     {
