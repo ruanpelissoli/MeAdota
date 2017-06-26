@@ -200,6 +200,7 @@
     <Compile Include="Controllers\AuthController.cs" />
     <Compile Include="Controllers\BaseApiController.cs" />
     <Compile Include="Controllers\DownloadController.cs" />
+    <Compile Include="Controllers\LogController.cs" />
     <Compile Include="Controllers\PosterController.cs" />
     <Compile Include="Controllers\UserController.cs" />
     <Compile Include="Extensions\RequestExtension.cs" />

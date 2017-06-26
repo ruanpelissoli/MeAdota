@@ -43,6 +43,7 @@
     <Compile Include="Models\AppServiceIdentity.cs" />
     <Compile Include="Models\FacebookProfile.cs" />
     <Compile Include="Models\Filter.cs" />
+    <Compile Include="Models\SystemLog.cs" />
     <Compile Include="Models\Login.cs" />
     <Compile Include="Models\LoginResponse.cs" />
     <Compile Include="Models\MenuItem.cs" />
@@ -56,7 +57,8 @@
     <Compile Include="Services\PictureService.cs" />
     <Compile Include="Util\ApplicationParameters.cs" />
     <Compile Include="Util\ByteToImageFieldConverter.cs" />
-    <Compile Include="Util\EPictureOptions.cs" />
+    <Compile Include="Util\Enums.cs" />
+    <Compile Include="Util\ExceptionHandler.cs" />
     <Compile Include="Util\NegateBoolConverter.cs" />
     <Compile Include="Util\StateList.cs" />
     <Compile Include="ViewModels\BaseViewModel.cs" />

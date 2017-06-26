@@ -48,6 +48,7 @@
     <Compile Include="DTO\PosterOutputDTO.cs" />
     <Compile Include="Enums\ELogType.cs" />
     <Compile Include="Enums\EPetType.cs" />
+    <Compile Include="Enums\EPlatform.cs" />
     <Compile Include="PetPicture.cs" />
     <Compile Include="Poster.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

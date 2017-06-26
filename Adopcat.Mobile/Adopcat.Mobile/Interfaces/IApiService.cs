@@ -60,6 +60,11 @@ namespace Adopcat.Mobile.Interfaces
         [Get("/download")]
         Task<byte[]> Download(string url);
         #endregion
+
+        #region Log
+        [Get("/log")]
+        Task<List<SystemLog>> CreateLog(SystemLog log, [Header("Authorization")] string token);
+        #endregion
     }
 
 }

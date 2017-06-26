@@ -16,6 +16,11 @@ namespace Adopcat.Services
             _systemLogRepository = systemLogRepository;
         }
 
+        public async Task CreateAsync(SystemLog log)
+        {
+            await _systemLogRepository.CreateAsync(log);
+        }
+
         public async Task Error(Exception ex)
         {
             try
@@ -24,6 +29,7 @@ namespace Adopcat.Services
                 {
                     LogDate = DateTime.Now,
                     LogType = ELogType.Error,
+                    Platform = EPlatform.API,
                     Text = ex.Message,
                 };
 
