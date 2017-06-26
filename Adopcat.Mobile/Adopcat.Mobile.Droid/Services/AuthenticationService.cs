@@ -6,7 +6,6 @@ using Adopcat.Mobile.Interfaces;
 using Android.Webkit;
 using System.Threading.Tasks;
 using Microsoft.WindowsAzure.MobileServices;
-using System.Diagnostics;
 using Adopcat.Mobile.Helpers;
 
 [assembly: Dependency(typeof(AuthenticationService))]
@@ -27,7 +26,7 @@ namespace Adopcat.Mobile.Droid.Services
             }
             catch (Exception ex)
             {
-                Debug.WriteLine(ex.StackTrace);
+                await App.ExceptionHandler.Handle(ex);
                 throw;
             }
         }

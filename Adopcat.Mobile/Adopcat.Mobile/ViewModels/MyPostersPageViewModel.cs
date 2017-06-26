@@ -46,7 +46,7 @@ namespace Adopcat.Mobile.ViewModels
             }
             catch (Exception ex)
             {
-                Debug.WriteLine(ex.StackTrace);
+                await ExceptionHandler.Handle(ex);
             }
         }
 

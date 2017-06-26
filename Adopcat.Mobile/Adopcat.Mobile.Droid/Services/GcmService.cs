@@ -74,7 +74,7 @@ namespace Adopcat.Mobile.Droid.Services
             }
             catch (Exception ex)
             {
-                Debug.WriteLine(ex.Message);
+                await App.ExceptionHandler.Handle(ex);
             }
         }
 

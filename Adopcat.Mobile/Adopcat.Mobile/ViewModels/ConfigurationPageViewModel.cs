@@ -112,8 +112,7 @@ namespace Adopcat.Mobile.ViewModels
             }
             catch (Exception ex)
             {
-                await _dialogService.DisplayAlertAsync("Erro!", "Não foi possível salvar suas alterações, tenta novamente mais tarde.", "Ok");
-                Debug.WriteLine(ex.StackTrace);
+                await ExceptionHandler.Handle(ex);
             }
             finally
             {
@@ -156,7 +155,7 @@ namespace Adopcat.Mobile.ViewModels
             }
             catch (Exception ex)
             {
-                Debug.WriteLine(ex.StackTrace);
+                await ExceptionHandler.Handle(ex);
             }
         }
     }

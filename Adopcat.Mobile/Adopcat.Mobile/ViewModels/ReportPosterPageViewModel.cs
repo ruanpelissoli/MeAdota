@@ -130,8 +130,9 @@ namespace Adopcat.Mobile.ViewModels
             }
             catch (Exception ex)
             {
-                Debug.WriteLine(ex.StackTrace);
-            }finally
+                await ExceptionHandler.Handle(ex, true);
+            }
+            finally
             {
                 ShowLoading = false;
             }
@@ -150,7 +151,7 @@ namespace Adopcat.Mobile.ViewModels
             await _navigationService.GoBackAsync(null, true);
         }
 
-        public override void OnNavigatedTo(NavigationParameters parameters)
+        public async override void OnNavigatedTo(NavigationParameters parameters)
         {
             base.OnNavigatedTo(parameters);
 
@@ -160,7 +161,7 @@ namespace Adopcat.Mobile.ViewModels
             }
             catch (Exception ex)
             {
-                Debug.WriteLine(ex.StackTrace);
+                await ExceptionHandler.Handle(ex);
             }
         }
     }

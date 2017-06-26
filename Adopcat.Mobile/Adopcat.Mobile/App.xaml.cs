@@ -16,6 +16,7 @@ namespace Adopcat.Mobile
     {
         public static IApiService ApiService { get; private set; }
         public static AzureService MobileService { get; private set; }
+        public static ExceptionHandler ExceptionHandler { get; private set; }
 
         public App(IPlatformInitializer initializer = null) : base(initializer) { }
 
@@ -29,7 +30,9 @@ namespace Adopcat.Mobile
                 MobileService.Initialize();
 
                 ApiService = RestService.For<IApiService>(ApplicationParameters.ApiUrl);
-                
+
+                ExceptionHandler = new ExceptionHandler();
+
                 if (!Settings.IsLoggedIn)
                     NavigationService.NavigateAsync($"NavigationPage/{nameof(LoginPage)}");
                 else

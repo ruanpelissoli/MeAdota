@@ -121,7 +121,7 @@ namespace Adopcat.Mobile.Services
             }
             catch (Exception ex)
             {
-                Debug.WriteLine(ex.StackTrace);
+                await App.ExceptionHandler.Handle(ex);
                 return false;
             }
         }
@@ -137,7 +137,7 @@ namespace Adopcat.Mobile.Services
             }
             catch (Exception ex)
             {
-                Debug.WriteLine(ex.StackTrace);
+                await App.ExceptionHandler.Handle(ex);
             }
             finally
             {

@@ -28,7 +28,7 @@ namespace Adopcat.Mobile.Services
             }
             catch (System.Exception ex)
             {
-                Debug.WriteLine(ex.StackTrace);
+                await App.ExceptionHandler.Handle(ex);
             }
             return null;
         }

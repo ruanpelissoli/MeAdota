@@ -6,8 +6,7 @@ using Adopcat.Mobile.Interfaces;
 using Adopcat.Mobile.iOS.Services;
 using Microsoft.WindowsAzure.MobileServices;
 using System.Threading.Tasks;
-using Adopcat.Mobile.iOS.Helpers;
-using System.Diagnostics;
+using Adopcat.Mobile.Helpers;
 
 [assembly: Xamarin.Forms.Dependency(typeof(AuthenticationService))]
 namespace Adopcat.Mobile.iOS.Services
@@ -28,7 +27,7 @@ namespace Adopcat.Mobile.iOS.Services
             }
             catch (Exception ex)
             {
-                Debug.WriteLine(ex.StackTrace);
+                await App.ExceptionHandler.Handle(ex);
                 throw;
             }
         }

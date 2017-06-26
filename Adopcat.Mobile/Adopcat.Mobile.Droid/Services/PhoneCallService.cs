@@ -9,7 +9,7 @@ namespace Adopcat.Mobile.Droid.Services
 {
     public class PhoneCallService : IPhoneCall
     {
-        public void CallNumber(string number)
+        public async void CallNumber(string number)
         {
             try
             {
@@ -17,9 +17,9 @@ namespace Adopcat.Mobile.Droid.Services
                 var intent = new Intent(Intent.ActionDial, uri);
                 Forms.Context.StartActivity(intent);
             }
-            catch (Exception)
+            catch (Exception ex)
             {
-                throw;
+                await App.ExceptionHandler.Handle(ex);
             }            
         }
     }

@@ -2,6 +2,7 @@
 using Prism.Mvvm;
 using Prism.Navigation;
 using Prism.Services;
+using System;
 using System.Threading.Tasks;
 
 namespace Adopcat.Mobile.ViewModels
@@ -10,6 +11,8 @@ namespace Adopcat.Mobile.ViewModels
     {
         protected INavigationService _navigationService;
         protected IPageDialogService _dialogService;
+
+        protected ExceptionHandler ExceptionHandler { get; private set; }
 
         private string _title;
         public string Title
@@ -31,6 +34,8 @@ namespace Adopcat.Mobile.ViewModels
             _dialogService = dialogService;
 
             Title = string.Empty;
+
+            ExceptionHandler = new ExceptionHandler(_navigationService, _dialogService);
         }
 
         protected async Task<EPictureOptions> DisplayPictureAlert()

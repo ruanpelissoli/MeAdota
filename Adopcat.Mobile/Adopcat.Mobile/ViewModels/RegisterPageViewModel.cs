@@ -130,12 +130,7 @@ namespace Adopcat.Mobile.ViewModels
             }
             catch (Exception ex)
             {
-                if(ex is Refit.ApiException)
-                {
-                    var refitEx = ex as Refit.ApiException;
-                    await _dialogService.DisplayAlertAsync("Erro!", refitEx.Content, "Ok");
-                }
-                Debug.WriteLine(ex.StackTrace);
+                await ExceptionHandler.Handle(ex, true);
             }
             finally
             {

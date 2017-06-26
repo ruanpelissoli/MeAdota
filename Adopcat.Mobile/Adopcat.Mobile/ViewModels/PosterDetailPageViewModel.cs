@@ -69,7 +69,7 @@ namespace Adopcat.Mobile.ViewModels
             }
             catch (Exception ex)
             {
-                await _dialogService.DisplayAlertAsync("Erro", ex.Message, "Fechar");
+                await ExceptionHandler.Handle(ex);
             }
         }
 
@@ -87,9 +87,9 @@ namespace Adopcat.Mobile.ViewModels
                     ImgDewormed = Poster.Dewormed ? "icon_checked.png" : "icon_not_checked.png";
                 }
             }
-            catch (Refit.ApiException ex)
+            catch (Exception ex)
             {
-                Debug.WriteLine(ex.StackTrace);
+                await ExceptionHandler.Handle(ex);
             }
         }
     }

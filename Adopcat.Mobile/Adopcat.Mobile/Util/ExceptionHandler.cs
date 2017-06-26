@@ -1,14 +1,30 @@
 ﻿using Adopcat.Mobile.Helpers;
 using Adopcat.Mobile.Models;
+using Adopcat.Mobile.Views;
+using Prism.Navigation;
 using Prism.Services;
 using System;
 using System.Threading.Tasks;
 
 namespace Adopcat.Mobile.Util
 {
-    public static class ExceptionHandler
+    public class ExceptionHandler
     {
-        private static SystemLog CreateLog(string errorMessage)
+        private INavigationService _navigationService;
+        private IPageDialogService _dialogService;
+
+        public ExceptionHandler(INavigationService navigationService, IPageDialogService dialogService)
+        {
+            _navigationService = navigationService;
+            _dialogService = dialogService;
+        }
+
+        public ExceptionHandler()
+        {
+            
+        }
+
+        private SystemLog CreateLog(string errorMessage)
         {
             return new SystemLog
             {
@@ -19,26 +35,32 @@ namespace Adopcat.Mobile.Util
             };
         }
 
-        public async static Task HandleException(Exception ex)
+        public async Task Handle(Exception ex, bool showAlert = false)
         {
+            Refit.ApiException apiException = null;
             try
             {
-                var log = CreateLog(ex is Refit.ApiException ? (ex as Refit.ApiException).ReasonPhrase : ex.Message);
-                await App.ApiService.CreateLog(log, "bearer " + Settings.AuthToken);
-            }
-            catch(Exception) { }
-        }
+                if (!string.IsNullOrEmpty(Settings.AuthToken))
+                {
+                    if (ex is Refit.ApiException)
+                        apiException = (ex as Refit.ApiException);
 
-        public async static Task HandleException(Exception ex, IPageDialogService dialogService)
-        {
-            try
-            {
-                var log = CreateLog(ex is Refit.ApiException ? (ex as Refit.ApiException).ReasonPhrase : ex.Message);
-                await App.ApiService.CreateLog(log, "bearer " + Settings.AuthToken);
+                    var log = CreateLog(apiException != null ? apiException.ReasonPhrase : ex.Message);
+
+                    await App.ApiService.CreateLog(log, "bearer " + Settings.AuthToken);
+                }
             }
             catch (Exception) { }
 
-            await dialogService.DisplayAlertAsync("Erro!", ex.Message, "Ok");
+            if (apiException != null && apiException.Equals("Unauthorized"))
+            {
+                await App.MobileService.LogoutAsync();
+                await _navigationService.NavigateAsync($"app:///NavigationPage/{nameof(LoginPage)}");
+                return;
+            }
+
+            if (showAlert)
+                await _dialogService.DisplayAlertAsync("Erro!", "Ocorreu um erro inesperado, verifique sua conexão e tente novamente.", "Ok");
         }
     }
 }

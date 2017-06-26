@@ -165,7 +165,7 @@ namespace Adopcat.Mobile.ViewModels
             }
             catch (Exception ex)
             {
-                Debug.WriteLine(ex.StackTrace);
+                await ExceptionHandler.Handle(ex, true);
             }
             finally
             {
@@ -208,7 +208,7 @@ namespace Adopcat.Mobile.ViewModels
             }
             catch (Exception ex)
             {
-                await _dialogService.DisplayAlertAsync("Erro", ex.Message, "Fechar");
+                await ExceptionHandler.Handle(ex);
             }           
         }
 

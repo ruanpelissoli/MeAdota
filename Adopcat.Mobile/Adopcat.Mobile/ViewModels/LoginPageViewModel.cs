@@ -76,7 +76,6 @@ namespace Adopcat.Mobile.ViewModels
                         await _dialogService.DisplayAlertAsync("Erro!", "Usuário ou senha inválidos.", "Ok");
                     }
                 }
-                Debug.WriteLine(ex.StackTrace);
             }
             finally
             {

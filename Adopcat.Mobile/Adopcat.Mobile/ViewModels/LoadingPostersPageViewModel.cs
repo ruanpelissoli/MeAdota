@@ -1,12 +1,12 @@
 ﻿using Adopcat.Mobile.Helpers;
 using Adopcat.Mobile.Models;
+using Adopcat.Mobile.Util;
 using Adopcat.Mobile.Views;
 using Prism.Commands;
 using Prism.Navigation;
 using Prism.Services;
 using System;
 using System.Collections.Generic;
-using System.Diagnostics;
 using System.Linq;
 using System.Threading.Tasks;
 
@@ -77,16 +77,7 @@ namespace Adopcat.Mobile.ViewModels
             }            
             catch (Exception ex)
             {
-                if (ex is Refit.ApiException)
-                {
-                    var refitEx = ex as Refit.ApiException;
-                    if (refitEx.ReasonPhrase.Equals("Unauthorized"))
-                    {
-                        await App.MobileService.LogoutAsync();
-                        await _navigationService.NavigateAsync($"app:///NavigationPage/{nameof(LoginPage)}");
-                    }
-                }
-                Debug.WriteLine(ex.StackTrace);
+                await ExceptionHandler.Handle(ex);
             }
             finally
             {

@@ -32,9 +32,9 @@ namespace Adopcat.Mobile.Droid
 
             base.OnCreate(bundle);
 
-            AppDomain.CurrentDomain.UnhandledException += (sender, unhandledExceptionEventArgs) =>
+            AppDomain.CurrentDomain.UnhandledException += async (sender, unhandledExceptionEventArgs) =>
             {
-                Console.WriteLine(new Exception("UnhandledException", unhandledExceptionEventArgs.ExceptionObject as Exception).StackTrace);
+                await App.ExceptionHandler.Handle(new Exception("UnhandledException", unhandledExceptionEventArgs.ExceptionObject as Exception));
             };
 
             global::Xamarin.Forms.Forms.Init(this, bundle);

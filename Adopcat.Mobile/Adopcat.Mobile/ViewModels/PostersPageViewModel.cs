@@ -76,7 +76,7 @@ namespace Adopcat.Mobile.ViewModels
             await _navigationService.NavigateAsync($"NavigationPage/{nameof(FilterPage)}", null, true);
         }
 
-        public override void OnNavigatedTo(NavigationParameters parameters)
+        public async override void OnNavigatedTo(NavigationParameters parameters)
         {
             base.OnNavigatedTo(parameters);
 
@@ -86,7 +86,7 @@ namespace Adopcat.Mobile.ViewModels
             }
             catch (Exception ex)
             {
-                Debug.WriteLine(ex.StackTrace);
+                await ExceptionHandler.Handle(ex);
             }
         }
     }
