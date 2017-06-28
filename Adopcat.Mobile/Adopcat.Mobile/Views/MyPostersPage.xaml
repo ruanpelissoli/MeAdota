@@ -4,9 +4,11 @@
              xmlns:prism="clr-namespace:Prism.Mvvm;assembly=Prism.Forms"
              prism:ViewModelLocator.AutowireViewModel="True"
              x:Class="Adopcat.Mobile.Views.MyPostersPage"
+             x:Name="MyPage"
              Title="{Binding Title}">
     <StackLayout>
         <ListView
+            IsVisible="{Binding ShowLoading, Converter={StaticResource NegateBooleanConverter}"
             ItemsSource="{Binding MyPosters}"
             HasUnevenRows="False"
             ItemTapped="ListView_ItemTapped">
@@ -15,10 +17,18 @@
                     <ImageCell 
                         ImageSource="{Binding MainPictureUrl}" 
                         Text="{Binding PetName}" TextColor="#00ad97"
-                        Detail="{Binding City}">.
+                        Detail="{Binding City}">
+                        <ImageCell.ContextActions>
+                            <MenuItem Text="Deletar" IsDestructive="True" Command="{Binding Path=BindingContext.DeleteCommand, Source={x:Reference MyPage}}" CommandParameter="{Binding Id}" />
+                        </ImageCell.ContextActions>
                     </ImageCell>
                 </DataTemplate>
             </ListView.ItemTemplate>
         </ListView>
+        <ActivityIndicator IsVisible="{Binding ShowLoading}" 
+                           IsRunning="{Binding ShowLoading}" 
+                           Color="#00ad97"
+                           HorizontalOptions="CenterAndExpand"
+                           VerticalOptions="CenterAndExpand" />
     </StackLayout>
 </ContentPage>

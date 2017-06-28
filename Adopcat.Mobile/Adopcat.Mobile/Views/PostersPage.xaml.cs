@@ -4,7 +4,7 @@ using Xamarin.Forms;
 
 namespace Adopcat.Mobile.Views
 {
-    public partial class PostersPage : CarouselPage
+    public partial class PostersPage : ContentPage
     {
         private PostersPageViewModel ViewModel
         {
@@ -13,33 +13,28 @@ namespace Adopcat.Mobile.Views
 
         public PostersPage()
         {
-            InitializeComponent();
+            InitializeComponent();            
         }
 
-        protected override void OnCurrentPageChanged()
+        private void CarouselView_PositionSelected(object sender, SelectedPositionChangedEventArgs e)
         {
-            base.OnCurrentPageChanged();
-
-            var currentPage = CurrentPage;
-
-            if (currentPage == null) return;
-
-            var backArrow = currentPage.Content.FindByName<Image>("imgBackArrow");
-            var frontArrow = currentPage.Content.FindByName<Image>("imgForwardArrow");
-
-            var castrated = currentPage.Content.FindByName<Image>("imgCastrated");
-            var dewormed = currentPage.Content.FindByName<Image>("imgDewormed");
-
-            var selectedPoster = SelectedItem as PosterOutput;
-
-            castrated.Source = selectedPoster.Castrated ? ImageSource.FromFile("icon_checked.png") : ImageSource.FromFile("icon_not_checked.png");
-            dewormed.Source = selectedPoster.Dewormed ? ImageSource.FromFile("icon_checked.png") : ImageSource.FromFile("icon_not_checked.png");
-
+            var selectedPoster = carouselView.Item as PosterOutput;
+            
             if (selectedPoster == null) return;
             ViewModel.ShowCarouselArrowsCommand.Execute(selectedPoster);
 
-            backArrow.IsVisible = ViewModel.IsNotFirstItem;
-            frontArrow.IsVisible = ViewModel.IsNotLastItem;
+            imgBackArrow.IsVisible = ViewModel.IsNotFirstItem;
+            imgForwardArrow.IsVisible = ViewModel.IsNotLastItem;
+        }
+
+        private void imgBackArrow_Tapped(object sender, System.EventArgs e)
+        {
+            carouselView.Position += -1;
+        }
+
+        private void imgForwardArrow_Tapped(object sender, System.EventArgs e)
+        {
+            carouselView.Position += 1;
         }
     }
 }

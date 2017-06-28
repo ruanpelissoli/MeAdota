@@ -83,6 +83,7 @@ namespace Adopcat.Mobile.ViewModels
             try
             {
                 Posters = new ObservableCollection<PosterOutput>(parameters.GetValue<List<PosterOutput>>("posters"));
+                ShowCarouselArrowsCommand.Execute(Posters.First());
             }
             catch (Exception ex)
             {

@@ -42,7 +42,10 @@
                 </ListView.ItemTemplate>
             </ListView>
             <Button Text="Adicionar foto" Command="{Binding PickPhotoCommand}" Style="{StaticResource SecondaryButton}" />
-            <Entry Placeholder="Nome" Text="{Binding Poster.PetName}" />
+            <StackLayout Orientation="Horizontal">
+                <Label Text="Nome:" Style="{StaticResource TitleLabel}" HorizontalOptions="Start"/>
+                <Entry Text="{Binding Poster.PetName}" HorizontalOptions="FillAndExpand" />
+            </StackLayout>
             <StackLayout Orientation="Horizontal">
                 <Label Text="Tipo:" Style="{StaticResource TitleLabel}" HorizontalOptions="Start"/>
                 <Picker ItemsSource="{Binding PetTypeList}" 
@@ -65,7 +68,10 @@
                         SelectedIndexChanged="Picker_SelectedIndexChanged_1" 
                         HorizontalOptions="FillAndExpand" />
             </StackLayout>
-            <Entry Placeholder="Cidade" Text="{Binding Poster.City}" />
+            <StackLayout Orientation="Horizontal">
+                <Label Text="Cidade:" Style="{StaticResource TitleLabel}" HorizontalOptions="Start"/>
+                <Entry Text="{Binding Poster.City}" HorizontalOptions="FillAndExpand" />
+            </StackLayout>            
             <StackLayout Orientation="Horizontal">
                 <Label Text="Foi adotado?" HorizontalOptions="StartAndExpand" Style="{StaticResource TitleLabel}" />
                 <Switch IsToggled="{Binding Poster.IsAdopted}" HorizontalOptions="End"/>

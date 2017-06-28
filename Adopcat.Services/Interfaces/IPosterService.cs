@@ -15,5 +15,6 @@ namespace Adopcat.Services.Interfaces
         Task<List<Poster>> GetByUserIdAsync(int id);
         Task<List<Poster>> GetByStateAsync(string state);
         Task<List<Poster>> GetByCityAsync(string city);
+        Task DeleteAsync(int id);
     }
 }

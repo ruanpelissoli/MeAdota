@@ -6,6 +6,8 @@ using System.Threading.Tasks;
 using Adopcat.Model.DTO;
 using Adopcat.Model.Enums;
 using System.Linq;
+using System;
+using Adopcat.Services.Exceptions;
 
 namespace Adopcat.Services
 {
@@ -142,6 +144,22 @@ namespace Adopcat.Services
             return await TryCatch(async () =>
             {
                 return await _repository.GetAllAsync(w => w.City == city);
+            });
+        }
+
+        public async Task DeleteAsync(int id)
+        {
+            await TryCatch(async () =>
+            {
+                var poster = await _repository.FindAsync(id);
+                if (poster == null) throw new BadRequestException();
+
+                foreach (var p in poster.PetPictures)
+                    await _blobService.DeleteBlobStorageAsync(p.Url);
+
+                await _petPictureService.DeleteMany(poster.Id);
+
+                await _repository.DeleteAsync(poster);
             });
         }
     }

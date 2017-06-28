@@ -21,6 +21,7 @@ namespace Adopcat.Mobile.ViewModels
         }
 
         public DelegateCommand<int?> SelectedPosterCommand { get; set; }
+        public DelegateCommand<int?> DeleteCommand { get; set; }
 
         public MyPostersPageViewModel(INavigationService navigationService, IPageDialogService dialogService)
             : base(navigationService, dialogService)
@@ -28,6 +29,35 @@ namespace Adopcat.Mobile.ViewModels
             Title = "Meus Anúncios";
 
             SelectedPosterCommand = new DelegateCommand<int?>(SelectedPosterCommandExecute);
+            DeleteCommand = new DelegateCommand<int?>(DeleteCommandExecute);
+        }
+
+        private async void DeleteCommandExecute(int? posterId)
+        {
+            try
+            {
+                if (posterId.HasValue)
+                {
+                    var delete = await _dialogService.DisplayAlertAsync("Deletar", "Deseja realmente deletar este anúncio?", "Sim", "Não");
+
+                    if (delete)
+                    {
+                        ShowLoading = true;
+                        await App.ApiService.DeletePoster(posterId.Value, "bearer " + Settings.AuthToken);
+                        await _dialogService.DisplayAlertAsync("Sucesso!", "Anúncio deletado com sucesso.", "Ok");
+
+                        MyPosters.Remove(MyPosters.First(w => w.Id == posterId));
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                await ExceptionHandler.Handle(ex, true);
+            }
+            finally
+            {
+                ShowLoading = false;
+            }           
         }
 
         public async override void OnNavigatedTo(NavigationParameters parameters)

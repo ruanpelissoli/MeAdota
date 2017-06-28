@@ -54,6 +54,9 @@ namespace Adopcat.Mobile.Interfaces
 
         [Put("/poster")]
         Task UpdatePoster(PosterInput poster, [Header("Authorization")] string token);
+
+        [Delete("/poster")]
+        Task<PosterOutput> DeletePoster(int id, [Header("Authorization")] string token);
         #endregion
 
         #region Download

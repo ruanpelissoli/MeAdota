@@ -84,5 +84,12 @@ namespace Adopcat.API.Controllers
             await _posterService.UpdateAsync(model).ConfigureAwait(false);
             return Ok();
         }
+
+        [HttpDelete]
+        public async Task<IHttpActionResult> Delete(int id)
+        {
+            await _posterService.DeleteAsync(id).ConfigureAwait(false);
+            return Ok();
+        }
     }
 }
