@@ -70,7 +70,7 @@ namespace Adopcat.Mobile.Interfaces
         #endregion
 
         #region Log
-        [Get("/log")]
+        [Post("/log")]
         Task<List<SystemLog>> CreateLog(SystemLog log, [Header("Authorization")] string token);
         #endregion
     }

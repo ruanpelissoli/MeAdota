@@ -52,7 +52,7 @@ namespace Adopcat.Mobile.Util
             }
             catch (Exception) { }
 
-            if (apiException != null && apiException.Equals("Unauthorized"))
+            if (apiException != null && apiException.ReasonPhrase.Equals("Unauthorized"))
             {
                 await App.MobileService.LogoutAsync();
                 await _navigationService.NavigateAsync($"app:///NavigationPage/{nameof(LoginPage)}");
