@@ -154,19 +154,18 @@ namespace Adopcat.Mobile.ViewModels
                 var pictureService = Xamarin.Forms.DependencyService.Get<PictureService>();
                 var file = await pictureService.GetPicture(action);
 
-                if (file != null)
+                if (file == null) return;
+
+                using (var memoryStream = new MemoryStream())
                 {
-                    using (var memoryStream = new MemoryStream())
+                    file.GetStream().CopyTo(memoryStream);
+                    file.Dispose();
+                    PetImages.Add(new PetPictureItem
                     {
-                        file.GetStream().CopyTo(memoryStream);
-                        file.Dispose();
-                        PetImages.Add(new PetPictureItem
-                        {
-                            Id = Guid.NewGuid().ToString(),
-                            Image = memoryStream.ToArray()
-                        });
-                        EditPosterCommand.RaiseCanExecuteChanged();
-                    }
+                        Id = Guid.NewGuid().ToString(),
+                        Image = memoryStream.ToArray()
+                    });
+                    EditPosterCommand.RaiseCanExecuteChanged();
                 }
             }
             catch (Exception ex)

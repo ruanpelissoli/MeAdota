@@ -44,7 +44,7 @@ namespace Adopcat.Mobile.ViewModels
 
             if (action == null) return EPictureOptions.Invalid;
 
-            if (action.ToLower().Equals("foto")) return EPictureOptions.Take;
+            if (action.ToLower().Equals("tirar foto")) return EPictureOptions.Take;
 
             return EPictureOptions.Pick;
         }
