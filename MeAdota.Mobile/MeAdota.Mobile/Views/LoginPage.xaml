@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:prism="clr-namespace:Prism.Mvvm;assembly=Prism.Forms"
+             prism:ViewModelLocator.AutowireViewModel="True"
+             x:Class="MeAdota.Mobile.Views.LoginPage"
+             Title="{Binding Title}">
+    <RelativeLayout HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
+        <Image 
+            VerticalOptions="FillAndExpand"
+            HorizontalOptions="FillAndExpand"
+            Aspect="AspectFill"
+            Source="login_bg.jpg" 
+            RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width}"
+            RelativeLayout.HeightConstraint="{ConstraintExpression Type=RelativeToParent, Property=Height}"/>
+        <Grid 
+            RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width}"
+            RelativeLayout.HeightConstraint="{ConstraintExpression Type=RelativeToParent, Property=Height}">
+            <StackLayout 
+                VerticalOptions="FillAndExpand"
+                HorizontalOptions="FillAndExpand">
+                <StackLayout VerticalOptions="CenterAndExpand" Padding="20, 0">
+                    <Label Text="E-mail" Style="{StaticResource TitleLabel}" FontSize="Medium" />
+                    <Entry Text="{Binding Email}" BackgroundColor="White" Opacity="0.5" />
+                    <Label Text="Senha" Style="{StaticResource TitleLabel}" FontSize="Medium" />
+                    <Entry IsPassword="True" Text="{Binding Password}" BackgroundColor="White" Opacity="0.5" />
+                    <Button Text="Login" 
+                            Command="{Binding LoginCommand}" 
+                            Style="{StaticResource DefaultButton}" 
+                            HorizontalOptions="FillAndExpand" 
+                            IsEnabled="{Binding ShowLoading, Converter={StaticResource NegateBooleanConverter}}"/>
+                    <Label Text="ou" Style="{StaticResource TitleLabel}" HorizontalTextAlignment="Center" />
+                    <Button Text="Login com Facebook" 
+                            Command="{Binding FacebookLoginCommand}" 
+                            Style="{StaticResource DefaultButton}" 
+                            HorizontalOptions="FillAndExpand"
+                            IsEnabled="{Binding ShowLoading, Converter={StaticResource NegateBooleanConverter}}"/>
+                    <ActivityIndicator IsVisible="{Binding ShowLoading}" IsRunning="{Binding ShowLoading}" Color="#00ad97" />
+                </StackLayout>               
+                <StackLayout VerticalOptions="End" 
+                             HorizontalOptions="FillAndExpand" 
+                             Padding="10"
+                             BackgroundColor="White"
+                             Opacity="0.8">
+                    <Label Text="Cadastre-se" Style="{StaticResource TitleLabel}" FontSize="Medium" HorizontalTextAlignment="Center">
+                        <Label.GestureRecognizers>
+                            <TapGestureRecognizer NumberOfTapsRequired="1" Command="{Binding RegisterCommand}"></TapGestureRecognizer>
+                        </Label.GestureRecognizers>
+                    </Label>
+                </StackLayout>
+            </StackLayout>
+        </Grid>
+    </RelativeLayout>
+</ContentPage>
